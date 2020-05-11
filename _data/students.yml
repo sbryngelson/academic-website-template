@@ -1,0 +1,16 @@
+#- name:
+#  photo: rock.jpg
+#  info:
+#  email:
+#  number_educ:
+#  education1:
+#  education2:
+#  education3:
+#  education4:
+
+- name: Rosanne Wijgman
+  photo: rock.jpg
+  info: Master student
+  email: rosanne.wijgman@student.ru.nl
+  number_educ: 0
+  education1:
