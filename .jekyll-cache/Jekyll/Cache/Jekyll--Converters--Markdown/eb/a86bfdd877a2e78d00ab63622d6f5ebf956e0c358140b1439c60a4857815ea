@@ -1,18 +1,0 @@
-I"�<h1 id="research">Research</h1>
-
-<p>Our overarching goal is to explore and understand new quantum states of electronic matter on the atomic scale. To do so, we use and develop novel spectroscopic-imaging scanning tunneling microscopy (SI-STM) tools to visualize the relevant quantum mechanical degrees of freedom.</p>
-
-<p>Questions of interest include: (i), How does the Mott state collapse upon doping and how is this related to the complex phase diagram of high-temperature superconductors? (ii), What is the strange metal phase seen in correlated electron systems? Is this an exotic long-range entangled state? What is the mechanism of dissipation in that state? (iii), Why is the transition temperature in high-temperature superconductors so high?</p>
-
-<p><img src="http://localhost:4000/images/respic/layers_real.jpg" alt="" style="width: 300px; float: right; border: 10px" /></p>
-
-<p>Currently, our instrument of choice  is SI-STM.  State-of-the-art SI-STM measures an array of tunneling spectra on a given sample, registered to the atomic sites with picometer precision. Each is proportional to the local density of states at a given location. Ideally, the recorded spectra are so tightly packed that the measurement yields a three-dimensional mapping of the local density of states as a function of locations and energy. This is shown on the image on the right-hand side (10x10 nm2), and its Fourier transform, below.</p>
-
-<p>The quantum materials which we will investigate encapsulate some of the great unsolved mysteries of physics. They include high-temperature superconductors, quantum-critical compounds, graphene, and topological electronic matter that can be used for error-resistant quantum computing.</p>
-
-<p><img src="http://localhost:4000/images/respic/layers_fft.jpg" alt="" style="width: 300px; float: left; border: 10px" /></p>
-
-<p>A main goal is to use modern technology to build the new instrumentation needed to understand these quantum materials. I learned my trade in <a href="http://davisgroup.lassp.cornell.edu/">Seamus Davis’ SI-STM lab</a> and with <a href="http://dpmc.unige.ch/gr_baumberger/index.html">Felix Baumberger</a>, and later moved as an <a href="http://www.ethfellows.ethz.ch/">ETH fellow</a> to <a href="http://www.qudev.ethz.ch/">Andreas Wallraff’s qudev lab</a> where we investigated coupled cavity arrays in circuit QED. This allowed me to learn new techniques such as high frequency measurements, low temperature noise-free amplification, and quantum-limited measurements. The goal is to combine these with SI-STM.</p>
-
-<p>This will enable the instrumental capabilities to visualize the different quantum mechanical degrees of freedom needed to understand next-generation quantum materials. STM will be the main method, but we use different spectroscopic-imaging techniques to visualize not only the topography, but also the density of states, spins, and other degrees of freedom hidden below the surface.</p>
-:ET
