@@ -1,0 +1,103 @@
+- name: Milan P Allan
+  photo: Milan.jpg
+  info: Associate professor, started Jan 2015
+  email: milan.allan@gmail.com
+  number_educ: 5
+  education1: Master ETHZ, Diplomarbeit with <a href="http://www.physik.uzh.ch/groups/osterwalder/">J Osterwalder</a>, University of Zurich
+  education2: PhD St Andrews (while at Cornell University) with <a href="http://dpmc.unige.ch/gr_baumberger/index.html">Felix Baumberger</a> and <a href="http://davisgroup.lassp.cornell.edu/">JC Davis</a>
+  education3: Postdoc Cornell
+  education4: <a href="http://www.ethfellows.ethz.ch/">ETH fellow</a> at ETHZ with Andreas Wallraff
+  education5: <a href="https://www.universiteitleiden.nl/en/news/2017/07/milan-allan-wins-bryan-r.-coles-prize">Bryan R. Coles Prize 2017</a>
+
+- name: Jianfeng (Jacky) Ge
+  photo: Jacky.jpg
+  info: Postdoc, started Oct 2019
+  email: ge@Physics.LeidenUniv.nl
+  number_educ: 3
+  education1: Postdoc with <a href="http://hoffman.physics.harvard.edu">Jenny Hoffman</a>, Harvard University
+  education2: Ph.D. with <a href="https://www.physics.sjtu.edu.cn/en/people/1/jfJia">Jinfeng Jia</a>, Shanghai Jiao Tong University
+  education3: B.S. East China University of Science and Technology
+
+- name: Koen M Bastiaans
+  photo: Koen.jpg
+  info: PhD Student, started Sep 2015
+  email: Bastiaans@Physics.LeidenUniv.nl
+  number_educ: 1
+  education1: Master Leiden University with Milan Allan
+
+- name: Maarten Leeuwenhoek
+  photo: Maarten.png
+  info: PhD Student, shared with the <a href="http://www.groeblacherlab.tudelft.nl">Groeblacher lab</a> at TU Delft under a NanoFront grant.
+  email: M.Leeuwenhoek@tudelft.nl
+  number_educ: 1
+  education1: Master Leiden University with Milan Allan
+  education2:
+  education3:
+  education4:
+
+- name: Damianos Chatzopoulos
+  photo: Damianos.jpg
+  info: PhD Student, started December 2017
+  email: chatzopoulos@Physics.LeidenUniv.nl
+  number_educ: 2
+  education1: Bachelor National and Kapodistrian University of Athens with D Syvridis
+  education2: Master TU Delft with <a href="http://vanderzantlab.tudelft.nl/">Herre van der Zant</a>
+  education3:
+
+- name: Willem Tromp
+  photo: website_pic_willem.jpg
+  info: PhD Student, started September 2018
+  email: WTromp@physics.leidenuniv.nl
+  number_educ: 1
+  education1: Master Leiden University with Felix Baumberger, Milan Allan
+  education2:
+  education3:
+  education4:
+
+- name: Tjerk Benschop
+  photo: tjeruk.jpg
+  info: PhD Student, started November 2018
+  email: benschop@physics.leidenuniv.nl
+  number_educ: 2
+  education1: Master Leiden University with Milan Allan
+  education2: Casimir PhD grant
+  education3:
+  education4:
+
+- name: Vincent Stalman
+  photo: Photo Vincent.jpg
+  info: PhD Student, started November 2018
+  email: stalman@physics.leidenuniv.nl
+  number_educ: 1
+  education1: Master University of Amsterdam with Diego Hofman
+  education2:
+  education3:
+  education4:
+
+- name: Kees van Oosten
+  photo: DSC_1032.JPG
+  info: Fine mechanical engineer associated with the FMD working in our group
+  email: Oosten@fmd.physics.leidenuniv.nl
+  number_educ: 2
+  education1: Leidse instrumentmakers School
+  education2: Associate degree Mechanical Engineering, Hogeschool Arnhem Nijmegen
+
+- name: Freek Groenewoud
+  photo: Freek.jpg
+  info: Fine mechanical engineer associated with the FMD working in our group
+  email: Groenewoud@physics.leidenuniv.nl
+  number_educ: 2
+  education1: Leidse Instrumentmaker School
+  education2: Mechanical Engineer , Hogeschool  Delft
+  education3:
+  education4:
+
+- name: "This could be you !"
+  photo: rock.jpg
+  info: See <a href="http://www.allanlab.org/vacancies">openings</a> for more info
+  email: milan.allan@gmail.com
+  number_educ: 0
+  education1:
+  education2:
+  education3:
+  education4:
