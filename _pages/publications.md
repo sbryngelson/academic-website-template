@@ -9,9 +9,9 @@ permalink: /publications/
 
 # Publications
 
-## Highlights
+For a full list see [below](#in-the-pipeline) or go to [Google Scholar](https://scholar.google.com/citations?user=dM-nHdMAAAAJ&hl=en) or [ResearchGate](https://www.researchgate.net/profile/Spencer_Bryngelson)
 
-(For a full list see [below](#full-list) or go to [Google Scholar](https://scholar.google.ch/citations?user=TqxYWZsAAAAJ), [ResearcherID](https://www.researcherid.com/rid/D-7763-2012))
+## Highlights
 
 {% assign number_printed = 0 %}
 {% for publi in site.data.publist %}
@@ -51,13 +51,28 @@ permalink: /publications/
 
 <p> &nbsp; </p>
 
+## In the Pipeline
 
-## Full List
+{% for publi in site.data.pub_pending %}
+
+  <strong> {{ publi.title }}</strong> <br />
+  <em>{{ publi.authors }} </em><br />
+  <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.link.url }}" target="_blank">{{ publi.link.display }}</a>{% if publi.arxiv %}, arXiv: <a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank">{{ publi.arxiv }}</a> {% endif %}
+
+{% endfor %}
+
+## Journal Papers
 
 {% for publi in site.data.publist %}
 
-  {{ publi.title }} <br />
-  <em>{{ publi.authors }} </em><br /><a href="{{ publi.link.url }}">{{ publi.link.display }}</a>
+  <strong> {{ publi.title }}</strong> <br />
+  <em>{{ publi.authors }} </em><br />
+  <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.link.url }}" target="_blank">{{ publi.link.display }}</a>{% if publi.doi %}, doi: <a href="http://dx.doi.org/{{ publi.doi }}" target="_blank">{{ publi.doi }}</a> {% endif %}
 
 {% endfor %}
+
+## Conference Proceedings
+
+
+
 
