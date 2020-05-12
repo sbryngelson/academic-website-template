@@ -1,0 +1,8 @@
+- name: Spencer H. Bryngelson
+  photo: Spencer.jpg
+  info: Title here
+  email: sbryngelson@gmail.com
+  number_educ: 3
+  education1: Postdoc Caltech (with <a href="https://colonius.caltech.edu" target="_blank">Tim Colonius</a>)
+  education2: Postdoc XPACC (with <a href="https://colonius.caltech.edu" target="_blank">Tim Colonius</a>)
+  education3: Ph.D. UIUC (with <a href="https://aerospace.illinois.edu/directory/profile/jbfreund" target="_blank">Jon Freund</a>)

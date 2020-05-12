@@ -1467,10 +1467,10 @@ samp {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
 
 code {
-  padding: 2px 4px;
+  padding: 4px 6px;
   font-size: 90%;
-  color: #c7254e;
-  background-color: #f9f2f4;
+  color: #e3e3e3;
+  background-color: #808080;
   border-radius: 4px; }
 
 kbd {
@@ -6192,6 +6192,11 @@ pubtit {
 
 #gridid .row {
   margin-bottom: 24px; }
+
+#gridid .rowrow {
+  margin-bottom: 24px;
+  display: inline-block;
+  margin: 0 auto; }
 
 /* Grid overrides */
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-5, .col-sm-6,

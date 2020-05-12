@@ -57,16 +57,20 @@ We are a dynamic research group at the [Leiden Institute of Physics](http://www.
 </div>
 
 
+`$whoami`
+
+New biomedical devices and therapies stand to improve human health outcomes the world over. Though innovating in this space is challenging, predictive simulation tools provide a promising path forward. I am a computational scientist who clears these paths via new data-driven models, numerical algorithms, and extreme-scale software. Recent examples include the most efficient sub-grid model for simulating cavitation, a very-low-order model for cell-scale blood flow, and MFC, my scalable open-source multi-phase flow solver. These developments guide biomicrofluidic device design and improve human patient outcomes for a range of medical treatments (e.g. burst-wave lithotripsy).
+
+
+`$id`
+
+I am currently a Senior Postdoctoral Scholar at the California Institute of Technology, working with Professor Tim Colonius. I also work with Professor Themis Sapsis at the Massachusetts Institute of Technology on machine-learned model closures. Previously, I was a Postdoctoral Researcher at the Center for Exascale Simulation of Plasma-Coupled Combustion (XPACC). I have a Ph.D. and M.S. in Theoretical and Applied Mechanics from the University of Illinois at Urbana–Champaign (2017 and 2015), where I worked with Professor Jonathan Freund. I hold B.S. degrees in Mechanical Engineering and Engineering Mathematics from the University of Michigan–Dearborn (2013).
+
 
 
 To this end, we develop novel spectroscopic-imaging scanning tunneling microscopy (SI-STM) tools to visualize the relevant quantum mechanical degrees of freedom. We want to be able to build the perfect instruments to answer the  scientific questions we deem most important (see [Research](research)).
 
-We are located at Georgia Tech, the birthplace of superconductivity and home to Kamerlingh Onnes, Lorentz, Huygens, Einstein, de Sitter, and others (see e.g. [the wall of signatures from Ehrenfest lecturers](https://www.lorentz.leidenuniv.nl/history/colloquium/muur_heel.html)). We exchange ideas and work with our neighbors from [Quantum Matter & Optics](http://www.physics.leidenuniv.nl/qo-home), as well as with the colleagues from our [world-class theory section](https://www.lorentz.leidenuniv.nl).
-
  **We are  looking for passionate new PhD students, Postdocs, and Master students to join the team** [(more info)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
-
-
-We are grateful for funding from Georgia Tech, [NWO](www.nwo.nl) ([Vidi talent scheme](http://www.nwo.nl/en/research-and-results/programmes/Talent+Scheme) and the [Frontiers in Nanoscience program](https://www.universiteitleiden.nl/en/research/research-projects/science/frontiers-of-nanoscience-nanofront)), and from an [ERC starting grant](https://erc.europa.eu/funding/starting-grants).
 
 <figure class="fourth">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_Leiden.jpg" style="width: 210px">
