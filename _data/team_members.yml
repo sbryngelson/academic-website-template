@@ -2,16 +2,15 @@
   photo: rock.jpg
   info: Postdoc, started Oct 2019
   email: ge@Physics.LeidenUniv.nl
-  number_educ: 3
+  website: https://mywebsite.com
+  number_educ: 2
   education1: Postdoc with <a href="http://hoffman.physics.harvard.edu">Jenny Hoffman</a>, Harvard University
   education2: Ph.D. with <a href="https://www.physics.sjtu.edu.cn/en/people/1/jfJia">Jinfeng Jia</a>, Shanghai Jiao Tong University
-  education3: B.S. East China University of Science and Technology
 
 
 - name: "This could be you !"
   photo: rock.jpg
   info: See <a href="http://www.allanlab.org/vacancies">openings</a> for more info
-  email: milan.allan@gmail.com
   number_educ: 0
   education1:
   education2:
