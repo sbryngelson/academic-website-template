@@ -18,6 +18,13 @@
   @include clearfix;
 }
 
+
+@mixin make-row2($gutter: $grid-gutter-width) {
+  margin-left:  ceil(($gutter / -2));
+  margin-right: floor(($gutter / -2));
+  @include clearfix;
+}
+
 // Generate the extra small columns
 @mixin make-xs-column($columns, $gutter: $grid-gutter-width) {
   position: relative;

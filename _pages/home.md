@@ -8,10 +8,6 @@ permalink: /
 
 We are a dynamic research group at the [Leiden Institute of Physics](http://www.physics.leidenuniv.nl). Our aim is to explore and understand [quantum materials](http://condensedconcepts.blogspot.nl/2013/05/what-is-quantum-matter.html), including strange metals, high-temperature superconductors, and quantum critical electron matter.
 
-<a href="asdf"><button class="btn">Click me</button></a>
-<a href="asdf"><button class="btn-pdf">PDF</button></a>
-<a href="asdf"><button class="btn-bib">BIB</button></a>
-
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover" >
     <!-- Menu -->
     <ol class="carousel-indicators">
