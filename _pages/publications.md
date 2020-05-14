@@ -29,7 +29,7 @@ For a full list see [below](#in-the-pipeline) or go to [Google Scholar](https://
   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="33%" style="float: left" />
   <p>{{ publi.description }}</p>
   <p><em>{{ publi.authors }}</em></p>
-  <p><strong><a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.link.url }}">{{ publi.link.display }}</a></strong></p>
+  <p><strong><a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}">{{ publi.display }}</a></strong></p>
   <p class="text-danger"><strong> {{ publi.news1 }}</strong></p>
   <p> {{ publi.news2 }}</p>
  </div>
@@ -53,11 +53,14 @@ For a full list see [below](#in-the-pipeline) or go to [Google Scholar](https://
 
 ## In the Pipeline
 
-{% for publi in site.data.pub_pending %}
+{% for publi in site.data.publist %}
 
+{% if publi.doi %}{% else %}
   <strong> {{ publi.title }}</strong> <br />
   <em>{{ publi.authors }} </em><br />
-  <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.link.url }}" target="_blank">{{ publi.link.display }}</a>{% if publi.arxiv %}, arXiv: <a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank">{{ publi.arxiv }}</a> {% endif %}
+  {{ publi.display }} <br />
+  {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a> {% endif %} {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}
+{% endif %}
 
 {% endfor %}
 
@@ -65,10 +68,26 @@ For a full list see [below](#in-the-pipeline) or go to [Google Scholar](https://
 
 {% for publi in site.data.publist %}
 
+
+{% if publi.doi %}
+
+{% assign bibtest = false %}
+{% if publi.url %}
+ {% assign bibfile = "/papers/" | append:  publi.url  | append: ".bib" %}
+
+ {% for file in site.static_files %}
+  {% if file.path contains bibfile %}
+   {% assign bibtest = true %}
+  {% endif %}
+ {% endfor %}
+{% endif %}
+
   <strong> {{ publi.title }}</strong> <br />
   <em>{{ publi.authors }} </em><br />
-  <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.link.url }}" target="_blank">{{ publi.link.display }}</a>{% if publi.doi %}, doi: <a href="http://dx.doi.org/{{ publi.doi }}" target="_blank">{{ publi.doi }}</a> {% endif %}
+  {{ publi.display }}<br />
+  {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}    {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}    {% if bibtest == true %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.bib" target="_blank"><button class="btn-bib">BIB</button></a> {% endif %}    {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}
 
+  {% endif %}
 {% endfor %}
 
 ## Conference Proceedings

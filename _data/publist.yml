@@ -1,21 +1,30 @@
+- title: Near-surface dynamics of a gas bubble collapsing above a crevice
+  image: dummy.png
+  description: ""
+  authors:
+    T. Trummler, S. H. Bryngelson, K. Schmidmayer, S. J. Schmidt, N. A. Adams, T. Colonius
+  url: bryngelson-JFM-19
+  display: under review, Journal of Fluid Mechanics
+  highlight: 0
+  arxiv: 1912.07022
+
 - title: "MFC: An open-source high-order multi-component, multi-phase, and multi-scale compressible flow solver"
   image: dummy.png
   description: ""
   authors:
     S. H. Bryngelson, K. Schmidmayer, V. Coralic, J. C. Meng, K. Maeda, T. Colonius
-  link:
-    url: bryngelson-CPC-19.pdf
-    display: accepted, Computer Physics Communications (2020)
+  url: bryngelson-CPC-19
+  display: accepted, Computer Physics Communications (2020)
   highlight: 0
+  arxiv: 1907.10512
 
 - title: A Gaussian moment method and its augmentation via LSTM recurrent neural networks for the statistics of cavitating bubble populations
   image: dummy.png
   description: ""
   authors:
     S. H. Bryngelson, A. Charalampopoulos, T. P. Sapsis, T. Colonius
-  link:
-    url: bryngelson-IJMF-20.pdf
-    display: International Journal of Multiphase Flow 127, 103262 (2020)
+  url: bryngelson-IJMF-20
+  display: International Journal of Multiphase Flow 127, 103262 (2020)
   highlight: 0
   doi: 10.1016/j.ijmultiphaseflow.2020.103262
 
@@ -23,9 +32,8 @@
   image: dummy.png
   description: ""
   authors: S. H. Bryngelson and T. Colonius 
-  link: 
-    url: bryngelson-JASA-20.pdf 
-    display: Journal of the Acoustical Society of America 147, 1126–1135 (2020)
+  url: bryngelson-JASA-20 
+  display: Journal of the Acoustical Society of America 147, 1126–1135 (2020)
   highlight: 1
   doi: 10.1121/10.0000746 
 
@@ -33,9 +41,8 @@
   image: dummy.png
   description: ""
   authors: K. Schmidmayer, S. H. Bryngelson, T. Colonius
-  link: 
-    url: bryngelson-JCP-20.pdf
-    display: Journal of Computational Physics 402, 109080 (2020) 
+  url: bryngelson-JCP-20
+  display: Journal of Computational Physics 402, 109080 (2020) 
   highlight: 1
   doi: 10.1016/j.jcp.2019.109080
 
@@ -43,9 +50,8 @@
   image: dummy.png
   description: ""
   authors: S. H. Bryngelson, K. Schmidmayer, T. Colonius
-  link: 
-    url: bryngelson-IJMF-19.pdf  
-    display: International Journal of Multiphase Flow 115, 137–143 (2019)
+  url: bryngelson-IJMF-19  
+  display: International Journal of Multiphase Flow 115, 137–143 (2019)
   highlight: 0
   doi: 10.1016/j.ijmultiphaseflow.2019.03.028
 
@@ -53,9 +59,8 @@
   image: dummy.png
   description: ""
   authors: S. H. Bryngelson, F. Guéniat, J. B. Freund
-  link: 
-    url: bryngelson-PRE-19.pdf
-    display: Physical Review E 100, 012203 (2019)
+  url: bryngelson-PRE-19
+  display: Physical Review E 100, 012203 (2019)
   highlight: 0
   doi: 10.1103/PhysRevE.100.012203
 
@@ -63,9 +68,8 @@
   image: dummy.png
   description: ""
   authors: S. H. Bryngelson and J. B. Freund
-  link: 
-    url: bryngelson-EJM-19.pdf
-    display: European Journal of Mechanics B/Fluids 77, 171–176 (2019)
+  url: bryngelson-EJM-19
+  display: European Journal of Mechanics B/Fluids 77, 171–176 (2019)
   highlight: 0
   doi: 10.1016/j.euromechflu.2019.04.012
 
@@ -74,9 +78,8 @@
   image: dummy.png
   description: ""
   authors: S. H. Bryngelson and J. B. Freund
-  link: 
-    url: bryngelson-PRF-18.pdf
-    display: Physical Review Fluids 3, 073101 (2018)
+  url: bryngelson-PRF-18
+  display: Physical Review Fluids 3, 073101 (2018)
   highlight: 0
   doi: 10.1103/PhysRevFluids.3.073101
 
@@ -84,9 +87,8 @@
   image: dummy.png
   description: ""
   authors: S. H. Bryngelson and J. B. Freund
-  link: 
-    url: bryngelson-JFM-18.pdf
-    display: Journal of Fluid Mechanics 852, 663–677 (2018)
+  url: bryngelson-JFM-18
+  display: Journal of Fluid Mechanics 852, 663–677 (2018)
   highlight: 0
   doi: 10.1017/jfm.2018.574
 
@@ -94,9 +96,8 @@
   image: dummy.png
   description: ""
   authors: S. H. Bryngelson and J. B. Freund
-  link: 
-    url: bryngelson-PRF-16.pdf
-    display: Physical Review Fluids 1, 033201 (2016)
+  url: bryngelson-PRF-16
+  display: Physical Review Fluids 1, 033201 (2016)
   highlight: 0
   doi: 10.1103/PhysRevFluids.1.033201
 
@@ -104,17 +105,7 @@
   image: dummy.png
   description: ""
   authors: S. H. Bryngelson and J. B. Freund
-  link: 
-    url: bryngelson-RA-16.pdf
-    display: Rheologica Acta 55, 451–464 (2016) 
+  url: bryngelson-RA-16
+  display: Rheologica Acta 55, 451–464 (2016) 
   highlight: 0
   doi: 10.1007/s00397-015-0900-9
-
-- title: 
-  image: dummy.png
-  description: ""
-  authors: 
-  link: 
-    url: 
-    display: 
-  highlight: 0

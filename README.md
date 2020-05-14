@@ -1,11 +1,19 @@
-# Allan Lab Website
+# Spencer Bryngelson website
 
-This is the website of our academic research group at Leiden University.
+## Acknowledgement
 
-This website is powered by Jekyll and some Bootstrap, Bootwatch. We tried to make it simple yet adaptable, so that it is easy for you to use it as a template. Plese feel free to copy and modify for your own purposes.  You don't have to link to us or mention us (but of course we appreciate it).
+Credit the Allen Lab for creating the webpage that this one is adapted from.
 
-Go to *aboutwebsite.md*  to learn how to copy and modidy this page for your purpose. 
+## Publication database
+
+File `_data/publist.yml` contains the publication database loaded on the 'Publications' page.
+Items in that database can be used as examples for your entries.
+If a DOI is present, the publication will be listed under 'Journal Papers'. 
+Otherwise, it will be listed as 'In the Pipeline'.
+If the `arXiv` category is present, then an additional button will be placed next to the entry on the publications page.
+For each paper a corresponding PDF can be placed in the `papers/` directory.
+The name of this file (with no .pdf extension!) should be placed in the `url` category of its entry in `publist.yml`.
 
 
-Copyright Allan Lab. Code released under the MIT License.
-
+Optional: Running `readyaml.py`, which is located in the home directory, will create `.bib` files for all publications that have DOIs.
+If this is done, an additional button for the `.bib` file will be placed next to its entry on the publications page.
