@@ -29,7 +29,7 @@ For a full list see [below](#in-the-pipeline) or go to [Google Scholar](https://
   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="33%" style="float: left" />
   <p>{{ publi.description }}</p>
   <p><em>{{ publi.authors }}</em></p>
-  <p><strong><a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}">{{ publi.display }}</a></strong></p>
+  <p><strong><a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank">{{ publi.display }}</a></strong></p>
   <p class="text-danger"><strong> {{ publi.news1 }}</strong></p>
   <p> {{ publi.news2 }}</p>
  </div>
@@ -90,8 +90,7 @@ For a full list see [below](#in-the-pipeline) or go to [Google Scholar](https://
   {% endif %}
 {% endfor %}
 
-## Conference Proceedings
-
+<br/>
 
 
 

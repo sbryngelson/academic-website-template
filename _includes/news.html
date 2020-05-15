@@ -2,22 +2,44 @@
 <div class="well">
 <h4>News</h4>
 
-{% for article in site.data.news limit:4 %}
-{{ article.date }}
-<p>{{ article.headline }}</p>
-{% endfor %}
+  {% for article in site.data.news limit:4 %}
+  {{ article.date }}
+  <p>{{ article.headline }}</p>
+  {% endfor %}
+  
+  <h4><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></h4>
 
-<h4><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></h4>
-
-    </div>
+</div>
 
 <div class="well">
 <h4>Events</h4>
 
-{% for article in site.data.events limit:5 %}
-{{ article.date }}
-<p>{{ article.headline }}</p>
-{% endfor %}
+  {% for article in site.data.events limit:5 %}
+  {{ article.date }}
+  <p>{{ article.headline }}</p>
+  {% endfor %}
+
+</div>
 
 
-    </div>
+<div class="well">
+<h4>Funding</h4>
+
+  <style>
+   .mycenter {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+   }
+  </style>
+
+  <p><img src='/images/logopic/nsf.png' class='mycenter' style='max-height: 100px'/></p>
+  <p><img src='/images/logopic/doe_logo.jpg' class='mycenter' style='max-height: 100px'/></p>
+  <p><img src='/images/logopic/onr_logo.png' class='mycenter' style='max-height: 80px'/></p>
+  <p><img src='/images/logopic/NIH-logo.png' class='mycenter' style='max-height: 80px'/></p>
+  <p><img src='/images/logopic/nnsa_logo.png' class='mycenter' style='max-height: 60px'/></p>
+
+
+</div>
+
+      <!-- width: 50%; -->
