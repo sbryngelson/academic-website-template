@@ -1,7 +1,6 @@
 ---
-title: "Bryngelson Group - Publications"
+title: "Publications"
 layout: gridlay
-excerpt: "Bryngelson Group -- Publications."
 sitemap: false
 permalink: /publications/
 ---
@@ -11,60 +10,44 @@ permalink: /publications/
 
 For a full list see [below](#in-the-pipeline) or go to [Google Scholar](https://scholar.google.com/citations?user=dM-nHdMAAAAJ&hl=en) or [ResearchGate](https://www.researchgate.net/profile/Spencer_Bryngelson)
 
-## Highlights
-
-{% assign number_printed = 0 %}
-{% for publi in site.data.publist %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if publi.highlight == 1 %}
-
-{% if even_odd == 0 %}
-<div class="row">
-{% endif %}
-
-<div class="col-sm-6 clearfix">
- <div class="well">
-  <pubtit>{{ publi.title }}</pubtit>
-  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="33%" style="float: left" />
-  <p>{{ publi.description }}</p>
-  <p><em>{{ publi.authors }}</em></p>
-  <p><strong><a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank">{{ publi.display }}</a></strong></p>
-  <p class="text-danger"><strong> {{ publi.news1 }}</strong></p>
-  <p> {{ publi.news2 }}</p>
- </div>
-</div>
-
-{% assign number_printed = number_printed | plus: 1 %}
-
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
-{% endif %}
-{% endfor %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
-<p> &nbsp; </p>
 
 ## In the Pipeline
 
+
 {% for publi in site.data.publist %}
 
+
 {% if publi.doi %}{% else %}
-  <strong> {{ publi.title }}</strong> <br />
-  <em>{{ publi.authors }} </em><br />
-  {{ publi.display }} <br />
-  {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a> {% endif %} {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}
+
+{% assign bibtest = false %}
+{% if publi.url %}
+ {% assign bibfile = "/papers/" | append:  publi.url  | append: ".bib" %}
+
+ {% for file in site.static_files %}
+  {% if file.path contains bibfile %}
+   {% assign bibtest = true %}
+  {% endif %}
+ {% endfor %}
 {% endif %}
 
+ <div class="well-sm">
+    {% if publi.image %}
+  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="10%" style="float: left" />
+    {% else %}
+  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/dummy.png" width="10%" class="img2"  style="float: left" />
+    {% endif %}
+
+  <strong> {{ publi.title }}</strong> <br />
+  <em>{{ publi.authors }} </em><br />
+  {{ publi.display }}<br />
+  {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}    {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}    {% if bibtest == true %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.bib" target="_blank"><button class="btn-bib">BIB</button></a> {% endif %}    {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}
+ </div>
+  {% endif %}
 {% endfor %}
 
+
 ## Journal Papers
+
 
 {% for publi in site.data.publist %}
 
@@ -82,15 +65,94 @@ For a full list see [below](#in-the-pipeline) or go to [Google Scholar](https://
  {% endfor %}
 {% endif %}
 
+ <div class="well-sm">
+    {% if publi.image %}
+  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="10%" style="float: left" />
+    {% else %}
+  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/dummy.png" width="10%" class="img2"  style="float: left" />
+    {% endif %}
+
   <strong> {{ publi.title }}</strong> <br />
   <em>{{ publi.authors }} </em><br />
   {{ publi.display }}<br />
   {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}    {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}    {% if bibtest == true %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.bib" target="_blank"><button class="btn-bib">BIB</button></a> {% endif %}    {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}
-
+ </div>
   {% endif %}
 {% endfor %}
 
-<br/>
 
+{% if site.data.conference_papers %}
+## Conference Papers
+
+
+{% for publi in site.data.conference_papers %}
+
+{% assign bibtest = false %}
+{% if publi.url %}
+ {% assign bibfile = "/papers/" | append:  publi.url  | append: ".bib" %}
+
+ {% for file in site.static_files %}
+  {% if file.path contains bibfile %}
+   {% assign bibtest = true %}
+  {% endif %}
+ {% endfor %}
+{% endif %}
+
+ <div class="well-sm">
+    {% if publi.image %}
+  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="10%" style="float: left" />
+    {% else %}
+  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/dummy.png" width="10%" class="img2"  style="float: left" />
+    {% endif %}
+
+  <strong> {{ publi.title }}</strong> <br />
+  <em>{{ publi.authors }} </em><br />
+  {{ publi.display }}<br />
+  {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}    {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}    {% if bibtest == true %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.bib" target="_blank"><button class="btn-bib">BIB</button></a> {% endif %}    {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}
+ </div>
+{% endfor %}
+{% endif %}
+
+{% if site.data.other_pubs %}
+## Other Publications
+
+
+{% for publi in site.data.other_pubs %}
+
+ <div class="well-sm">
+    {% if publi.image %}
+  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="10%" style="float: left" />
+    {% else %}
+  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/dummy.png" width="10%" class="img2"  style="float: left" />
+    {% endif %}
+
+  <strong> {{ publi.title }}</strong> <br />
+  <em>{{ publi.authors }} </em><br />
+  {{ publi.display }}<br />
+  {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
+ </div>
+{% endfor %}
+{% endif %}
+
+
+
+{% if site.data.conference_talks %}
+## Conference Abstracts
+
+{% for publi in site.data.conference_talks %}
+* <strong>{{ publi.title }}</strong> <br/> <i>{{ publi.authors }}</i>, {{ publi.conf }} ({{ publi.year }})
+{% endfor %}
+{% endif %}
+
+
+{% if site.data.invited_talks %}
+## Invited Talks and Seminars
+
+{% for publi in site.data.invited_talks %}
+* {{ publi.name }}
+{% endfor %}
+{% endif %}
+
+<br/>
 
 

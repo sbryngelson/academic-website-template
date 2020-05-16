@@ -1,7 +1,6 @@
 ---
 title: "News"
 layout: textlay
-excerpt: "Bryngelson Group at Georgia Tech."
 sitemap: false
 permalink: /allnews.html
 ---

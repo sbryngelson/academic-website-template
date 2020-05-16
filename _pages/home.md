@@ -1,7 +1,6 @@
 ---
-title: "Bryngelson Group - Home"
+title: "Home"
 layout: homelay
-excerpt: "Bryngelson Group at Georgia Tech."
 sitemap: false
 permalink: /
 ---

@@ -1,111 +1,79 @@
 - title: Near-surface dynamics of a gas bubble collapsing above a crevice
-  image: dummy.png
-  description: ""
   authors:
     T. Trummler, S. H. Bryngelson, K. Schmidmayer, S. J. Schmidt, N. A. Adams, T. Colonius
   url: bryngelson-JFM-19
   display: under review, Journal of Fluid Mechanics
-  highlight: 0
   arxiv: 1912.07022
 
 - title: "MFC: An open-source high-order multi-component, multi-phase, and multi-scale compressible flow solver"
-  image: dummy.png
-  description: ""
   authors:
     S. H. Bryngelson, K. Schmidmayer, V. Coralic, J. C. Meng, K. Maeda, T. Colonius
   url: bryngelson-CPC-19
   display: <b>accepted</b>, Computer Physics Communications 
-  highlight: 0
   arxiv: 1907.10512
 
 - title: A Gaussian moment method and its augmentation via LSTM recurrent neural networks for the statistics of cavitating bubble populations
-  image: dummy.png
-  description: ""
   authors:
     S. H. Bryngelson, A. Charalampopoulos, T. P. Sapsis, T. Colonius
   url: bryngelson-IJMF-20
   display: International Journal of Multiphase Flow 127, 103262 (2020)
-  highlight: 0
   doi: 10.1016/j.ijmultiphaseflow.2020.103262
 
 - title: Simulation of humpback whale bubble-net feeding models
-  image: dummy.png
-  description: ""
   authors: S. H. Bryngelson and T. Colonius 
   url: bryngelson-JASA-20 
   display: Journal of the Acoustical Society of America 147, 1126–1135 (2020)
-  highlight: 0
   doi: 10.1121/10.0000746 
 
 - title: An assessment of multicomponent flow models and interface capturing schemes for spherical bubble dynamics
-  image: dummy.png
-  description: ""
   authors: K. Schmidmayer, S. H. Bryngelson, T. Colonius
   url: bryngelson-JCP-20
   display: Journal of Computational Physics 402, 109080 (2020) 
-  highlight: 0
   doi: 10.1016/j.jcp.2019.109080
 
 - title: A quantitative comparison of phase-averaged models for bubbly, cavitating flows
-  image: dummy.png
-  description: ""
   authors: S. H. Bryngelson, K. Schmidmayer, T. Colonius
   url: bryngelson-IJMF-19  
   display: International Journal of Multiphase Flow 115, 137–143 (2019)
-  highlight: 0
   doi: 10.1016/j.ijmultiphaseflow.2019.03.028
 
 - title: Irregular dynamics of cellular blood flow in a model microvessel
-  image: dummy.png
-  description: ""
   authors: S. H. Bryngelson, F. Guéniat, J. B. Freund
   url: bryngelson-PRE-19
   display: Physical Review E 100, 012203 (2019)
-  highlight: 0
   doi: 10.1103/PhysRevE.100.012203
 
 - title: Non-modal Floquet stability of capsules in large-amplitude oscillatory extensional flow
   image: vizabstract_laoe.png
-  description: ""
   authors: S. H. Bryngelson and J. B. Freund
   url: bryngelson-EJM-19
   display: European Journal of Mechanics B/Fluids 77, 171–176 (2019)
-  highlight: 1
   doi: 10.1016/j.euromechflu.2019.04.012
 
 
-- title: Global stability of ﬂowing red blood cell trains
+- title: Global stability of flowing red blood cell trains
   image: vizabstract_3dtrains.png
-  description: ""
   authors: S. H. Bryngelson and J. B. Freund
   url: bryngelson-PRF-18
   display: Physical Review Fluids 3, 073101 (2018)
-  highlight: 1
   doi: 10.1103/PhysRevFluids.3.073101
 
 - title: Floquet stability analysis of capsules in viscous shear flow  
   image: vizabstract_floquet.png
-  description: ""
   authors: S. H. Bryngelson and J. B. Freund
   url: bryngelson-JFM-18
   display: Journal of Fluid Mechanics 852, 663–677 (2018)
-  highlight: 1
   doi: 10.1017/jfm.2018.574
 
 - title: Capsule-train stability 
   image: vizabstract_cells2d.png
-  description: ""
   authors: S. H. Bryngelson and J. B. Freund
   url: bryngelson-PRF-16
   display: Physical Review Fluids 1, 033201 (2016)
-  highlight: 1
   doi: 10.1103/PhysRevFluids.1.033201
 
 - title: Buckling and its effect on the conﬁned ﬂow of a model capsule suspension 
-  image: dummy.png
-  description: ""
   authors: S. H. Bryngelson and J. B. Freund
   url: bryngelson-RA-16
   display: Rheologica Acta 55, 451–464 (2016) 
-  highlight: 0
   doi: 10.1007/s00397-015-0900-9

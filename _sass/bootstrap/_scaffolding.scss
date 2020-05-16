@@ -82,6 +82,11 @@ img {
   @include img-responsive;
 }
 
+
+// .img-responsive2 {
+//   @include img-responsive2;
+// }
+
 // Rounded corners
 .img-rounded {
   border-radius: $border-radius-large;

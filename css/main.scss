@@ -9,6 +9,8 @@ img { margin-bottom: 24px;
 }
 
 
+
+
 body {
 	padding-top: 70px;
 }
@@ -61,12 +63,15 @@ firstp {
 }
 
 /* Team & Publications */
+#gridid .img2 { margin: 16px 22px 6px 0; border-radius:10%; box-shadow: 2px 2px 5px rgba(0,0,0,0) }
 #gridid img { margin: 16px 22px 6px 0; border-radius:10%; box-shadow: 2px 2px 5px #555555 }
 #homeid img { margin: 0 0 0 0; border-radius:5%; box-shadow: 0px 0px 0px #555555 }
 #picid img { margin: 6px 3px 60px 6px; border-radius:1%; box-shadow: 2px 2px 5px #555555 }
 #gridid .row { margin-bottom: 24px; }
 #gridid .rowl1 { margin-bottom: 24px; background-color: #2a2a2a; border-radius:10px; padding-left: 10px; padding-right: 10px;}
 #gridid .rowl2 { margin-bottom: 24px; background-color: #3a3a3a; border-radius:10px; padding-left: 10px; padding-right: 10px;}
+
+// .img2 { margin: 46px 52px 6px 0; border-radius:10%; box-shadow: 2px 10px 5px #FFFFFF }
 
 
 /* Grid overrides */

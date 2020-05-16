@@ -1,16 +1,16 @@
-- name: Jianfeng (Jacky) Ge
+- name: Example student name
   photo: rock.jpg
-  info: Postdoc, started Oct 2019
-  email: ge@Physics.LeidenUniv.nl
-  website: https://mywebsite.com
+  info: Postdoc, started Oct 2040
+  email: exampleemail@gmail.com
+  website: https://website.com
   number_educ: 2
-  education1: Postdoc with <a href="http://hoffman.physics.harvard.edu">Jenny Hoffman</a>, Harvard University
-  education2: Ph.D. with <a href="https://www.physics.sjtu.edu.cn/en/people/1/jfJia">Jinfeng Jia</a>, Shanghai Jiao Tong University
+  education1: Postdoc with <a href="w">XYZ</a>, Harvard University
+  education2: Ph.D. with <a href="w">XYZ</a>, X University
 
 
 - name: "This could be you !"
   photo: rock.jpg
-  info: See <a href="http://www.allanlab.org/vacancies">openings</a> for more info
+  info: See <a href="www">openings</a> for more info
   number_educ: 0
   education1:
   education2:

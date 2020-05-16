@@ -1,7 +1,6 @@
 ---
-title: "Bryngelson Group - Research"
+title: "Research"
 layout: gridlay
-excerpt: "Bryngelson Group -- Research"
 sitemap: false
 permalink: /research/
 ---
@@ -19,7 +18,7 @@ permalink: /research/
 </div>
  
 
-<div class="rowl2">
+<div class="rowl1">
   <img src="{{ site.url }}{{ site.baseurl }}/images/respic/microcapsules.jpg" class="img-responsive" width="20%" style="float: left" />
   <h4>Microcapsules for drug delivery</h4>
   Currently, our instrument of choice  is SI-STM.  State-of-the-art SI-STM measures an array of tunneling spectra on a given sample, registered to the atomic sites with picometer precision. Each is proportional to the local density of states at a given location. Ideally, the recorded spectra are so tightly packed that the measurement yields a three-dimensional mapping of the local density of states as a function of locations and energy. This is shown on the image on the right-hand side (10x10 nm2), and its Fourier transform, below.
@@ -40,7 +39,7 @@ This will enable the instrumental capabilities to visualize the different quantu
 </div>
 
 
-<div class="rowl2">
+<div class="rowl1">
   <img src="{{ site.url }}{{ site.baseurl }}/images/respic/sickle_cells2.jpg" class="img-responsive" width="20%" style="float: left" />
   <h4>Deformed and diseased cells</h4>
   Currently, our instrument of choice  is SI-STM.  State-of-the-art SI-STM measures an array of tunneling spectra on a given sample, registered to the atomic sites with picometer precision. Each is proportional to the local density of states at a given location. Ideally, the recorded spectra are so tightly packed that the measurement yields a three-dimensional mapping of the local density of states as a function of locations and energy. This is shown on the image on the right-hand side (10x10 nm2), and its Fourier transform, below.
