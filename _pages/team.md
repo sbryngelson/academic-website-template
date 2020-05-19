@@ -5,7 +5,7 @@ sitemap: false
 permalink: /team/
 ---
 
-# Group Members
+# Team
 
  **We are  looking for new PhD students, Postdocs, and Master students to join the team** [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
 
@@ -161,4 +161,3 @@ permalink: /team/
 ## Administrative Support
 <a href="exampleemail@gmail.com">Example staff</a> is helping us (and other groups) with administration.
 
-<br/>

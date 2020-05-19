@@ -16,38 +16,51 @@
   authors:
     S. H. Bryngelson, A. Charalampopoulos, T. P. Sapsis, T. Colonius
   url: bryngelson-IJMF-20
-  display: International Journal of Multiphase Flow 127, 103262 (2020)
+  display: International Journal of Multiphase Flow 127, 103262
+  year: 2020
   doi: 10.1016/j.ijmultiphaseflow.2020.103262
 
 - title: Simulation of humpback whale bubble-net feeding models
   authors: S. H. Bryngelson and T. Colonius 
   url: bryngelson-JASA-20 
-  display: Journal of the Acoustical Society of America 147, 1126–1135 (2020)
+  display: Journal of the Acoustical Society of America 147, 1126–1135
+  year: 2020
   doi: 10.1121/10.0000746 
 
 - title: An assessment of multicomponent flow models and interface capturing schemes for spherical bubble dynamics
   authors: K. Schmidmayer, S. H. Bryngelson, T. Colonius
   url: bryngelson-JCP-20
-  display: Journal of Computational Physics 402, 109080 (2020) 
+  display: Journal of Computational Physics 402, 109080
+  year: 2020
   doi: 10.1016/j.jcp.2019.109080
 
 - title: A quantitative comparison of phase-averaged models for bubbly, cavitating flows
   authors: S. H. Bryngelson, K. Schmidmayer, T. Colonius
   url: bryngelson-IJMF-19  
-  display: International Journal of Multiphase Flow 115, 137–143 (2019)
+  display: International Journal of Multiphase Flow 115, 137–143
+  year: 2019
   doi: 10.1016/j.ijmultiphaseflow.2019.03.028
+
+- title: A comparison of ensemble- and volume-averaged bubbly flow models 
+  image:
+  authors: S. H. Bryngelson and T. Colonius
+  url: bryngelson-ICMF-19
+  display: Proceedings of 10th International Conference on Multiphase Flow, Rio de Janeiro, Brazil
+  year: 2019
 
 - title: Irregular dynamics of cellular blood flow in a model microvessel
   authors: S. H. Bryngelson, F. Guéniat, J. B. Freund
   url: bryngelson-PRE-19
-  display: Physical Review E 100, 012203 (2019)
+  display: Physical Review E 100, 012203
+  year: 2019
   doi: 10.1103/PhysRevE.100.012203
 
 - title: Non-modal Floquet stability of capsules in large-amplitude oscillatory extensional flow
   image: vizabstract_laoe.png
   authors: S. H. Bryngelson and J. B. Freund
   url: bryngelson-EJM-19
-  display: European Journal of Mechanics B/Fluids 77, 171–176 (2019)
+  display: European Journal of Mechanics B/Fluids 77, 171–176
+  year: 2019
   doi: 10.1016/j.euromechflu.2019.04.012
 
 
@@ -55,25 +68,57 @@
   image: vizabstract_3dtrains.png
   authors: S. H. Bryngelson and J. B. Freund
   url: bryngelson-PRF-18
-  display: Physical Review Fluids 3, 073101 (2018)
+  display: Physical Review Fluids 3, 073101
+  year: 2018
   doi: 10.1103/PhysRevFluids.3.073101
 
 - title: Floquet stability analysis of capsules in viscous shear flow  
   image: vizabstract_floquet.png
   authors: S. H. Bryngelson and J. B. Freund
   url: bryngelson-JFM-18
-  display: Journal of Fluid Mechanics 852, 663–677 (2018)
+  display: Journal of Fluid Mechanics 852, 663–677
+  year: 2018
   doi: 10.1017/jfm.2018.574
+
+- title: Adjoint-based sensitivity for flows with shocks
+  image:
+  authors: S. H. Bryngelson, C. Pantano, D. Bodony, J. B. Freund
+  url: bryngelson-xpacc18
+  display: XPACC Technical Report
+  year: 2018
+
+- title: Stability and transition of capsule-flow systems
+  image:
+  authors: S. H. Bryngelson
+  url: bryngelson-dissertation17
+  display: Ph.D. Dissertation, University of Illinois at Urbana--Champign
+  year: 2017
 
 - title: Capsule-train stability 
   image: vizabstract_cells2d.png
   authors: S. H. Bryngelson and J. B. Freund
   url: bryngelson-PRF-16
-  display: Physical Review Fluids 1, 033201 (2016)
+  display: Physical Review Fluids 1, 033201
+  year: 2016
   doi: 10.1103/PhysRevFluids.1.033201
 
 - title: Buckling and its effect on the conﬁned ﬂow of a model capsule suspension 
   authors: S. H. Bryngelson and J. B. Freund
   url: bryngelson-RA-16
-  display: Rheologica Acta 55, 451–464 (2016) 
+  display: Rheologica Acta 55, 451–464
+  year: 2016
   doi: 10.1007/s00397-015-0900-9
+
+- title: Buckling and the rheology of an elastic capsule suspension 
+  image:
+  authors: S. H. Bryngelson and J. B. Freund
+  url: bryngelson-ICTAM-16
+  display: Proceedings of XXIV International Congress of Theoretical and Applied Mechanics, Montreal, Canada
+  year: 2016
+
+- title: The stability of flowing trains of confined red blood cells 
+  image:
+  authors: J. B. Freund and S. H. Bryngelson
+  url: freund-ICTAM-16
+  display: Proceedings of XXIV International Congress of Theoretical and Applied Mechanics, Montreal, Canada
+  year: 2016

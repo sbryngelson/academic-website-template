@@ -1,5 +1,5 @@
 ---
-title: "About Me"
+title: "About"
 layout: gridlay
 sitemap: false
 permalink: /about/
@@ -108,4 +108,3 @@ He holds a Ph.D. in Theoretical and Applied Mechanics from the University of Ill
 * <a href="http://sandlab.mit.edu/" target="_blank">Professor Themis Sapsis (Sand Lab, MIT)</a>
 * <a href="https://kevinschmidmayer.github.io/overview/" target="_blank">Dr. Kevin Schmidmayer (Sopra Steria, France)</a>
 
-<br/>

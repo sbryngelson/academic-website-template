@@ -49,5 +49,3 @@ This will enable the instrumental capabilities to visualize the different quantu
   </ul>
 </div>
 
-
-<br/>
