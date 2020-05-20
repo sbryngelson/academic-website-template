@@ -5,7 +5,10 @@ sitemap: false
 permalink: /
 ---
 
-`$whoami`
+# Welcome to the Bryngelson Group
+
+<br/>
+#### `$whoami`
 
 New biomedical devices and therapies stand to improve human health outcomes the world over. Though innovating in this space is challenging, predictive simulation tools provide a promising path forward. I am a computational scientist who clears these paths via new data-driven models, numerical algorithms, and extreme-scale software. Recent examples include the most efficient sub-grid model for simulating cavitation, a very-low-order model for cell-scale blood flow, and MFC, my scalable open-source multi-phase flow solver. These developments guide biomicrofluidic device design and improve human patient outcomes for a range of medical treatments (e.g. burst-wave lithotripsy).
 
@@ -20,10 +23,7 @@ New biomedical devices and therapies stand to improve human health outcomes the 
 </div>
 <br/>
 
-
-
-`$id`
+#### `$id`
 
 I am currently a Senior Postdoctoral Scholar at the California Institute of Technology, working with Professor Tim Colonius. I also work with Professor Themis Sapsis at the Massachusetts Institute of Technology on machine-learned model closures. Previously, I was a Postdoctoral Researcher at the Center for Exascale Simulation of Plasma-Coupled Combustion (XPACC). I have a Ph.D. and M.S. in Theoretical and Applied Mechanics from the University of Illinois at Urbana–Champaign (2017 and 2015), where I worked with Professor Jonathan Freund. I hold B.S. degrees in Mechanical Engineering and Engineering Mathematics from the University of Michigan–Dearborn (2013).
-
 
