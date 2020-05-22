@@ -45,4 +45,3 @@ I hold B.S. degrees in Mechanical Engineering and Engineering Mathematics from t
 </div>
 
 
-

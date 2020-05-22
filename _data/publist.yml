@@ -6,6 +6,7 @@
   display: <b>accepted</b>, Journal of Fluid Mechanics 1907
   year: 2020
   arxiv: 1912.07022
+  abstract: "The impact of a collapsing gas bubble above rigid, notched walls is considered. Such surface crevices and imperfections often function as bubble nucleation sites, and thus have a direct relation to cavitation-induced erosion and damage structures. A generic configuration is investigated numerically using a second-order-accurate compressible multi-component flow solver in a two-dimensional axisymmetric coordinate system. Results show that the crevice geometry has a significant effect on the collapse dynamics, jet formation, subsequent wave dynamics, and interactions. The wall-pressure distribution associated with erosion potential is a direct consequence of development and intensity of these flow phenomena."
 
 - title: "MFC: An open-source high-order multi-component, multi-phase, and multi-scale compressible flow solver"
   authors:
@@ -15,6 +16,7 @@
   display: <b>accepted</b>, Computer Physics Communications 107396
   year: 2020
   arxiv: 1907.10512
+  abstract: "MFC is an open-source tool for solving multi-component, multi-phase, and bubbly compressible flows. It is capable of efficiently solving a wide range of flows, including droplet atomization, shock-bubble interaction, and gas bubble cavitation. We present the 5- and 6-equation thermodynamically-consistent diffuse-interface models we use to handle such flows, which are coupled to high-order interface-capturing methods, HLL-type Riemann solvers, and TVD time-integration schemes that are capable of simulating unsteady flows with strong shocks. The numerical methods are implemented in a flexible, modular framework that is amenable to future development. The methods we employ are validated via comparisons to experimental results for shock-bubble, shock-droplet, and shock-water-cylinder interaction problems and verified to be free of spurious oscillations for material-interface advection and gas-liquid Riemann problems. For smooth solutions, such as the advection of an isentropic vortex, the methods are verified to be high-order accurate. Illustrative examples involving shock-bubble-vessel-wall and acoustic-bubble-net interactions are used to demonstrate the full capabilities of MFC."
 
 - title: A Gaussian moment method and its augmentation via LSTM recurrent neural networks for the statistics of cavitating bubble populations
   authors:
@@ -24,6 +26,7 @@
   display: International Journal of Multiphase Flow 127, 103262
   year: 2020
   doi: 10.1016/j.ijmultiphaseflow.2020.103262
+  abstract: "Phase-averaged dilute bubbly flow models require high-order statistical moments of the bubble population. The method of classes, which directly evolve bins of bubbles in the probability space, are accurate but computationally expensive. Moment-based methods based upon a Gaussian closure present an opportunity to accelerate this approach, particularly when the bubble size distributions are broad (polydisperse). For linear bubble dynamics a Gaussian closure is exact, but for bubbles undergoing large and nonlinear oscillations, it results in a large error from misrepresented higher-order moments. Long short-term memory recurrent neural networks, trained on Monte Carlo truth data, are proposed to improve these model predictions. The networks are used to correct the low-order moment evolution equations and improve prediction of higher-order moments based upon the low-order ones. Results show that the networks can reduce model errors to less than 1% of their unaugmented values."
 
 - title: Simulation of humpback whale bubble-net feeding models
   image: whales20.png
@@ -32,6 +35,7 @@
   display: Journal of the Acoustical Society of America 147, 1126–1135
   year: 2020
   doi: 10.1121/10.0000746 
+  abstract: "Humpback whales can generate intricate bubbly regions, called bubble nets, via blowholes. Humpback whales appear to exploit these bubble nets for feeding via loud vocalizations. A fully-coupled phase-averaging approach is used to model the flow, bubble dynamics, and corresponding acoustics. A previously hypothesized waveguiding mechanism is assessed for varying acoustic frequencies and net void fractions. Reflections within the bubbly region result in observable waveguiding for only a small range of flow parameters. A configuration of multiple whales surrounding and vocalizing towards an annular bubble net is also analyzed. For a range of flow parameters, the bubble net keeps its core region substantially quieter than the exterior. This approach appears more viable, though it relies upon the cooperation of multiple whales. A spiral bubble net configuration that circumvents this requirement is also investigated. The acoustic wave behaviors in the spiral interior vary qualitatively with the vocalization frequency and net void fraction. The competing effects of vocalization guiding and acoustic attenuation are quantified. Low void fraction cases allow low-frequency waves to partially escape the spiral region, with the remaining vocalizations still exciting the net interior. Higher void fraction nets appear preferable, guiding even low-frequency vocalizations while still maintaining a quiet net interior."
 
 - title: An assessment of multicomponent flow models and interface capturing schemes for spherical bubble dynamics
   authors: K. Schmidmayer, S. H. Bryngelson, T. Colonius
@@ -40,6 +44,7 @@
   display: Journal of Computational Physics 402, 109080
   year: 2020
   doi: 10.1016/j.jcp.2019.109080
+  abstract: "Numerical simulation of bubble dynamics and cavitation is challenging; even the seemingly simple problem of a collapsing spherical bubble is difficult to compute accurately with a general, three-dimensional, compressible, multicomponent flow solver. Difficulties arise due to both the physical model and the numerical method chosen for its solution. We consider the 5-equation model of Allaire et al. [1] and Massoni et al. [2], the 5-equation model of Kapila et al. [3], and the 6-equation model of Saurel et al. [4] as candidate approaches for spherical bubble dynamics, and both MUSCL and WENO interface-capturing methods are implemented and compared. We demonstrate the inadequacy of the traditional 5-equation model for spherical bubble collapse problems and explain the corresponding advantages of the augmented model of Kapila et al. [3] for representing this phenomenon. Quantitative comparisons between the augmented 5-equation and 6-equation models for three-dimensional bubble collapse problems demonstrate the versatility of the pressure-disequilibrium model. Lastly, the performance of the pressure-disequilibrium model for representing a three-dimensional spherical bubble collapse for different bubble interior/exterior pressure ratios is evaluated for different numerical methods. Pathologies associated with each factor and their origins are identified and discussed."
 
 - title: A quantitative comparison of phase-averaged models for bubbly, cavitating flows
   image: icmf19_2.png
@@ -48,6 +53,7 @@
   display: International Journal of Multiphase Flow 115, 137–143
   year: 2019
   doi: 10.1016/j.ijmultiphaseflow.2019.03.028
+  abstract: "We compare the computational performance of two modeling approaches for the flow of dilute cavitation bubbles in a liquid. The first approach is a deterministic model, for which bubbles are represented in a Lagrangian framework as advected features, each sampled from a distribution of equilibrium bubble sizes. The dynamic coupling to the liquid phase is modeled through local volume averaging. The second approach is stochastic; ensemble-phase averaging is used to derive mixture-averaged equations and field equations for the associated bubble properties are evolved in an Eulerian reference frame. For polydisperse mixtures, the probability density function of the equilibrium bubble radii is discretized and bubble properties are solved for each representative bin. In both cases, the equations are closed by solving Rayleigh–Plesset-like equations for the bubble dynamics as forced by the local or mixture-averaged pressure, respectively. An acoustically excited dilute bubble screen is used as a case study for comparisons. We show that observables of ensemble- and volume-averaged simulations match closely and that their convergence is first order under grid refinement. Guidelines are established for phase-averaged simulations by comparing the computational costs of methods. The primary costs are shown to be associated with stochastic closure; polydisperse ensemble-averaging requires many samples of the underlying PDF and volume-averaging requires repeated, randomized simulations to accurately represent a homogeneous bubble population. The relative sensitivities of these costs to spatial resolution and bubble void fraction are presented."
 
 - title: A comparison of ensemble- and volume-averaged bubbly flow models 
   image: icmf19.png
@@ -55,6 +61,12 @@
   url: bryngelson-ICMF-19
   display: Proceedings of 10th International Conference on Multiphase Flow, Rio de Janeiro, Brazil
   year: 2019
+  abstract: "We compare volume- and ensemble-averaged bubbly flow models. Volume-averaging is a deterministic process for which
+bubbles are represented in a Lagrangian framework as advected particles, each sampled from a distribution of equilibrium
+bubble sizes. Ensemble-averaging instead uses mixture-averaged equations in an Eulerian reference frame for the associated
+bubble properties, each represented by bins of the equilibrium distribution. In both cases, bubbles are modeled as spherical with
+dynamics governed by the Keller-Miksis equation. Computationally, there are tradeoffs between these two approaches. Here, we
+simulate an acoustically excited dilute bubble screen and compare the computational efficiency of the two approaches."
 
 - title: Irregular dynamics of cellular blood flow in a model microvessel
   image: chaos19.png
@@ -63,6 +75,7 @@
   display: Physical Review E 100, 012203
   year: 2019
   doi: 10.1103/PhysRevE.100.012203
+  abstract: "The flow of red blood cells within cylindrical vessels is complex and irregular, so long as the vessel diameter is somewhat larger than the nominal cell size. Long-time-series simulations, in which cells flow 10,000 vessel diameters, are used to characterize the chaotic kinematics, particularly to inform reduced-order models. The simulation model used includes full coupling between the elastic red blood cell membranes and surrounding viscous fluid, providing a faithful representation of the cell-scale dynamics. Results show that the flow has neither classifiable recurrent features nor a dominant frequency. Instead, its kinematics are sensitive to the initial flow configuration in a way consistent with chaos and Lagrangian turbulence. Phase-space reconstructions show that a low-dimensional attractor does not exist, so the observed long-time dynamics are effectively stochastic. Based on this, a simple Markov chain model for the dynamics is introduced and shown to reproduce the statistics of the cell positions."
 
 - title: Non-modal Floquet stability of capsules in large-amplitude oscillatory extensional flow
   image: vizabstract_laoe.png
@@ -71,6 +84,7 @@
   display: European Journal of Mechanics B/Fluids 77, 171–176
   year: 2019
   doi: 10.1016/j.euromechflu.2019.04.012
+  abstract: "We analyze the stability of a capsule in large-amplitude oscillatory extensional (LAOE) flow, as often used to study the rheology and dynamics of suspensions. Such a flow is typically established in a cross-slot configuration, with the particle (or particles) of interest observed in the stagnation region. However, controlling this configuration is challenging because the flow is unstable. We quantify such an instability for spherical elastic capsules suspended near the stagnation point using a non-modal global Floquet analysis, which is formulated to include full coupling of the capsule-viscous-flow dynamics. The flow is shown to be transiently, though not asymptotically, unstable. For each case considered, two predominant modes of transient amplification are identified: a predictable intra-period growth for translational capsule perturbations and period-to-period growth for certain capsule distortions. The amplitude of the intra-period growth depends linearly on the flow strength and oscillation period, which corresponds to a shift of the flow stagnation point, and the period-to-period growth saturates over several periods, commensurate with the asymptotic stability of the flow."
 
 
 - title: Global stability of flowing red blood cell trains
@@ -80,6 +94,7 @@
   display: Physical Review Fluids 3, 073101
   year: 2018
   doi: 10.1103/PhysRevFluids.3.073101
+  abstract: "A train of red blood cells flowing in a round tube will either advect steadily or break down into a complex and irregular flow, depending upon its degree of confinement. We analyze this apparent instability, including full coupling between the viscous fluid flow and the elastic cell membranes. A linear stability analysis is constructed via a complete set of orthogonal perturbations to a boundary integral formulation of the flow equations. Both transiently (t→0+) and asymptotically (t→∞) amplifying disturbances are identified. Those that amplify transiently have short-wavelength shape distortions that carry significant membrane strain energy. In contrast, asymptotic disturbances are primarily rigid-body-like tilts and translations. It is shown that an intermediate cell-cell spacing of about half a tube diameter suppresses long-time train instability, particularly when the vessel diameter is relatively small. Altering the viscosity ratio between the cytosol fluid within the cell and the suspending fluid is found to be asymptotically destabilizing for both higher and lower viscosity ratios. Altering the cytosol volume away from that of a nominally healthy discocyte alters the stability with complex dependence on train density and vessel diameter. Several of the observations are consistent with a switch from predominantly cell-cell interactions for dense trains and predominantly cell-wall interactions for less dense trains. Direct numerical simulations are used to verify the linear stability analysis and track the perturbation growth into a self-sustaining disordered regime."
 
 - title: Floquet stability analysis of capsules in viscous shear flow  
   image: vizabstract_floquet.png
@@ -88,6 +103,7 @@
   display: Journal of Fluid Mechanics 852, 663–677
   year: 2018
   doi: 10.1017/jfm.2018.574
+  abstract: "Observations in experiments and simulations show that the kinematic behaviour of an elastic capsule, suspended and rotating in shear flow, depends upon the flow strength, the capsule membrane material properties and its at-rest shape. We develop a linear stability description of the periodically rotating base state of this coupled system, as represented by a boundary integral flow formulation with spherical harmonic basis functions describing the elastic capsule geometry. This yields Floquet multipliers that classify the stability of the capsule motion for elastic capillary numbers Ca ranging from 0.01 to 5. Viscous dissipation rapidly damps most perturbations. However, for all cases, a single component grows or decays slowly, depending upon Ca, over many periods of the rotation. The transitions in this stability behaviour correspond to the different classes of rotating motion observed in previous studies."
 
 - title: Adjoint-based sensitivity for flows with shocks
   image: xpacc18.png
@@ -95,6 +111,7 @@
   url: bryngelson-xpacc18
   display: XPACC Technical Report
   year: 2018
+  abstract: "Developing a consistent solution method for discontinuous adjoint flow problems is challenging. The inviscid Burgers’ equation is considered as a step toward the formulation of such a method. Results are shown for linear and nonlinear numerical methods, including WENO shock capturing. Necessary and sufficient conditions for consistent and convergent solutions to the associated adjoint equation are discussed. The adjoint Euler equations are also investigated, for which no numerical schemes are provably convergent. A characteristic-based method for this problem is proposed. It transforms the adjoint equations into an uncoupled set of transport equations. These equations have the same form as the adjoint Burgers’ equation, and thus inherit their proven consistency properties."
 
 - title: Stability and transition of capsule-flow systems
   image: cells_expvssim.png
@@ -102,6 +119,7 @@
   url: bryngelson-dissertation17
   display: Ph.D. Dissertation, University of Illinois at Urbana--Champign
   year: 2017
+  abstract: "This work focuses on the mechanical stability of three different capsule-viscous-flow-systems. Red blood cells, which are often modeled as capsules, can form uniform 'trains' when flowing in narrow confines; however, in less confined environments their flow appears disordered. This time-stationary system is analyzed through a nonmodal stability analysis which includes full coupling between the viscous fluid flow and elastic cell membranes. The linearization is constructed via a complex set of orthogonal small disturbances which are evaluated using boundary integral techniques. Transiently (t -> 0+) and asymptotically (t -> infty) unstable disturbances are identified, with their corresponding growth rates and perturbation conformations depending upon on the flow strength, viscosity ratio between the inner and exterior cell fluids, cell–cell spacing, cell at-rest shape, and vessel diameter. An ellipsoidal capsule subject to homogeneous shear flow is also considered. While this flow configuration is seemingly more simple, the base motion of the capsule is time-dependent, though periodic, rather than steady, requiring an extension of our methods. This capsule flow is known to display different kinematic behavior, depending on the flow strength, membrane material properties, and capsule shape. The stability of the capsule motion has been studied based on empirical observations of simulations; here we build upon these results though a direct stability analysis. Our analysis utilizes Floquet methods, which yields Floquet multipliers that classify the asymptotic stability of the capsule motion, and quantify how viscous dissipation will rapidly damp most disturbances. However, we also identify disturbances that decay slowly, over many periods of the capsules rotating motion, as well as neutrally stable perturbations. The last flow system considered here is a spherical capsule subject to large amplitude oscillatory extensional (LAOE) flow, which is often used to study the rheology and dynamics of complex fluids. Examining soft particles in LAOE is particularly challenging, partially due to the instability of the flow system. We again quantify this stability through linear analysis, here extending the aforementioned Floquet formulation to include nonmodal and intra-period effects. The analysis shows the asymptotic stability of the capsules for all flow descriptions, as defined by the relative flow strength and capsule time scale. Transiently unstable modes are found for all cases, though again their growth saturates quickly. We also identify an intra-period instability to capsule translations, which matches that of a rigid particle, though it does not have finite amplification from period-to-period."
 
 - title: Capsule-train stability 
   image: vizabstract_cells2d.png
@@ -110,6 +128,7 @@
   display: Physical Review Fluids 1, 033201
   year: 2016
   doi: 10.1103/PhysRevFluids.1.033201
+  abstract: "Elastic capsules flowing in small enough tubes, such as red blood cells in capillaries, are well known to line up into regular single-file trains. The stability of such trains in somewhat wider channels, where this organization is not observed, is studied in a two-dimensional model system that includes full coupling between the viscous flow and suspended capsules. A diverse set of linearly amplifying disturbances, both long-time asymptotic (modal) and transient (nonmodal) perturbations, is identified and analyzed. These have a range of amplification rates and their corresponding forms are wavelike, typically dominated by one of five principal perturbation classes: longitudinal and transverse translations, tilts, and symmetric and asymmetric shape distortions. Finite-amplitude transiently amplifying perturbations are shown to provide a mechanism that can bypass slower asymptotic modal linear growth and precipitate the onset of nonlinear effects. Direct numerical simulations are used to verify the linear analysis and track the subsequent transition of the regular capsule trains into an apparently chaotic flow."
 
 - title: Buckling and its effect on the conﬁned ﬂow of a model capsule suspension 
   authors: S. H. Bryngelson and J. B. Freund
@@ -118,6 +137,7 @@
   display: Rheologica Acta 55, 451–464
   year: 2016
   doi: 10.1007/s00397-015-0900-9
+  abstract: "The rheology of confined flowing suspensions, such as blood, depends upon the dynamics of the components, which can be particularly rich when they are elastic capsules. Using boundary integral methods, we simulate a two-dimensional model channel through which flows a dense suspension of fluid-filled capsules. A parameter of principal interest is the equilibrium membrane perimeter, parameterized by xi_o, which ranges from round capsules with xi_o=1.0 to xi_o=3.0 capsules with a dog-bone-like equilibrium shape. It is shown that the minimum effective viscosity occurs for xi_o approx 1.6, which forms a biconcave equilibrium shape, similar to a red blood cell. The rheological behavior changes significantly over this range; transitions are linked to specific changes in the capsule dynamics. Most noteworthy is an abrupt change in behavior for xi_o = 2.0, which correlates with the onset of capsule buckling. The buckled capsules have a more varied orientation and make significant rotational (rotlet) contributions to the capsule–capsule interactions."
 
 - title: The stability of flowing trains of confined red blood cells 
   image: blood16.png
@@ -125,6 +145,11 @@
   url: freund-ICTAM-16
   display: Proceedings of XXIV International Congress of Theoretical and Applied Mechanics, Montreal, Canada
   year: 2016
+  abstract: "The asymptotic and transient stability of single-file trains of fluid-filled elastic capsules flowing in narrow channels is analyzed as
+a model for the lines of red blood cells commonly observed in small tubes or vessels. The most amplified disturbances in larger channels are
+found to have a rich variety of characteristics depending upon the details of the particular configuration. Transient growth mechanisms are
+found to be significant, even for relatively small perturbations, and are shown to precipitate nonlinear saturation and chaotic flow many times
+more quickly than the t → ∞ asymptotic stability would predict even for nominally small perturbations."
 
 - title: Buckling and the rheology of an elastic capsule suspension 
   image: buckling2.png
@@ -132,4 +157,9 @@
   url: bryngelson-ICTAM-16
   display: Proceedings of XXIV International Congress of Theoretical and Applied Mechanics, Montreal, Canada
   year: 2016
+  abstract: "The rheological behavior of an elastic capsule suspension is studied in a model two-dimensional channel using detailed numerical
+simulations. As the rest capsule membrane aspect ratio increases, the capsules become increasingly vulnerable to a buckling instability. This
+buckling behavior is concomitant with a sudden increase in the effective viscosity and a near disappearance of any near-wall capsule-free
+layer. The microstructure dynamics suggest elongated capsules make significant rotational contributions that disrupt organized flow, as
+computed by their rotlet capsule-capsule interactions."
 

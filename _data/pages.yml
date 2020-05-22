@@ -2,5 +2,7 @@
 - name: publications
 - name: talks
 - name: research
-- name: teaching
 - name: software
+# - name: team
+# - name: publications2
+# - name: teaching
