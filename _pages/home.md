@@ -34,3 +34,15 @@ I also work with <a href="http://sandlab.mit.edu/" target="_blank">Professor The
 Previously, I was a Postdoctoral Researcher at the <a href="https://xpacc.illinois.edu/" target="_blank">Center for Exascale Simulation of Plasma-Coupled Combustion</a> (XPACC).
 I have a Ph.D. and M.S. in Theoretical and Applied Mechanics from the University of Illinois at Urbana–Champaign (2017 and 2015), where I worked with <a href="https://aerospace.illinois.edu/directory/profile/jbfreund" target="_blank">Professor Jonathan Freund</a>.
 I hold B.S. degrees in Mechanical Engineering and Engineering Mathematics from the University of Michigan–Dearborn (2013).
+
+<br/>
+<div class="well-md">
+<h3>Sponsors</h3>
+<div style='display:block; text-align:center; margin-left:auto; margin-right:auto;'>
+ {% for funder in site.data.funders %}{% if funder.url %}<a href="{{funder.url}}" target="_blank"><img src='/images/logopic/{{ funder.image }}' style='max-height: 70px; max-width: 170px;'/></a>{% else %}<img src='/images/logopic/{{ funder.image }}' class='mycenter' style='max-height: 70px; max-width: 170px;'/>{% endif %}   {% endfor %}
+</div>
+
+</div>
+
+
+

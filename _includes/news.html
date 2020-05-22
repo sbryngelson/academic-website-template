@@ -72,34 +72,28 @@
 
 <div class="well">
 <h4>Events</h4>
-
   {% for article in site.data.events limit:5 %}
   <b>{{ article.date }}</b>
     <p>{{ article.headline }}<br/>
     <i>{{ article.location }}</i></p>
   {% endfor %}
-
 </div>
 
-
-<div class="well">
-<h4>Funding</h4>
-
-  <style>
-   .mycenter {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-   }
-  </style>
-
- {% for funder in site.data.funders %}
- {% if funder.url %} 
-  <a href="{{funder.url}}" target="_blank"><img src='/images/logopic/{{ funder.image }}' class='mycenter' style='max-height: 70px; max-width: 200px;'/></a>
- {% else %}
-  <img src='/images/logopic/{{ funder.image }}' class='mycenter' style='max-height: 70px; max-width: 200px;'/>
- {% endif %} 
- {% endfor %}
-
-</div>
+<!-- <div class="well"> -->
+<!-- <h4>Funding</h4> -->
+<!--   <style> -->
+<!--    .mycenter { -->
+<!--       display: block; -->
+<!--       margin-left: auto; -->
+<!--       margin-right: auto; -->
+<!--    } -->
+<!--   </style> -->
+<!--  {% for funder in site.data.funders %} -->
+<!--  {% if funder.url %} --> 
+<!--   <a href="{{funder.url}}" target="_blank"><img src='/images/logopic/{{ funder.image }}' class='mycenter' style='max-height: 70px; max-width: 200px;'/></a> -->
+<!--  {% else %} -->
+<!--   <img src='/images/logopic/{{ funder.image }}' class='mycenter' style='max-height: 70px; max-width: 200px;'/> -->
+<!--  {% endif %} --> 
+<!--  {% endfor %} -->
+<!-- </div> -->
 
