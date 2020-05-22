@@ -48,8 +48,17 @@ For a full list see [below](#in-the-pipeline) or go to [Google Scholar](https://
   <strong> {{ publi.title }}</strong> <br />
   <em>{{ publi.authors }} </em><br />
   {{ publi.display }}<br />
-  {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}    {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}  {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}  {% if bibtest == true %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.html" target="_blank"><button class="btn-bib">BIB</button></a> {% endif %}    
+  {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}    {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}  {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}  {% if bibtest == true %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.html" target="_blank"><button class="btn-bib">BIB</button></a> {% endif %} {% if publi.abstract %} <a data-toggle="collapse" href="#{{publi.url}}"  class="btn-abstract" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.url}}">ABSTRACT</a>{% endif %}
  </div>
+
+{% if publi.abstract %}
+<div class="collapse" id="{{publi.url}}">
+<div class="well-abstract">
+{{publi.abstract}}
+</div>
+</div>
+{% endif %}
+
   {% endif %}
 {% endfor %}
 
@@ -82,8 +91,17 @@ For a full list see [below](#in-the-pipeline) or go to [Google Scholar](https://
   <strong> {{ publi.title }}</strong> <br />
   <em>{{ publi.authors }} </em><br />
   {{ publi.display }} {% if publi.year %}({{publi.year}}){% endif %}<br />
-  {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}    {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}  {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}  {% if bibtest == true %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.html" target="_blank"><button class="btn-bib">BIB</button></a> {% endif %} 
+  {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}    {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}  {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}  {% if bibtest == true %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.html" target="_blank"><button class="btn-bib">BIB</button></a> {% endif %} {% if publi.abstract %} <a data-toggle="collapse" href="#{{publi.url}}"  class="btn-abstract" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.url}}">ABSTRACT</a>{% endif %}
 </div>
+
+{% if publi.abstract %}
+<div class="collapse" id="{{publi.url}}">
+<div class="well-abstract">
+{{publi.abstract}}
+</div>
+</div>
+{% endif %}
+
 
 {% endif %}
 {% endfor %}
