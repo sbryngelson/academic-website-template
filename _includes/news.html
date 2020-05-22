@@ -74,8 +74,9 @@
 <h4>Events</h4>
 
   {% for article in site.data.events limit:5 %}
-  {{ article.date }}
-    <p>{{ article.headline }}</p>
+  <b>{{ article.date }}</b>
+    <p>{{ article.headline }}<br/>
+    <i>{{ article.location }}</i></p>
   {% endfor %}
 
 </div>

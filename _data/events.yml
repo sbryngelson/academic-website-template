@@ -1,8 +1,21 @@
-- date: 20 July, 2021
-  headline: "ICTAM"
-
-- date: 20 December, 2020
-  headline: "SNH"
-
-- date: 20 November, 2020
+- date: November 22-24, 2020
   headline: "APS Division of Fluid Dynamics"
+  location: Chicago, Illinois USA
+
+- date: October 22-27, 2020
+  headline: "33rd Symposium on Naval Hydrodynamics"
+  location: Osaka, Japan
+
+- date: December 8-12, 2020
+  headline: "179th Meeeting of the Acoustical Society of America"
+  location: Chicago, Illinois USA
+
+
+- date: May 9-13, 2021
+  headline: "CAV2021: 11th International Symposium on Cavitation"
+  location: Daejeon, Korea
+
+
+- date: August 22-27, 2021
+  headline: "25th International Congress on Theroretical and Applied Mechanics"
+  location: Milano, Italy 
