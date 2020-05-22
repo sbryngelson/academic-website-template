@@ -1,7 +1,5 @@
-- name: team
 - name: about
 - name: publications
-- name: publications2
 - name: talks
 - name: research
 - name: teaching
