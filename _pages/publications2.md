@@ -29,7 +29,7 @@ For a full list see [below](#in-the-pipeline) or go to [Google Scholar](https://
 
 {% assign bibtest = false %}
 {% if publi.url %}
- {% assign bibfile = "/papers/" | append:  publi.url  | append: ".bib" %}
+ {% assign bibfile = "/papers/" | append:  publi.url  | append: ".html" %}
 
  {% for file in site.static_files %}
   {% if file.path contains bibfile %}
@@ -48,7 +48,7 @@ For a full list see [below](#in-the-pipeline) or go to [Google Scholar](https://
   <strong> {{ publi.title }}</strong> <br />
   <em>{{ publi.authors }} </em><br />
   {{ publi.display }}<br />
-  {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}    {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}  {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}  {% if bibtest == true %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.bib" target="_blank"><button class="btn-bib">BIB</button></a> {% endif %}    
+  {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}    {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}  {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}  {% if bibtest == true %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.html" target="_blank"><button class="btn-bib">BIB</button></a> {% endif %}    
  </div>
   {% endif %}
 {% endfor %}
@@ -62,7 +62,7 @@ For a full list see [below](#in-the-pipeline) or go to [Google Scholar](https://
 
 {% assign bibtest = false %}
 {% if publi.url %}
-  {% assign bibfile = "/papers/" | append:  publi.url  | append: ".bib" %}
+  {% assign bibfile = "/papers/" | append:  publi.url  | append: ".html" %}
   {% for file in site.static_files %}
    {% if file.path contains bibfile %}
    {% assign bibtest = true %}
@@ -82,7 +82,7 @@ For a full list see [below](#in-the-pipeline) or go to [Google Scholar](https://
   <strong> {{ publi.title }}</strong> <br />
   <em>{{ publi.authors }} </em><br />
   {{ publi.display }} {% if publi.year %}({{publi.year}}){% endif %}<br />
-  {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}    {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}  {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}  {% if bibtest == true %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.bib" target="_blank"><button class="btn-bib">BIB</button></a> {% endif %} 
+  {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}    {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}  {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}  {% if bibtest == true %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.html" target="_blank"><button class="btn-bib">BIB</button></a> {% endif %} 
 </div>
 
 {% endif %}
