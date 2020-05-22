@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Bryngelson Group
+title: Spencer Bryngelson
 email: sbryngelson@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -14,13 +14,21 @@ description: > # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: ""
 url: ""
-affiliation: We are part of the School of Computing at the Georgia Institute of Technology
+affiliation: We are part of the Division of Engineering and Applied Science at the California Institute of Technology
+# affiliation: We are part of the School of Computing at the Georgia Institute of Technology
+
 location: >
   Contact: <br/>
-  Building here, Georgia Tech <br/>
+  Building here, Caltech <br/>
   Add 1<br/>
   Add 2<br/>
   <a href="www" target="_blank">Map</a>
+# location: >
+#   Contact: <br/>
+#   Building here, Georgia Tech <br/>
+#   Add 1<br/>
+#   Add 2<br/>
+#   <a href="www" target="_blank">Map</a>
 
 include:
   - .htaccess

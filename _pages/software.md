@@ -71,10 +71,13 @@ ICE can also identify and actuate code transforms to optimize performance.
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/rbc3d.png" class="img-responsive" width="33%" style="display:block; margin-left:auto; margin-right:auto; border-radius: 10px" />
 <center><h4><b>Spectral Boundary Integral Solver for Cell-scale Flows</b></h4></center>
 
-* Solver for flexible objects and surfaces
-* Spectral accuracy (spherical harmonics)
-* Boundary conditions imposed via weak formulation
-* Constitutive laws for capsules, cells, and droplets
+RBC3D solves the boundary integral equation form of the Stokes equations using spectral methods. 
+This form of the equations only discretizes the boundaries present in this problem, which in this case include model cells and droplets.
+No-slip boundary conditions for, e.g., model vessel walls are imposed via a weak-formulation of the velocity-force equations and iterative solve to ensure the surface velocity is nearly zero.
+The quadrature is switched to a near-singular formulation when boundaries are close, avoiding the singularity of the associated Green's functions.
+A short-range repulsion force, of similar character to electrostatic repulsion present in actual cells, helps ensure that neighboring objects do not intersect.
+The equations are solved in parallel via MPI.
+
 <ul style="overflow: hidden"></ul>
 </div>
 

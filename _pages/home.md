@@ -5,7 +5,7 @@ sitemap: false
 permalink: /
 ---
 
-# Welcome to the Bryngelson Group
+# Welcome!
 
 <br/>
 #### `$whoami`
@@ -15,7 +15,7 @@ New biomedical devices and therapies stand to improve human health outcomes the 
 <br/>
 
 <div class="row" style="text-align:center">
-<video autoplay muted loop width="90%" style="display:inline-block; border-radius: 25px; border:0px solid #FFF;">
+<video controls autoplay muted loop width="90%" style="display:inline-block; border-radius: 25px; border:0px solid #FFF;">
   <source src="{{ site.url }}{{ site.baseurl }}/images/videos/3dtrain_breakdown2.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>

@@ -40,10 +40,21 @@ permalink: /publications/
 
 
 {% for myyear in site.data.years %}
+
+{% assign yeartest = false %}
+{% for publi in site.data.publist %}
+  {% if publi.year == myyear.year %}
+   {% assign yeartest = true %}
+  {% endif %}
+{% endfor %}
+
+{% if yeartest == true %}
 ## {{ myyear.year }}
+{% endif %}
 
 {% for publi in site.data.publist %}
 {% if publi.year == myyear.year %}
+
 
 {% assign bibtest = false %}
 {% if publi.url %}
