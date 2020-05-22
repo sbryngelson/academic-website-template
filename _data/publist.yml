@@ -3,7 +3,8 @@
     T. Trummler, S. H. Bryngelson, K. Schmidmayer, S. J. Schmidt, N. A. Adams, T. Colonius
   url: bryngelson-JFM-19
   image: crevice20.png
-  display: <b>accepted</b>, Journal of Fluid Mechanics
+  display: <b>accepted</b>, Journal of Fluid Mechanics 1907
+  year: 2020
   arxiv: 1912.07022
 
 - title: "MFC: An open-source high-order multi-component, multi-phase, and multi-scale compressible flow solver"
@@ -11,7 +12,8 @@
     S. H. Bryngelson, K. Schmidmayer, V. Coralic, J. C. Meng, K. Maeda, T. Colonius
   url: bryngelson-CPC-19
   image: droplet_mfc.png
-  display: <b>accepted</b>, Computer Physics Communications 
+  display: <b>accepted</b>, Computer Physics Communications 107396
+  year: 2020
   arxiv: 1907.10512
 
 - title: A Gaussian moment method and its augmentation via LSTM recurrent neural networks for the statistics of cavitating bubble populations
