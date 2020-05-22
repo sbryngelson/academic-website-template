@@ -168,6 +168,3 @@ permalink: /publications/
 
 {% endfor %}
 
-
-
-W
