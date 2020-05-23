@@ -66,6 +66,10 @@ permalink: /publications/
 {% endif %}
 {% endfor %}
 
+{% if site.group_pub_by_year == true %}{% else %}
+## Journal Papers and Proceedings 
+{% endif %}
+
 {% for myyear in site.data.years %}
 
 {% assign yeartest = false %}
@@ -75,8 +79,10 @@ permalink: /publications/
   {% endif %}
 {% endfor %}
 
+{% if site.group_pub_by_year == true %}
 {% if yeartest == true %}
 ## {{ myyear.year }}
+{% endif %}
 {% endif %}
 
 {% for publi in site.data.publist %}

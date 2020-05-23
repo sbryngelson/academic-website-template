@@ -13,7 +13,7 @@
 	<div class="collapse navbar-collapse" id="navbar-collapse-1">
 	  <ul class="nav navbar-nav navbar-right">
 		<li><a href="{{ site.url }}{{ site.baseurl }}/">Home</a></li>
-        {% for page in site.data.pages %}
+        {% for page in site.nav_pages %}
           <li><a href="{{ site.url }}{{ site.baseurl }}/{{page.name}}">{{page.name | capitalize }}</a></li>
         {% endfor %}
 	  </ul>
