@@ -1,5 +1,7 @@
 #! /usr/bin/env python
 #
+# SHB: removed 'abstract' from the output
+#
 # Copyright (c) 2012, Nathan Grigg
 # All rights reserved.
 #
