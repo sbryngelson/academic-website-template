@@ -1,22 +1,55 @@
 # Dr. Spencer Bryngelson's academic website
 
-## Acknowledgment
+This is my statically-generated Jekyll/Liquid/Bootstrap-based website.
+Based upon the [Allan lab]() site with some significant modifications, it provides most of the features required for academic webpages.
+Some things I included that I did not find in satisfactory form elsewhere are
 
-I credit the [Allen Lab](https://www.allanlab.org/) for creating a beautiful academic research group webpage.
-This page was, in part, adopted from theirs.
-Additional features are present. 
-In particular:
-
-* Additions to publication page:
-   * Automatically-generated buttons for DOI/PDF/ARXIV/BIB/ABSTRACT
-   * Automatically-generated bibliography files for arXiv and DOI-equipped publications
-   * Bibliography information and abstracts are triggered in drown down wells via buttons
-   * Optional visual abstracts shown in each well
+* Publications: Automatically-generated buttons for DOI/PDF/ARXIV/BIB/ABSTRACT
+* Publications: Automatically-generated bibliography files for arXiv and DOI-equipped publications via `arXiv2bib` and `doi2bib` (required scripts included in `scripts/` and called via `readyaml.py`)
+* Bibliography information and abstracts are triggered in drown down wells via buttons
+* Optional visual abstracts shown in each well
 * Fontawesome icons included (email, CV, Google scholar, ResearchGate, GitHub, etc.)
 * Dark color scheme
-* `About me` page
+* Consistent `About me` page
 
-## Installation 
+
+## Future work
+
+This page has many features I could not find elsewhere.
+However, it still does not support all the options I would like:
+
+* Jekyll 4.0 and up is not supported.
+Building with these will break the theme of the site.
+I believe this is because the bootstrap version also needs to be upgraded.
+While such modern versions of Jekyll are not needed for most purposes and v3.X will likely be supported for a long time to come, some plugins do require the latest Jekyll.
+* [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar): This plug-in can build a publication page from bibliography files `*.bib`. 
+However, it appears the latest version of Jekyll is required to do this.
+I enjoy my home-cooked publication page, but I understand that some will prefer uploading `.bib` files as opposed to converting to the `YAML` database format this site supports.
+
+
+### Alternatives
+
+#### Static website generators
+
+A list of static webpage generators is available [here](https://www.staticgen.com/).
+For academic purposes, I believe most people use [Jekyll](https://jekyllrb.com/) or [Hugo](https://gohugo.io/).
+I am mostly unaware of their relative merits.
+However, both are relatively easy to use and offer many templates to base your ideas off of.
+This, in combination with their large user bases, make them particularly attractive.
+This site is built with Jekyll.
+
+#### Templates
+
+Other Jekyll templates are of course available.
+Some of these are viable for very simple academic pages with little tuning:
+* [Minimal mistake](https://mmistakes.github.io/minimal-mistakes/)
+* [al-folio](https://github.com/alshedivat/al-folio)
+* [academicpages](https://academicpages.github.io/)
+
+However, they do not natively include many of the features I list at the top.
+For this reason, I decided to build my own theme.
+
+## Local installation and build
 
 * Install [Jekyll](https://jekyllrb.com/docs/installation/) (version < 4.0 required)
   * Run `$ bundle exec jekyll serve` in the site root directory
@@ -89,4 +122,10 @@ Then, upload the resulting files located in the `_site/` directory via SSH or FT
 Be sure that the `site.url` and `site.baseurl` are set appropriately in the `_config.yml` file.
 
 
+
+
+## Acknowledgment
+
+I credit the [Allen Lab](https://www.allanlab.org/) for creating a beautiful academic research group webpage.
+This page was, in part, adopted from theirs.
 
