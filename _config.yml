@@ -38,6 +38,7 @@ group_pub_by_year: true
 include:
   - .htaccess
   - _pages
+  - README.md
 
 sass:
   sass_dir: _sass
