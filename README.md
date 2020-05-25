@@ -1,21 +1,20 @@
 # Dr. Spencer Bryngelson's academic website
 
 This is my statically-generated Jekyll/Liquid/Bootstrap-based website.
-Based upon the [Allan lab](https://www.allanlab.org/) site with some significant modifications, it provides a unique set of the features that I desired in an academic webpages.
-I could not find this collection of features publically available elsewhere.
+I started with the [Allan lab](https://www.allanlab.org/) webpage and made suitable modifications for a personal academic webpage.
+I worked in a unique set of the features that I desired and could not find in publicly available templates elsewhere.
 Some examples are:
 
 * Automatically-generated buttons for DOI/PDF/ARXIV/BIB/Abstract information
-* Automatically-generated bibliography files for arXiv and DOI-equipped publications via `arXiv2bib` and `doi2bib` (required scripts included in `scripts/` and called via `readyaml.py`)
+* Automatically-generated bibliography files for arXiv and DOI-equipped publications via `arXiv2bib` and `doi2bib` (required scripts included in `scripts/` and called via `makebib.py`)
 * Bibliography information and abstracts open in drown down wells via buttons
 * Visual abstracts
 * Fontawesome icons (email, CV, Google scholar, ResearchGate, GitHub, etc.)
 * Dark color scheme
 * Consistent and attractive `About me` page
 
-## Setup
-
-This document describes how to use this webpage as a template for your own academic website.
+I encourage the use of this webpage as a template for your own academic website.
+The remainder of this document describes how to do this.
 Broadly speaking, there are three steps:
 
 * [Fork](#fork-and-build)
@@ -24,19 +23,22 @@ Broadly speaking, there are three steps:
 
 ## Fork and build
 
-* Fork this repository by clicking the `fork` button on Github.
-* Install [Jekyll](https://jekyllrb.com/docs/installation/) (version < 4.0 required)
-* Run `$ bundle exec jekyll serve` in the site root directory
-* The locally-built site will be hosted at `localhost:4000`, which you can access with your web browser
+* Fork [this repository](https://github.com/sbryngelson/sbryngelson.github.io) by clicking the `fork` button in the top-right corner of its Github page.
+* Install [Jekyll](https://jekyllrb.com/docs/installation/) (version < 4.0 required) on your local computer
+* Run `$ bundle exec jekyll serve` in the repository root directory
+* Your site is now hosted locally at `localhost:4000`, which you can access with your web browser.
+   * It will be automatically re-built as you save changes to the files it contains.
+   Refreshing your web browser will reveal these changes.
 
 ## Customization
 
 * Modify `_config.yml` as appropriate
-* Modify pages in `_pages/` as appropriate (also see Navbar and pages below)
+* Modify YAML database files, located in `_data/*.yml`, as appropriate
+* Modify individual pages, located in `_pages/*.md`, as appropriate
 
 ### Navbar
 
-* The pages listed in the navbar are located in `_config.yml` file.
+* The pages listed in the top navbar are located in `_config.yml` file.
 The typical options are already included or commented, though additional pages can be created and listed here.
 Existing pages should be used as a template for this.
 * The header information of the new page (first five lines) should be modified to suit the page.
@@ -101,13 +103,11 @@ You can use a standard domain service (e.g. [GoDaddy](https://www.godaddy.com/))
 Then, using the `CNAME` file and modifying the DNS settings of the domain service, you can direct your custom domain to the Github Pages-generated site.
 Detailed instructions for doing this for GoDaddy domains are available [here](https://hackernoon.com/how-to-set-up-godaddy-domain-with-github-pages-a9300366c7b), though analogous instructions apply to other services.
 
-
 ### Hosting elsewhere
 
 If you already have a hosting service for a static HTML webpage, such as some universities provide, you can build your website locally using `bundle exec jekyll serve`.
 Then, upload the resulting files located in the `_site/` directory via SSH or FTP to this server.
 Be sure that the `site.url` and `site.baseurl` are set appropriately in the `_config.yml` file.
-
 
 ## Future work
 
@@ -117,8 +117,8 @@ However, it still does not support all the options I would like:
 * Jekyll 4.0 and up is not supported.
 Building with these will break the theme of the site.
 I believe this is because the bootstrap version also needs to be upgraded.
-While such modern versions of Jekyll are not needed for most purposes and v3.X will likely be supported for a long time to come, some plugins do require the latest Jekyll.
-* [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar): This plug-in can build a publication page from bibliography files `*.bib`. 
+While such modern versions of Jekyll are not needed for most purposes and v3.X will likely be supported for a long time to come, some plugins do require the latest version of Jekyll.
+* [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar) can build a publication page from bibliography files `*.bib`. 
 However, it appears the latest version of Jekyll is required to do this.
 I enjoy my home-cooked publication page, but I understand that some will prefer uploading `.bib` files as opposed to converting to the `YAML` database format this site supports.
 
@@ -147,5 +147,14 @@ For this reason, I decided to build my own theme.
 ## Acknowledgment
 
 I credit the [Allen Lab](https://www.allanlab.org/) for creating a beautiful academic research group webpage.
-This page was, in part, adopted from theirs.
+Many parts of this site were adopted or copied from their laboratory webpage.
 
+## License
+
+Copyright 2020, Spencer H. Bryngelson
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

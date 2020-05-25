@@ -5,6 +5,10 @@ sitemap: false
 permalink: /
 ---
 
+<style>
+code {padding: 6px 8px; font-size: 90%;}
+</style>
+
 # Welcome!
 
 <br/>

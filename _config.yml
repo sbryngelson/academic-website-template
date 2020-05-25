@@ -1,10 +1,7 @@
 # Site settings
 title: Dr. Spencer Bryngelson
 email: spencer@caltech.edu
-description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: Academic webpage of Dr. Spencer H. Bryngelson
 baseurl: ""
 url: ""
 affiliation: I am part of the <a href="http://www.eas.caltech.edu/" target="_blank">Division of Engineering and Applied Science</a> at the California Institute of Technology
@@ -14,15 +11,16 @@ google_analytics: UA-167467135-1
 
 # Location info. (shown in footer)
 location: >
-  Address: <br/>
-  Room 112, Gates-Thomas Laboratory <br/>
+  Coordinates: <br/>
+  Gates-Thomas Laboratory <br/>
   California Institute of Technology <br/>
   1200 E California Blvd<br/>
   Pasadena, CA 91125, MC104-44<br/>
 
 # Contact info. (shown in footer)
 contact: >
-    Contact Spencer via email: <a href="mailto:spencer@caltech.edu" target="_blank">spencer@caltech.edu</a>
+    Contact Spencer via email: <a href="mailto:spencer@caltech.edu" target="_blank">spencer@caltech.edu</a> <br/>
+    <br/><a href="/aboutwebsite.html">Use this webpage as a template for your own!</a>
 
 # Pages shown in navbar
 nav_pages:
