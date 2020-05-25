@@ -4,7 +4,7 @@
 {% for member in site.data.pi %}
 <div class="row">
   <a href="{{site.url}}{{site.baseurl}}/about"><img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="60%" style="block:inline; margin-left:auto; margin-right:auto;" /></a>
-  <center><h4>Dr. {{ member.name }}</h4>
+  <center><h4>{{ member.name }}</h4>
 
    {% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-2x"></i></a> {% endif %}
    {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a> {% endif %}

@@ -12,7 +12,7 @@ permalink: /about/
 
 <div class="row">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="30%" style="float: left" />
-  <h3>Dr. {{ member.name }}</h3>
+  <h3>{{ member.name }}</h3>
   <i style="font-size:20px">{{ member.info }}</i><br>
 
   {% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-3x"></i></a> {% endif %}
