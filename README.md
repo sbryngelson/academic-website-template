@@ -1,72 +1,54 @@
 # Dr. Spencer Bryngelson's academic website
 
 This is my statically-generated Jekyll/Liquid/Bootstrap-based website.
-Based upon the [Allan lab]() site with some significant modifications, it provides most of the features required for academic webpages.
-Some things I included that I did not find in satisfactory form elsewhere are
+Based upon the [Allan lab](https://www.allanlab.org/) site with some significant modifications, it provides a unique set of the features that I desired in an academic webpages.
+I could not find this collection of features publically available elsewhere.
+Some examples are:
 
-* Publications: Automatically-generated buttons for DOI/PDF/ARXIV/BIB/ABSTRACT
-* Publications: Automatically-generated bibliography files for arXiv and DOI-equipped publications via `arXiv2bib` and `doi2bib` (required scripts included in `scripts/` and called via `readyaml.py`)
-* Bibliography information and abstracts are triggered in drown down wells via buttons
-* Optional visual abstracts shown in each well
-* Fontawesome icons included (email, CV, Google scholar, ResearchGate, GitHub, etc.)
+* Automatically-generated buttons for DOI/PDF/ARXIV/BIB/Abstract information
+* Automatically-generated bibliography files for arXiv and DOI-equipped publications via `arXiv2bib` and `doi2bib` (required scripts included in `scripts/` and called via `readyaml.py`)
+* Bibliography information and abstracts open in drown down wells via buttons
+* Visual abstracts
+* Fontawesome icons (email, CV, Google scholar, ResearchGate, GitHub, etc.)
 * Dark color scheme
-* Consistent `About me` page
+* Consistent and attractive `About me` page
 
+## Setup
 
-## Future work
+This document describes how to use this webpage as a template for your own academic website.
+Broadly speaking, there are three steps:
 
-This page has many features I could not find elsewhere.
-However, it still does not support all the options I would like:
+* [Fork](#fork-and-build)
+* [Customize](#customization)
+* [Host](#hosting)
 
-* Jekyll 4.0 and up is not supported.
-Building with these will break the theme of the site.
-I believe this is because the bootstrap version also needs to be upgraded.
-While such modern versions of Jekyll are not needed for most purposes and v3.X will likely be supported for a long time to come, some plugins do require the latest Jekyll.
-* [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar): This plug-in can build a publication page from bibliography files `*.bib`. 
-However, it appears the latest version of Jekyll is required to do this.
-I enjoy my home-cooked publication page, but I understand that some will prefer uploading `.bib` files as opposed to converting to the `YAML` database format this site supports.
+## Fork and build
 
-
-### Alternatives
-
-#### Static website generators
-
-A list of static webpage generators is available [here](https://www.staticgen.com/).
-For academic purposes, I believe most people use [Jekyll](https://jekyllrb.com/) or [Hugo](https://gohugo.io/).
-I am mostly unaware of their relative merits.
-However, both are relatively easy to use and offer many templates to base your ideas off of.
-This, in combination with their large user bases, make them particularly attractive.
-This site is built with Jekyll.
-
-#### Templates
-
-Other Jekyll templates are of course available.
-Some of these are viable for very simple academic pages with little tuning:
-* [Minimal mistake](https://mmistakes.github.io/minimal-mistakes/)
-* [al-folio](https://github.com/alshedivat/al-folio)
-* [academicpages](https://academicpages.github.io/)
-
-However, they do not natively include many of the features I list at the top.
-For this reason, I decided to build my own theme.
-
-## Local installation and build
-
+* Fork this repository by clicking the `fork` button on Github.
 * Install [Jekyll](https://jekyllrb.com/docs/installation/) (version < 4.0 required)
-  * Run `$ bundle exec jekyll serve` in the site root directory
-  * If successful, the locally-built site will be hosted at `localhost:4000` which you can access with your web browser
+* Run `$ bundle exec jekyll serve` in the site root directory
+* The locally-built site will be hosted at `localhost:4000`, which you can access with your web browser
+
+## Customization
+
 * Modify `_config.yml` as appropriate
 * Modify pages in `_pages/` as appropriate (also see Navbar and pages below)
 
-## Navbar and pages
+### Navbar
 
 * The pages listed in the navbar are located in `_config.yml` file.
 The typical options are already included or commented, though additional pages can be created and listed here.
 Existing pages should be used as a template for this.
 * The header information of the new page (first five lines) should be modified to suit the page.
-* Pages generally load information from YAML databases located as `_data/*.yml`.
 
-### Page header information
+### Creating or editing pages
 
+All pages are located in the `_pages` directory.
+Pages generally load information from YAML databases located as `_data/*.yml`.
+
+#### Page header information
+
+All pages require header information.
 Example header data for the 'Talks' page is below.
 ```
 ---
@@ -81,7 +63,12 @@ The differences between most layouts is generally subtle and `gridlay` can gener
 The permalink must be unique for each page, and corresponds to the directory that will store the page in the compiled HTML.
 Refer to your pages in `_config.yml` via their `title`.
 
-## Publication page and database
+#### Markdown
+
+All pages are written in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) as `*.md`.
+HTML commands and CSS styles can be directly used in a markdown files.
+
+#### Publication page and database
 
 File `_data/publist.yml` contains the publication database loaded on the 'Publications' page.
 Items in that database can be used as examples for your entries.
@@ -122,7 +109,40 @@ Then, upload the resulting files located in the `_site/` directory via SSH or FT
 Be sure that the `site.url` and `site.baseurl` are set appropriately in the `_config.yml` file.
 
 
+## Future work
 
+This page has many features I could not find elsewhere.
+However, it still does not support all the options I would like:
+
+* Jekyll 4.0 and up is not supported.
+Building with these will break the theme of the site.
+I believe this is because the bootstrap version also needs to be upgraded.
+While such modern versions of Jekyll are not needed for most purposes and v3.X will likely be supported for a long time to come, some plugins do require the latest Jekyll.
+* [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar): This plug-in can build a publication page from bibliography files `*.bib`. 
+However, it appears the latest version of Jekyll is required to do this.
+I enjoy my home-cooked publication page, but I understand that some will prefer uploading `.bib` files as opposed to converting to the `YAML` database format this site supports.
+
+## Alternatives
+
+### Static website generators
+
+A list of static webpage generators is available [here](https://www.staticgen.com/).
+For academic purposes, I believe most people use [Jekyll](https://jekyllrb.com/) or [Hugo](https://gohugo.io/).
+I am mostly unaware of their relative merits.
+However, both are relatively easy to use and offer many templates to base your ideas off of.
+This, in combination with their large user bases, make them particularly attractive.
+This site is built with Jekyll.
+
+### Templates
+
+Other Jekyll templates are of course available.
+Some of these are viable for very simple academic pages with little tuning:
+* [Minimal mistake](https://mmistakes.github.io/minimal-mistakes/)
+* [al-folio](https://github.com/alshedivat/al-folio)
+* [academicpages](https://academicpages.github.io/)
+
+However, they do not natively include many of the features I list at the top.
+For this reason, I decided to build my own theme.
 
 ## Acknowledgment
 
