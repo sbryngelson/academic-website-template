@@ -13,9 +13,9 @@
     S. H. Bryngelson, K. Schmidmayer, V. Coralic, J. C. Meng, K. Maeda, T. Colonius
   url: bryngelson-CPC-19
   image: droplet_mfc.png
-  display: <b>accepted</b>, Computer Physics Communications 107396
+  display: Computer Physics Communications 4655, 107396
   year: 2020
-  arxiv: 1907.10512
+  doi: https://doi.org/10.1016/j.cpc.2020.107396
   abstract: "MFC is an open-source tool for solving multi-component, multi-phase, and bubbly compressible flows. It is capable of efficiently solving a wide range of flows, including droplet atomization, shock-bubble interaction, and gas bubble cavitation. We present the 5- and 6-equation thermodynamically-consistent diffuse-interface models we use to handle such flows, which are coupled to high-order interface-capturing methods, HLL-type Riemann solvers, and TVD time-integration schemes that are capable of simulating unsteady flows with strong shocks. The numerical methods are implemented in a flexible, modular framework that is amenable to future development. The methods we employ are validated via comparisons to experimental results for shock-bubble, shock-droplet, and shock-water-cylinder interaction problems and verified to be free of spurious oscillations for material-interface advection and gas-liquid Riemann problems. For smooth solutions, such as the advection of an isentropic vortex, the methods are verified to be high-order accurate. Illustrative examples involving shock-bubble-vessel-wall and acoustic-bubble-net interactions are used to demonstrate the full capabilities of MFC."
 
 - title: A Gaussian moment method and its augmentation via LSTM recurrent neural networks for the statistics of cavitating bubble populations

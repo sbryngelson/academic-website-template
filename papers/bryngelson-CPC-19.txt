@@ -1,12 +1,11 @@
-@article{1907.10512v1,
-Author        = {Spencer H. Bryngelson and Kevin Schmidmayer and Vedran Coralic and Jomela C. Meng and Kazuki Maeda and Tim Colonius},
-Title         = {MFC: An open-source high-order multi-component, multi-phase, and
-  multi-scale compressible flow solver},
-Eprint        = {1907.10512v1},
-ArchivePrefix = {arXiv},
-PrimaryClass  = {physics.comp-ph},
-Year          = {2019},
-Month         = {Jul},
-Url           = {http://arxiv.org/abs/1907.10512v1},
-File          = {1907.10512v1.pdf}
+@article{Bryngelson_2020,
+	doi = {10.1016/j.cpc.2020.107396},
+	url = {https://doi.org/10.1016%2Fj.cpc.2020.107396},
+	year = 2020,
+	month = {may},
+	publisher = {Elsevier {BV}},
+	pages = {107396},
+	author = {Spencer H. Bryngelson and Kevin Schmidmayer and Vedran Coralic and Jomela C. Meng and Kazuki Maeda and Tim Colonius},
+	title = {{MFC}: An open-source high-order multi-component, multi-phase, and multi-scale compressible flow solver},
+	journal = {Computer Physics Communications}
 }
