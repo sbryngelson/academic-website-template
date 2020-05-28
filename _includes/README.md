@@ -1,7 +1,7 @@
 # Dr. Spencer Bryngelson's academic website
 
 This is my statically-generated Jekyll/Liquid/Bootstrap-based website.
-I started with the [Allan lab](https://www.allanlab.org/) webpage and made suitable modifications for a personal academic webpage.
+I started with the [Allan lab](https://www.allanlab.org/) webpage and modified it into a personal academic webpage that met my requirements.
 I worked in a unique set of the features that I desired and could not find in publicly available templates elsewhere.
 Some examples are:
 
@@ -28,7 +28,7 @@ Broadly speaking, there are three steps:
 * Run `$ bundle exec jekyll serve` in the repository root directory
 * Your site is now hosted locally at `localhost:4000`, which you can access with your web browser.
    * It will be automatically re-built as you save changes to the files it contains.
-   Refreshing your web browser will reveal these changes.
+   Refreshing your web browser reveals these changes.
 
 ## Customization
 
@@ -38,15 +38,15 @@ Broadly speaking, there are three steps:
 
 ### Navbar
 
-* The pages listed in the top navbar are located in `_config.yml` file.
+The pages listed in the top navbar are located in `_config.yml` file.
 The typical options are already included or commented, though additional pages can be created and listed here.
-Existing pages should be used as a template for this.
-* The header information of the new page (first five lines) should be modified to suit the page.
 
 ### Creating or editing pages
 
 All pages are located in the `_pages` directory.
 Pages generally load information from YAML databases located as `_data/*.yml`.
+Creating new pages can be done by using existing pages as a template.
+
 
 #### Page header information
 
@@ -60,10 +60,10 @@ sitemap: false
 permalink: /talks/
 ---
 ```
-The layout variable corresponds to layouts in the `_layouts` directory.
-The differences between most layouts is generally subtle and `gridlay` can generally be used.
+The `layout` variable corresponds to HTML layouts in the `_layouts` directory.
+The differences between most layouts is subtle and `gridlay` can generally be used.
 The permalink must be unique for each page, and corresponds to the directory that will store the page in the compiled HTML.
-Refer to your pages in `_config.yml` via their `title`.
+Refer to your pages in `_config.yml` via the `title` variable.
 
 #### Markdown
 
@@ -72,8 +72,9 @@ HTML commands and CSS styles can be directly used in a markdown files.
 
 #### Publication page and database
 
-File `_data/publist.yml` contains the publication database loaded on the 'Publications' page.
-Items in that database can be used as examples for your entries.
+YAML file `_data/publist.yml` contains the paper database loaded on the 'Publications' page.
+Items in this database can be used as examples for new entries.
+The publication page itself obeys the follow rules:
 
 * If a year is not present, the publication will be listed under the 'Coming Soon' heading.
 Otherwise it will be listed below either a 'Journal Papers' heading or the year of publication.
@@ -82,7 +83,7 @@ Choosing between these options is available via the `group_pub_by_year` variable
 * For each paper a corresponding PDF can be placed in the `papers/` directory.
 The name of this file (with no .pdf extension!) should be placed in the `url` category of its entry in `publist.yml`.
 * If an abstract is present, an additional drop down to show it will be placed next to its entry on the publications page.
-* Running `./readyaml.py` (Python3 required) will create bibliography files for all publications that have DOIs or arXiv identifiers.
+* Running `makebib.py` (Python3 required) will create bibliography files for all publications that have DOIs or arXiv identifiers.
 If this is done, an additional drop down to show it will be placed next to its entry on the publications page.
 
 ## Hosting
