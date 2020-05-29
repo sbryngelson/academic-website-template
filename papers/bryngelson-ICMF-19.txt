@@ -1,0 +1,5 @@
+@inproceedings{bryngelson19,
+    Author = {S. H. Bryngelson and T. Colonius},
+    Booktitle = {Proceedings of 10th International Conference on Multiphase Flow, Rio de Janeiro, Brazil},
+    Title = {A comparison of ensemble- and volume-averaged bubbly flow models},
+    Year = 2019}
