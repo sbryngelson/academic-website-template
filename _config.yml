@@ -4,7 +4,9 @@ email: spencer@caltech.edu
 description: Academic webpage of Dr. Spencer H. Bryngelson
 baseurl: ""
 url: ""
-affiliation: I am part of the <a href="http://www.eas.caltech.edu/" target="_blank">Division of Engineering and Applied Science</a> at the California Institute of Technology
+affiliation: >
+    I am part of the <a href="http://www.eas.caltech.edu/" target="_blank">Division of Engineering and Applied Science</a> 
+    at the California Institute of Technology
 
 # Google analytics ID
 google_analytics: UA-167467135-1
@@ -15,12 +17,12 @@ location: >
   Gates-Thomas Laboratory <br/>
   California Institute of Technology <br/>
   1200 E California Blvd<br/>
-  Pasadena, CA 91125, MC104-44<br/>
+  Pasadena, CA 91125, MC104-44
 
 # Contact info. (shown in footer)
 contact: >
-    Contact Spencer via email: <a href="mailto:spencer@caltech.edu" target="_blank">spencer@caltech.edu</a> <br/>
-    <br/><a href="/aboutwebsite.html">Use this webpage as a template for your own!</a>
+    <a href="mailto:spencer@caltech.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Spencer via email</a> <br/>
+    <a href="/aboutwebsite.html"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
 
 # Pages shown in navbar
 nav_pages:
