@@ -40,7 +40,7 @@ permalink: /publications/
 </li>
 <li class="flex-item2">
   <strong> {{ publi.title }}</strong><br/>
-  <em>{{ publi.authors }} </em><br/>
+  <i>{{ publi.authors }} </i><br/>
   {{ publi.display }}<br/>
   {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
   {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}
@@ -107,8 +107,8 @@ permalink: /publications/
   {% endif %}
 </li>
 <li class="flex-item2">
-  <strong> {{ publi.title }}</strong> <br />
-  <em>{{ publi.authors }} </em><br />
+  <b>{{ publi.title }}</b><br/>
+  <i>{{ publi.authors }} </i><br/>
   {{ publi.display }} {% if publi.year %}({{publi.year}}){% endif %}<br/>
   {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
   {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}
