@@ -1,11 +1,11 @@
 - title: Near-surface dynamics of a gas bubble collapsing above a crevice
   authors:
     T. Trummler, S. H. Bryngelson, K. Schmidmayer, S. J. Schmidt, N. A. Adams, T. Colonius
-  url: bryngelson-JFM-19
+  url: trummler-bryngelson-JFM-20
   image: crevice20.png
-  display: <b>accepted</b>, Journal of Fluid Mechanics 1907
+  display: Journal of Fluid Mechanics 899, A16
   year: 2020
-  arxiv: 1912.07022
+  doi: 10.1017/jfm.2020.432
   abstract: "The impact of a collapsing gas bubble above rigid, notched walls is considered. Such surface crevices and imperfections often function as bubble nucleation sites, and thus have a direct relation to cavitation-induced erosion and damage structures. A generic configuration is investigated numerically using a second-order-accurate compressible multi-component flow solver in a two-dimensional axisymmetric coordinate system. Results show that the crevice geometry has a significant effect on the collapse dynamics, jet formation, subsequent wave dynamics, and interactions. The wall-pressure distribution associated with erosion potential is a direct consequence of development and intensity of these flow phenomena."
 
 - title: "MFC: An open-source high-order multi-component, multi-phase, and multi-scale compressible flow solver"
