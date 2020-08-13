@@ -15,7 +15,7 @@ permalink: /publications/
 {% endfor %}
 
 {% if yeartest == false %}
-## Coming Soon
+## Under review
 {% endif %}
 
 {% for publi in site.data.publist %}
