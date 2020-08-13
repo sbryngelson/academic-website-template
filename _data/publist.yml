@@ -2,7 +2,7 @@
   authors: J.-S. Spratt, M. Rodriguez, K. Schmidmayer, S. H. Bryngelson, J. Yang, C. Franck, T. Colonius
   url: spratt-bryngelson-JMPS-20
   display: Under review for J. Mech. Phys. Solids
-  arxiv: 2008.04410
+  arxiv: "2008.04410"
   abstract: "Viscoelastic material properties at high strain rates are needed to model many biological and medical systems. Bubble cavitation can induce such strain rates, and the resulting bubble dynamics
 are sensitive to the material properties. Thus, in principle, these properties can be inferred via
 measurements of the bubble dynamics. Estrada et al. (2018) demonstrated such bubble-dynamic
