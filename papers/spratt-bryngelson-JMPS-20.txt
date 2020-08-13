@@ -1,0 +1,12 @@
+@article{2008.04410v1,
+Author        = {Jean-Sebastien Spratt and Mauro Rodriguez and Kevin Schmidmayer and Spencer Bryngelson and Jin Yang and Christian Franck and Tim Colonius},
+Title         = {Characterizing viscoelastic materials via ensemble-based data
+  assimilation of bubble collapse observations},
+Eprint        = {2008.04410v1},
+ArchivePrefix = {arXiv},
+PrimaryClass  = {physics.comp-ph},
+Year          = {2020},
+Month         = {Aug},
+Url           = {http://arxiv.org/abs/2008.04410v1},
+File          = {2008.04410v1.pdf}
+}
