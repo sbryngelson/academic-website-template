@@ -1,7 +1,16 @@
+- title: "QBMMlib: A library of quadrature-based moment methods"
+  authors: S. H. Bryngelson, T. Colonius, R. O. Fox
+  url: bryngelson-SoftX-20
+  display: Under review at SoftwareX, arXiv 2008.05063
+  image: qbmmlib.jpg
+  arxiv: 2008.05063
+  abstract: "QBMMlib is an open source Mathematica package of quadrature-based moment methods and their algorithms. Such methods are commonly used to solve fully-coupled disperse flow and combustion problems, though formulating and closing the corresponding governing equations can be complex. QBMMlib aims to make analyzing these techniques simple and more accessible. Its routines use symbolic manipulation to formulate the moment transport equations for a population balance equation and a prescribed dynamical system. However, the resulting moment transport equations are unclosed. QBMMlib trades the moments for a set of quadrature points and weights via an inversion algorithm, of which several are available. Quadratures then closes the moment transport equations. Embedded code snippets show how to use QBMMlib, with the algorithm initialization and solution spanning just 13 total lines of code. Examples are shown and analyzed for linear harmonic oscillator and bubble dynamics problems."
+
 - title: "Characterizing viscoelastic materials via ensemble-based data assimilation of bubble collapse observations"
   authors: J.-S. Spratt, M. Rodriguez, K. Schmidmayer, S. H. Bryngelson, J. Yang, C. Franck, T. Colonius
   url: spratt-bryngelson-JMPS-20
-  display: Under review for J. Mech. Phys. Solids
+  display: Under review at J. Mech. Phys. Solids, arXiv 2008.04410
+  image: enkf.jpg
   arxiv: "2008.04410"
   abstract: "Viscoelastic material properties at high strain rates are needed to model many biological and medical systems. Bubble cavitation can induce such strain rates, and the resulting bubble dynamics
 are sensitive to the material properties. Thus, in principle, these properties can be inferred via
@@ -17,13 +26,6 @@ uncertainties. In particular, the En4D–Var yields lower viscosity estimates fo
 and the dynamic estimators reveal a potential mechanism that is unaccounted for in the model,
 whereby the viscosity is reduced in some cases due to material damage occurring at bubble collapse.
 "
-
-- title: "QBMMlib: A library of quadrature-based moment methods"
-  authors: S. H. Bryngelson, T. Colonius, R. O. Fox
-  url: bryngelson-SoftX-20
-  display: Under review for SoftwareX
-  arxiv: 2008.05063
-  abstract: "QBMMlib is an open source Mathematica package of quadrature-based moment methods and their algorithms. Such methods are commonly used to solve fully-coupled disperse flow and combustion problems, though formulating and closing the corresponding governing equations can be complex. QBMMlib aims to make analyzing these techniques simple and more accessible. Its routines use symbolic manipulation to formulate the moment transport equations for a population balance equation and a prescribed dynamical system. However, the resulting moment transport equations are unclosed. QBMMlib trades the moments for a set of quadrature points and weights via an inversion algorithm, of which several are available. Quadratures then closes the moment transport equations. Embedded code snippets show how to use QBMMlib, with the algorithm initialization and solution spanning just 13 total lines of code. Examples are shown and analyzed for linear harmonic oscillator and bubble dynamics problems."
 
 - title: Near-surface dynamics of a gas bubble collapsing above a crevice
   authors:
