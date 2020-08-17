@@ -1,6 +1,36 @@
 - authors: S. H. Bryngelson and T. Colonius
   title: A fast-integration-based model for polydisperse bubble cloud dynamics and their two-way-flow coupling
   conf: Journal of the Acoustical Society of America
+  year: 2021
+
+- authors: S. H. Bryngelson, R. Fox, T. Colonius
+  title: Conditional moment method for fully-coupled phase-averaged cavitation models
+  conf: 11th International Symposium on Cavitation (Daejeon, Korea)
+  year: 2021
+
+- authors: J.-S. Spratt, M. Rodriguez, S. H. Bryngelson, S. Cao, T. Colonius
+  title: Eulerian framework for bubble-cloud-kidney stone interaction
+  conf: 11th International Symposium on Cavitation (Daejeon, Korea)
+  year: 2021
+
+- authors: S. H. Bryngelson, A. Charalampopoulos, T. Sapsis, T. Colonius
+  title: Averaging methods for cavitating bubbly flows 
+  conf: 33rd Symposium on Naval Hydrodynamics (Osaka, Japan)
+  year: 2020
+
+- authors: S. H. Bryngelson, R. Fox, T. Colonius
+  title: Conditioned quadrature moment methods for cavitating bubble dispersions
+  conf: American Physical Society
+  year: 2020
+
+- authors: J.-S. Spratt, M. Rodriguez, S. H. Bryngelson, T. Colonius
+  title: A fully Eulerian simulation framework for cavitating bubble-clouds near viscoelastic materials
+  conf: American Physical Society
+  year: 2020
+
+- authors: M. Rodriguez, S. H. Bryngelson, T. Colonius
+  title: Cavitation bubble growth with phase transition near a rigid wall
+  conf: American Physical Society
   year: 2020
 
 - authors: S. H. Bryngelson and T. Colonius
@@ -10,7 +40,7 @@
 
 - authors: S. H. Bryngelson, A. Charalampopoulos, T. P. Sapsis, T. Colonius
   title: Neural-network-augmented Gaussian moment method for the statistics of cavitating bubble populations
-  conf: Americal Physical Society
+  conf: American Physical Society
   year: 2019
 
 - authors: T. Trummler, K. Schmidmayer, S. H. Bryngelson, T. Colonius
@@ -25,12 +55,12 @@
 
 - authors: S. H. Bryngelson and T. Colonius
   title: Modeling approaches for bubbly, cavitating flows
-  conf: Americal Physical Society
+  conf: American Physical Society
   year: 2018
 
 - authors: S. H. Bryngelson and J. B. Freund
   title: Floquet stability of tank-treading and tumbling capsules in viscous shear flow
-  conf: Americal Physical Society
+  conf: American Physical Society
   year: 2017
 
 - authors: S. H. Bryngelson and J. B. Freund
@@ -45,10 +75,10 @@
 
 - authors: S. H. Bryngelson and J. B. Freund
   title: Stability and transition to chaos of regular capsule trains
-  conf: Americal Physical Society
+  conf: American Physical Society
   year: 2016
 
 - authors: S. H. Bryngelson and J. B. Freund
   title: Buckling and its effect on the confined flow of a capsule suspension
-  conf: Americal Physical Society
+  conf: American Physical Society
   year: 2015

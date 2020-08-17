@@ -7,11 +7,35 @@ permalink: /software/
 
 # Software
 
+
+<div class="rowl1">
+<center><h4><b>QBMMlib: Quadrature Moment Methods for Fully-coupled Flows</b></h4>
+<a href="https://github.com/sbryngelson/QBMMlib" target="_blank"><button class="btn-doi">GITHUB</button></a>
+<a href="https://arxiv.org/abs/2008.05063" target="_blank"><button class="btn-arxiv">PAPER</button></a> 
+</center>
+
+QBMMlib is an open source Mathematica package of quadrature-based moment methods and their algorithms.
+Such methods are commonly used to solve fully-coupled disperse flow and combustion problems, though formulating and closing the corresponding governing equations can be complex.
+QBMMlib makes analyzing these techniques simple and more accessible.
+Its routines use symbolic manipulation to formulate the moment transport equations for a population balance equation and a prescribed dynamical system.
+However, the resulting moment transport equations are unclosed.
+QBMMlib trades the moments for a set of quadrature points and weights via an inversion algorithm, of which several are available.
+Quadratures then closes the moment transport equations.
+The algorithm initialization and solution can span just 13 total lines of code.
+An example notebook solves linear harmonic oscillator and nonlinear bubble dynamics problems.
+
+<ul style="overflow: hidden"></ul>
+</div>
+
 <div class="rowl1">
 <a href="https://mfc-caltech.github.io" target="_blank">
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/mfc-logo2.png" class="img-responsive" width="33%" style="display:block; margin-left:auto; margin-right:auto; border-radius: 10px; box-shadow:0px 0px 0px 0px" />
 </a>
-<center><h4><b>High-fidelity Multiphase Flow Simulation</b></h4></center>
+<center><h4><b>High-fidelity Multiphase Flow Simulation</b></h4>
+<a href="https://mfc-caltech.github.io" target="_blank"><button class="btn-doi">WEBSITE</button></a>
+<a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-CPC-19.pdf" target="_blank"><button class="btn-arxiv">PAPER</button></a> 
+</center>
+
 
   MFC is a fully-documented open source parallel simulation software for multi-component, multi-phase, and bubbly flows. 
   It is capable of efficiently solving a wide range of flows, including droplet atomization, shock–bubble interaction, and gas bubble cavitation. 
@@ -28,7 +52,10 @@ permalink: /software/
 <a href="https://code-mphi.github.io/ECOGEN/" target="_blank">
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/ecogen.png" class="img-responsive" width="40%" style="display:block; margin-left:auto; margin-right:auto; border-radius: 10px; box-shadow:0px 0px 0px 0px;" />
 </a>
-<center><h4><b>Multiphase and Capillary Flow Solver</b></h4></center>
+<center><h4><b>Multiphase and Capillary Flow Solver</b></h4>
+<a href="https://code-mphi.github.io/ECOGEN/" target="_blank"><button class="btn-doi">WEBSITE</button></a>
+<a href="http://dx.doi.org/10.1016/j.cpc.2019.107093" target="_blank"><button class="btn-arxiv">PAPER</button></a> 
+</center>
 
 ECOGEN is an open-source computational fluid dynamics code. 
 It is a multi-model tool devoted to the simulation of compressible flows. 
