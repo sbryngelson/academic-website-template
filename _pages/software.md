@@ -75,7 +75,9 @@ Phase change problems (heating or cavitating flows) can be treated with respect 
 <a href="https://xpacc-dev.bitbucket.io/PlasCom2/" target="_blank">
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/xpacc.png" class="img-responsive" width="33%" style="display:block; margin-left:auto; margin-right:auto; border-radius: 10px" />
 </a>
-<center><h4><b>PlascomCM/Plascom2: Multi-physics Turbulent Flows</b></h4></center>
+<center><h4><b>PlascomCM/Plascom2: Multi-physics Turbulent Flows</b></h4>
+<a href="https://xpacc-dev.bitbucket.io/PlasCom2/" target="_blank"><button class="btn-doi">WEBSITE</button></a>
+</center>
 
 PlasCom2 is a variable-order, single- and multi-block (overset), compressible Navier-Stokes solver. 
 It supports hybrid MPI+X massively parallel multiphysics simulation application designed for solving reactive flows on 1, 2, and 3-dimensional curvilinear domains discretized by multiple, overlapping block-structured grids.
