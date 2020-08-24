@@ -67,28 +67,29 @@ permalink: /about/
 
 {% endfor %}
 
-## Sketch
+<!-- ## Sketch -->
 
-Dr. Spencer Bryngelson develops computational tools to improve human health outcomes. 
-He is currently a Senior Postdoctoral Scholar at the California Institute of Technology, working with Professor Tim Colonius. 
-He also works with Professor Themis Sapsis at the Massachusetts Institute of Technology. 
-Previously, he was a Postdoctoral Research Associate at the Center for Exascale Simulation of Plasma-Coupled Combustion. 
-He holds a Ph.D. in Theoretical and Applied Mechanics from the University of Illinois at Urbana–Champaign, where he worked with Professor Jonathan Freund.
+<!-- Dr. Spencer Bryngelson develops computational tools to improve human health outcomes. --> 
+<!-- He is currently a Senior Postdoctoral Scholar at the California Institute of Technology, working with Professor Tim Colonius. --> 
+<!-- He also works with Professor Themis Sapsis at the Massachusetts Institute of Technology. --> 
+<!-- Previously, he was a Postdoctoral Research Associate at the Center for Exascale Simulation of Plasma-Coupled Combustion. --> 
+<!-- He holds a Ph.D. in Theoretical and Applied Mechanics from the University of Illinois at Urbana–Champaign, where he worked with Professor Jonathan Freund. -->
 
-{% if site.data.awards %}
-## Awards
-
-{% for award in site.data.awards %}
-* {{ award.name }}
-{% endfor %}
-
-{% endif %}
 
 {% if site.data.grants %}
 ## Grants
 
 {% for grant in site.data.grants %}
 * {{ grant.name }}
+{% endfor %}
+
+{% endif %}
+
+{% if site.data.awards %}
+## Awards
+
+{% for award in site.data.awards %}
+* {{ award.name }}
 {% endfor %}
 
 {% endif %}

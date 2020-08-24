@@ -1,6 +1,6 @@
 - name: Dr. Spencer H. Bryngelson
   photo: Spencer.jpg
-  info: Senior Postdoctoral Scholar
+  info: Senior Postdoctoral Scholar, Caltech 
   email: spencer@caltech.edu
   github: https://github.com/sbryngelson
   researchgate: https://www.researchgate.net/profile/Spencer_Bryngelson
@@ -9,10 +9,12 @@
   number_educ: 6
   education1: (2018- ) Senior Postdoc, Caltech (with <a href="https://colonius.caltech.edu" target="_blank">Tim Colonius</a>)
   education2: (2019) Visiting Researcher, MIT (with <a href="https://colonius.caltech.edu" target="_blank">Themis Sapsis</a>)
-  education3: (2017-8) Postdoc, Center for Exascale Simulation of Plasma-Coupled Combustion (<a href="https://xpacc.illinois.edu/" target="_blank">XPACC</a>, with <a href="https://viterbi.usc.edu/directory/faculty/Pantano-Rubino/Carlos" target="_blank">Carlos Pantano</a>, <a href="http://acoustics.ae.illinois.edu/" target="_blank">Dan Bodony</a>, <a href="http://jbfreund.mechse.illinois.edu/" target="_blank">Jon Freund</a>)
-  education4: (2017) Ph.D. Theoretical and Applied Mechanics, University of Illinois at Urbana-Champaign (with <a href="https://aerospace.illinois.edu/directory/profile/jbfreund" target="_blank">Jon Freund</a>)
-  education5: (2015) M.S. Theoretical and Applied Mechanics, University of Illinois at Urbana-Champaign (with certificate in <a href="https://cse.illinois.edu/" target="_blank">Computational Science & Engineering</a>)
-  education6: (2013) B.S. and B.S. University of Michigan-Dearborn (Mechanical Engineering and Engineering Mathematics)
+  education3: (2017-8) Postdoctor Researcher <br> <a href="https://xpacc.illinois.edu/" target="_blank">XPACC</a> (with <a href="https://viterbi.usc.edu/directory/faculty/Pantano-Rubino/Carlos" target="_blank">Carlos Pantano</a>, <a href="http://acoustics.ae.illinois.edu/" target="_blank">Dan Bodony</a>, <a href="http://jbfreund.mechse.illinois.edu/" target="_blank">Jon Freund</a>)
+  education4: (2017) Ph.D. Theoretical and Applied Mechanics<br> University of Illinois at Urbana-Champaign (with <a href="https://aerospace.illinois.edu/directory/profile/jbfreund" target="_blank">Jon Freund</a>)
+  education5: (2015) M.S. Theoretical and Applied Mechanics<br> University of Illinois at Urbana-Champaign
+    <br>(with certificate in <a href="https://cse.illinois.edu/" target="_blank">Computational Science & Engineering</a>)
+  education6: (2013) B.S. Mechanical Engineering, B.S. Mathematics<br>
+    University of Michigan-Dearborn
   education1short: (2018- ) Senior Postdoc, Caltech 
   education2short: (2019) Visiting Researcher, MIT 
   education3short: (2017-8) Postdoc, XPACC 
