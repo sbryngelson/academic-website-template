@@ -8,7 +8,7 @@ affiliation: >
     I am part of the <a href="http://www.eas.caltech.edu/" target="_blank">Division of Engineering and Applied Science</a> 
     at the California Institute of Technology
 
-# Google analytics ID
+# Google analytics ID: Remove or use your own!
 google_analytics: UA-167467135-1
 
 # Location info. (shown in footer)
