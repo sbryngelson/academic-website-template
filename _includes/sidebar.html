@@ -1,6 +1,4 @@
 <div class="well">
-<h4>{{ site.name }}</h4>
-
 {% for member in site.data.pi %}
 <div class="row">
   <a href="{{site.url}}{{site.baseurl}}/about"><img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="60%" style="block:inline; margin-left:auto; margin-right:auto;" /></a>
@@ -59,11 +57,11 @@
 </div>
 
 <div class="well">
-<h4>News</h4>
+<h3>News</h3>
 
   {% for article in site.data.news limit:4 %}
-  {{ article.date }}
-    <p>{{ article.headline }}</p>
+  <b>{{ article.date }}</b>
+  <p>{{ article.headline }}</p>
   {% endfor %}
   
   <h4><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></h4>
@@ -71,9 +69,9 @@
 </div>
 
 <div class="well">
-<h4>Upcoming Events</h4>
+<h3>Upcoming Events</h3>
   {% for article in site.data.events limit:5 %}
-  <b>{{ article.date }}</b>
+    <b>{{ article.date }}</b>
     <p>{{ article.headline }}<br/>
     <i>{{ article.location }}</i></p>
   {% endfor %}
