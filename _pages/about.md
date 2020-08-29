@@ -5,7 +5,7 @@ sitemap: false
 permalink: /about/
 ---
 
-## About 
+# About 
 
 
 {% for member in site.data.pi %}
