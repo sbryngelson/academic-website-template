@@ -243,6 +243,7 @@
 
   .panel-footer {
     border-top: 0;
+    margin-bottom: 0;
     + .panel-collapse .panel-body {
       border-bottom: 1px solid $panel-inner-border;
     }
