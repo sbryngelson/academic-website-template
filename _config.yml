@@ -41,8 +41,8 @@ include:
   - .htaccess
   - _pages
 
-sass:
-  sass_dir: _sass
+# sass:
+#   sass_dir: _sass
 
 # Conversion
 markdown: kramdown
