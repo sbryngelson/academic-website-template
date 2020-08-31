@@ -23,15 +23,32 @@
   width: 85%;
 }
 
+.well-collapse {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 4px;
+  border-radius: 7px;
+  min-height: 1px;
+  margin-top: 15px;
+  color: black;
+  background-color: var(--gray);
+  border: 2px solid var(--gray-dark);
+  blockquote {
+    border-color: #ddd;
+    border-color: rgba(0,0,0,.15);
+  }
+}
+
+
 img { margin-bottom: 24px;
      margin-top: 17px;
     border-radius:2%;
 }
 
-body {
-	padding-top: 70px;
-	padding-bottom: 0;
-}
+// body {
+// 	padding-top: 70px;
+// }
 
 figcaption {
     text-align: right;
@@ -39,10 +56,7 @@ figcaption {
     margin-bottom: 20px;
 }
 
-
-
 /* Top navigation bar */
-
 
 p.byline {
 	text-align: center;
@@ -50,6 +64,10 @@ p.byline {
 	line-height: 36px;
 	margin-top: -24px;
 	margin-bottom: 48px;
+}
+
+.navbar {
+  margin-bottom: 20px;
 }
 
 
@@ -65,6 +83,14 @@ firstp {
   margin-left: auto;
   max-width: 800px; /* or 950px */
 }
+
+
+.container-footer {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px; /* or 950px */
+}
+
 
 /* Home, News */
 #newsid p {
@@ -86,8 +112,22 @@ firstp {
 #homeid img { margin: 0 0 0 0; border-radius:5%; box-shadow: 0px 0px 0px #555555 }
 #picid img { margin: 6px 3px 60px 6px; border-radius:1%; box-shadow: 2px 2px 5px #555555 }
 #gridid .row { margin-bottom: 24px; }
-#gridid .rowl1 { margin-bottom: 24px; background-color: #2a2a2a; border-radius:10px; padding-top: 20px; padding-left: 20px; padding-right: 20px;}
-#gridid .rowl2 { margin-bottom: 24px; background-color: #3a3a3a; border-radius:10px; padding-left: 10px; padding-right: 10px;}
+// #gridid .rowl1 { margin-bottom: 24px; background-color: #2a2a2a; border-radius:10px; padding-top: 20px; padding-left: 20px; padding-right: 20px;}
+// #gridid .rowl2 { margin-bottom: 24px; background-color: #3a3a3a; border-radius:10px; padding-left: 10px; padding-right: 10px;}
+
+.rowl1 {
+    // background-color: #2a2a2a; 
+    // filter: brightness(150%);
+    background-color: var(--dark);
+    border-radius:10px; 
+    padding-top: 20px; 
+    padding-left: 20px; 
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 
 /* Grid overrides */
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-5, .col-sm-6,
@@ -101,15 +141,3 @@ firstp {
 	padding-left: 26px;
 	padding-right: 26px;
 }
-
-
-/* Carousel */
-
-.carousel {
-    border-radius: 3px 3px 3px 3px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-

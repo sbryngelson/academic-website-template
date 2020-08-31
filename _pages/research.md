@@ -7,7 +7,7 @@ permalink: /research/
 
 # Research
 
-<div class="rowl1">
+<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
   <img src="{{ site.url }}{{ site.baseurl }}/images/respic/droplets_in_water.jpeg" class="img-responsive" width="20%" style="float: left; border-radius:10px" />
   <h4>Bubble and droplet dynamics</h4>
 The fluid dynamics associated with cavitating bubbles and impinging droplets can ablate cancer cells (oncotripsy), fragment tissues (miniscalpels), and deliver drugs, among many other functions.
@@ -24,7 +24,7 @@ For example, quantifying the potential for <a href="https://bryngelson-research.
 </div>
  
 
-<div class="rowl1">
+<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
   <img src="{{ site.url }}{{ site.baseurl }}/images/respic/microcapsules.jpg" class="img-responsive" width="20%" style="float: left; border-radius:10px" />
   <h4>Microcapsules for drug delivery</h4>
 Observations in experiments and simulations show that the kinematic behavior of elastic capsules are sensitive to the flow strength and capsule material properties.
@@ -36,7 +36,7 @@ These results can be used to guide design of capsules that deliver drugs in the 
 </div>
 
 
-<div class="rowl1">
+<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
   <img src="{{ site.url }}{{ site.baseurl }}/images/respic/whales.jpeg" class="img-responsive" width="20%" style="float: left; border-radius:10px" />
   <h4>Humpback whale bubble-net feeding</h4>
 Perspective on bubble utilization can also come from a surprising source: *animals*.
@@ -51,7 +51,7 @@ Similar outcomes are desirable for sensitive, implanted biomedical devices.
 </div>
 
 
-<div class="rowl1">
+<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
   <img src="{{ site.url }}{{ site.baseurl }}/images/respic/shocks.jpg" class="img-responsive" width="20%" style="float: left; border-radius:10px" />
   <h4>Adjoint-based optimization of multi-phase flows</h4>
 Biomedical therapy design relies upon efficient optimization algorithms. 
@@ -63,7 +63,7 @@ I coupled this method with our open-source computational tool, Plascom2, which c
 </div>
 
 
-<div class="rowl1">
+<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
   <img src="{{ site.url }}{{ site.baseurl }}/images/respic/sickle_cells2.jpg" class="img-responsive" width="20%" style="float: left; border-radius:10px" />
   <h4>Deformed and diseased cells</h4>
 I have developed simulation-based methods for flows associated with targeted drug delivery therapies and biomicrofluidic devices.

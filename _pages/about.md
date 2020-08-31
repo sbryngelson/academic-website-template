@@ -7,10 +7,10 @@ permalink: /about/
 
 # About 
 
-
 {% for member in site.data.pi %}
 
-<div class="row">
+<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<!-- <div class="rowl1"> -->
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="30%" style="float: left" />
   <h3>{{ member.name }}</h3>
   <i style="font-size:20px">{{ member.info }}</i><br>
@@ -77,6 +77,7 @@ permalink: /about/
 
 
 {% if site.data.grants %}
+<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 ## Grants
 
 {% for grant in site.data.grants %}
@@ -84,8 +85,10 @@ permalink: /about/
 {% endfor %}
 
 {% endif %}
+</div>
 
 {% if site.data.awards %}
+<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 ## Awards
 
 {% for award in site.data.awards %}
@@ -93,7 +96,9 @@ permalink: /about/
 {% endfor %}
 
 {% endif %}
+</div>
 
+<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 ## Collaborators
 
 * <a href="http://acoustics.ae.illinois.edu/" target="_blank">Professor Daniel Bodony (Aerospace, University of Illinois)</a>
@@ -108,4 +113,5 @@ permalink: /about/
 * <a href="http://www.its.caltech.edu/~mrdz/index.html" target="_blank">Dr. Mauro Rodriguez (MechE, Caltech)</a>
 * <a href="http://sandlab.mit.edu/" target="_blank">Professor Themis Sapsis (Sand Lab, MIT)</a>
 * <a href="https://kevinschmidmayer.github.io/overview/" target="_blank">Dr. Kevin Schmidmayer (Sopra Steria, France)</a>
+</div>
 

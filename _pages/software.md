@@ -8,13 +8,11 @@ permalink: /software/
 # Software
 
 
-<div class="rowl1">
+<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 <center><h4><b>QBMMlib: Quadrature Moment Methods for Fully-coupled Flows</b></h4>
-<a href="https://github.com/sbryngelson/QBMMlib" target="_blank"><button class="btn-doi">GITHUB</button></a>
-<a href="https://arxiv.org/abs/2008.05063" target="_blank"><button class="btn-arxiv">PAPER</button></a> 
+<a href="https://github.com/sbryngelson/QBMMlib" target="_blank"><button class="btn btn-success btn-sm">GITHUB</button></a>
+<a href="https://arxiv.org/abs/2008.05063" target="_blank"><button class="btn btn-primary btn-sm">PAPER</button></a> 
 </center>
-
-<i>Developer: S. H. Bryngelson</i>
 
 QBMMlib is an open source Mathematica package of quadrature-based moment methods and their algorithms.
 Such methods are commonly used to solve fully-coupled disperse flow and combustion problems, though formulating and closing the corresponding governing equations can be complex.
@@ -29,16 +27,15 @@ An example notebook solves linear harmonic oscillator and nonlinear bubble dynam
 <ul style="overflow: hidden"></ul>
 </div>
 
-<div class="rowl1">
+<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 <a href="https://mfc-caltech.github.io" target="_blank">
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/mfc-logo2.png" class="img-responsive" width="33%" style="display:block; margin-left:auto; margin-right:auto; border-radius: 10px; box-shadow:0px 0px 0px 0px" />
 </a>
 <center><h4><b>High-fidelity Multiphase Flow Simulation</b></h4>
-<a href="https://mfc-caltech.github.io" target="_blank"><button class="btn-doi">WEBSITE</button></a>
-<a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-CPC-19.pdf" target="_blank"><button class="btn-arxiv">PAPER</button></a> 
+<a href="https://mfc-caltech.github.io" target="_blank"><button class="btn btn-success btn-sm">WEBSITE</button></a>
+<a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-CPC-19.pdf" target="_blank"><button class="btn btn-primary btn-sm">PAPER</button></a> 
 </center>
 
-<i>Developers: S. H. Bryngelson, V. Coralic, K. Schmidmayer, J. Meng, K. Maeda, J. S. Spratt, M. Rodriguez</i>
 
   MFC is a fully-documented open source parallel simulation software for multi-component, multi-phase, and bubbly flows. 
   It is capable of efficiently solving a wide range of flows, including droplet atomization, shock–bubble interaction, and gas bubble cavitation. 
@@ -50,17 +47,14 @@ An example notebook solves linear harmonic oscillator and nonlinear bubble dynam
 <ul style="overflow: hidden"></ul>
 </div>
 
-<div class="rowl1">
-
+<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 <a href="https://code-mphi.github.io/ECOGEN/" target="_blank">
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/ecogen.png" class="img-responsive" width="40%" style="display:block; margin-left:auto; margin-right:auto; border-radius: 10px; box-shadow:0px 0px 0px 0px;" />
 </a>
 <center><h4><b>Multiphase and Capillary Flow Solver</b></h4>
-<a href="https://code-mphi.github.io/ECOGEN/" target="_blank"><button class="btn-doi">WEBSITE</button></a>
-<a href="http://dx.doi.org/10.1016/j.cpc.2019.107093" target="_blank"><button class="btn-arxiv">PAPER</button></a> 
+<a href="https://code-mphi.github.io/ECOGEN/" target="_blank"><button class="btn btn-success btn-sm">WEBSITE</button></a>
+<a href="http://dx.doi.org/10.1016/j.cpc.2019.107093" target="_blank"><button class="btn btn-primary btn-sm">PAPER</button></a> 
 </center>
-
-<i>Developers: S. H. Bryngelson, K. Schmidmayer, E. Daniel, F. Petitpas</i>
 
 ECOGEN is an open-source computational fluid dynamics code. 
 It is a multi-model tool devoted to the simulation of compressible flows. 
@@ -76,15 +70,13 @@ Phase change problems (heating or cavitating flows) can be treated with respect 
 <ul style="overflow: hidden"></ul>
 </div>
 
-<div class="rowl1">
+<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 <a href="https://xpacc-dev.bitbucket.io/PlasCom2/" target="_blank">
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/xpacc.png" class="img-responsive" width="33%" style="display:block; margin-left:auto; margin-right:auto; border-radius: 10px" />
 </a>
 <center><h4><b>PlascomCM/Plascom2: Multi-physics Turbulent Flows</b></h4>
-<a href="https://xpacc-dev.bitbucket.io/PlasCom2/" target="_blank"><button class="btn-doi">WEBSITE</button></a>
+<a href="https://xpacc-dev.bitbucket.io/PlasCom2/" target="_blank"><button class="btn btn-success btn-sm">WEBSITE</button></a>
 </center>
-
-<i>Developers: S. H. Bryngelson, E. Cisneros, M. Campbell, D. Buchta, M. Anderson, M. Diener, M. Smith</i>
 
 PlasCom2 is a variable-order, single- and multi-block (overset), compressible Navier-Stokes solver. 
 It supports hybrid MPI+X massively parallel multiphysics simulation application designed for solving reactive flows on 1, 2, and 3-dimensional curvilinear domains discretized by multiple, overlapping block-structured grids.
@@ -103,11 +95,9 @@ ICE can also identify and actuate code transforms to optimize performance.
 </div>
 
  
-<div class="rowl1">
+<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/rbc3d.png" class="img-responsive" width="33%" style="display:block; margin-left:auto; margin-right:auto; border-radius: 10px" />
 <center><h4><b>Spectral Boundary Integral Solver for Cell-scale Flows</b></h4></center>
-
-<i>Developers: S. H. Bryngelson, H. Zhao, A. Isfahani, J. B. Freund</i>
 
 RBC3D solves the boundary integral equation form of the Stokes equations using spectral methods. 
 This form of the equations only discretizes the boundaries present in this problem, which in this case include model cells and droplets.
