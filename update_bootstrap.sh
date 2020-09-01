@@ -16,4 +16,10 @@ cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.* assets/javascript/boots
 cp node_modules/jquery/dist/jquery.min.* assets/javascript/bootstrap/
 touch assets/javascript/bootstrap/__DO_NOT_MODIFY
 
-# rm -rf node_modules package-lock.json
+# popper stuff
+rm -rf assets/javascript/popper
+mkdir -p assets/javascript/popper
+cp -r node_modules/@popperjs/core/* assets/javascript/popper/
+touch assets/javascript/popper/__DO_NOT_MODIFY
+
+rm -rf node_modules package-lock.json
