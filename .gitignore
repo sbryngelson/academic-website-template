@@ -4,4 +4,5 @@ _site/
 .DS_Store
 */.DS_Store
 */*/.DS_Store
-
+Gemfile.lock
+package-lock.json
