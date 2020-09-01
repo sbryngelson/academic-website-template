@@ -57,40 +57,23 @@
 </div>
 
 <div class="jumbotron" style="padding:7%; margin-top:5%; margin-bottom:5%">
-<h4>News</h4>
+  <h4>News</h4>
 
   {% for article in site.data.news limit:4 %}
   {{ article.date }}
     <p>{{ article.headline }}</p>
   {% endfor %}
   
-  <h4><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></h4>
+  <h5><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></h5>
 
 </div>
 
 <div class="jumbotron" style="padding:7%; margin-top:5%; margin-bottom:5%">
-<h4>Upcoming Events</h4>
+  <h4>Upcoming Events</h4>
+
   {% for article in site.data.events limit:5 %}
   <b>{{ article.date }}</b>
     <p>{{ article.headline }}<br/>
     <i>{{ article.location }}</i></p>
   {% endfor %}
 </div>
-<!-- <div class="well"> -->
-<!-- <h4>Funding</h4> -->
-<!--   <style> -->
-<!--    .mycenter { -->
-<!--       display: block; -->
-<!--       margin-left: auto; -->
-<!--       margin-right: auto; -->
-<!--    } -->
-<!--   </style> -->
-<!--  {% for funder in site.data.funders %} -->
-<!--  {% if funder.url %} --> 
-<!--   <a href="{{funder.url}}" target="_blank"><img src='/images/logopic/{{ funder.image }}' class='mycenter' style='max-height: 70px; max-width: 200px;'/></a> -->
-<!--  {% else %} -->
-<!--   <img src='/images/logopic/{{ funder.image }}' class='mycenter' style='max-height: 70px; max-width: 200px;'/> -->
-<!--  {% endif %} --> 
-<!--  {% endfor %} -->
-<!-- </div> -->
-

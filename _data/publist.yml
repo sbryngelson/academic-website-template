@@ -1,5 +1,5 @@
 - title: "QBMMlib: A library of quadrature-based moment methods"
-  authors: <b>S. H. Bryngelson</b>, T. Colonius, R. O. Fox
+  authors: S. H. Bryngelson, T. Colonius, R. O. Fox
   url: bryngelson-SoftX-20
   journal: SoftwareX
   image: qbmmlib.jpg
@@ -15,29 +15,26 @@
     Examples are shown and analyzed for linear harmonic oscillator and bubble dynamics problems."
 
 - title: "Characterizing viscoelastic materials via ensemble-based data assimilation of bubble collapse observations"
-  authors: J.-S. Spratt, M. Rodriguez, K. Schmidmayer, <b>S. H. Bryngelson</b>, J. Yang, C. Franck, T. Colonius
+  authors: J.-S. Spratt, M. Rodriguez, K. Schmidmayer, S. H. Bryngelson, J. Yang, C. Franck, T. Colonius
   url: spratt-bryngelson-JMPS-20
   journal: Journal of the Mechanics and Physics of Solids
   image: enkf.jpg
   arxiv: "2008.04410"
-  abstract: "Viscoelastic material properties at high strain rates are needed to model many biological and medical systems. Bubble cavitation can induce such strain rates, and the resulting bubble dynamics
-are sensitive to the material properties. Thus, in principle, these properties can be inferred via
-measurements of the bubble dynamics. Estrada et al. (2018) demonstrated such bubble-dynamic
-high-strain-rate rheometry by using least-squares shooting to minimize the difference between simulated and experimental bubble radius histories. We generalize their technique to account for
-additional uncertainties in the model, initial conditions, and material properties needed to uniquely
-simulate the bubble dynamics. Ensemble-based data assimilation minimizes the computational expense associated with the bubble cavitation model. We test an ensemble Kalman filter (EnKF),
-an iterative ensemble Kalman smoother (IEnKS), and a hybrid ensemble-based 4D–Var method
-(En4D-Var) on synthetic data, assessing their estimations of the viscosity and shear modulus of a
-Kelvin-Voigt material. Results show that En4D–Var and IEnKS provide better moduli estimates
-than EnKF. Applying these methods to the experimental data of Estrada et al. (2018) yields similar material property estimates to those they obtained, but provides additional information about
-uncertainties. In particular, the En4D–Var yields lower viscosity estimates for some experiments,
-and the dynamic estimators reveal a potential mechanism that is unaccounted for in the model,
-whereby the viscosity is reduced in some cases due to material damage occurring at bubble collapse.
+  abstract: "Viscoelastic material properties at high strain rates are needed to model many biological and medical systems. 
+    Bubble cavitation can induce such strain rates, and the resulting bubble dynamics are sensitive to the material properties. 
+    Thus, in principle, these properties can be inferred via measurements of the bubble dynamics. 
+    Estrada et al. (2018) demonstrated such bubble-dynamic high-strain-rate rheometry by using least-squares shooting to minimize the difference between simulated and experimental bubble radius histories. 
+  We generalize their technique to account for additional uncertainties in the model, initial conditions, and material properties needed to uniquely simulate the bubble dynamics. 
+  Ensemble-based data assimilation minimizes the computational expense associated with the bubble cavitation model. 
+  We test an ensemble Kalman filter (EnKF), an iterative ensemble Kalman smoother (IEnKS), and a hybrid ensemble-based 4D–Var method (En4D-Var) on synthetic data, assessing their estimations of the viscosity and shear modulus of a Kelvin-Voigt material. 
+  Results show that En4D–Var and IEnKS provide better moduli estimates than EnKF. 
+  Applying these methods to the experimental data of Estrada et al. (2018) yields similar material property estimates to those they obtained, but provides additional information about uncertainties. 
+  In particular, the En4D–Var yields lower viscosity estimates for some experiments, and the dynamic estimators reveal a potential mechanism that is unaccounted for in the model, whereby the viscosity is reduced in some cases due to material damage occurring at bubble collapse.
 "
 
 - title: Near-surface dynamics of a gas bubble collapsing above a crevice
   authors:
-    T. Trummler, <b>S. H. Bryngelson</b>, K. Schmidmayer, S. J. Schmidt, N. A. Adams, T. Colonius
+    T. Trummler, S. H. Bryngelson, K. Schmidmayer, S. J. Schmidt, N. A. Adams, T. Colonius
   url: trummler-bryngelson-JFM-20
   image: crevice20.jpg
   journal: Journal of Fluid Mechanics
@@ -52,7 +49,7 @@ whereby the viscosity is reduced in some cases due to material damage occurring 
 
 - title: "MFC: An open-source high-order multi-component, multi-phase, and multi-scale compressible flow solver"
   authors:
-    <b>S. H. Bryngelson</b>, K. Schmidmayer, V. Coralic, J. C. Meng, K. Maeda, T. Colonius
+    S. H. Bryngelson, K. Schmidmayer, V. Coralic, J. C. Meng, K. Maeda, T. Colonius
   url: bryngelson-CPC-19
   image: droplet_mfc.jpg
   journal: Computer Physics Communications
@@ -69,7 +66,7 @@ whereby the viscosity is reduced in some cases due to material damage occurring 
 
 - title: A Gaussian moment method and its augmentation via LSTM recurrent neural networks for the statistics of cavitating bubble populations
   authors:
-    <b>S. H. Bryngelson</b>, A. Charalampopoulos, T. P. Sapsis, T. Colonius
+    S. H. Bryngelson, A. Charalampopoulos, T. P. Sapsis, T. Colonius
   url: bryngelson-IJMF-20
   image: icmf20.jpg
   journal: International Journal of Multiphase Flow 
@@ -86,7 +83,7 @@ whereby the viscosity is reduced in some cases due to material damage occurring 
 
 - title: Simulation of humpback whale bubble-net feeding models
   image: whales20.jpg
-  authors: <b>S. H. Bryngelson</b> and T. Colonius 
+  authors: S. H. Bryngelson and T. Colonius 
   url: bryngelson-JASA-20 
   journal: Journal of the Acoustical Society of America
   info: 147, 1126–1135
@@ -106,7 +103,7 @@ whereby the viscosity is reduced in some cases due to material damage occurring 
     Higher void fraction nets appear preferable, guiding even low-frequency vocalizations while still maintaining a quiet net interior."
 
 - title: An assessment of multicomponent flow models and interface capturing schemes for spherical bubble dynamics
-  authors: K. Schmidmayer, <b>S. H. Bryngelson</b>, T. Colonius
+  authors: K. Schmidmayer, S. H. Bryngelson, T. Colonius
   url: bryngelson-JCP-20
   image: spherical_cavitation.jpg
   journal: Journal of Computational Physics
@@ -123,7 +120,7 @@ whereby the viscosity is reduced in some cases due to material damage occurring 
 
 - title: A quantitative comparison of phase-averaged models for bubbly, cavitating flows
   image: icmf19_2.jpg
-  authors: <b>S. H. Bryngelson</b>, K. Schmidmayer, T. Colonius
+  authors: S. H. Bryngelson, K. Schmidmayer, T. Colonius
   url: bryngelson-IJMF-19  
   journal: International Journal of Multiphase Flow
   info: 115, 137–143
@@ -143,7 +140,7 @@ whereby the viscosity is reduced in some cases due to material damage occurring 
 
 - title: A comparison of ensemble- and volume-averaged bubbly flow models 
   image: icmf19.jpg
-  authors: <b>S. H. Bryngelson</b> and T. Colonius
+  authors: S. H. Bryngelson and T. Colonius
   url: bryngelson-ICMF-19
   journal: Proceedings of 10th International Conference on Multiphase Flow
   info: Rio de Janeiro, Brazil
@@ -157,7 +154,7 @@ whereby the viscosity is reduced in some cases due to material damage occurring 
 
 - title: Irregular dynamics of cellular blood flow in a model microvessel
   image: chaos19.jpg
-  authors: <b>S. H. Bryngelson</b>, F. Guéniat, J. B. Freund
+  authors: S. H. Bryngelson, F. Guéniat, J. B. Freund
   url: bryngelson-PRE-19
   journal: Physical Review E
   info: 100, 012203
@@ -173,7 +170,7 @@ whereby the viscosity is reduced in some cases due to material damage occurring 
 
 - title: Non-modal Floquet stability of capsules in large-amplitude oscillatory extensional flow
   image: vizabstract_laoe.jpg
-  authors: <b>S. H. Bryngelson</b> and J. B. Freund
+  authors: S. H. Bryngelson and J. B. Freund
   url: bryngelson-EJM-19
   journal: European Journal of Mechanics B/Fluids
   info: 77, 171–176
@@ -190,7 +187,7 @@ whereby the viscosity is reduced in some cases due to material damage occurring 
 
 - title: Global stability of flowing red blood cell trains
   image: vizabstract_3dtrains.jpg
-  authors: <b>S. H. Bryngelson</b> and J. B. Freund
+  authors: S. H. Bryngelson and J. B. Freund
   url: bryngelson-PRF-18
   journal: Physical Review Fluids
   info: 3, 073101
@@ -209,7 +206,7 @@ whereby the viscosity is reduced in some cases due to material damage occurring 
 
 - title: Floquet stability analysis of capsules in viscous shear flow  
   image: vizabstract_floquet.jpg
-  authors: <b>S. H. Bryngelson</b> and J. B. Freund
+  authors: S. H. Bryngelson and J. B. Freund
   url: bryngelson-JFM-18
   journal: Journal of Fluid Mechanics
   info: 852, 663–677
@@ -224,7 +221,7 @@ whereby the viscosity is reduced in some cases due to material damage occurring 
 
 - title: Adjoint-based sensitivity for flows with shocks
   image: xpacc18.jpg
-  authors: <b>S. H. Bryngelson</b>, C. Pantano, D. Bodony, J. B. Freund
+  authors: S. H. Bryngelson, C. Pantano, D. Bodony, J. B. Freund
   url: bryngelson-xpacc18
   journal: XPACC Technical Report
   year: 2018
@@ -239,7 +236,7 @@ whereby the viscosity is reduced in some cases due to material damage occurring 
 
 - title: Stability and transition of capsule-flow systems
   image: cells_expvssim.jpg
-  authors: <b>S. H. Bryngelson</b>
+  authors: S. H. Bryngelson
   url: bryngelson-dissertation17
   journal: Ph.D. Dissertation
   info: University of Illinois at Urbana-Champaign
@@ -264,7 +261,7 @@ whereby the viscosity is reduced in some cases due to material damage occurring 
 
 - title: Capsule-train stability 
   image: vizabstract_cells2d.jpg
-  authors: <b>S. H. Bryngelson</b> and J. B. Freund
+  authors: S. H. Bryngelson and J. B. Freund
   url: bryngelson-PRF-16
   journal: Physical Review Fluids
   info: 1, 033201
@@ -278,7 +275,7 @@ whereby the viscosity is reduced in some cases due to material damage occurring 
     Direct numerical simulations are used to verify the linear analysis and track the subsequent transition of the regular capsule trains into an apparently chaotic flow."
 
 - title: Buckling and its effect on the conﬁned ﬂow of a model capsule suspension 
-  authors: <b>S. H. Bryngelson</b> and J. B. Freund
+  authors: S. H. Bryngelson and J. B. Freund
   image: bucklingpaper.jpg 
   url: bryngelson-RA-16
   journal: Rheologica Acta
@@ -294,7 +291,7 @@ whereby the viscosity is reduced in some cases due to material damage occurring 
 
 - title: The stability of flowing trains of confined red blood cells 
   image: blood16.jpg
-  authors: J. B. Freund and <b>S. H. Bryngelson</b>
+  authors: J. B. Freund and S. H. Bryngelson
   url: freund-ICTAM-16
   journal: Proceedings of XXIV International Congress of Theoretical and Applied Mechanics
   info: Montreal, Canada
@@ -305,7 +302,7 @@ whereby the viscosity is reduced in some cases due to material damage occurring 
 
 - title: Buckling and the rheology of an elastic capsule suspension 
   image: buckling2.jpg
-  authors: <b>S. H. Bryngelson</b> and J. B. Freund
+  authors: S. H. Bryngelson and J. B. Freund
   url: bryngelson-ICTAM-16
   journal: Proceedings of XXIV International Congress of Theoretical and Applied Mechanics
   info: Montreal, Canada
