@@ -48,7 +48,6 @@ All pages are located in the `_pages` directory.
 Pages generally load information from YAML databases located as `_data/*.yml`.
 Creating new pages can be done by using existing pages as a template.
 
-
 #### Page header information
 
 All pages require header information.
@@ -115,13 +114,7 @@ Be sure that the `site.url` and `site.baseurl` are set appropriately in the `_co
 
 This page has many features I could not find elsewhere.
 However, it still does not support all the options I would like:
-
-* Jekyll 4.0 and up is not supported.
-Building with these will break the theme of the site.
-I believe this is because the bootstrap version also needs to be upgraded.
-While such modern versions of Jekyll are not needed for most purposes and v3.X will likely be supported for a long time to come, some plugins do require the latest version of Jekyll.
 * [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar) can build a publication page from bibliography files `*.bib`. 
-However, it appears the latest version of Jekyll is required to do this.
 I enjoy my home-cooked publication page, but I understand that some will prefer uploading `.bib` files as opposed to converting to the `YAML` database format this site supports.
 
 ## Alternatives
