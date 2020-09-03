@@ -31,11 +31,11 @@ permalink: /publications/
 {% endfor %}
 {% endif %}
 
-<div class="jumbotron" style="padding:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron" style="padding:2%; margin-top:3%; margin-bottom:1%">
 <ul class="flex-container">
 <li class="flex-item1">
   {% if publi.image %}
-   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="80%" style="float: left" />
+   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" width="90%" />
   {% endif %}
 </li>
 <li class="flex-item2">
@@ -98,11 +98,11 @@ permalink: /publications/
 {% endfor %}
 {% endif %}
 
-<div class="jumbotron" style="padding:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron" style="padding:2%; margin-top:3%; margin-bottom:1%">
 <ul class="flex-container">
 <li class="flex-item1">
   {% if publi.image %}
-   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="90%" style="float: left" />
+   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" width="90%"  />
   {% endif %}
 </li>
 <li class="flex-item2">

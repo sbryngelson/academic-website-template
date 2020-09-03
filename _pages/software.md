@@ -15,15 +15,20 @@ permalink: /software/
 
 <i>Developer: S. H. Bryngelson</i>
 
-QBMMlib is an open source Mathematica package of quadrature-based moment methods and their algorithms.
-Such methods are commonly used to solve fully-coupled disperse flow and combustion problems, though formulating and closing the corresponding governing equations can be complex.
-QBMMlib makes analyzing these techniques simple and more accessible.
-Its routines use symbolic manipulation to formulate the moment transport equations for a population balance equation and a prescribed dynamical system.
-However, the resulting moment transport equations are unclosed.
-QBMMlib trades the moments for a set of quadrature points and weights via an inversion algorithm, of which several are available.
-Quadratures then closes the moment transport equations.
+QBMMlib is an open source Mathematica package that solves populating balance equations using quadrature-based moment methods.
+Such methods can solve fully-coupled disperse flow and combustion problems
+However, formulating and closing the corresponding governing equations can be complex.
+QBMMlib makes analyzing these techniques simple and accessible:
+- Symbolic manipulation automatically formulates the moment transport equations for a prescribed population balance equation and dynamical system
+- Moment inversion (QMOM) trades the moment set for quadrature nodes and weights 
+    - Several algorithms are included: QMOM, HyQMOM, CQMOM, CHyQMOM, and more
+- Quadratures closes the moment transport and governing flow equations 
+- Embedded Runge--Kutta algorithms ensure stable and realizable time integration
+
 The algorithm initialization and solution can span just 13 total lines of code.
-An example notebook solves linear harmonic oscillator and nonlinear bubble dynamics problems.
+Example notebooks demonstrate solutions to linear harmonic oscillator and nonlinear bubble dynamics problems.
+
+<!-- However, the resulting moment transport equations are unclosed. -->
 
 <ul style="overflow: hidden"></ul>
 </div>
