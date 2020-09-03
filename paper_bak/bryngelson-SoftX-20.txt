@@ -1,0 +1,11 @@
+@article{2008.05063v1,
+Author        = {Spencer H. Bryngelson and Tim Colonius and Rodney O. Fox},
+Title         = {QBMMlib: A library of quadrature-based moment methods},
+Eprint        = {2008.05063v1},
+ArchivePrefix = {arXiv},
+PrimaryClass  = {physics.comp-ph},
+Year          = {2020},
+Month         = {Aug},
+Url           = {http://arxiv.org/abs/2008.05063v1},
+File          = {2008.05063v1.pdf}
+}

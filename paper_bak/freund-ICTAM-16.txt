@@ -1,0 +1,5 @@
+@inproceedings{freund16,
+    Author = {J. B. Freund and S. H. Bryngelson},
+    Booktitle = {Proceedings of XXIV International Congress of Theoretical and Applied Mechanics, Montreal, Canada},
+    Title = {The stability of flowing trains of confined red blood cells},
+    Year = 2016}

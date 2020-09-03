@@ -1,0 +1,12 @@
+@article{Schmidmayer_2020,
+	doi = {10.1016/j.jcp.2019.109080},
+	url = {https://doi.org/10.1016%2Fj.jcp.2019.109080},
+	year = 2020,
+	month = {feb},
+	publisher = {Elsevier {BV}},
+	volume = {402},
+	pages = {109080},
+	author = {Kevin Schmidmayer and Spencer H. Bryngelson and Tim Colonius},
+	title = {An assessment of multicomponent flow models and interface capturing schemes for spherical bubble dynamics},
+	journal = {Journal of Computational Physics}
+}

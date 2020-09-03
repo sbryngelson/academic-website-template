@@ -1,0 +1,5 @@
+@inproceedings{bryngelson16,
+    Author = {S. H. Bryngelson and J. B. Freund},
+    Booktitle = {Proceedings of XXIV International Congress of Theoretical and Applied Mechanics, Montreal, Canada},
+    Title = {Buckling and the rheology of an elastic capsule suspension},
+    Year = 2016}

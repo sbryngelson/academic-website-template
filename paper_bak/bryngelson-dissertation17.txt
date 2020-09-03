@@ -1,0 +1,6 @@
+@phdthesis{bryngelson17,
+    Author = {S. H. Bryngelson},
+    School = {University of Illinois at Urbana--Champaign},
+    Title = {Stability and transition of capsule-flow systems},
+    Year = {2017}
+}
