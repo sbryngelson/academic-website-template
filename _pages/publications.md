@@ -31,7 +31,7 @@ permalink: /publications/
 {% endfor %}
 {% endif %}
 
-<div class="jumbotron" style="padding:2%; margin-top:3%; margin-bottom:1%">
+<div class="jumbotron" style="padding:2%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 <ul class="flex-container">
 <li class="flex-item1">
   {% if publi.image %}
@@ -97,7 +97,7 @@ permalink: /publications/
 {% endfor %}
 {% endif %}
 
-<div class="jumbotron" style="padding:2%; margin-top:3%; margin-bottom:1%">
+<div class="jumbotron" style="padding:2%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 <ul class="flex-container">
 <li class="flex-item1">
   {% if publi.image %}
