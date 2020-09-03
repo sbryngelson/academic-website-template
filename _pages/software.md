@@ -46,10 +46,10 @@ Example notebooks demonstrate solutions to linear harmonic oscillator and nonlin
 MFC is an open source parallel simulation software for multi-component, multi-phase, and bubbly flows. 
 Its efficient simulation algorithm is capable of efficiently solving a wide range of flows, including droplet atomization, bubble cavitation, and their interactions with strong shocks.
 This is done via
-- 5- and 6-equation diffuse-interface models to handle such flows, which are coupled to
-- High-order-accurate interface-capturing methods
+- 5- and 6-equation diffuse-interface models
+- High-order-accurate WENO interface-capturing methods
 - HLL-type Riemann solvers
-- Sub-grid particle models
+- Sub-grid bubble models
 - TVD time-integration schemes 
 
 MFC is actively developed and gaining capabilities for QMOM-based solutions to sub-grid flows and neural-network enhanced interface capturing.
@@ -106,9 +106,14 @@ PlasCom2 routinely scales to all available processing units on the largest machi
 <b>Developers:</b>
 <i>S. H. Bryngelson, H. Zhao, A. Isfahani, J. B. Freund</i>
 
-RBC3D simulates flowing elastic capsules and cells in parallel.
-The boundary integral form of the Stokes equations is solved using spectral methods, ensuring efficient simulations.
-No-slip boundary conditions (for, e.g., model vessel walls) are imposed via a weak-formulation of the velocity-force equations.
-The quadrature is switched to a near-singular formulation when boundaries are close, avoiding the singularity of the associated Green's functions.
-A short-range repulsion force, of similar character to electrostatic repulsion present in actual cells, ensures that neighboring objects do not intersect.
+RBC3D is a flow solver for soft capsules and cells.
+It solves the boundary integral form of the Stokes equations via an algorithm well-tailored for cell-scale simulations:
+* Spectrally-accurate spherical harmonics represent the deforming surfaces
+* Close-contact interactions treated via a modified quadrature approximation of the Green's functions
+* A short-range electrostatic-like repulsion ensures that neighboring cells do not intersect
+* No-slip boundaries (e.g., vessel walls) imposed via a weak-formulation of the velocity-force equations
+
+These features ensure that RBC3D simulations are efficient. 
+Parallel communication (MPI) enables large simulations.
+For example, many cells to be simulated simultaneously in a model vascular network.
 </div>
