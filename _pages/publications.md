@@ -35,7 +35,7 @@ permalink: /publications/
 <ul class="flex-container">
 <li class="flex-item1">
   {% if publi.image %}
-   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" width="90%" />
+   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" width="90%" style="margin-top:4%" />
   {% endif %}
 </li>
 <li class="flex-item2">
@@ -58,7 +58,6 @@ permalink: /publications/
  <iframe src='{{site.url}}{{site.baseurl}}/papers/{{publi.url}}.txt' scrolling='yes' width="100%" height="210" frameborder='0'></iframe>
 </div></div>
 {% endif %}
-
 </li>
 </ul>
 </div>
@@ -102,7 +101,7 @@ permalink: /publications/
 <ul class="flex-container">
 <li class="flex-item1">
   {% if publi.image %}
-   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" width="90%"  />
+   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" width="90%" style="margin-top:4%" />
   {% endif %}
 </li>
 <li class="flex-item2">
@@ -126,7 +125,6 @@ permalink: /publications/
 <iframe src='{{site.url}}{{site.baseurl}}/papers/{{publi.url}}.txt' scrolling='yes' width="100%" height="210" frameborder='0'></iframe>
 </div></div>
 {% endif %}
-
 </li>
 </ul>
 
