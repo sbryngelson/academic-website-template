@@ -66,7 +66,7 @@ MFC is actively developed and gaining capabilities for QMOM-based solutions to s
 </center>
 
 <b>Developers:</b>
-<i>K. Schmidmayer, E. Daniel, S. H. Bryngelson, F. Petitpas</i>
+<i>K. Schmidmayer, E. Daniel, S. Le Martelot, S. H. Bryngelson, F. Petitpas</i>
 
 ECOGEN is an open source fluid flow simulation tool.
 Interface- and shock-capturing methods handle single-phase gas dynamics and multi-phase and multi-physics flows.
@@ -79,7 +79,7 @@ The code base is object-oriented and modular, assisting future development.
 <a href="https://xpacc-dev.bitbucket.io/PlasCom2/" target="_blank">
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/xpacc.png" width="33%" style="display:block; margin-left:auto; margin-right:auto; border-radius: 10px" />
 </a>
-<center><h4><b>PlascomCM/Plascom2: Multi-physics Turbulent Flows</b></h4>
+<center><h4><b>Plascom2: Multi-physics Turbulent Flows</b></h4>
 <a href="https://xpacc-dev.bitbucket.io/PlasCom2/" target="_blank"><button class="btn btn-success btn-sm">WEBSITE</button></a>
 </center>
 
