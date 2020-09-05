@@ -30,7 +30,7 @@ The algorithm initialization and solution can span _just 13 total lines of code_
 Example notebooks demonstrate solutions to linear harmonic oscillator and nonlinear bubble dynamics problems.
 </div>
 
-<div class="jumbotron" style="padding:3%; padding-top:1%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron" style="padding:3%; padding-top:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 <a href="https://mfc-caltech.github.io" target="_blank">
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/mfc-logo2.png" width="33%" style="display:block; margin-left:auto; margin-right:auto; border-radius: 10px; box-shadow:0px 0px 0px 0px" />
 </a>
@@ -55,7 +55,7 @@ This is done via
 MFC is actively developed and gaining capabilities for QMOM-based solutions to sub-grid flows and neural-network enhanced interface capturing.
 </div>
 
-<div class="jumbotron" style="padding:3%; padding-top:1%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron" style="padding:3%; padding-top:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 <a href="https://code-mphi.github.io/ECOGEN/" target="_blank">
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/ecogen.png" width="40%" style="display:block; margin-left:auto; margin-right:auto; border-radius: 10px; box-shadow:0px 0px 0px 0px;" />
 </a>
@@ -75,7 +75,7 @@ Multiphase ECOGEN simulations regularly scale up to thousands of cores.
 The code base is object-oriented and modular, assisting future development.
 </div>
 
-<div class="jumbotron" style="padding:3%; padding-top:1%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron" style="padding:3%; padding-top:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 <a href="https://xpacc-dev.bitbucket.io/PlasCom2/" target="_blank">
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/xpacc.png" width="33%" style="display:block; margin-left:auto; margin-right:auto; border-radius: 10px" />
 </a>
@@ -99,7 +99,7 @@ PlasCom2 routinely scales to all available processing units on the largest machi
 </div>
 
  
-<div class="jumbotron" style="padding:3%; padding-top:1%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron" style="padding:3%; padding-top:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/rbc3d.png" width="33%" style="display:block; margin-left:auto; margin-right:auto; border-radius: 10px" />
 <center><h4><b>Spectral Boundary Integral Solver for Cell-scale Flows</b></h4></center>
 

@@ -1,6 +1,6 @@
 <div>
 {% for member in site.data.pi %}
-<div class="jumbotron" style="padding:6%; margin-top:5%; margin-bottom:5%;">
+<div class="jumbotron" style="padding:6%; padding-bottom:1%; margin-top:5%; margin-bottom:5%;">
    <center>
    <a href="{{site.url}}{{site.baseurl}}/about"><img src="{{site.url}}{{site.baseurl}}/images/teampic/{{ member.photo }}" width="60%" style="block:inline; margin-left:auto; margin-right:auto; margin-bottom:5px;"/></a>
    <h4>{{ member.name }}</h4>
@@ -57,7 +57,7 @@
 {% endfor %}
 </div>
 
-<div class="jumbotron" style="padding:7%; margin-top:5%; margin-bottom:5%">
+<div class="jumbotron" style="padding:7%; padding-bottom:3%; margin-top:5%; margin-bottom:5%">
   <h4>News</h4>
 
   {% for article in site.data.news limit:3 %}
@@ -69,7 +69,7 @@
 
 </div>
 
-<div class="jumbotron" style="padding:7%; margin-top:5%; margin-bottom:5%">
+<div class="jumbotron" style="padding:7%; padding-bottom:3%; margin-top:5%; margin-bottom:5%">
   <h4>Upcoming Events</h4>
 
   {% for article in site.data.events limit:5 %}

@@ -5,8 +5,10 @@ description: Academic webpage of Dr. Spencer H. Bryngelson
 baseurl: ""
 url: ""
 affiliation: >
-    I am part of the <a href="http://www.eas.caltech.edu/" target="_blank">Division of Engineering and Applied Science</a> 
-    at the California Institute of Technology
+    Spencer H. Bryngelson<br/>
+    Senior Postdoctoral Scholar<br/>
+    <a href="http://www.eas.caltech.edu/" target="_blank">Engineering and Applied Science</a><br/>
+    California Institute of Technology
 
 # Google analytics ID: Remove or use your own!
 google_analytics: UA-167467135-1
