@@ -88,7 +88,7 @@ I crafted kinematic stability analyses of this coupled dynamical system, includi
 <div class="jumbotron">
 <div class="row">
 <div class="col-md-9 col-sm-12 col-xs-12">
- <h4>Deformed and diseased cells</h4>
+ <h4>An _in silico_ microfluidics and microcirculation</h4>
 I develop simulation tools for the cellular flows that occur _in vivo_ and in biomicrofluidic devices.
 This includes physical models for the cells and particles that make up such flows and numerical techniques that efficiently simulate their flow.
 These are implemented in <a href="{{ site.url }}{{ site.baseurl }}/software/" target="_blank">RBC3D</a>, my state-of-the-art flow solver that resolves <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRF-16.pdf" target="_blank">all particle-scale interactions</a>.
