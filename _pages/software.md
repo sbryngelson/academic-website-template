@@ -22,7 +22,7 @@ However, formulating and closing the corresponding governing equations can be co
 QBMMlib makes analyzing these techniques simple and accessible:
 - Symbolic manipulation _automatically formulates_ the moment transport equations for a prescribed population balance equation and dynamical system
 - Moment inversion (QMOM) trades the moment set for quadrature nodes and weights 
-    - Several algorithms are included: QMOM, HyQMOM, CQMOM, CHyQMOM, and more
+    - Algorithms options: QMOM, HyQMOM, CQMOM, CHyQMOM, and more
 - Quadratures closes the moment transport and governing flow equations 
 - Embedded Runge--Kutta algorithms ensure _stable and realizable_ time integration
 
@@ -45,7 +45,7 @@ Example notebooks demonstrate solutions to linear harmonic oscillator and nonlin
 
 MFC is an open source parallel simulation software for multi-component, multi-phase, and bubbly flows. 
 Its efficient simulation algorithm is capable of efficiently solving a wide range of flows, including droplet atomization, bubble cavitation, and their interactions with strong shocks.
-This is done via
+It consists of:
 - 5- and 6-equation diffuse-interface models
 - High-order-accurate WENO interface-capturing methods
 - HLL-type Riemann solvers
@@ -88,7 +88,7 @@ The code base is object-oriented and modular, assisting future development.
 
 PlasCom2 is a variable-order, single- and multi-block (overset), compressible Navier--Stokes solver. 
 It supports hybrid MPI+X massively parallel multiphysics simulation application designed for solving reactive flows on 3D curvilinear domains discretized by multiple, overlapping block-structured grids.
-Offloading to GPGPUs is handled via OpenMP.
+OpenMP handles GPGPU offloading.
 PlasCom2 utilizes home-grown libraries to manage these interactions:
 * **Pick-Pocket**: Dynamic discovery of intra-application data movement to optimize runtime data motion
 * **Hydra**: Offloads OpenMP threads to GPGPUs and manages data movement to/from GPUs
@@ -114,6 +114,5 @@ It solves the boundary integral form of the Stokes equations via an algorithm we
 * No-slip boundaries (e.g., vessel walls) imposed via a weak-formulation of the velocity-force equations
 
 These features ensure that RBC3D simulations are efficient. 
-Parallel communication (MPI) enables large simulations.
-For example, many cells to be simulated simultaneously in a model vascular network.
+Parallel communication (MPI) enables large simulations, such as many cells flowing in a model vascular network.
 </div>

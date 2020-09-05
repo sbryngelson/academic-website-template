@@ -92,8 +92,8 @@ I crafted kinematic stability analyses of this coupled dynamical system, includi
 I develop simulation tools for the cellular flows that occur _in vivo_ and in biomicrofluidic devices.
 This includes physical models for the cells and particles that make up such flows and numerical techniques that efficiently simulate their flow.
 These are implemented in <a href="{{ site.url }}{{ site.baseurl }}/software/" target="_blank">RBC3D</a>, my state-of-the-art flow solver that resolves <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRF-16.pdf" target="_blank">all particle-scale interactions</a>.
-Coupling this with several <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRF-18.pdf" target="_blank">stability and optimization research tools</a> I discovered:
-* The <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-RA-16.pdf" target="_blank">rheological mechanism</a> that prevents sickle cells from flowing efficiently, which must also be considered when designing drug delivery particles.
+Coupling this with <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRF-18.pdf" target="_blank">stability and optimization tools</a> I discovered:
+* The <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-RA-16.pdf" target="_blank">rheological mechanism</a> that prevents sickle cells from flowing efficiently
 * The <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRE-19.pdf" target="_blank">chaotic nature</a> of microcirculatory flows, and so computational methods cannot predict exact cell locations at long times.
 * A <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRE-19.pdf" target="_blank">data-driven low-order model</a> that accurately represents the statistics of the flow.
 </div>
