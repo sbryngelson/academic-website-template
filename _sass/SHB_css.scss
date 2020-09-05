@@ -14,7 +14,8 @@
 
 .flex-item1 {
   padding-right: 5px;
-  width: 15%;
+  max-width: 15%;
+  min-width: 0;
 }
 
 .flex-item2 {

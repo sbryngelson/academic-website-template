@@ -34,10 +34,15 @@ permalink: /publications/
 <div class="jumbotron" style="padding:2%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 <ul class="flex-container">
 <li class="flex-item1">
-  {% if publi.image %}
-   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" width="90%" style="margin-top:4%" />
-  {% endif %}
+<div class="d-none d-md-block">
+{% if publi.image %}
+<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" width="90%" style="margin-top:4%" />
+{% endif %}
+</div>
+<!-- <div class="d-md-none"> -->
+<!-- </div> -->
 </li>
+<!-- </div> -->
 <li class="flex-item2">
   <strong> {{ publi.title }}</strong><br/>
   {{ publi.authors | replace_first: 'S. H. Bryngelson', '<b>S. H. Bryngelson</b>'}}<br/>
@@ -100,9 +105,11 @@ permalink: /publications/
 <div class="jumbotron" style="padding:2%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 <ul class="flex-container">
 <li class="flex-item1">
+<div class="d-none d-md-block">
   {% if publi.image %}
    <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" width="90%" style="margin-top:4%" />
   {% endif %}
+</div>
 </li>
 <li class="flex-item2">
   <b>{{ publi.title }}</b><br/>
