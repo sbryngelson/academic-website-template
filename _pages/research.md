@@ -7,7 +7,6 @@ permalink: /research/
 
 # Research
 
-
 <div class="jumbotron">
 <div class="row">
 <div class="col-md-9 col-sm-12 col-xs-12">
@@ -45,7 +44,7 @@ Specifically, they
 * Swim up and through the interior, lunge feeding on the fish
 
 While fascinating, the acoustic mechanisms that enable this behavior are not understood.
-I used an ensemble-averaged bubbly flow model to simulate the relevant acoustic phenomena, <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-JASA-20.pdf" target="_blank">advancing our interpretation of this behavior</a>.
+My ensemble-averaged bubbly flow model simulates the relevant acoustic phenomena, <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-JASA-20.pdf" target="_blank">advancing our interpretation of this behavior</a>.
 Similar outcomes are desirable for sensitive, implanted biomedical devices.
 </div>
 <div class="d-none d-md-block col-sm-3">
@@ -73,11 +72,12 @@ Coupling with our flow solver <a href="{{ site.url }}{{ site.baseurl }}/software
 <div class="jumbotron">
 <div class="row">
 <div class="col-md-9 col-sm-12 col-xs-12">
- <h4>Targeted microcapsules enable drug delivery</h4>
-Observations in experiments and simulations show that the kinematic behavior of elastic capsules are sensitive to the flow strength and capsule material properties.
-I developed a stability description of the rotating state of this coupled system, as represented by a boundary integral flow formulation with spherical harmonic basis functions describing the elastic capsule geometry.
-This was the first <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-JFM-18.pdf" target="_blank">Floquet analysis</a> of such a complex system, classifying its stability without the ambiguity of empirical perturbations or experiments.
-These results can be used to guide design of capsules that deliver drugs in the microcirculation or <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-EJM-19.pdf" target="_blank">characterize them in rheometers</a>.
+ <h4>Targeted microcapsules for drug delivery</h4>
+Capsules can deliver drug payloads via the microcirculation and pulmonary system.
+The capsules dynamics are an important design condition in this application, which are particularly sensitive to the capsule membrane itself.
+I crafted kinematic stability analyses of this coupled dynamical system, including:
+* The first <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-JFM-18.pdf" target="_blank">Floquet analysis</a> of such a system, classifying the stability without the ambiguity of empirical perturbations or experiments
+* <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-EJM-19.pdf" target="_blank">Non-modal extensions</a> of this analysis, which enable prediction in the rheometric flows that characterize the capsule mechanical properties
 </div>
 <div class="d-none d-md-block col-sm-3">
   <img src="{{ site.url }}{{ site.baseurl }}/images/respic/microcapsules.jpg" width="100%"/>
@@ -88,13 +88,14 @@ These results can be used to guide design of capsules that deliver drugs in the 
 <div class="jumbotron">
 <div class="row">
 <div class="col-md-9 col-sm-12 col-xs-12">
-  <h4>Deformed and diseased cells</h4>
-I have developed simulation-based methods for flows associated with targeted drug delivery therapies and biomicrofluidic devices.
+ <h4>Deformed and diseased cells</h4>
+I develop simulation tools for the cellular flows that occur _in vivo_ and in biomicrofluidic devices.
 This includes physical models for the cells and particles that make up such flows and numerical techniques that efficiently simulate their flow.
-I implemented these in RBC3D, my state-of-the-art flow solver that resolves <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRF-16.pdf" target="_blank">all particle-scale interactions</a> and several <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRF-18.pdf" target="_blank">stability and optimization research tools</a>.
-Coupling these tools with novel analysis, I discovered the <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-RA-16.pdf" target="_blank">rheological mechanism</a> that prevents sickle cells from flowing efficiently, which must also be considered when designing drug delivery particles.
-I then showed that these circulatory flows are chaotic, so computational methods cannot predict exact cell locations at long times.
-However, the <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRE-19.pdf" target="_blank">data-driven low-order model</a> I developed accurately represents the statistics of the flow, accelerating the design of biomedical devices.
+These are implemented in <a href="{{ site.url }}{{ site.baseurl }}/software/" target="_blank">RBC3D</a>, my state-of-the-art flow solver that resolves <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRF-16.pdf" target="_blank">all particle-scale interactions</a>.
+Coupling this with several <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRF-18.pdf" target="_blank">stability and optimization research tools</a> I discovered:
+* The <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-RA-16.pdf" target="_blank">rheological mechanism</a> that prevents sickle cells from flowing efficiently, which must also be considered when designing drug delivery particles.
+* The <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRE-19.pdf" target="_blank">chaotic nature</a> of microcirculatory flows, and so computational methods cannot predict exact cell locations at long times.
+* A <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRE-19.pdf" target="_blank">data-driven low-order model</a> that accurately represents the statistics of the flow.
 </div>
 <div class="d-none d-md-block col-sm-3">
   <img src="{{ site.url }}{{ site.baseurl }}/images/respic/sickle_cells2.jpg" width="100%"/>
