@@ -1,7 +1,8 @@
 <div>
 {% for member in site.data.pi %}
-<div class="jumbotron" style="padding:7%; margin-top:5%; margin-bottom:5%">
- <center> <a href="{{site.url}}{{site.baseurl}}/about"><img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="60%" style="block:inline; margin-left:auto; margin-right:auto;" /></a>
+<div class="jumbotron" style="padding:6%; margin-top:5%; margin-bottom:5%;">
+   <center>
+   <a href="{{site.url}}{{site.baseurl}}/about"><img src="{{site.url}}{{site.baseurl}}/images/teampic/{{ member.photo }}" width="60%" style="block:inline; margin-left:auto; margin-right:auto; margin-bottom:5px;"/></a>
    <h4>{{ member.name }}</h4>
    <div style="margin-bottom:5px">
    {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a> {% endif %}
@@ -53,7 +54,6 @@
   {% endif %}
   </ul>
 </div>
-
 {% endfor %}
 </div>
 
