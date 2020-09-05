@@ -59,8 +59,8 @@
 <div class="jumbotron" style="padding:7%; margin-top:5%; margin-bottom:5%">
   <h4>News</h4>
 
-  {% for article in site.data.news limit:4 %}
-  {{ article.date }}
+  {% for article in site.data.news limit:3 %}
+  <b>{{ article.date }}</b>
     <p>{{ article.headline }}</p>
   {% endfor %}
   
@@ -72,7 +72,7 @@
   <h4>Upcoming Events</h4>
 
   {% for article in site.data.events limit:5 %}
-  <b>{{ article.date }}</b>
+  <b>{{ article.date | replace: "-","&#8211;" }}</b>
     <p>{{ article.headline }}<br/>
     <i>{{ article.location }}</i></p>
   {% endfor %}
