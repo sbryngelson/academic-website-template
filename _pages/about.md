@@ -8,12 +8,17 @@ permalink: /about/
 # About 
 
 {% for member in site.data.pi %}
-<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron">
 <div class="row">
 <div class="d-none d-md-block col-sm-4">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" width="100%"/>
 </div>
 <div class="col-md-8 col-sm-12 col-xs-12">
+  <div class="d-md-none">
+   <center>
+   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" width="35%"/>
+   </center>
+  </div>
   <h3>{{ member.name }}</h3>
   <i style="font-size:20px">{{ member.info }}</i><br>
   {% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-3x"></i></a> {% endif %}
@@ -73,7 +78,7 @@ permalink: /about/
 
 
 {% if site.data.grants %}
-<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron">
 ## Grants
 <ul>
 {% for grant in site.data.grants %}
@@ -84,7 +89,7 @@ permalink: /about/
 {% endif %}
 
 {% if site.data.awards %}
-<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron">
 ## Awards
 <ul>
 {% for award in site.data.awards %}
@@ -94,7 +99,7 @@ permalink: /about/
 </div>
 {% endif %}
 
-<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron">
 ## Collaborators
 
 * <a href="http://acoustics.ae.illinois.edu/" target="_blank">Professor Daniel Bodony (Aerospace, University of Illinois)</a>

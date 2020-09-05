@@ -8,7 +8,7 @@ permalink: /talks/
 # Talks
 
 {% if site.data.conference_talks %}
-<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron">
 ## Conference Abstracts
 
 {% for publi in site.data.conference_talks %}
@@ -19,9 +19,8 @@ permalink: /talks/
 </div>
 {% endif %}
 
-
 {% if site.data.invited_talks %}
-<div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron">
 ## Invited Talks and Seminars
 
 {% for publi in site.data.invited_talks %}
@@ -29,4 +28,3 @@ permalink: /talks/
 {% endfor %}
 </div>
 {% endif %}
-

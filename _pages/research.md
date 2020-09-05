@@ -8,7 +8,7 @@ permalink: /research/
 # Research
 
 
-<div class="jumbotron" style="padding:3%; padding-top:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron">
 <div class="row">
 <div class="col-md-9 col-sm-12 col-xs-12">
  <h4>Cavitation as a gateway for better therapies</h4>
@@ -32,7 +32,7 @@ This has impacted specific application areas:
 </div>
 
 
-<div class="jumbotron" style="padding:3%; padding-top:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron">
 <div class="row">
 <div class="col-md-9 col-sm-12 col-xs-12">
 <h4>Learning from animals: Humpback whales</h4>
@@ -55,7 +55,7 @@ Similar outcomes are desirable for sensitive, implanted biomedical devices.
 </div>
  
 
-<div class="jumbotron" style="padding:3%; padding-top:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron">
 <div class="row">
 <div class="col-md-9 col-sm-12 col-xs-12">
  <h4>Therapy design via adjoint-based optimization</h4>
@@ -70,7 +70,7 @@ Coupling with our flow solver <a href="{{ site.url }}{{ site.baseurl }}/software
 </div>
 </div>
 
-<div class="jumbotron" style="padding:3%; padding-top:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron">
 <div class="row">
 <div class="col-md-9 col-sm-12 col-xs-12">
  <h4>Targeted microcapsules enable drug delivery</h4>
@@ -85,7 +85,7 @@ These results can be used to guide design of capsules that deliver drugs in the 
 </div>
 </div>
 
-<div class="jumbotron" style="padding:3%; padding-top:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron">
 <div class="row">
 <div class="col-md-9 col-sm-12 col-xs-12">
   <h4>Deformed and diseased cells</h4>

@@ -31,11 +31,11 @@ permalink: /publications/
 {% endfor %}
 {% endif %}
 
-<div class="jumbotron" style="padding:2%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron">
 <div class="row">
 <div class="d-none d-md-block col-sm-2">
 {% if publi.image %}
-<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" width="100%" style="margin-top:4%" />
+ <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" width="100%" style="margin-top:4%" />
 {% endif %}
 </div>
 <div class="col-md-10 col-sm-12 col-xs-12">
@@ -97,7 +97,7 @@ permalink: /publications/
 {% endfor %}
 {% endif %}
 
-<div class="jumbotron" style="padding:2%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
+<div class="jumbotron">
 <div class="row">
 <div class="d-none d-md-block col-sm-2">
   {% if publi.image %}

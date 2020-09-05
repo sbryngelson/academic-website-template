@@ -2,13 +2,21 @@ img {
     border-radius:5%;
 }
 
+
+.jumbotron {
+    padding:20px; 
+    padding-bottom:7px; 
+    margin-top:22px; 
+    margin-bottom:22px;
+}
+
 .navbar {
   margin-bottom: 20px;
 }
 
 .btn {
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .container-fluid {
@@ -35,7 +43,7 @@ img {
   background-color: var(--gray);
   border: 2px solid var(--gray-dark);
   blockquote {
-    border-color: #ddd;
+    border-color: var(--gray-dark);
     border-color: rgba(0,0,0,.15);
   }
 }
