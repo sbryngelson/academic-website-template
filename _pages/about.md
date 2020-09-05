@@ -75,24 +75,24 @@ permalink: /about/
 {% if site.data.grants %}
 <div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 ## Grants
-
+<ul>
 {% for grant in site.data.grants %}
-* {{ grant.name }}
+ <li> {{ grant.name }} </li>
 {% endfor %}
-
-{% endif %}
+</ul>
 </div>
+{% endif %}
 
 {% if site.data.awards %}
 <div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 ## Awards
-
+<ul>
 {% for award in site.data.awards %}
-* {{ award.name }}
+ <li> {{ award.name }} </li>
 {% endfor %}
-
-{% endif %}
+</ul>
 </div>
+{% endif %}
 
 <div class="jumbotron" style="padding:3%; padding-bottom:1%; margin-top:3%; margin-bottom:3%">
 ## Collaborators
