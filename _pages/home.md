@@ -5,7 +5,7 @@ sitemap: false
 permalink: /
 ---
 
-# Welcome!
+## Welcome!
 
 #### `$ whoami`
 

@@ -5,11 +5,11 @@ sitemap: false
 permalink: /talks/
 ---
 
-# Talks
+## Talks
 
 {% if site.data.conference_talks %}
 <div class="jumbotron">
-## Conference Abstracts
+### Conference Abstracts
 {% for publi in site.data.conference_talks %}
 - <strong>{{ publi.title }}</strong> <br/> 
  {{ publi.authors | replace_first: 'S. H. Bryngelson', '<b>S. H. Bryngelson</b>'}} <br/>
@@ -20,7 +20,7 @@ permalink: /talks/
 
 {% if site.data.invited_talks %}
 <div class="jumbotron">
-## Invited Talks and Seminars
+### Invited Talks and Seminars
 <ul>
 {% for publi in site.data.invited_talks %}
 <li> {{ publi.name | replace: "-","&#8211;" }} </li>

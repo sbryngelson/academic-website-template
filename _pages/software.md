@@ -5,7 +5,7 @@ sitemap: false
 permalink: /software/
 ---
 
-# Software
+## Software
 
 <div class="jumbotron">
 <center><h4><b>QBMMlib: Quadrature Moment Methods for Fully-coupled Flows</b></h4>

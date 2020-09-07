@@ -6,10 +6,18 @@ permalink: /publications/
 ---
 
 <style>
-.btn{margin-bottom:0;}
+.btn{
+    margin-bottom:0;
+}
+.jumbotron{
+    padding-bottom:0px;
+    padding-top:5px;
+    margin-top:10px;
+    margin-bottom:10px
+}
 </style>
 
-# Publications
+## Publications
 
 {% assign yeartest = true %}
 {% for publi in site.data.publist %}
@@ -19,7 +27,7 @@ permalink: /publications/
 {% endfor %}
 
 {% if yeartest == false %}
-## Under Review
+### Under Review
 {% endif %}
 
 {% for publi in site.data.publist %}
@@ -39,7 +47,7 @@ permalink: /publications/
 <div class="row">
 <div class="d-none d-md-block col-sm-2">
 {% if publi.image %}
- <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" width="100%"/>
+ <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" width="100%" style="margin-top:5px"/>
 {% endif %}
 </div>
 <div class="col-md-10 col-sm-12 col-xs-12">
@@ -69,7 +77,7 @@ permalink: /publications/
 {% endfor %}
 
 {% if site.group_pub_by_year == true %}{% else %}
-## Journal Papers and Proceedings 
+### Journal Papers and Proceedings 
 {% endif %}
 
 {% for myyear in site.data.years %}
@@ -83,7 +91,7 @@ permalink: /publications/
 
 {% if site.group_pub_by_year == true %}
 {% if yeartest == true %}
-## {{ myyear.year }}
+### {{ myyear.year }}
 {% endif %}
 {% endif %}
 
@@ -105,7 +113,7 @@ permalink: /publications/
 <div class="row">
 <div class="d-none d-md-block col-sm-2">
   {% if publi.image %}
-   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" width="100%"/>
+   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" width="100%" style="margin-top:5px"/>
   {% endif %}
 </div>
 <div class="col-md-10 col-sm-12 col-xs-12">

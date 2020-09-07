@@ -5,7 +5,7 @@ sitemap: false
 permalink: /research/
 ---
 
-# Research
+## Research
 
 <div class="jumbotron">
 <div class="row">

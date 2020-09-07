@@ -5,7 +5,7 @@ sitemap: false
 permalink: /teaching/
 ---
 
-# Teaching
+## Teaching
 
 * Lecturer (Teaching Fellow), University of Illinois at Urbana--Champaign 
     * Fundamentals of Fluid Dynamics (Junior Level)--2015

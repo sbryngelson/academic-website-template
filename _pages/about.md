@@ -5,7 +5,7 @@ sitemap: false
 permalink: /about/
 ---
 
-# About 
+## About 
 
 {% for member in site.data.pi %}
 <div class="jumbotron">
@@ -69,7 +69,7 @@ permalink: /about/
 
 {% if site.data.grants %}
 <div class="jumbotron">
-## Grants
+### Grants
 <ul>
 {% for grant in site.data.grants %}
  <li> {{ grant.name }} </li>
@@ -80,7 +80,7 @@ permalink: /about/
 
 {% if site.data.awards %}
 <div class="jumbotron">
-## Awards
+### Awards
 <ul>
 {% for award in site.data.awards %}
  <li> {{ award.name | replace: "-","&#8211;"}} </li>
@@ -92,7 +92,7 @@ permalink: /about/
 
 {% if site.data.collaborators %}
 <div class="jumbotron">
-## Collaborators
+### Collaborators
 <ul>
 {% for collab in site.data.collaborators %}
  <li> <a href="{{collab.url}}" target="_blank">{{collab.name}}</a> ({{collab.title}})</li>
