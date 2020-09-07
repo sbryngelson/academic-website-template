@@ -10,7 +10,7 @@ permalink: /research/
 <div class="jumbotron">
 <div class="row">
 <div class="col-md-9 col-sm-12 col-xs-12">
- <h4>Cavitation as a gateway for better therapies</h4>
+ <h4>Cavitation as a gateway to better therapies</h4>
 Cavitating bubbles can ablate cancer cells, fragment tissues, and deliver drugs, among other functions.
 I develop high-fidelity computational methods to simulate these dynamics.
 Examples are:
