@@ -2,7 +2,6 @@ img {
     border-radius:5%;
 }
 
-
 .jumbotron {
     padding:20px; 
     padding-bottom:7px; 
@@ -12,6 +11,7 @@ img {
 
 .navbar {
   margin-bottom: 20px;
+  border-bottom: 4px solid var(--secondary);
 }
 
 .btn {
