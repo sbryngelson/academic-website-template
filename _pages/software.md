@@ -16,7 +16,7 @@ permalink: /software/
 <b>Developer:</b>
 <i>S. H. Bryngelson</i>
 
-QBMMlib is an <a href="https://github.com/sbryngelson/QBMMlib" target="_blank">open source Mathematica package</a> that solves populating balance equations using quadrature-based moment methods.
+QBMMlib is an <a href="https://github.com/sbryngelson/QBMMlib" target="_blank">open source Mathematica package</a> for solving populating balance equations with quadrature-based moment methods.
 These methods solve fully-coupled disperse flow and combustion problems.
 However, formulating and closing the corresponding governing equations can be complex.
 QBMMlib makes analyzing these techniques simple and accessible:
@@ -107,12 +107,12 @@ PlasCom2 routinely scales to all available processing units on the largest machi
 <i>S. H. Bryngelson, H. Zhao, A. Isfahani, J. B. Freund</i>
 
 RBC3D is a flow solver for soft capsules and cells.
-It solves the boundary integral form of the Stokes equations via an algorithm well-tailored for cell-scale simulations:
+It solves the boundary integral form of the Stokes equations via an algorithm tailored for cell-scale simulations:
 * Spectrally-accurate spherical harmonics represent the deforming surfaces
 * Close-contact interactions treated via a modified quadrature approximation of the Green's functions
-* A short-range electrostatic-like repulsion ensures that neighboring cells do not intersect
-* No-slip boundaries (e.g., vessel walls) imposed via a weak-formulation of the velocity-force equations
+* Short-range electrostatic-like repulsion prevents neighboring cells from intersecting
+* Weak-formulation of the velocity-force equations enforces no-slip boundaries (e.g., vessel walls)
 
-These features ensure that RBC3D simulations are efficient. 
+These features ensure that RBC3D simulations are robust.
 Parallel communication (MPI) enables large simulations, such as many cells flowing in a model vascular network.
 </div>
