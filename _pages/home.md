@@ -5,6 +5,7 @@ sitemap: false
 permalink: /
 ---
 
+
 ## Welcome!
 
 #### `$ whoami`
@@ -15,13 +16,17 @@ I am a **computational scientist** who clears these paths via new data-driven mo
 Recent examples include the <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-IJMF-20.pdf" target="_blank">most efficient sub-grid model</a> for simulating cavitation, a <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRE-19.pdf" target="_blank">low-order model</a> for cell-scale blood flow, and <a href="https://mfc-caltech.github.io/" target="_blank">MFC</a>, my open-source multi-phase flow solver.
 These developments guide biomicrofluidic device design and improve treatment outcomes (e.g. burst-wave <a href="https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/lithotripsy" target="_blank">lithotripsy</a>).
 
-<video controls autoplay muted loop width="100%" style="display:inline-block; border-radius: 25px; border:0px solid #FFF;">
-  <source src="{{ site.url }}{{ site.baseurl }}/images/videos/3dtrain_breakdown2.mp4" type="video/mp4"></video>
+<div class="container">
+<div class="row">
 <center>
-  Transition to chaos of a flowing red blood cell train. <br/>
-  Bryngelson & Freund, <i>Phys. Rev. Fluids</i> (2018)
+<video controls autoplay muted loop width="100%" style="display:inline-block; border-radius: 25px; border:0px;">
+  <source src="{{ site.url }}{{ site.baseurl }}/images/videos/3dtrain_breakdown2.mp4" type="video/mp4">
+</video>
+Transition to chaos of a flowing red blood cell train. <br/>
+Bryngelson & Freund, <i>Phys. Rev. Fluids</i> (2018)
 </center>
-<br/>
+</div>
+</div>
 
 #### `$ id`
 
