@@ -5,7 +5,6 @@ sitemap: false
 permalink: /
 ---
 
-
 ## Welcome!
 
 #### `$ whoami`
@@ -19,9 +18,7 @@ These developments guide biomicrofluidic device design and improve treatment out
 <div class="container">
 <div class="row">
 <center>
-<video controls autoplay muted loop width="100%" style="display:inline-block; border-radius: 25px; border:0px;">
-  <source src="{{ site.url }}{{ site.baseurl }}/images/videos/3dtrain_breakdown2.mp4" type="video/mp4">
-</video>
+<iframe src="https://player.vimeo.com/video/455688517?autoplay=1&loop=1&autopause=0&muted=1" width="100%" frameborder="0" allow="autoplay" style="border-style:solid;border-radius:10px;"></iframe>
 Transition to chaos of a flowing red blood cell train. <br/>
 Bryngelson & Freund, <i>Phys. Rev. Fluids</i> (2018)
 </center>
