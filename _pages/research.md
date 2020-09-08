@@ -87,21 +87,6 @@ Coupling with our flow solver <a href="{{ site.url }}{{ site.baseurl }}/software
 </div>
 </div>
 
-<div class="jumbotron">
-<div class="row">
-<div class="col-md-9 col-sm-12 col-xs-12">
- <h4>Targeted microcapsules for drug delivery</h4>
-Capsules can deliver drug payloads via the microcirculation and pulmonary system.
-The capsules dynamics are an important design condition in this application, which are particularly sensitive to the capsule membrane itself.
-I crafted kinematic stability analyses of this coupled dynamical system, including:
-* The first <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-JFM-18.pdf" target="_blank">Floquet analysis</a> of such a system, which classifies the stability without the ambiguity of empirical perturbations or experiments
-* <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-EJM-19.pdf" target="_blank">Non-modal extensions</a> of the stability analysis, enabling the prediction of rheometric flows and characterization of the capsule's mechanical properties
-</div>
-<div class="d-none d-md-block col-sm-3">
-  <iframe src="https://player.vimeo.com/video/455887720?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="156px" frameborder="0" allow="autoplay"></iframe>
-</div>
-</div>
-</div>
 
 <div class="jumbotron">
 <div class="row">
@@ -120,3 +105,21 @@ Coupling RBC3D with <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-
   <iframe src="https://player.vimeo.com/video/455887646?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="155px" frameborder="0" allow="autoplay"></iframe>
 </div>
 </div>
+
+<div class="jumbotron">
+<div class="row">
+<div class="col-md-9 col-sm-12 col-xs-12">
+ <h4>Targeted microcapsules for drug delivery</h4>
+Capsules can deliver drug payloads via the microcirculation and pulmonary system.
+The capsules dynamics are an important design condition in this application, which are particularly sensitive to the capsule membrane itself.
+I crafted kinematic stability analyses of this coupled dynamical system, including:
+* The first <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-JFM-18.pdf" target="_blank">Floquet analysis</a> of such a system, which classifies the stability without the ambiguity of empirical perturbations or experiments
+* <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-EJM-19.pdf" target="_blank">Non-modal extensions</a> of the stability analysis, enabling the prediction of rheometric flows and characterization of the capsule's mechanical properties
+</div>
+<div class="d-none d-md-block col-sm-3">
+  <iframe src="https://player.vimeo.com/video/455887720?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="156px" frameborder="0" allow="autoplay"></iframe>
+</div>
+</div>
+</div>
+
+
