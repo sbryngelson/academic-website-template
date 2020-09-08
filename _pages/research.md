@@ -105,6 +105,7 @@ Coupling RBC3D with <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-
   <iframe src="https://player.vimeo.com/video/455887646?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="155px" frameborder="0" allow="autoplay"></iframe>
 </div>
 </div>
+</div>
 
 <div class="jumbotron">
 <div class="row">
@@ -121,5 +122,4 @@ I crafted kinematic stability analyses of this coupled dynamical system, includi
 </div>
 </div>
 </div>
-
 
