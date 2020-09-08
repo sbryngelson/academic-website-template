@@ -40,7 +40,7 @@ Perspective on bubble utilization can come from a surprising source: **animals**
 Specifically, they
 * Release air from their blowholes while swimming, spiraling downwards
 * Surround their prey with a wall of bubbles
-* Vocalize from the exterior, trapping small fish in a wall of loud sound (~190dB!)
+* Vocalize from the exterior, trapping small fish in loud sound (~190dB!)
 * Swim up and through the interior, lunge feeding on the fish
 
 While fascinating, the acoustic mechanisms enabling this behavior are not understood.
