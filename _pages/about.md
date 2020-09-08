@@ -10,15 +10,10 @@ permalink: /about/
 {% for member in site.data.pi %}
 <div class="jumbotron">
 <div class="row">
-<div class="d-none d-md-block col-sm-4">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" width="100%"/>
+<div class="col-sm-4">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" width="100%" style="max-width:250px"/>
 </div>
-<div class="col-md-8 col-sm-12 col-xs-12">
-  <div class="d-md-none">
-   <center>
-   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" width="35%"/>
-   </center>
-  </div>
+<div class="col-sm-8 col-xs-12">
   <h3>{{ member.name }}</h3>
   <h4><i>{{ member.info }}</i></h4>
   {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-3x"></i></a> {% endif %}
