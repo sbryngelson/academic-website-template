@@ -44,8 +44,8 @@ This has impacted application-specific treatments, including:
 * Cavitation-induced <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-JFM-19.pdf" target="_blank">erosion potential</a> for rough materials
 </div>
 <div class="col-md-3 col-sm-12" >
+  <iframe src="https://player.vimeo.com/video/455888052?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="182px" frameborder="0" allow="autoplay"></iframe>
   <iframe src="https://player.vimeo.com/video/455887852?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="142px" frameborder="0" allow="autoplay"></iframe>
-  <iframe src="https://player.vimeo.com/video/455888052?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="182jWpx" frameborder="0" allow="autoplay"></iframe>
 </div>
 </div>
 </div>
@@ -68,8 +68,8 @@ My ensemble-averaged bubbly flow model simulates the relevant acoustic phenomena
 Similar outcomes are desirable for sensitive, implanted biomedical devices.
 </div>
 <div class="col-md-3 col-sm-12" >
-  <iframe src="https://player.vimeo.com/video/455688521?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="192px" frameborder="0" allow="autoplay"></iframe>
   <iframe src="https://player.vimeo.com/video/455888384?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="100px" frameborder="0" allow="autoplay"></iframe>
+  <iframe src="https://player.vimeo.com/video/455688521?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="192px" frameborder="0" allow="autoplay"></iframe>
 </div>
 </div>
 </div>
@@ -82,7 +82,7 @@ Similar outcomes are desirable for sensitive, implanted biomedical devices.
 Designing medical therapies requires efficient optimization algorithms. 
 Current methods fail to account for the _material interfaces_ or _shock waves_ that occur during treatments like lithotripsy and histotripsy.
 I developed an adjoint-based technique for navigating these complications and computes the gradient-based information required for such <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-xpacc18.pdf" target="_blank">optimization and sensitivity analysis</a>.
-Coupling with our flow solver <a href="{{ site.url }}{{ site.baseurl }}/software/" target="_blank">Plascom2</a> provides a fully-functional optimization framework for medical therapies and devices.
+Coupling with <a href="{{ site.url }}{{ site.baseurl }}/software/" target="_blank">PlasCom2</a> provides a full optimization framework for medical therapies and devices.
 </div>
 <div class="col-md-3 col-sm-12" >
   <img src="{{ site.url }}{{ site.baseurl }}/images/respic/lithotripsy.jpg" width="175px"/>
