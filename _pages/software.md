@@ -6,14 +6,15 @@ permalink: /software/
 ---
 
 <style>
-img{border-radius: 10px;}
-
+img{
+  border-radius: 10px;
+}
 iframe {
   width: 175px;
   display: inline;
-  vertical-align:top;
-  margin-bottom:5px;
-  margin-left:5px;
+  vertical-align:middle;
+  <!-- margin-bottom:5px; -->
+  <!-- margin-left:5px; -->
   <!-- border: 1px solid red; -->
 }
 .col-md-3 {
@@ -22,14 +23,19 @@ iframe {
   display:block;
   overflow:hidden;
   text-align:center;
-  <!-- background:blue; -->
+  display: table-cell;
+  height: auto;
+  float: none;
+  background:white;
+  border-radius:20px;
+  <!-- border: 1px solid black; -->
 }
 </style>
 
 ## Software
 
 <div class="jumbotron">
-<div class="row">
+<div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
 <h4><b>QBMMlib: Moment Methods for Fully-coupled Flows</b></h4>
 <a href="https://github.com/sbryngelson/QBMMlib" target="_blank"><button class="btn btn-primary btn-sm">GITHUB</button></a>
@@ -58,7 +64,7 @@ Example notebooks demonstrate QBMMlib on bubble dynamics problems.
 </div>
 
 <div class="jumbotron">
-<div class="row">
+<div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
 <a href="https://mfc-caltech.github.io" target="_blank">
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/mfc-logo2.png" width="50%" />
@@ -90,7 +96,7 @@ MFC is actively developed and gaining capabilities for QMOM-based solutions to s
 </div>
 
 <div class="jumbotron">
-<div class="row">
+<div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
 <a href="https://code-mphi.github.io/ECOGEN/" target="_blank">
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/ecogen.png" width="60%" />
@@ -117,7 +123,7 @@ The code base is object-oriented and modular, assisting future development.
 </div>
 
 <div class="jumbotron">
-<div class="row">
+<div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
 <a href="https://xpacc-dev.bitbucket.io/PlasCom2/" target="_blank">
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/xpacc.png" width="50%" />
@@ -140,14 +146,16 @@ PlasCom2 utilizes home-grown libraries to manage these interactions:
 PlasCom2 routinely scales to all available processing units on the largest machines in the United States, including modern Sierra-like architectures.
 </div>
 <div class="col-md-3 col-sm-12">
+  <div style="background-color:black;">
   <iframe src="https://player.vimeo.com/video/455887853?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="100px" frameborder="0" allow="autoplay"></iframe>
+  </div>
 </div>
 </div>
 </div>
 
  
 <div class="jumbotron">
-<div class="row">
+<div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/rbc3d.png" width="50%" />
 <h4><b>Spectral Boundary Integral Solver for Cell-scale Flows</b></h4>
@@ -166,7 +174,7 @@ These features ensure that simulations are robust.
 Parallel communication (MPI) enables large simulations, such as model vascular networks.
 </div>
 <div class="col-md-3 col-sm-12">
-  <img src="{{site.url}}{{site.baseurl}}/images/respic/network.jpeg" width="95%"/>
+  <img src="{{site.url}}{{site.baseurl}}/images/respic/network.jpeg" width="175px "/>
 </div>
 </div>
 </div>

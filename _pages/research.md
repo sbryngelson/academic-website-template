@@ -5,29 +5,66 @@ sitemap: false
 permalink: /research/
 ---
 
+<!-- <style> -->
+<!-- iframe { -->
+<!--   height: 100%; -->
+<!--   width: 175px !important; -->
+<!--   display: inline; -->
+<!--   vertical-align:middle; -->
+<!--   margin:0px !important; -->
+<!--   padding:0px !important; -->
+<!--   width: 175px; -->
+<!--   display: inline; -->
+<!--   vertical-align:middle; -->
+<!--   border: 1px solid red; -->
+<!-- } -->
+<!-- .col-md-3 { -->
+<!--   margin:0px !important; -->
+<!--   padding:0px !important; -->
+<!--   overflow:hidden; -->
+<!--   display: table-cell; -->
+<!--   text-align:center; -->
+<!--   background: white; -->
+<!--   width: 175px; -->
+<!--   border: 0px solid transparent; -->
+<!--   border-radius:20px; -->
+<!-- } -->
+<!-- </style> -->
+
 <style>
-iframe {
-  width: 175px;
-  display: inline;
-  vertical-align:top;
-  margin-bottom:5px;
-  margin-left:5px;
-  <!-- border: 1px solid red; -->
+img{
+  border-radius: 10px;
 }
 .col-md-3 {
-  margin:0;
-  padding:0;
+  margin:0px;
+  padding:0px;
   display:block;
   overflow:hidden;
   text-align:center;
-  <!-- background:blue; -->
+  display: table-cell;
+  background: white;
+  border-radius: 20px;
+  height: auto;
+  <!-- border: 1px solid black; -->
+}
+iframe {
+  margin:0;
+  padding:0;
+  width: 175px;
+  display: inline;
+  vertical-align: middle;
 }
 </style>
+
+  <!-- border: 5px solid red; -->
+  <!-- margin-bottom:5px; -->
+  <!-- margin-left:5px; -->
+  <!-- float: none; -->
 
 ## Research
 
 <div class="jumbotron">
-<div class="row">
+<div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
  <h4>Cavitation as a gateway to better therapies</h4>
 Cavitating bubbles can ablate cancer cells, fragment tissues, and deliver drugs, among other functions.
@@ -43,16 +80,17 @@ This has impacted application-specific treatments, including:
 * Understanding of <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-JCP-20.pdf" target="_blank">bubble-collapse-rebound</a> dynamics
 * Cavitation-induced <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-JFM-19.pdf" target="_blank">erosion potential</a> for rough materials
 </div>
-<div class="col-md-3 col-sm-12" >
+<div class="col-md-3 col-sm-12" style="background-color:transparent;">
   <iframe src="https://player.vimeo.com/video/455888052?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="182px" frameborder="0" allow="autoplay"></iframe>
-  <iframe src="https://player.vimeo.com/video/455887852?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="142px" frameborder="0" allow="autoplay"></iframe>
 </div>
 </div>
 </div>
+
+  <!-- <iframe src="https://player.vimeo.com/video/455887852?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="142px" frameborder="0" allow="autoplay"></iframe> -->
 
 
 <div class="jumbotron">
-<div class="row">
+<div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
 <h4>Learning from animals: Humpback whales</h4>
 Perspective on bubble utilization can come from a surprising source: **animals**.
@@ -68,7 +106,6 @@ My ensemble-averaged bubbly flow model simulates the relevant acoustic phenomena
 Similar outcomes are desirable for sensitive, implanted biomedical devices.
 </div>
 <div class="col-md-3 col-sm-12" >
-  <iframe src="https://player.vimeo.com/video/455888384?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="100px" frameborder="0" allow="autoplay"></iframe>
   <iframe src="https://player.vimeo.com/video/455688521?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="192px" frameborder="0" allow="autoplay"></iframe>
 </div>
 </div>
@@ -76,7 +113,7 @@ Similar outcomes are desirable for sensitive, implanted biomedical devices.
  
 
 <div class="jumbotron">
-<div class="row">
+<div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
  <h4>Therapy design via adjoint-based optimization</h4>
 Designing medical therapies requires efficient optimization algorithms. 
@@ -84,7 +121,7 @@ Current methods fail to account for the _material interfaces_ or _shock waves_ t
 I developed an adjoint-based technique for navigating these complications and computes the gradient-based information required for such <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-xpacc18.pdf" target="_blank">optimization and sensitivity analysis</a>.
 Coupling with <a href="{{ site.url }}{{ site.baseurl }}/software/" target="_blank">PlasCom2</a> provides a full optimization framework for medical therapies and devices.
 </div>
-<div class="col-md-3 col-sm-12" >
+<div class="col-md-3 col-sm-12" style="background-color:transparent" >
   <img src="{{ site.url }}{{ site.baseurl }}/images/respic/lithotripsy.jpg" width="175px"/>
 </div>
 </div>
@@ -92,7 +129,7 @@ Coupling with <a href="{{ site.url }}{{ site.baseurl }}/software/" target="_blan
 
 
 <div class="jumbotron">
-<div class="row">
+<div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
  <h4>An _in silico_ microfluidics and microcirculation</h4>
 I develop simulation tools for the cellular flows that occur _in vivo_ and in biomicrofluidic devices.
@@ -103,15 +140,22 @@ Coupling RBC3D with <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-
 * The <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRE-19.pdf" target="_blank">chaotic behavior</a> of microcirculatory flows, and so computational methods cannot predict cell location (or motion) at long times.
 * A <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRE-19.pdf" target="_blank">data-driven low-order model</a> for the flow statistics.
 </div>
-<div class="col-md-3 col-sm-12" >
-  <iframe src="https://player.vimeo.com/video/455887647?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="112px" frameborder="0" allow="autoplay"></iframe>
-  <iframe src="https://player.vimeo.com/video/455887646?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="155px" frameborder="0" allow="autoplay"></iframe>
+<div class="col-md-3 col-sm-12">
+  <iframe src="https://player.vimeo.com/video/455887647?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" frameborder="0" allow="autoplay"></iframe>
 </div>
 </div>
 </div>
 
+  <!-- <iframe src="https://player.vimeo.com/video/455887646?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" frameborder="0" allow="autoplay"></iframe> -->
+<!-- <div class="embed-container embed-container-spleen"> -->
+<!-- </div> -->
+
+<!-- <div class="embed-container embed-container-leuk"> -->
+<!--   <iframe src="https://player.vimeo.com/video/455887647?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" frameborder="0" allow="autoplay"></iframe> -->
+<!-- </div> -->
+
 <div class="jumbotron">
-<div class="row">
+<div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
  <h4>Targeted microcapsules for drug delivery</h4>
 Capsules can deliver drug payloads via the microcirculation and pulmonary system.

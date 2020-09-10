@@ -47,3 +47,26 @@ img {
     border-color: rgba(0,0,0,.15);
   }
 }
+
+.embed-container {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  width: 175px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  // margin-left:7px;
+  // border: 1px solid red;
+
+.embed-container-spleen {
+  height: 155px;
+  background-image: url($baseurl + "/images/thumbs/spleen.jpg");
+}
+
+.embed-container-leuk {
+  height: 112px;
+  background-image: url($baseurl + "/images/thumbs/spleen.jpg");
+}
