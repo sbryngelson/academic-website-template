@@ -36,7 +36,8 @@ img{
   border-radius: 10px;
 }
 .col-md-3 {
-  margin:0px;
+  margin-top:10px;
+  margin-bottom:10px;
   padding:0px;
   display:block;
   overflow:hidden;

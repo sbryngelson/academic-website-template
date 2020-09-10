@@ -20,6 +20,8 @@ iframe {
 .col-md-3 {
   margin:0;
   padding:0;
+  margin-top:10px;
+  margin-bottom:10px;
   display:block;
   overflow:hidden;
   text-align:center;
