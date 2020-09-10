@@ -18,9 +18,7 @@ These developments guide biomicrofluidic device design and improve treatment out
 <div class="container">
 <div class="row">
 <center>
-<div class="embed-container-home" style="border-style:solid;border-radius:5px;">
-<iframe src="https://player.vimeo.com/video/455688517?autoplay=1&loop=1&autopause=0&muted=1&quality=360p&background=1" width="100%" frameborder="0" allow="autoplay"></iframe>
-</div>
+<iframe src="https://player.vimeo.com/video/455688517?autoplay=1&loop=1&autopause=0&muted=1&quality=360p&background=1" width="100%" style="border-style:solid;border-radius:5px;" frameborder="0" allow="autoplay"></iframe>
 Transition to chaos of a flowing red blood cells. <br/>
 Bryngelson & Freund, <i>Phys. Rev. Fluids</i> (2018)
 </center>
