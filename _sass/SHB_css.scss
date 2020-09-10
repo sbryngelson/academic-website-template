@@ -48,6 +48,20 @@ img {
   }
 }
 
+
+.embed-container-home {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  width: 435px;
+  height: 150px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url($baseurl + "/images/thumbs/3dtrain.jpeg");
+}
+
 .embed-container {
   position: relative;
   padding: 0px;
