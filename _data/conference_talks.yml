@@ -43,6 +43,11 @@
   conf: Journal of the Acoustical Society of America, 146(4) 2771
   year: 2019
 
+- title: "A comparison of ensemble- and volume-averaged bubbly flow models"
+  authors: S. H. Bryngelson and T. Colonius
+  conf: 10th International Conference on Multiphase Flow (Rio de Janeiro, Brazil)
+  year: 2019
+
 - authors: S. H. Bryngelson, A. Charalampopoulos, T. P. Sapsis, T. Colonius
   title: Neural-network-augmented Gaussian moment method for the statistics of cavitating bubble populations
   conf: American Physical Society
@@ -77,6 +82,16 @@
   title: Global stability of fully coupled capsule flow systems
   conf: SIAM Computational Science and Engineering
   year: 2017
+
+- title: The stability of flowing trains of confined red blood cells
+  authors: J. B. Freund and S. H. Bryngelson
+  conf: XXIV International Congress of Theoretical and Applied Mechanics (Montreal, Canada)
+  year: 2016
+
+- title: Buckling and the rheology of an elastic capsule suspension
+  authors: S. H. Bryngelson and J. B. Freund
+  conf: XXIV International Congress of Theoretical and Applied Mechanics (Montreal, Canada)
+  year: 2016
 
 - authors: S. H. Bryngelson and J. B. Freund
   title: Stability and transition to chaos of regular capsule trains
