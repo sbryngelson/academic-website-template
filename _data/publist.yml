@@ -35,6 +35,8 @@
     Examples are shown and analyzed for linear harmonic oscillator and bubble dynamics problems."
 
 
+
+
 - title: Near-surface dynamics of a gas bubble collapsing above a crevice
   authors:
     T. Trummler, S. H. Bryngelson, K. Schmidmayer, S. J. Schmidt, N. A. Adams, T. Colonius
@@ -121,6 +123,15 @@
     Quantitative comparisons between the augmented 5-equation and 6-equation models for three-dimensional bubble collapse problems demonstrate the versatility of the pressure-disequilibrium model. 
     Lastly, the performance of the pressure-disequilibrium model for representing a three-dimensional spherical bubble collapse for different bubble interior/exterior pressure ratios is evaluated for different numerical methods. 
     Pathologies associated with each factor and their origins are identified and discussed."
+
+- title: Averaging methods for cavitating bubbly flows
+  image: snh20.jpg
+  authors: S. H. Bryngelson, A. Charalampopouslos, T. P. Sapsis, T. Colonius
+  url: bryngelson-SNH-20
+  journal: Proceedings of the 33rd Symposium on Naval Hydrodynamics
+  info: Osaka, Japan
+  year: 2020
+  abstract: "Averaged models are used to represent cavitating bubbly mixtures at the sub-grid computational level. Though such averaging techniques are widely used, the relative computational performance of various adaptations remains unknown. The accuracy and computational efficiency of two such models, one ensemble-averaging and one volume-averaging, addresses this issue. Results show that the relative computational cost of the methods depends upon the degree of bubble polydispersity. The ensemble-averaged model requires more quadrature nodes for broader population sizes and increasingly broad populations become computationally untenable. A moment-based method addresses this shortcoming. It uses a Gaussian closure and is augmented via long short-term memory recurrent neural networks for high-order statistics. Results show that this approach achieves small relative errors for even high-order statistical moments using only five degrees of freedom, significantly fewer than the hundreds required by classes methods."
 
 - title: A quantitative comparison of phase-averaged models for bubbly, cavitating flows
   image: icmf19_2.jpg

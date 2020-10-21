@@ -1,0 +1,5 @@
+@inproceedings{bryngelson20,
+    Author = {S. H. Bryngelson and A. Charalampopoulos and T. P. Sapsis and T. Colonius},
+    Booktitle = {Proceedings of the 33rd Symposium on Naval Hydrodynamics, Osaka, Japan},
+    Title = {Averaging methods for cavitating bubbly flows},
+    Year = 2020}
