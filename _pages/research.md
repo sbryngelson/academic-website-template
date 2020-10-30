@@ -69,7 +69,7 @@ iframe {
 <div class="col-md-9 col-sm-12">
  <h4>Cavitation as a gateway to better therapies</h4>
 Cavitating bubbles can ablate cancer cells, fragment tissues, and deliver drugs, among other functions.
-I develop high-fidelity computational methods to simulate these dynamics.
+I create high-fidelity computational methods to simulate these dynamics.
 Examples are:
 * Euler--Euler and Euler--Lagrange <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-IJMF-19.pdf" target="_blank">sub-grid bubble cloud models</a>
 * Accelerated models using a <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-IJMF-20.pdf" target="_blank">statistical paradigm and neural networks</a>
@@ -119,7 +119,7 @@ Similar outcomes are desirable for sensitive, implanted biomedical devices.
  <h4>Therapy design via adjoint-based optimization</h4>
 Designing medical therapies requires efficient optimization algorithms. 
 Current methods fail to account for the _material interfaces_ or _shock waves_ that occur during treatments like lithotripsy and histotripsy.
-I developed an adjoint-based technique for navigating these complications and computes the gradient-based information required for such <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-xpacc18.pdf" target="_blank">optimization and sensitivity analysis</a>.
+I created an adjoint-based technique for navigating these complications and computes the gradient-based information required for such <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-xpacc18.pdf" target="_blank">optimization and sensitivity analysis</a>.
 Coupling with <a href="{{ site.url }}{{ site.baseurl }}/software/" target="_blank">PlasCom2</a> provides a full optimization framework for medical therapies and devices.
 </div>
 <div class="col-md-3 col-sm-12" style="background-color:transparent" >
@@ -133,7 +133,7 @@ Coupling with <a href="{{ site.url }}{{ site.baseurl }}/software/" target="_blan
 <div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
  <h4>An _in silico_ microfluidics and microcirculation</h4>
-I develop simulation tools for the cellular flows that occur _in vivo_ and in biomicrofluidic devices.
+I create simulation methods for the cellular flows that occur _in vivo_ and in biomicrofluidic devices.
 These tools are composed of physical models for the cells and particles and numerical methods to solve for their motion.
 These are implemented in <a href="{{ site.url }}{{ site.baseurl }}/software/" target="_blank">RBC3D</a>, my state-of-the-art flow solver that resolves <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRF-16.pdf" target="_blank">all particle-scale interactions</a>.
 Coupling RBC3D with <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRF-18.pdf" target="_blank">stability and optimization tools</a> I discovered:

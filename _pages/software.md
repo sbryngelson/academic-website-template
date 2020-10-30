@@ -40,13 +40,14 @@ iframe {
 <div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
 <h4><b>QBMMlib: Moment Methods for Fully-coupled Flows</b></h4>
-<a href="https://github.com/sbryngelson/QBMMlib" target="_blank"><button class="btn btn-primary btn-sm">GITHUB</button></a>
+<a href="https://github.com/sbryngelson/QBMMlib" target="_blank"><button class="btn btn-primary btn-sm">GIT: QBMMLIB</button></a>
+<a href="https://github.com/sbryngelson/PyQBMMlib" target="_blank"><button class="btn btn-primary btn-sm">GIT: PyQBMMLIB</button></a>
 <a href="https://arxiv.org/abs/2008.05063" target="_blank"><button class="btn btn-danger btn-sm">PAPER</button></a> 
 
-<b>Developer:</b>
+<b>Author:</b>
 <i>S. H. Bryngelson</i>
 
-QBMMlib is an <a href="https://github.com/sbryngelson/QBMMlib" target="_blank">open source Mathematica package</a> for solving populating balance equations with quadrature-based moment methods (QBMMs).
+<b>QBMMlib</b> is an <a href="https://github.com/sbryngelson/QBMMlib" target="_blank">open source Mathematica package</a> for solving populating balance equations with quadrature-based moment methods (QBMMs).
 QBMMs are used for fully-coupled disperse flow and combustion problems.
 However, formulating and closing the corresponding governing equations can be complex.
 QBMMlib makes using these methods simple and accessible:
@@ -58,6 +59,9 @@ QBMMlib makes using these methods simple and accessible:
 
 The algorithm initialization and solution can span _just 13 lines of code_.
 Example notebooks demonstrate QBMMlib on bubble dynamics problems.
+
+<b><a href="https://github.com/sbryngelson/PyQBMMlib" target="_blank">PyQBMMlib:</a></b> With Esteban Cisneros I developed a Python version of QBMMlib that leverages JIT compiling for significantly improved performance.
+
 </div>
 <div class="col-md-3 col-sm-12">
   <iframe src="https://player.vimeo.com/video/456290405?autoplay=1&loop=1&autopause=0&muted=1&quality=240p&background=1" height="132px" frameborder="0" allow="autoplay"></iframe>
@@ -76,7 +80,7 @@ Example notebooks demonstrate QBMMlib on bubble dynamics problems.
 <a href="https://github.com/ComputationalFlowPhysics/MFC-Caltech" target="_blank"><button class="btn btn-primary btn-sm">GITHUB</button></a>
 <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-CPC-19.pdf" target="_blank"><button class="btn btn-danger btn-sm">PAPER</button></a> 
 
-<b>Developers:</b>
+<b>Authors:</b>
 <i>S. H. Bryngelson, V. Coralic, K. Schmidmayer, J. S. Spratt, M. Rodriguez, B. Stevens, A. Charalampopoulos, S. Cao, J. Meng, K. Maeda</i>
 
 MFC is an open source parallel simulation software for multi-component, multi-phase, and bubbly flows. 
@@ -108,7 +112,7 @@ MFC is actively developed and gaining capabilities for QMOM-based solutions to s
 <a href="https://github.com/code-mphi/ECOGEN" target="_blank"><button class="btn btn-primary btn-sm">GITHUB</button></a>
 <a href="http://dx.doi.org/10.1016/j.cpc.2019.107093" target="_blank"><button class="btn btn-danger btn-sm">PAPER</button></a> 
 
-<b>Developers:</b>
+<b>Authors:</b>
 <i>K. Schmidmayer, E. Daniel, S. Le Martelot, S. H. Bryngelson, F. Petitpas</i>
 
 ECOGEN is an open source fluid flow simulation tool.
@@ -133,7 +137,7 @@ The code base is object-oriented and modular, assisting future development.
 <h4><b>PlasCom2: Multi-physics Turbulent Flows</b></h4>
 <a href="https://xpacc-dev.bitbucket.io/PlasCom2/" target="_blank"><button class="btn btn-success btn-sm">WEBSITE</button></a>
 
-<b>Developers:</b>
+<b>Authors:</b>
 <i>M. Campbell, E. Cisneros, S. H. Bryngelson, D. Buchta, M. Anderson, M. Diener, M. Smith</i>
 
 PlasCom2 is a variable-order, single- and multi-block (overset), compressible Navier--Stokes solver. 
@@ -163,7 +167,7 @@ PlasCom2 routinely scales to all available processing units on the largest machi
 <img src="{{ site.url }}{{ site.baseurl }}/images/software/rbc3d.png" width="50%" />
 <h4><b>Spectral Boundary Integral Solver for Cell-scale Flows</b></h4>
 
-<b>Developers:</b>
+<b>Authors:</b>
 <i>S. H. Bryngelson, H. Zhao, A. Isfahani, J. B. Freund</i>
 
 RBC3D is a flow solver for soft capsules and cells.
