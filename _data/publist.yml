@@ -21,10 +21,10 @@
   url: bryngelson-SoftX-20
   journal: SoftwareX
   year: 2020
-  info: 100615, in press
-  arxiv: "2008.05063"
+  info: 12, 100615
+  doi: 10.1016/j.softx.2020.100615
   image: qbmmlib.jpg
-  abstract: "QBMMlib is an open source Mathematica package of quadrature-based moment methods and their algorithms. 
+  abstract: "QBMMlib is an open source package of quadrature-based moment methods and their algorithms. 
     Such methods are commonly used to solve fully-coupled disperse flow and combustion problems, though formulating and closing the corresponding governing equations can be complex. 
     QBMMlib aims to make analyzing these techniques simple and more accessible. 
     Its routines use symbolic manipulation to formulate the moment transport equations for a population balance equation and a prescribed dynamical system. 
