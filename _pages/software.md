@@ -42,7 +42,7 @@ iframe {
 <h4><b>QBMMlib: Moment Methods for Fully-coupled Flows</b></h4>
 <a href="https://github.com/sbryngelson/QBMMlib" target="_blank"><button class="btn btn-primary btn-sm">GIT: QBMMLIB</button></a>
 <a href="https://github.com/sbryngelson/PyQBMMlib" target="_blank"><button class="btn btn-primary btn-sm">GIT: PyQBMMLIB</button></a>
-<a href="https://arxiv.org/abs/2008.05063" target="_blank"><button class="btn btn-danger btn-sm">PAPER</button></a> 
+<a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-SoftX-20.pdf" target="_blank"><button class="btn btn-danger btn-sm">PAPER</button></a> 
 
 <b>Author:</b>
 <i>S. H. Bryngelson</i>
