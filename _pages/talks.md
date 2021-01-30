@@ -7,6 +7,17 @@ permalink: /talks/
 
 ## Talks
 
+{% if site.data.invited_talks %}
+<div class="jumbotron">
+### Invited Talks and Seminars
+<ul>
+{% for publi in site.data.invited_talks %}
+<li> {{ publi.name | replace: "-","&#8211;" }} </li>
+{% endfor %}
+</ul>
+</div>
+{% endif %}
+
 {% if site.data.conference_talks %}
 <div class="jumbotron">
 ### Conference Abstracts
@@ -18,13 +29,4 @@ permalink: /talks/
 </div>
 {% endif %}
 
-{% if site.data.invited_talks %}
-<div class="jumbotron">
-### Invited Talks and Seminars
-<ul>
-{% for publi in site.data.invited_talks %}
-<li> {{ publi.name | replace: "-","&#8211;" }} </li>
-{% endfor %}
-</ul>
-</div>
-{% endif %}
+
