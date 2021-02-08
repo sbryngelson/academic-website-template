@@ -5,9 +5,7 @@ sitemap: false
 permalink: /
 ---
 
-## Welcome!
-
-#### `$ whoami`
+### Welcome!
 
 New medical devices and therapies stand to improve human health outcomes the world over.
 Though innovating in this space is challenging, predictive simulations provide a promising path forward.
@@ -26,7 +24,7 @@ Bryngelson & Freund, <i>Phys. Rev. Fluids</i> (2018)
 </div>
 <br/>
 
-#### `$ id`
+### About me
 
 I am a Senior Postdoctoral Scholar at the California Institute of Technology, working with <a href="https://www.colonius.caltech.edu/" target="_blank">Professor Tim Colonius</a>.
 I also work with <a href="http://sandlab.mit.edu/" target="_blank">Professor Themis Sapsis</a> at the Massachusetts Institute of Technology on machine-learned model closures.
