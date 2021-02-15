@@ -1,0 +1,24 @@
+# - name: respic/Chaotic_mixing.png
+# - name: respic/adjoint_shocks.png
+# - name: respic/bucklng_viz.png
+# - name: respic/cavitation.jpg
+# - name: respic/chaos_cells_stochastic.png
+# - name: respic/droplets_in_water.jpeg
+# - name: respic/ensemble_avg.png
+# - name: respic/full_model.png
+# - name: respic/globalst.jpg
+# - name: respic/hybridmethod_1.png
+# - name: respic/laoe_19.png
+# - name: respic/microcapsules.jpg
+# - name: respic/shocks.jpg
+# - name: respic/sickle_cells.jpg
+# - name: respic/sickle_cells2.jpg
+# - name: respic/whales.jpeg
+# - name: respic/whales2.jpeg
+- name: slider/SaphireSTM2.jpg
+- name: slider/STS.jpg
+- name: slider/cake_web.jpg
+- name: slider/logos.jpg
+- name: slider/NoiseCover2.jpg
+- name: slider/SmartTipSide.jpg
+- name: slider/lab.jpg

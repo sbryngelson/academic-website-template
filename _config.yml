@@ -1,0 +1,98 @@
+# Site settings
+title: Dr. Spencer Bryngelson
+email: spencer@caltech.edu
+description: Academic webpage of Dr. Spencer H. Bryngelson
+baseurl: ""
+url: ""
+
+
+# Google analytics ID: Remove or use your own!
+google_analytics: UA-167467135-1
+
+# Footer info
+affiliation: >
+    Dr. Spencer Bryngelson<br/>
+    Senior Postdoctoral Scholar<br/>
+    <a href="http://www.eas.caltech.edu/" target="_blank">Engineering and Applied Science</a><br/>
+    California Institute of Technology
+
+location: >
+  <a href="http://www.mce.caltech.edu/about/gates_thomas" target="_blank">Gates-Thomas Laboratory</a><br/>
+  California Institute of Technology <br/>
+  1200 E California Blvd<br/>
+  Pasadena, CA 91125, MC104-44
+
+contact: >
+    <a href="mailto:spencer@caltech.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Spencer via email</a> <br/>
+    <a href="/aboutwebsite.html"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
+
+# Pages shown in navbar
+nav_pages:
+  - name: about
+  - name: publications
+  - name: talks
+  - name: research
+  - name: software
+# - name: team
+# - name: teaching
+
+include:
+  - .htaccess
+  - _pages
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  parse_block_html: true # default for kramdown is false. This will enable using Markdown links
+
+
+plugins: ['jekyll/scholar']
+
+scholar:
+
+  last_name: Bryngelson
+  first_name: [Spencer H.]
+
+  style: shb
+  locale: en
+
+  source: /_bibliography/
+  bibliography: ref.bib
+  bibliography_template: bibtemplate
+  sort_by: year, month
+  order: descending
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+
+  bibliography_list_attributes:
+    reversed: "reversed"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - update_boostrap.sh
+  - switch_theme.sh
+  - makebib.py
