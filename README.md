@@ -72,19 +72,9 @@ HTML commands and CSS styles can be directly used in a markdown files.
 
 #### Publication page and database
 
-YAML file `_data/publist.yml` contains the paper database loaded on the 'Publications' page.
-Items in this database can be used as examples for new entries.
-The publication page itself obeys the follow rules:
-
-* If a year is not present, the publication will be listed under the 'Coming Soon' heading.
-Otherwise it will be listed below either a 'Journal Papers' heading or the year of publication.
-Choosing between these options is available via the `group_pub_by_year` variable in `_config.yml`.
-* If the `arXiv` category is present, then an additional button will be placed next to the entry on the publications page.
-* For each paper a corresponding PDF can be placed in the `papers/` directory.
-The name of this file (with no .pdf extension!) should be placed in the `url` category of its entry in `publist.yml`.
-* If an abstract is present, an additional drop down to show it will be placed next to its entry on the publications page.
-* Running `makebib.py` (Python3 required) will create bibliography files for all publications that have DOIs or arXiv identifiers.
-If this is done, an additional drop down to show it will be placed next to its entry on the publications page.
+The publications and talks are now listed via Jekyll Scholar.
+The bibliography file `ref.bib` is located in the `cv/` directory.
+Modify according to your needs.
 
 ## Hosting
 
