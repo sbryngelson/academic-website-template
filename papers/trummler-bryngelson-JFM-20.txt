@@ -1,9 +1,0 @@
-@article{Trummler_2020,
-	doi = {10.1017/jfm.2020.432},
-	year = 2020,
-	month = {jul},
-	volume = {899},
-	author = {Theresa Trummler and Spencer H. Bryngelson and Kevin Schmidmayer and Steffen J. Schmidt and Tim Colonius and Nikolaus A. Adams},
-	title = {Near-surface dynamics of a gas bubble collapsing above a crevice},
-	journal = {J. Fluid Mech.}
-}
