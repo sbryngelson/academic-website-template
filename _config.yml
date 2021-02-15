@@ -71,7 +71,7 @@ scholar:
   style: shb
   locale: en
 
-  source: /_bibliography/
+  source: /cv/
   bibliography: ref.bib
   bibliography_template: bibtemplate
   sort_by: year, month
