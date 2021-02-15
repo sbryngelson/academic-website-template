@@ -1,0 +1,11 @@
+- name: Example Alumni Name
+  photo: rock.jpg
+  duration: In the lab 2015 - 2018, now at X
+  info: Fine mechanical engineer associated with the FMD working in our group
+  email: exampleemail@gmail.com
+  number_educ: 1
+  education1: Example education here
+  education2:
+  education3:
+  education4:
+

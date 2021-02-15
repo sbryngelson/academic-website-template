@@ -1,0 +1,86 @@
+img { 
+    border-radius:5%;
+}
+
+.jumbotron {
+    padding:20px; 
+    padding-bottom:7px; 
+    margin-top:22px; 
+    margin-bottom:22px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+  border-bottom: 4px solid var(--secondary);
+}
+
+.btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.container-fluid {
+  max-width: 800px;
+}
+
+.container-footer {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
+  padding-left:  20px;
+  padding-right: 20px;
+}
+
+.well-collapse {
+  padding-left:  20px;
+  padding-right: 20px;
+  padding-top:   12px;
+  padding-bottom: 4px;
+  border-radius:  7px;
+  min-height:     1px;
+  margin-top:    15px;
+  color: black;
+  background-color: var(--gray);
+  border: 2px solid var(--gray-dark);
+  blockquote {
+    border-color: var(--gray-dark);
+    border-color: rgba(0,0,0,.15);
+  }
+}
+
+
+.embed-container-home {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  // width: 435px;
+  // height: 150px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url($baseurl + "/images/thumbs/3dtrain.jpeg");
+}
+
+.embed-container {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  width: 175px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  // margin-left:7px;
+  // border: 1px solid red;
+
+.embed-container-spleen {
+  height: 155px;
+  background-image: url($baseurl + "/images/thumbs/spleen.jpg");
+}
+
+.embed-container-leuk {
+  height: 112px;
+  background-image: url($baseurl + "/images/thumbs/spleen.jpg");
+}
