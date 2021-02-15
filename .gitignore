@@ -6,3 +6,11 @@ _site/
 Gemfile.lock
 package-lock.json
 node_modules/
+
+cv/*.aux
+cv/*.fdb*
+cv/*.fls
+cv/*.log
+cv/*.out
+cv/*.synctex.gz
+cv/*.xdv

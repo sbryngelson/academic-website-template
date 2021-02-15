@@ -1,0 +1,691 @@
+% !TEX TS-program = XeLaTeX
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{calc}
+\usepackage{comment}
+\usepackage{microtype}
+\usepackage{tabu}
+\usepackage[hidelinks]{hyperref}
+\usepackage{hyphenat}
+\usepackage{changepage}
+\usepackage{academicons}
+\usepackage{fontawesome}
+\usepackage{multicol}
+
+\usepackage{array,tabularx}
+
+
+\newcommand{\phonesymbol}{\faPhone}
+\newcommand{\homepagesymbol}{\faHome}
+\newcommand{\locationsymbol}{\faMapMarker}
+\newcommand{\linkedinsymbol}{\faLinkedin}
+\newcommand{\twittersymbol}{\faTwitter}
+\newcommand{\githubsymbol}{\faGithub}
+\newcommand{\orcidsymbol}{\aiOrcid}
+\newcommand{\emailsymbol}{\faEnvelope}
+
+\setlength{\parindent}{0in}
+
+\newcommand{\seps}{2pt}
+\newcommand{\sepss}{-0.5em}
+\newcommand{\negspace}{-0.8em}
+\linespread{1.05}
+
+\usepackage[shortlabels]{enumitem}
+
+\newcommand{\printinfo}[2]{\mbox{\color{black}{\normalfont #1}\hspace{0.5em}#2\hspace{2em}}}
+
+\newcommand{\email}[1]{\printinfo{\emailsymbol}{#1}}
+\newcommand{\mailaddress}[1]{\printinfo{\mailsymbol}{#1}}
+\newcommand{\phone}[1]{\printinfo{\phonesymbol}{#1}}
+\newcommand{\homepage}[1]{\printinfo{\homepagesymbol}{#1}}
+\newcommand{\github}[1]{\printinfo{\githubsymbol}{#1}}
+\newcommand{\location}[1]{\printinfo{\locationsymbol}{#1}}
+
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em} 
+\newlength{\bibsep}
+\setlength{\bibsep}{-0.25em} 
+
+\newenvironment{bibsection}%
+        {\begin{enumerate}{}{%
+       \setlength{\leftmargin}{\bibhang}%
+       \setlength{\itemindent}{-\leftmargin}%
+       \setlength{\itemsep}{\bibsep}%
+       \setlength{\parsep}{\z@}%
+       %\setlength{\parsep}{0pt}%
+        % \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{enumerate}\vspace{-.1\baselineskip}}
+\makeatother
+
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=\seps,topsep=0pt,partopsep=0pt,leftmargin=28pt]}
+        {\end{itemize}}
+
+\newcommand\SHB{\mbox{\textbf{S. H. Bryngelson}}}
+\newcommand\Authors{\mbox{\textbf{S. H. Bryngelson}, J. B. Freund}}  
+\newcommand\AltAuthors{\mbox{J. B. Freund, \textbf{S. H. Bryngelson}}}  
+\newcommand\FloAuthors{\mbox{\textbf{S. H. Bryngelson}, F. Gu\'{e}niat, J. B. Freund}}  
+\newcommand\SpencerTim{\mbox{\textbf{S. H. Bryngelson}, T. Colonius}}  
+\newcommand\SpencerKevinTim{\mbox{\textbf{S. H. Bryngelson}, K. Schmidmayer, T. Colonius}}  
+\newcommand\KevinSpencerTim{\mbox{K. Schmidmayer, \textbf{S. H. Bryngelson}, T. Colonius}}  
+\newcommand\Theresa{\mbox{T. Trummler, K. Schmidmayer, \textbf{S. H. Bryngelson}, T. Colonius}}
+\newcommand\SpencerThemis{\mbox{\textbf{S. H. Bryngelson}, A. Charalampopoulos, T. P. Sapsis, T. Colonius}}
+
+\newcommand\Caltech{\mbox{California Institute of Technology}}  
+\newcommand\MIT{\mbox{Massachusetts Institute of Technology}}  
+\newcommand\UIUC{\mbox{University of Illinois at Urbana--Champaign}}  
+\newcommand\UMD{\mbox{University of Michigan--Dearborn}}  
+\usepackage{xspace}
+\newcommand{\TikZ}{Ti\textit{k}Z\xspace}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=[rgb]{0,0,0.5},
+    linkcolor=.,
+}
+
+\name{{\huge S}{\Large PENCER} {\huge H.} {\huge B}{\Large RYNGELSON}}
+
+\usepackage{etoolbox}
+\newtoggle{quals}
+% \toggletrue{quals}
+
+\usepackage{xpatch}
+\usepackage[normalem]{ulem}
+
+\usepackage[table]{xcolor}
+\definecolor{myBrown}{RGB}{155,77,40}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{}\chead{}\rhead{}
+\cfoot{}
+% \rfoot{\hspace{3\baselineskip}Page \thepage/4}
+\rfoot{\color{myBrown}\vspace*{-0.5cm}Page \thepage\xspace of \pageref{LastPage}}
+\cfoot{\color{myBrown}\vspace*{-0.5cm}Latest at \href{https://bryngelson-research.com/cv_bryngelson.pdf}{\tt bryngelson-research.com/cv.pdf}}
+\lfoot{\color{myBrown}\vspace*{-0.5cm}Spencer H. Bryngelson}
+
+
+% \newcommand{\CPC}{Comp.\ Phys.\ Comm.}
+% \newcommand{\JASA}{J.\ Acoust.\ Soc.\ Am.}
+% \newcommand{\JCP}{J.\ Comp.\ Phys.}
+% \newcommand{\IJMF}{Int.\ J.\ Multiphase Flow}
+% \newcommand{\PRE}{Phys.\ Rev.\ E}
+% \newcommand{\EJM}{Eur.\ J.\ Mech.\ B}
+% \newcommand{\PRF}{Phys.\ Rev.\ Fluids}
+% \newcommand{\JFM}{J.\ Fluid Mech.}
+% \newcommand{\RA}{Rheol.\ Acta}
+% \newcommand{\APS}{Bull. Am. Phys. Soc.}
+% \newcommand{\ICTAM}{ICTAM}
+
+\newcommand{\APS}{Bulletin of the American Physical Society}
+\newcommand{\ICTAM}{International Conference of Theoretical and Applied Mechanics}
+\newcommand{\CPC}{Computer Physics Communications}
+\newcommand{\JASA}{Journal of the Acoustical Society of America}
+\newcommand{\JCP}{Journal of Computational Physics}
+\newcommand{\IJMF}{International Journal of Multiphase Flow}
+\newcommand{\PRE}{Physical Review E}
+\newcommand{\EJM}{European Journal of Mechanics B}
+\newcommand{\PRF}{Physical Review Fluids}
+\newcommand{\JFM}{Journal of Fluid Mechanics}
+\newcommand{\RA}{Rheologica Acta}
+
+\begin{document}
+
+%-------------------------------------------------------------------
+\begin{center}
+	\vspace*{-1cm}
+    \href{mailto:spencer@caltech.edu}{\faEnvelope\,\texttt{spencer{@}caltech.edu}} \quad
+    \href{https://bryngelson-research.com/cv_bryngelson.pdf}{\faInstitution\,\texttt{Senior Researcher, Caltech}} \quad
+	\href{https://bryngelson-research.com}{\faHome\,\texttt{bryngelson-research.com}}
+\end{center}
+
+%-------------------------------------------------------------------
+\begin{rSection}{{\Large R}ESEARCH EXPERIENCE}
+
+\begin{myrSubsections}{\Caltech}{2018--Present}{Senior Postdoctoral Scholar}{with Professor Tim Colonius}{Pasadena, CA} 
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+	  	\itemsep \sepss 
+	  	\vspace{\negspace} 
+		\item Created state-of-the-art models for the disperse flows centeral to many therapies
+        \item Developed \texttt{MFC}, a parallel and multi-phase flow solver for biophysical problems
+  	\end{list}
+\end{myrSubsections}
+
+\begin{myrSubsections}{\MIT}{Summer 2019}{Visiting Researcher}{Professor Themis Sapsis}{Cambridge, MA} 
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+	  	\itemsep \sepss 
+	  	\vspace{\negspace} 
+		\item Developed low-order moment method for cavitating bubble population dynamics
+        \item Physics-informed recurrent neural networks predict flow statistics
+  	\end{list}
+\end{myrSubsections}
+
+\begin{myrSubsections}{Center for Exascale Simulation of Plasma-Coupled Combustion (XPACC)}{2017--2018}{Postdoctoral Researcher}{Professors Carlos Pantano, Jonathan Freund, Daniel Bodony}{Urbana, IL}
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+	  	\itemsep \sepss 
+	  	\vspace{\negspace} 
+     	\item Developed novel adjoint-based sensitivity analysis for flows with shock waves
+		\item Orchestrated large-scale flow simulations for uncertainty quantification of multi-physics flows
+  	\end{list}
+\end{myrSubsections}
+
+\begin{myrSubsections}{\UIUC}{2013--2017}{Graduate Research Fellow}{Professor Jonathan Freund}{Urbana, IL} 
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+	  	\itemsep \sepss
+	  	\vspace{\negspace} 
+        \item Developed novel stability and rheological analyses for biomicrofluidic device design
+        \item Discovered buckling mechanism prohibiting flow of sickled cells
+  	\end{list}
+\end{myrSubsections}
+
+
+\begin{myrSubsections}{\UMD}{2012--2013}{Undergraduate Research Assistant}{Professor Eric Ratts}{Dearborn, MI} 
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+	  	\itemsep \sepss 
+	  	\vspace{\negspace} 
+		\item Designed pipe flow system and heat-transfer analysis of multi-phase complex fluids
+  	\end{list}
+\end{myrSubsections}
+
+\end{rSection}
+
+
+%--------------------------------------------------------------
+\begin{rSection}{{\Large T}EACHING EXPERIENCE}
+
+% \smallskip
+% \begin{center}
+%     ------ \textbf{TEACHING} ------
+% \end{center}
+% \vspace{-0.2cm}
+
+\begin{rSubsections}{\UIUC}{}{Lecturer (Teaching Fellow)}{Urbana, IL} \\
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+	  	\itemsep \sepss 
+	  	\vspace{-2em} 
+        \item Fundamentals of Fluid Dynamics (Junior Level) \hfill 2015
+  	\end{list}
+\end{rSubsections}
+
+\begin{rSubsections}{\UMD}{}{Teaching Assistant}{Dearborn, MI} \\
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+	  	\itemsep \sepss 
+	  	\vspace{-2em} 
+        \item Design and Analysis of Machine Elements (Junior Level)            \hfill {2013}
+        \item Probability, Statistics, and Reliability in Design (Senior Level) \hfill {2012}
+        \item Statics and Mechanics of Materials (Sophomore Level)              \hfill {2012}
+  	\end{list}
+\end{rSubsections}
+
+\end{rSection}
+
+
+
+%--------------------------------------------------------------
+% \newpage
+\begin{rSection}{{\Large E}DUCATION}
+
+{\bf \UIUC}
+
+\setlength\parindent{0pt}
+\setlength\parskip{3pt}
+
+\begin{adjustwidth}{14pt}{0pt}
+    Doctor of Philosophy, Theoretical and Applied Mechanics (Advisor: Jonathan Freund) \hfill 2017 
+	% \begin{innerlist}
+	% 	\item \underline{Advisor}: Professor Jonathan Freund
+	% \end{innerlist}
+
+	Master of Science, Theoretical and Applied Mechanics \hfill 2015
+	
+	Graduate Degree Certificate, Computational Science and Engineering \hfill 2015
+\end{adjustwidth}
+
+\vspace{0.15cm}
+{\bf \UMD}
+\begin{adjustwidth}{14pt}{0pt}
+	Batchelor of Science, Mechanical Engineering, \textit{with distinction} \hfill 2013
+	
+	Batchelor of Science, Engineering Mathematics, \textit{with distinction} \hfill 2013
+\end{adjustwidth}
+
+\end{rSection}
+
+%------------------------------------------------------------
+\begin{rSection}{{\Large P}UBLICATIONS} % (see \href{https://bryngelson-research.com/publications/}{\tt bryngelson-research.com/publications} for latest)}
+
+\smallskip
+
+\sloppy
+
+\begin{center}
+    ------ \textbf{REFEREED JOURNAL PAPERS} ------
+\end{center}
+
+\begin{bibsection}
+    % \setlength\itemsep{0.1cm}
+    \setlength{\itemsep}{\bibsep}%
+
+    \item J.-S. Spratt, M. Rodriguez, K. Schmidmayer, \SHB, J. Yang, C. Franck, T. Colonius, 
+    ``Characterizing viscoelastic materials via ensemble-based data assimilation of bubble collapse observations,''
+    under review at \emph{Journal of Mechanics and Physics of Solids}, arXiv 2008.04410 (2020)
+
+    \item \SHB, T. Colonius, R.\ O. Fox, 
+    ``QBMMlib: A library of quadrature-based moment methods,''
+    \emph{SoftwareX} \textbf{12}, 100615 (2020)
+
+    \item T. Trummler, \SHB, K. Schmidmayer, S. J. Schmidt, T. Colonius, N. A. Adams,
+    ``Near\hyp{}surface dynamics of a gas bubble collapsing above a crevice,''
+	\emph{\JFM} \textbf{899}, A16 (2020) 
+
+    \item \mbox{\textbf{S. H. Bryngelson}, K. Schmidmayer, V. Coralic, K. Maeda, J. Meng, T. Colonius}, 
+    ``MFC: An open\hyp{}source high\hyp{}order multi-component, multi-phase, and multi-scale compressible flow solver,''
+    \emph{\CPC}, \textbf{4655} 107398 (2020)
+
+    \item \SpencerThemis,
+	``A Gaussian moment method and its augmentation via LSTM recurrent neural networks for the statistics of cavitating bubble populations,''
+    \emph{\IJMF} \textbf{127}, 103262 (2020)
+
+	\item \SpencerTim, 
+	``Simulation of humpback whale bubble-net feeding models,'' 
+    \emph{\JASA} \textbf{147}, 1126--1135 (2020) 	
+
+	\item \KevinSpencerTim, 
+	``An assessment of multicomponent flow models and interface capturing schemes for spherical bubble dynamics,''
+    \emph{\JCP} \textbf{402}, 109080 (2020) 
+
+	\item \SpencerKevinTim, 
+	``A quantitative comparison of phase\hyp{}averaged models for bubbly, cavitating flows,'' 
+	\emph{\IJMF} \textbf{115}, 137--143 (2019)
+
+	\item \FloAuthors,  
+	``Irregular dynamics of cellular blood flow in a model microvessel,'' 
+    \emph{\PRE} \textbf{100}, 012203 (2019)
+	
+	\item  \Authors, 
+	``Non-modal Floquet stability of capsules in large-amplitude oscillatory extensional flow,'' 
+    \emph{\EJM} \textbf{77}, 171--176 (2019)
+
+	\item  \Authors, 
+	``Global stability of flowing red blood cell trains,'' 	
+	\emph{\PRF} \textbf{3}, 073101 (2018)	
+	
+	\item  \Authors, 
+	``Floquet stability analysis of capsules in viscous shear flow,'' 
+	\emph{\JFM} \textbf{852}, 663--677 (2018) 
+	
+	\item \Authors, 
+	``Capsule-train stability,''
+	\emph{\PRF} \textbf{1}, 033201 (2016)	
+	
+	\item \Authors, 
+	``Buckling and its effect on the confined flow of a model capsule suspension,'' 
+	\emph{\RA} \textbf{55}, 451-464 (2016)
+\end{bibsection}
+\medskip 
+
+\begin{center}
+    ------ \textbf{REFEREED CONFERENCE PAPERS (+ TALKS)} ------
+\end{center}
+
+\begin{bibsection}
+    \setlength{\itemsep}{\bibsep}%
+	\item \SpencerTim, 
+    ``Closure of phase-averaged bubbly, cavitating flow models,'' 
+    \textit{XXV \ICTAM,} Milano, Italy (2021)
+
+    \item M. Rodriguez, \textbf{S. H. Bryngelson}, S. Cao, T. Colonius, 
+    ``A unified Eulerian multiphase framework for fluid-structure interaction problems including cavitation,'' 
+	\textit{XXV \ICTAM,} Milano, Italy (2021)	
+
+    \item \SHB, R. O. Fox, T. Colonius,
+    ``Conditional moment method for fully-coupled phase-averaged cavitation models,''
+    \textit{11th International Symposium on Cavitation,} Daejon, Korea (2021)
+
+    \item M. Rodriguez, \SHB, S. Cao, T. Colonius,
+    ``Acoustically-induced bubble growth and phase change dynamics near compliant surfaces,''
+    \textit{11th International Symposium on Cavitation,} Daejon, Korea (2021)
+
+    \item J.-S. Spratt, M. Rodriguez, \SHB, S. Cao, T. Colonius,
+    ``Eulerian framework for bubble--cloud-kidney stone interaction,''
+    \textit{11th International Symposium on Cavitation,} Daejon, Korea (2021)
+
+	\item \SpencerThemis, 
+    ``Averaging methods for cavitating bubbly flows,''
+	\textit{33rd Symposium on Naval Hydrodynamics}, Osaka, Japan (2020)
+
+	\item \SpencerTim, 
+    ``A comparison of ensemble- and volume-averaged bubbly flow models,'' 
+	\textit{10th International Conference of Multiphase Flow}, Rio de Janeiro, Brazil (2019)
+
+	\item \Authors, 
+    ``Buckling and the rheology of an elastic capsule suspension,'' 
+	\textit{XXIV \ICTAM,} Montreal, Canada (2016)	
+
+    \item \AltAuthors, 
+     ``The stability of flowing trains of confined red blood cells,'' 
+	\textit{XXIV \ICTAM,} Montreal, Canada (2016)				
+\end{bibsection}
+
+\medskip 
+
+\begin{center}
+    ------ \textbf{OTHER PUBLICATIONS} ------
+\end{center}
+
+\begin{bibsection}
+    \setlength{\itemsep}{\bibsep}%
+    \item \textbf{S. H. Bryngelson}, C. Pantano, D. Bodoney, J. B. Freund, 
+        ``Adjoint-based sensitivity for flows with shocks,''
+	   \textit{XPACC Technical Report}  (2018)
+
+   \item \textbf{S. H. Bryngelson}, 
+       ``Stability and transition of capsule-flow systems,''
+       \textit{Ph.D.\ Dissertation}, University of Illinois at Urbana--Champaign (2017)
+\end{bibsection}
+
+\end{rSection}
+
+%-----------------------------------------------------------
+\begin{rSection}{{\Large P}RESENTATIONS}
+
+\smallskip
+\begin{center}
+    ------ \textbf{CONFERENCE TALKS/ABSTRACTS} ------
+\end{center}
+
+\begin{bibsection}
+    \setlength{\itemsep}{\bibsep}%
+    \item \SpencerTim, 
+    ``A fast-integration-based model for polydisperse bubble cloud dynamics and their two-way-flow coupling,''
+    \textit{Journal of the Acoustical Society of America} (2021)
+
+    \item \SHB, R. O. Fox, T. Colonius, 
+    ``Conditioned quadrature moment methods for cavitating bubble dispersions,''
+	\textit{\APS} (2020)
+
+    \item J.-S. Spratt, M. Rodriguez, \SHB, T. Colonius
+    ``A fully Eulerian simulation framework for cavitating bubble-clouds near viscoelastic materials,''
+	\textit{\APS} (2020)
+
+    \item M. Rodriguez, \SHB, T. Colonius
+    ``Cavitation bubble growth with phase transition near a rigid wall,''
+	\textit{\APS} (2020)
+
+    \item \SpencerTim, 
+    ``Annular and spiral bubble nets: A simulation-focused analysis of humpback whale feeding strategies,''
+    \textit{Journal of the Acoustical Society of America} \textbf{146}, 4, 2771 (2019)
+
+    \item \SpencerThemis, 
+    ``Neural-network-augmented Gaussian moment method for the statistics of cavitating bubble populations,''
+	\textit{\APS} (2019)
+
+	\item \Theresa, 
+     ``Simulations of a collapsing gas bubble above a crevice,''
+	\textit{SoCal Fluids XIII} (2019)
+
+	\item \SpencerTim, 
+    ``Simulations and acoustics of humpback whale bubble-net feeding,''
+	\textit{SoCal Fluids XIII} (2019)
+
+	\item \SpencerTim, 
+    ``Modeling approaches for bubbly, cavitating flows,'' 
+	\textit{\APS} (2018)
+
+	\item \Authors, 
+    ``Floquet stability of tank-treading and tumbling capsules in viscous shear flow,'' 
+	\textit{\APS} (2017)
+
+	\item \Authors, 
+    ``Stability of flowing red blood cell trains,'' 
+	\textit{Blood Flow,} Paris, France (2017)			
+
+	\item \Authors, 
+    ``Global stability of fully coupled capsule flow systems,'' 
+	\textit{SIAM Computational Science and Engineering} (2017)	
+
+	\item \Authors, 
+    ``Stability and transition to chaos of regular capsule trains,'' 
+	\textit{\APS} (2016)		
+
+	\item \Authors, 
+    ``Buckling and its effect on the confined flow of a capsule suspension,'' 
+    \textit{\APS} (2015)
+
+\end{bibsection}
+\medskip 
+
+\begin{center}
+    ------ \textbf{INVITED TALKS} ------
+\end{center}
+
+\begin{bibsection}
+    \setlength{\itemsep}{\bibsep}%
+    \item Georgia Institute of Technology, Computational Science \& Engineering Seminar Series (2020)
+    \item University of Washington, Mechanical Engineering Seminar Series (2019)
+    \item University of Michigan--Ann Arbor, Mechanical Engineering Seminar Series (2019)
+    \item Massachusetts Institute of Technology, Mechanical Engineering (2019)
+    \item University of Vermont, Mechanical Engineering Seminar Series (2019)
+    \item University of Utah, Mechanical Engineering Seminar Series (2019)
+    \item University of Michigan--Dearborn, Mechanical Engineering Seminar Series (2019)
+    \item California Institute of Technology, Fluid Mechanics Research Conference (2018)
+    \item California Institute of Technology, Computational Flow Physics Group (2018)	
+    \item ETH Z\"{u}rich, Computational Science \& Engineering Lab (2017)
+    \item University of Illinois at Urbana--Champaign, Fluid Mechanics Seminar (2017)
+    \item University of Illinois at Urbana--Champaign, Biology Interest Group (2015)
+\end{bibsection}
+
+\end{rSection}
+
+
+%------------------------------------------------------------------------------------------------------------------------------
+\begin{rSection}{{\Large S}TUDENTS AND MENTORING}
+	\begin{list}{\textbullet}{\leftmargin=0.8em} 	  	
+        \begin{tabularx}{0.965\textwidth}{p{9cm} l>{\raggedleft\arraybackslash}X}
+            \textbullet\,\,  Jean-Sebastien Spratt    & Caltech                 & Ph.D., exp.\ 2022 \\
+            \textbullet\,\,  Alexis Charalampopoulos  & MIT                     & Ph.D., exp.\ 2021 \\
+            \textbullet\,\,  Ben Stevens              & Caltech                 & Ph.D., exp.\ 2021 \\
+            \textbullet\,\,  Esteban Cisneros         & University of Illinois  & Ph.D., exp.\ 2020 \\
+            \textbullet\,\,  Dr.\ David Mittelstein   & USC/Caltech             & Ph.D., 2020 \\
+            \textbullet\,\,  Dr.\ Theresa Trummler    & TU Munich               & Ph.D., 2020 \\
+            \textbullet\,\,  Franz O'Meally           & Johns Hopkins           & B.S., 2020 \\
+            \textbullet\,\,  Dr.\ Mauro Rodriguez     & Caltech                 & Ph.D., 2019 
+        \end{tabularx}
+	\end{list}
+\end{rSection}
+
+
+%------------------------------------------------------------------------------------------------------------------------------
+\begin{rSection}{{\Large A}WARDS}
+	\begin{list}{\textbullet}{\leftmargin=0.8em} 	  	
+        \begin{tabularx}{0.965\textwidth}{p{9cm} l>{\raggedleft\arraybackslash}X}
+           \textbullet\,\, Stanley Weiss Outstanding Dissertation Award    & University of Illinois & 2017  \\
+           \textbullet\,\, Hassan Aref Award (research in fluid mechanics) & University of Illinois & 2016  \\
+           \textbullet\,\, Alumni Teaching Fellowship                      & University of Illinois & 2015  \\
+           \textbullet\,\, Dean's List                                     & University of Michigan & 2010--2013  \\
+           \textbullet\,\, Pi Tau Sigma (honor society, member)            & University of Michigan & 2011
+        \end{tabularx}
+	\end{list}
+\end{rSection}
+
+%------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\begin{rSection}{{\Large G}RANTS}
+
+\begin{center}
+    ------ \textbf{FUNDED GRANTS} ------
+\end{center}
+
+\begin{list}{}{\leftmargin=0.8em} 	  	
+    \item  \begin{tabularx}{0.965\textwidth}{p{7cm} l}
+           \textbullet\,\, Co-PI: XSEDE CTS120005  & $\$135$K dollar valuation, 9M CPU Hours
+    \end{tabularx}
+\end{list}
+\smallskip
+
+\smallskip
+\begin{center}
+    ------ \textbf{PROJECTS SUPPORTED} ------
+\end{center}
+
+    \begin{list}{}{\leftmargin=0.8em} 	  	
+    \item  \begin{tabularx}{0.965\textwidth}{p{7cm} l}
+           \textbullet\,\, ONR MURI N0014-17-1-2676     & with T. Colonius \\
+           \textbullet\,\, ONR BRC N0014-17-1-2625      & with T. Colonius \\
+           \textbullet\,\, NIH 2P01-DK04881             & with T. Colonius \\
+           \textbullet\,\, DOE PSAAP DE-NA0002374       & with J. B. Freund, W. Gropp, C. Pantano,  D. Bodony \\
+           \textbullet\,\, NSF CBET 13-36972            & with J. B. Freund
+           \end{tabularx}
+	\end{list}
+\end{rSection}
+
+% \begin{list}{\textbullet}{\leftmargin=2.5em} 	  	
+% 	\itemsep \sepss 
+%     \item ONR MURI N0014-17-1-2676 (with Tim Colonius) %: High-Fidelity Simulation Methodologies for Multi-Phase Flows
+%     \item ONR BRC N0014-17-1-2625 (with Tim Colonius) %: Experimental-numerical Approach for the Development of a Multiscale Theory 
+%         % for Cavitation in Soft Complex Materials
+%     \item NIH 2P01-DK04881 (with Tim Colonius)
+%     \item DOE PSAAP DE-NA0002374 (with Jonathan Freund, Carlos Pantano,  Daniel Bodony)   
+%     \item NSF CBET 13-36972 (with Jonathan Freund) %: Order and chaos in the flow of red blood cells
+% \end{list}
+
+%--------------------------------------------------------------
+\begin{rSection}{{\Large R}ESEARCH TOOLS DEVELOPED}
+
+% I have developed several computational physics tools.
+% A partial list is included below.
+
+\begin{rSubsections}{\texttt{QBMMlib} and \texttt{PyQBMMlib}: Library of Quadrature-based Moment Methods}{}{with E.\ Cisneros, R.\ O.\ Fox, T.\ Colonius}{}
+
+\vspace{-0.4cm}
+\href{https://github.com/sbryngelson/QBMMlib}{\texttt{github.com/sbryngelson/QBMMlib}}
+and \href{https://github.com/sbryngelson/PyQBMMlib}{\texttt{github.com/sbryngelson/PyQBMMlib}}
+% \vspace{-0.65cm}
+% \par\noindent\rule{0.97\textwidth}{0.4pt}
+
+    \vspace{-0.1cm}
+    \begin{minipage}{0.99\linewidth}
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+        \item Automatic, symbolic computation of moment transport equation (via PBE) for given dynamics
+        \item Several QMOM-based methods (e.g.\ CQMOM, CHyQMOM)
+        \item Concise solution procedure (just 13 lines of code required)
+  	\end{list}
+    \end{minipage}
+\end{rSubsections}
+\medskip
+
+\begin{rSubsections}{\texttt{MFC}: Multi-Component Flow Code}{}{with M.\ Rodriguez, J.\ Spratt, K.\ Maeda, V.\ Coralic, J.\ Meng, T.\ Colonius}{}
+
+\vspace{-0.4cm}
+\href{https://mfc-caltech.github.io/}{\texttt{mfc-caltech.github.io}}
+% \vspace{-0.65cm}
+% \par\noindent\rule{0.97\textwidth}{0.4pt}
+
+    \vspace{-0.1cm}
+    \begin{minipage}{0.45\linewidth}
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+     	\item Multi-phase flow solver 
+        \item Sub-grid particle models 
+        \item Material interface sharpening
+  	\end{list}
+    \end{minipage}
+    \hspace{-0.5cm}
+    \begin{minipage}{0.65\linewidth}
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+        \item MPI support, parallel I/O
+        \item High-order interface capturing
+        \item Characteristic-based boundary conditions
+  	\end{list}
+    \end{minipage}
+\end{rSubsections}
+\medskip
+
+\begin{rSubsections}{\texttt{ECOGEN}: Evolutive, Compressible, Open-Source, Genuine, Easy, N-phase Flow Solver}{}{with K.\ Schmidmayer, M.\ Rodriguez, E.\ Daniel, F.\ Petitpas}{}
+
+\vspace{-0.4cm}
+\href{https://code-mphi.github.io/ECOGEN/}{\texttt{code-mphi.github.io/ECOGEN}}
+% \vspace{-0.65cm}
+% \par\noindent\rule{0.97\textwidth}{0.4pt}
+
+    \vspace{-0.1cm}
+    \begin{minipage}{0.45\linewidth}
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+        \item Multi-physics compressible solver
+        \item Unstructured meshes
+  	\end{list}
+    \end{minipage}
+    \hspace{-0.5cm}
+    \begin{minipage}{0.65\linewidth}
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+        \item Non-oscillatory diffuse interface method
+        \item Adaptive mesh refinement with load balancing
+  	\end{list}
+    \end{minipage}
+\end{rSubsections}
+\medskip
+
+\begin{rSubsections}{\texttt{Plascom2} and \texttt{PlascomCM}: Multi-Physics Turbulent Flows}{}{with E.\ Cisneros, M.\ Campbell, D.\ Buchta, J.\ Freund}{}
+
+\vspace{-0.4cm}
+\href{https://xpacc-dev.bitbucket.io/PlasCom2/}{\texttt{xpacc-dev.bitbucket.io/PlasCom2}}
+
+    \vspace{-0.1cm}
+    \begin{minipage}{0.45\linewidth}
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+     	\item Parallel Navier--Stokes solver
+        \item Supports fluid-structure interaction
+        \item Strong-shock capturing
+  	\end{list}
+    \end{minipage}
+    \hspace{-0.5cm}
+    \begin{minipage}{0.65\linewidth}
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+        \item Large-eddy turbulence models 
+        \item Chemical reactions via Cantera
+        \item Unstructured grids
+  	\end{list}
+    \end{minipage}
+\end{rSubsections}
+\medskip
+
+\begin{rSubsections}{\texttt{RBC3D}: Spectral Boundary Integral Flow Solver}{}{with H.\ Zhao, J.\ Freund}{}
+
+    \vspace{-0.2cm}
+    \begin{minipage}{0.45\linewidth}
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+        \item Solver for flexible objects and surfaces
+        \item Supports capsules, cells, and droplets
+
+  	\end{list}
+    \end{minipage}
+    \hspace{-0.5cm}
+    \begin{minipage}{0.65\linewidth}
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+        \item Spectral accuracy (spherical harmonics)
+        \item Weak formulation for boundary conditions
+  	\end{list}
+    \end{minipage}
+\end{rSubsections}
+\medskip
+
+\begin{rSubsections}{\texttt{IMR}: Inertial Microcavitation Rheometry}{}{with J.\ Spratt, J.\ Yang, C.\ Franck}{}
+	\begin{list}{\textbullet}{\leftmargin=2.5em} 
+	    \itemsep \sepss 
+	  	\vspace{\negspace} 
+        \item Computes high strain-rate viscoelastic properties of soft materials
+        \item Data asssimilation correlates flow field to material kinematics
+        \item Image processing for analyzing experimental images
+  	\end{list}
+\end{rSubsections}
+
+\end{rSection}
+
+\end{document}
