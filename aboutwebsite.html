@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>About the website - Dr. Spencer Bryngelson</title>
+  <meta name="description" content="Academic webpage of Dr. Spencer H. Bryngelson">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/aboutwebsite.html">
+  <link rel="shortcut icon" type ="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+  <link rel="preconnect" href="https://player.vimeo.com">
+  <link rel="preconnect" href="https://i.vimeocdn.com">
+  <link rel="preconnect" href="https://f.vimeocdn.com">
+
+
+
+
+</head>
+
+
+  <body>
+
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+<!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> -->
+    <a class="navbar-brand" href="/">
+     <img src="/favicon.ico" width="30" height="30" style="margin-right:5px" class="d-inline-block align-top" alt="">
+      Dr. Spencer Bryngelson
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+          </li> 
+          
+           <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+           </li> 
+          
+           <li class="nav-item">
+            <a class="nav-link" href="/publications">Publications</a>
+           </li> 
+          
+           <li class="nav-item">
+            <a class="nav-link" href="/talks">Talks</a>
+           </li> 
+          
+           <li class="nav-item">
+            <a class="nav-link" href="/research">Research</a>
+           </li> 
+          
+           <li class="nav-item">
+            <a class="nav-link" href="/software">Software</a>
+           </li> 
+          
+        </ul>
+  </div>
+</nav>
+
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div id="textid" class="col-sm-12">
+  <h1 id="dr-spencer-bryngelsons-academic-website">Dr. Spencer Bryngelson’s academic website</h1>
+
+<p>This is my statically-generated Jekyll/Liquid/Bootstrap-based website.
+I started with the <a href="https://www.allanlab.org/">Allan lab</a> webpage and modified it into a personal academic webpage that met my requirements.
+I worked in a unique set of the features that I desired and could not find in publicly available templates elsewhere.
+Some examples are:</p>
+
+<ul>
+  <li>Automatically-generated buttons for DOI/PDF/ARXIV/BIB/Abstract information</li>
+  <li>Automatically-generated bibliography files for arXiv and DOI-equipped publications via <code class="language-plaintext highlighter-rouge">arXiv2bib</code> and <code class="language-plaintext highlighter-rouge">doi2bib</code> (required scripts included in <code class="language-plaintext highlighter-rouge">scripts/</code> and called via <code class="language-plaintext highlighter-rouge">makebib.py</code>)</li>
+  <li>Bibliography information and abstracts open in drown down wells via buttons</li>
+  <li>Visual abstracts</li>
+  <li>Fontawesome icons (email, CV, Google scholar, ResearchGate, GitHub, etc.)</li>
+  <li>Dark color scheme</li>
+  <li>Consistent and attractive <code class="language-plaintext highlighter-rouge">About me</code> page</li>
+</ul>
+
+<p>I encourage the use of this webpage as a template for your own academic website.
+The remainder of this document describes how to do this.
+Broadly speaking, there are three steps:</p>
+
+<ul>
+  <li><a href="#fork-and-build">Fork</a></li>
+  <li><a href="#customization">Customize</a></li>
+  <li><a href="#hosting">Host</a></li>
+</ul>
+
+<h2 id="fork-and-build">Fork and build</h2>
+
+<ul>
+  <li>Fork <a href="https://github.com/sbryngelson/sbryngelson.github.io">this repository</a> by clicking the <code class="language-plaintext highlighter-rouge">fork</code> button in the top-right corner of its Github page.</li>
+  <li>Install <a href="https://jekyllrb.com/docs/installation/">Jekyll</a>  (version less than 4.0 required) on your local computer
+    <ul>
+      <li>On MacOS, you will need to upgrade your Ruby version from the depricated v2.3 that is shipped. Follow the above Jekyll instructions closely.</li>
+    </ul>
+  </li>
+  <li>Run <code class="language-plaintext highlighter-rouge">$ bundle exec jekyll serve</code> in the repository root directory</li>
+  <li>Your site is now hosted locally at <code class="language-plaintext highlighter-rouge">localhost:4000</code>, which you can access with your web browser.
+    <ul>
+      <li>It will be automatically re-built as you save changes to the files it contains.
+ Refreshing your web browser reveals these changes.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="customization">Customization</h2>
+
+<ul>
+  <li>Modify <code class="language-plaintext highlighter-rouge">_config.yml</code> as appropriate</li>
+  <li>Modify YAML database files, located in <code class="language-plaintext highlighter-rouge">_data/*.yml</code>, as appropriate</li>
+  <li>Modify individual pages, located in <code class="language-plaintext highlighter-rouge">_pages/*.md</code>, as appropriate</li>
+</ul>
+
+<h3 id="navbar">Navbar</h3>
+
+<p>The pages listed in the top navbar are located in <code class="language-plaintext highlighter-rouge">_config.yml</code> file.
+The typical options are already included or commented, though additional pages can be created and listed here.</p>
+
+<h3 id="creating-or-editing-pages">Creating or editing pages</h3>
+
+<p>All pages are located in the <code class="language-plaintext highlighter-rouge">_pages</code> directory.
+Pages generally load information from YAML databases located as <code class="language-plaintext highlighter-rouge">_data/*.yml</code>.
+Creating new pages can be done by using existing pages as a template.</p>
+
+<h4 id="page-header-information">Page header information</h4>
+
+<p>All pages require header information.
+Example header data for the ‘Talks’ page is below.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: "Talks"
+layout: gridlay
+sitemap: false
+permalink: /talks/
+---
+</code></pre></div></div>
+<p>The <code class="language-plaintext highlighter-rouge">layout</code> variable corresponds to HTML layouts in the <code class="language-plaintext highlighter-rouge">_layouts</code> directory.
+The differences between most layouts is subtle and <code class="language-plaintext highlighter-rouge">gridlay</code> can generally be used.
+The permalink must be unique for each page, and corresponds to the directory that will store the page in the compiled HTML.
+Refer to your pages in <code class="language-plaintext highlighter-rouge">_config.yml</code> via the <code class="language-plaintext highlighter-rouge">title</code> variable.</p>
+
+<h4 id="markdown">Markdown</h4>
+
+<p>All pages are written in <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a> as <code class="language-plaintext highlighter-rouge">*.md</code>.
+HTML commands and CSS styles can be directly used in a markdown files.</p>
+
+<h4 id="publication-page-and-database">Publication page and database</h4>
+
+<p>YAML file <code class="language-plaintext highlighter-rouge">_data/publist.yml</code> contains the paper database loaded on the ‘Publications’ page.
+Items in this database can be used as examples for new entries.
+The publication page itself obeys the follow rules:</p>
+
+<ul>
+  <li>If a year is not present, the publication will be listed under the ‘Coming Soon’ heading.
+Otherwise it will be listed below either a ‘Journal Papers’ heading or the year of publication.
+Choosing between these options is available via the <code class="language-plaintext highlighter-rouge">group_pub_by_year</code> variable in <code class="language-plaintext highlighter-rouge">_config.yml</code>.</li>
+  <li>If the <code class="language-plaintext highlighter-rouge">arXiv</code> category is present, then an additional button will be placed next to the entry on the publications page.</li>
+  <li>For each paper a corresponding PDF can be placed in the <code class="language-plaintext highlighter-rouge">papers/</code> directory.
+The name of this file (with no .pdf extension!) should be placed in the <code class="language-plaintext highlighter-rouge">url</code> category of its entry in <code class="language-plaintext highlighter-rouge">publist.yml</code>.</li>
+  <li>If an abstract is present, an additional drop down to show it will be placed next to its entry on the publications page.</li>
+  <li>Running <code class="language-plaintext highlighter-rouge">makebib.py</code> (Python3 required) will create bibliography files for all publications that have DOIs or arXiv identifiers.
+If this is done, an additional drop down to show it will be placed next to its entry on the publications page.</li>
+</ul>
+
+<h2 id="hosting">Hosting</h2>
+
+<p>Once your site has been modified to fit your needs, you should host it somewhere so others can access it.</p>
+
+<h3 id="github-pages">Github pages</h3>
+
+<p>A simple way to host your site for free is via <a href="https://pages.github.com/">Github Pages</a>.
+This will provide you a free domain name at your_github_username.github.io.
+Instructions on how to do this are available on their page.
+They generally involve creating a repository on your Github titled <code class="language-plaintext highlighter-rouge">your_github_username.github.io</code> and uploading your files there (everything excepted the <code class="language-plaintext highlighter-rouge">_site/</code> directory, which the Github Pages service will generate using its own version of Jekyll).
+Then, Github will automatically rebuild your site every time you push a commit to the repository (no bundle/jekyll commands required).</p>
+
+<h3 id="custom-domain-names">Custom domain names</h3>
+
+<p>You can use a standard domain service (e.g. <a href="https://www.godaddy.com/">GoDaddy</a>) to purchase a domain name.
+Then, using the <code class="language-plaintext highlighter-rouge">CNAME</code> file and modifying the DNS settings of the domain service, you can direct your custom domain to the Github Pages-generated site.
+Detailed instructions for doing this for GoDaddy domains are available <a href="https://hackernoon.com/how-to-set-up-godaddy-domain-with-github-pages-a9300366c7b">here</a>, though analogous instructions apply to other services.</p>
+
+<h3 id="hosting-elsewhere">Hosting elsewhere</h3>
+
+<p>If you already have a hosting service for a static HTML webpage, such as some universities provide, you can build your website locally using <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>.
+Then, upload the resulting files located in the <code class="language-plaintext highlighter-rouge">_site/</code> directory via SSH or FTP to this server.
+Be sure that the <code class="language-plaintext highlighter-rouge">site.url</code> and <code class="language-plaintext highlighter-rouge">site.baseurl</code> are set appropriately in the <code class="language-plaintext highlighter-rouge">_config.yml</code> file.</p>
+
+<h2 id="future-work">Future work</h2>
+
+<p>This page has many features I could not find elsewhere.
+However, it still does not support all the options I would like:</p>
+<ul>
+  <li><a href="https://github.com/inukshuk/jekyll-scholar">Jekyll-Scholar</a> can build a publication page from bibliography files <code class="language-plaintext highlighter-rouge">*.bib</code>. 
+I enjoy my home-cooked publication page, but I understand that some will prefer uploading <code class="language-plaintext highlighter-rouge">.bib</code> files as opposed to converting to the <code class="language-plaintext highlighter-rouge">YAML</code> database format this site supports.</li>
+</ul>
+
+<h2 id="alternatives">Alternatives</h2>
+
+<h3 id="static-website-generators">Static website generators</h3>
+
+<p>A list of static webpage generators is available <a href="https://www.staticgen.com/">here</a>.
+For academic purposes, I believe most people use <a href="https://jekyllrb.com/">Jekyll</a> or <a href="https://gohugo.io/">Hugo</a>.
+I am mostly unaware of their relative merits.
+However, both are relatively easy to use and offer many templates to base your ideas off of.
+This, in combination with their large user bases, make them particularly attractive.
+This site is built with Jekyll.</p>
+
+<h3 id="templates">Templates</h3>
+
+<p>Other Jekyll templates are of course available.
+Some of these are viable for very simple academic pages with little tuning:</p>
+<ul>
+  <li><a href="https://mmistakes.github.io/minimal-mistakes/">Minimal mistakes</a></li>
+  <li><a href="https://github.com/alshedivat/al-folio">al-folio</a></li>
+  <li><a href="https://academicpages.github.io/">academicpages</a></li>
+</ul>
+
+<p>However, they do not natively include many of the features I list at the top.
+For this reason, I decided to build my own theme.</p>
+
+<h2 id="acknowledgment">Acknowledgment</h2>
+
+<p>I credit the <a href="https://www.allanlab.org/">Allen Lab</a> for creating a beautiful academic research group webpage.
+Many parts of this site were adopted or copied from their laboratory webpage.</p>
+
+<h2 id="license">License</h2>
+
+<p>Copyright 2020, Spencer H. Bryngelson</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+
+</div>
+
+      </div>
+    </div>
+
+    <br/>
+<section id="footer">
+<div class="container-footer">
+  <div class="panel-footer">
+	  <div class="row">
+		<div class="col-sm-4">
+		    <h5>About</h5>	
+            <p>Dr. Spencer Bryngelson<br/> Senior Postdoctoral Scholar<br/> <a href="http://www.eas.caltech.edu/" target="_blank">Engineering and Applied Science</a><br/> California Institute of Technology
+</p>
+		</div>
+
+		<div class="col-sm-4">
+		    <h5>Contact</h5>	
+            <p><a href="mailto:spencer@caltech.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Spencer via email</a> <br/> <a href="/aboutwebsite.html"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
+</p>
+		</div>
+
+		<div class="col-sm-4">
+		    <h5>Coordinates</h5>	
+            <p><a href="http://www.mce.caltech.edu/about/gates_thomas" target="_blank">Gates-Thomas Laboratory</a><br/> California Institute of Technology <br/> 1200 E California Blvd<br/> Pasadena, CA 91125, MC104-44
+</p>
+		</div>
+	  </div>
+
+      <center><p>&copy 2021 Dr. Spencer Bryngelson </p></center>
+	</div>
+  </div>
+</div>
+
+<script src="/assets/javascript/bootstrap/jquery.min.js"></script>
+<script src="/assets/javascript/popper/dist/umd/popper.min.js"></script>
+<script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+<!-- <script src="/assets/javascript/shb.js"></script> -->
+
+
+
+  </body>
+
+</html>
