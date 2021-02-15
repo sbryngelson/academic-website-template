@@ -1,0 +1,44 @@
+require "rubygems"
+require "tmpdir"
+
+require "bundler/setup"
+require "jekyll"
+require 'jekyll/scholar'
+
+# Change your GitHub reponame
+GITHUB_REPONAME = "sbryngelson/sbryngelson.github.com"
+
+desc "Generate blog files"
+task :generate do
+  Jekyll::Site.new(Jekyll.configuration({
+    "source"      => ".",
+    "destination" => "_site"
+  })).process
+end
+
+
+desc "Generate and publish blog to gh-pages"
+task :publish => [:generate] do
+  Dir.mktmpdir do |tmp|
+    cp_r "_site/.", tmp
+
+    pwd = Dir.pwd
+    Dir.chdir tmp
+
+    system "echo 0"
+    system "git init"
+    system "echo 1"
+    system "git add ."
+    system "echo 2"
+    message = "Site updated at #{Time.now.utc}"
+    system "echo 3"
+    system "git commit -m #{message.inspect}"
+    system "echo 4"
+    system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
+    system "echo 5"
+    system "git push origin master --force"
+    system "echo 6"
+
+    Dir.chdir pwd
+  end
+end
