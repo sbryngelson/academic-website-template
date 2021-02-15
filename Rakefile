@@ -1,5 +1,7 @@
+require "tmpdir"
 
-require "reduce"
+source_branch = "source"
+production_branch = "production"
 
 desc "Delete _site/"
 task :delete do
@@ -8,78 +10,61 @@ task :delete do
   puts status ? "Success" : "Failed"
 end
 
-desc "Preview _site/"
-task :preview do
-  puts "\n## Opening _site/ in browser"
-  status = system("open http://0.0.0.0:4000/")
+desc "Commit _site/"
+task :commit, :message do |t, arg|
+  puts "\n## Building _site files"
+  status = system("jekyll build")
+  puts status ? "Success" : "Failed"
+
+  puts "\n## Staging modified files"
+  status = system("git add -A :/")
+  puts status ? "Success" : "Failed"
+  puts "\n## Committing site build at #{Time.now.utc}"
+  message = "Build site at #{Time.now.utc}"
+  status = system("git commit -m \"#{arg[:message]||"Update"}. #{message}\"")
+  puts status ? "Success" : "Failed"
+  puts "\n## Pushing commits to remote #{source_branch}"
+  status = system("git push origin #{source_branch}")
   puts status ? "Success" : "Failed"
 end
 
+desc "Deploy _site/ to #{production_branch} branch"
+task :deploy do
+  Dir.mktmpdir do |tmp|
+    puts "\n## Moving #{source_branch} branch _site contents to tmp folder"
+    status = system("mv _site/* #{tmp}")
+    puts status ? "Success" : "Failed"
+    puts "\n## Switching to #{production_branch} branch"
+    status = system("git checkout #{production_branch}")
+    puts status ? "Success" : "Failed"
 
-desc "Recompile Sass"
-task :recompile_sass do
-end
+    puts "\n## Pulling most recent #{production_branch} branch from remote"
+    status = system("git pull")
+    puts status ? "Success" : "Failed"
+    puts "\n## Removing #{production_branch} branch contents"
+    status = system("rm -rf *")
+    puts status ? "Success" : "Failed"
 
-namespace :build do
-  desc "Build _site/ for development"
-  task :dev => :recompile_sass do
-    puts "\n##  Starting Sass and Jekyll"
-    pids = [
-      spawn("jekyll serve -w")
-    ]
-
-    trap "INT" do
-      Process.kill "INT", *pids
-      exit 1
-    end
-
-    loop do
-      sleep 1
-    end
-  end
-
-  desc "Build _site/ for production"
-  task :pro => :recompile_sass do
-    puts "\n## Compiling Sass"
-    puts "\n## Building Jekyll to _site/"
-    status = system("jekyll build")
+    puts "\n## Moving contents in tmp folder to #{production_branch} branch"
+    status = system("mv #{tmp}/* .")
     puts status ? "Success" : "Failed"
   end
-end
-
-desc "Commit _site/"
-task :commit do
-  puts "\n## Staging modified files"
+  puts "\n## Adding #{production_branch} branch changes"
   status = system("git add -A")
   puts status ? "Success" : "Failed"
-  puts "\n## Committing a site build at #{Time.now.utc}"
-  message = "Build site at #{Time.now.utc}"
+  puts "\n## Committing production site at #{Time.now.utc}"
+  message = "Build production site at #{Time.now.utc}"
   status = system("git commit -m \"#{message}\"")
   puts status ? "Success" : "Failed"
-  puts "\n## Pushing commits to remote"
-  status = system("git push origin source")
+  puts "\n## Pushing commits to remote #{production_branch}"
+  status = system("git push origin #{production_branch}")
   puts status ? "Success" : "Failed"
-end
 
-desc "Deploy _site/ to master branch"
-task :deploy do
-  puts "\n## Deleting master branch"
-  status = system("git branch -D master")
-  puts status ? "Success" : "Failed"
-  puts "\n## Creating new master branch and switching to it"
-  status = system("git checkout -b master")
-  puts status ? "Success" : "Failed"
-  puts "\n## Forcing the _site subdirectory to be project root"
-  status = system("git filter-branch --subdirectory-filter _site/ -f")
-  puts status ? "Success" : "Failed"
-  puts "\n## Switching back to source branch"
-  status = system("git checkout source")
-  puts status ? "Success" : "Failed"
-  puts "\n## Pushing all branches to origin"
-  status = system("git push --all origin")
+  puts "\n## Switching back to #{source_branch} branch"
+  status = system("git checkout #{source_branch}")
   puts status ? "Success" : "Failed"
 end
 
 desc "Commit and deploy _site/"
-task :commit_deploy => [:commit, :deploy] do
+task :default => [:commit, :deploy] do
 end
