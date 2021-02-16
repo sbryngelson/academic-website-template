@@ -11,7 +11,16 @@
     padding-right:15px;
     height:20px:
 }
+pre{
+    white-space: pre-wrap;  
+    white-space: -moz-pre-wrap; 
+    white-space: -pre-wrap; 
+    white-space: -o-pre-wrap; 
+    word-wrap: break-word; 
+    width:100%; overflow-x:auto;
+}
 </style>
+
 
 <div class="text-justify">
 {{reference | replace_first: 'Bryngelson, S. H.', '<b>Bryngelson, S. H.</b>' | replace_first: 'Bryngelson, S.', '<b>Bryngelson, S.</b>' | replace_first: 'Bryngelson SH', '<b>Bryngelson SH</b>' | replace_first: 'Bryngelson S', '<b>Bryngelson S</b>'}}</div>
@@ -46,9 +55,15 @@
 <button class="btn btn-warning btm-sm"  onclick="toggleAbstract{{entry.key}}()">ABSTRACT</button>
 {% endif %}
 
+{% if entry.abstract %}
 <div id="a{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>{{entry.bibtex}}</pre>
+<pre>{{ entry.bibtex | remove: "entry.abstract" }}</pre>
 </div>
+{% else %}
+<div id="a{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
+<pre>{{ entry.bibtex }}</pre>
+</div>
+{% endif %}
 
 <div id="b{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
 <pre>{{entry.abstract}}</pre>
