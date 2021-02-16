@@ -1,0 +1,123 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{comment}
+\usepackage{tabu}
+\usepackage{xstring}
+\usepackage{etoolbox}
+\usepackage[backend=biber,defernumbers=true,sorting=ydnt,style=authoryear,doi=false,maxnames=99]{biblatex}
+
+\usepackage{calc}
+\usepackage{comment}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{hyphenat}
+\usepackage{changepage}
+\usepackage{multicol}
+\usepackage{xspace}
+\usepackage{enumitem}
+
+% Hyperlink colors
+\hypersetup{
+    colorlinks=true,
+    urlcolor=[rgb]{0,0,0.5},
+    linkcolor=.,
+}
+
+
+\newcommand\CIT{\mbox{California Institute of Technology}\xspace}  
+\newcommand\MIT{\mbox{Massachusetts Institute of Technology}\xspace}  
+\newcommand\UIUC{\mbox{University of Illinois at Urbana--Champaign}\xspace}  
+\newcommand\UMD{\mbox{University of Michigan--Dearborn}\xspace}
+
+% Remove indent spacing
+\setlength{\parindent}{0in}
+
+\defbibfilter{other}{
+  type=report or
+  type=thesis
+}
+
+\defbibfilter{invited}{
+  type=incollection and
+  keyword=invited
+}
+
+\defbibfilter{talk}{
+  type=incollection and
+  not keyword=invited
+}
+
+\addbibresource{ref.bib}
+
+% Bold my name
+\newboolean{bold}
+\newcommand{\makeauthorsbold}[1]{%
+  \DeclareNameFormat{author}{%
+  \setboolean{bold}{false}%
+    \renewcommand{\do}[1]{\expandafter\ifstrequal\expandafter{\namepartfamily}{####1}{\setboolean{bold}{true}}{}}%
+    \docsvlist{#1}%
+    \ifthenelse{\value{listcount}=1}
+    {%
+     {\expandafter\ifthenelse{\boolean{bold}}{\mkbibbold{\namepartfamily\addcomma\addspace \namepartgiveni}}{\namepartfamily\addcomma\addspace \namepartgiveni}}%
+    }{\ifnumless{\value{listcount}}{\value{liststop}}
+      {\expandafter\ifthenelse{\boolean{bold}}{\mkbibbold{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni}}{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni}}%
+      {\expandafter\ifthenelse{\boolean{bold}}{\mkbibbold{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\addcomma\isdot}}{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\addcomma\isdot}}%
+      }
+    \ifthenelse{\value{listcount}<\value{liststop}}
+    {\addcomma\space}{}
+  }
+}
+\makeauthorsbold{Bryngelson}
+
+% get reverse numbering
+\makeatletter
+\patchcmd{\blx@printbibliography}
+  {\blx@bibliography\blx@tempa}
+  {\setcounter{bibitemtotal}{0}%
+   \begingroup
+   \def\do##1{\stepcounter{bibitemtotal}}%
+   \dolistloop{\blx@tempa}%
+   \endgroup
+   \blx@bibliography\blx@tempa}{}{}
+\makeatother
+
+\newcounter{bibitemtotal}
+\newrobustcmd*{\mkbibdesc}[1]{%
+  \number\numexpr\value{bibitemtotal}+1-#1\relax}
+\DeclareFieldFormat{labelnumber}{\mkbibdesc{#1}}
+\DeclareFieldFormat{labelnumberwidth}{\mkbibbrackets{#1}}
+
+\defbibenvironment{bibliography}
+  {\list
+     {\printtext[labelnumberwidth]{\printfield{labelprefix}\printfield{labelnumber}}}
+     {}%
+      \renewcommand*{\makelabel}[1]{\hss##1}}
+  {\endlist}
+  {\item}
+
+% Set spacing in itemize
+\setlist{itemsep=3pt,topsep=3pt,parsep=0pt,partopsep=0pt} 
+
+% Set spacing around titles (syntax: spacing left, before, after)
+\usepackage{titlesec}
+\titlespacing*{\section}
+{0pt}{6pt}{6pt}
+\titlespacing*{\subsection}
+{0pt}{6pt}{6pt}
+
+
+
+% Add footer
+\usepackage[table]{xcolor}
+\definecolor{myBrown}{RGB}{155,77,40}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{}\chead{}\rhead{}
+\cfoot{}
+\rfoot{\color{myBrown}Page \thepage\xspace of \pageref{LastPage}}
+\cfoot{\color{myBrown}Latest at \href{https://bryngelson-research.com/cv/cv.pdf}{\tt bryngelson-research.com/cv/cv.pdf}}
+\lfoot{\color{myBrown}Spencer H. Bryngelson}

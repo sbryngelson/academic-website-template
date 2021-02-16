@@ -14,3 +14,7 @@ cv/*.log
 cv/*.out
 cv/*.synctex.gz
 cv/*.xdv
+cv/*.bbl
+cv/*.bcf
+cv/*.blg
+cv/*.run.xml
