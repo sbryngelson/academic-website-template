@@ -8,6 +8,7 @@ url: ""
 
 # Google analytics ID: Remove or use your own!
 google_analytics: UA-167467135-1
+google_analytics_4: G-02KDGRRB2T
 
 # Footer info
 affiliation: >
@@ -46,7 +47,6 @@ highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
