@@ -6,6 +6,8 @@ require "tmpdir"
 require "bundler/setup"
 require "jekyll"
 
+ENV["JEKYLL_ENV"] = "production"
+
 desc "Generate blog files"
 task :generate do
   Jekyll::Site.new(Jekyll.configuration({
