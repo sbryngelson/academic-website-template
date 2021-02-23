@@ -6,10 +6,6 @@
   title: Computational Flow Physics, Caltech
   url: "http://colonius.caltech.edu/"
 
-- name: Professor Randy Ewoldt 
-  title: MechSE, University of Illinois
-  url: "http://ewoldt.mechanical.illinois.edu/"
-
 - name: Professor Rodney Fox 
   title: ChemE, Iowa State University
   url: "https://www.cbe.iastate.edu/the-department/facultystaff/profile/rofox/"
@@ -35,5 +31,5 @@
   url: "http://sandlab.mit.edu/"
 
 - name: Dr. Kevin Schmidmayer
-  title: Sopra Steria, France
+  title: Aix-Marseille University, France
   url: "https://kevinschmidmayer.github.io/overview/"
