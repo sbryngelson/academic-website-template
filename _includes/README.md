@@ -1,10 +1,11 @@
-# Dr. Spencer Bryngelson's academic website
+# Dr. Bryngelson's website
+
+**Note: This webpage has been upgraded to use Jekyll plugins. If you are using Github pages you will have to build the website with the Rakefile in the project root directory! My Rakefile is adopted from ones like [this.](https://blog.sorryapp.com/blogging-with-jekyll/2014/01/31/using-jekyll-plugins-on-github-pages.html)**
 
 This is my statically-generated Jekyll/Liquid/Bootstrap-based website.
 I started with the [Allan lab](https://www.allanlab.org/) webpage and modified it into a personal academic webpage that met my requirements.
 I worked in a unique set of the features that I desired and could not find in publicly available templates elsewhere.
 Some examples are:
-
 
 * Automatically-generated buttons for DOI/PDF/ARXIV/BIB/Abstract information
   * via jekyll scholar
@@ -72,19 +73,9 @@ HTML commands and CSS styles can be directly used in a markdown files.
 
 #### Publication page and database
 
-YAML file `_data/publist.yml` contains the paper database loaded on the 'Publications' page.
-Items in this database can be used as examples for new entries.
-The publication page itself obeys the follow rules:
-
-* If a year is not present, the publication will be listed under the 'Coming Soon' heading.
-Otherwise it will be listed below either a 'Journal Papers' heading or the year of publication.
-Choosing between these options is available via the `group_pub_by_year` variable in `_config.yml`.
-* If the `arXiv` category is present, then an additional button will be placed next to the entry on the publications page.
-* For each paper a corresponding PDF can be placed in the `papers/` directory.
-The name of this file (with no .pdf extension!) should be placed in the `url` category of its entry in `publist.yml`.
-* If an abstract is present, an additional drop down to show it will be placed next to its entry on the publications page.
-* Running `makebib.py` (Python3 required) will create bibliography files for all publications that have DOIs or arXiv identifiers.
-If this is done, an additional drop down to show it will be placed next to its entry on the publications page.
+The publications and talks are now listed via Jekyll Scholar.
+The bibliography file `ref.bib` is located in the `cv/` directory.
+Modify according to your needs.
 
 ## Hosting
 
