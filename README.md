@@ -1,10 +1,11 @@
 # Dr. Spencer Bryngelson's academic website
 
+**Note: This webpage has been upgraded to use Jekyll plugins. If you are using Github pages you will have to build the website with the Rakefile in the project root directory! My Rakefile is adopted from ones like (this)[https://blog.sorryapp.com/blogging-with-jekyll/2014/01/31/using-jekyll-plugins-on-github-pages.html]**
+
 This is my statically-generated Jekyll/Liquid/Bootstrap-based website.
 I started with the [Allan lab](https://www.allanlab.org/) webpage and modified it into a personal academic webpage that met my requirements.
 I worked in a unique set of the features that I desired and could not find in publicly available templates elsewhere.
 Some examples are:
-
 
 * Automatically-generated buttons for DOI/PDF/ARXIV/BIB/Abstract information
   * via jekyll scholar
