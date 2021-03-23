@@ -1,6 +1,8 @@
-# Dr. Bryngelson's website
+# Dr. Bryngelson's personal website template
 
-**Note: This webpage has been upgraded to use Jekyll plugins. If you are using Github pages you will have to build the website with the Rakefile in the project root directory! My Rakefile is adopted from ones like [this.](https://blog.sorryapp.com/blogging-with-jekyll/2014/01/31/using-jekyll-plugins-on-github-pages.html)**
+**Note: I do not use this Jekyll webpage anymore, as my new research group webpage is located at bryngelson-research.com, but it can still be used as a template.**
+
+**Note: This webpage has been upgraded to use Jekyll plugins. If you are using Github pages you will have to build the website with the Rakefile in the project root directory of the source branch! My Rakefile is adopted from ones like [this.](https://blog.sorryapp.com/blogging-with-jekyll/2014/01/31/using-jekyll-plugins-on-github-pages.html)**
 
 This is my statically-generated Jekyll/Liquid/Bootstrap-based website.
 I started with the [Allan lab](https://www.allanlab.org/) webpage and modified it into a personal academic webpage that met my requirements.
