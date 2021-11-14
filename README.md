@@ -1,16 +1,22 @@
-# Dr. Bryngelson's personal website template
+# A personal website template for academics
 
-**Note: I do not use this Jekyll webpage anymore, as my new research group webpage is located at bryngelson-research.com, but it can still be used as a template.**
+## Users
 
-**Note: This webpage has been upgraded to use Jekyll plugins. If you are using Github pages you will have to build the website with the Rakefile in the project root directory of the source branch! My Rakefile is adopted from ones like [this.](https://blog.sorryapp.com/blogging-with-jekyll/2014/01/31/using-jekyll-plugins-on-github-pages.html)**
+Some users:
+* [Ethan Pickering](https://ethan-pickering.github.io/)
+* [Michael Berhanu](http://www.msc.univ-paris-diderot.fr/~berhanu/)
+* [Muhammad Haseeb Arshad](https://muhammadhaseeb.info//)
+*  [Spike Research Group](https://spike.doc.ic.ac.uk/)
 
-This is my statically-generated Jekyll/Liquid/Bootstrap-based website.
+## Introduction 
+
+This is a statically-generated Jekyll/Liquid/Bootstrap-based website template for academics.
 I started with the [Allan lab](https://www.allanlab.org/) webpage and modified it into a personal academic webpage that met my requirements.
 I worked in a unique set of the features that I desired and could not find in publicly available templates elsewhere.
 Some examples are:
 
 * Automatically-generated buttons for DOI/PDF/ARXIV/BIB/Abstract information
-  * via jekyll scholar
+  * via Jekyll Scholar
 * Bibliography information and abstracts open in drown down wells via buttons
 * Fontawesome icons (email, CV, Google scholar, ResearchGate, GitHub, etc.)
 * Dark color scheme via Bootswatch
@@ -33,6 +39,10 @@ Broadly speaking, there are three steps:
 * Your site is now hosted locally at `localhost:4000`, which you can access with your web browser.
    * It will be automatically re-built as you save changes to the files it contains.
    Refreshing your web browser reveals these changes.
+
+Note:
+* This webpage uses Jekyll plugins like Jekyll Scholar to automatically build your bibliography. 
+  If you are using Github pages then you will have to build the site with the `Rakefile` in the root directory of the source branch.
 
 ## Customization
 
