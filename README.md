@@ -4,6 +4,7 @@
 
 Some users:
 * [Ethan Pickering](https://ethan-pickering.github.io/)
+* [Mohammad Afzal Shadab](https://mashadab.github.io/)
 * [Michael Berhanu](http://www.msc.univ-paris-diderot.fr/~berhanu/)
 * [Muhammad Haseeb Arshad](https://muhammadhaseeb.info//)
 *  [Spike Research Group](https://spike.doc.ic.ac.uk/)
