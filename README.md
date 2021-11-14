@@ -8,6 +8,8 @@ Some users:
 * [Muhammad Haseeb Arshad](https://muhammadhaseeb.info//)
 *  [Spike Research Group](https://spike.doc.ic.ac.uk/)
 * [Computational Physics @ GT](https://comp-physics.group) (my research group webpage)
+* [Nitzan Farhi](https://nitzanfarhi.github.io/)
+* [Aditya Sundar](https://adisun94.github.io/)
 
 ## Introduction 
 
