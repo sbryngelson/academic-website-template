@@ -10,6 +10,7 @@ Some users:
 * [Computational Physics @ GT](https://comp-physics.group) (my research group webpage)
 * [Nitzan Farhi](https://nitzanfarhi.github.io/)
 * [Aditya Sundar](https://adisun94.github.io/)
+* [Cheng-Chun (Barry) Lee](https://barrylee36.github.io/)
 
 ## Introduction 
 
