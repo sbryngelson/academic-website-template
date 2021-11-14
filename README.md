@@ -7,6 +7,7 @@ Some users:
 * [Michael Berhanu](http://www.msc.univ-paris-diderot.fr/~berhanu/)
 * [Muhammad Haseeb Arshad](https://muhammadhaseeb.info//)
 *  [Spike Research Group](https://spike.doc.ic.ac.uk/)
+* [Computational Physics @ GT](https://comp-physics.group) (my research group webpage)
 
 ## Introduction 
 
