@@ -4,6 +4,7 @@
 
 Some users:
 * [Ethan Pickering](https://ethan-pickering.github.io/)
+* [Lalit M. Pant](https://home.iitk.ac.in/~lalit/)
 * [Mohammad Afzal Shadab](https://mashadab.github.io/)
 * [Michael Berhanu](http://www.msc.univ-paris-diderot.fr/~berhanu/)
 * [Muhammad Haseeb Arshad](https://muhammadhaseeb.info//)
