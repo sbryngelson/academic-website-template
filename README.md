@@ -14,6 +14,7 @@ Some users:
 * [Aditya Sundar](https://adisun94.github.io/)
 * [Cheng-Chun (Barry) Lee](https://barrylee36.github.io/)
 * [ACME Group @ CMU](https://acme-group-cmu.github.io/ACMEgroup/)
+* [Minseok Song @ POSTECH](https://minseoksong.github.io/)
 
 ## Introduction 
 
