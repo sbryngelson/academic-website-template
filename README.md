@@ -7,13 +7,11 @@ Some users:
 * [Lalit M. Pant](https://home.iitk.ac.in/~lalit/)
 * [Mohammad Afzal Shadab](https://mashadab.github.io/)
 * [Michael Berhanu](http://www.msc.univ-paris-diderot.fr/~berhanu/)
-* [Muhammad Haseeb Arshad](https://muhammadhaseeb.info//)
 * [Spike Research Group](https://spike.doc.ic.ac.uk/)
 * [Computational Physics @ GT](https://comp-physics.group) (my research group webpage)
-* [Nitzan Farhi](https://nitzanfarhi.github.io/)
 * [Aditya Sundar](https://adisun94.github.io/)
 * [Cheng-Chun (Barry) Lee](https://barrylee36.github.io/)
-* [ACME Group @ CMU](https://acme-group-cmu.github.io/ACMEgroup/)
+* [ACME Group @ CMU](https://acme-group-cmu.github.io/)
 * [Minseok Song @ POSTECH](https://minseoksong.github.io/)
 
 ## Introduction 
