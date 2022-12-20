@@ -13,6 +13,7 @@ Some users:
 * [Cheng-Chun (Barry) Lee](https://barrylee36.github.io/)
 * [ACME Group @ CMU](https://acme-group-cmu.github.io/)
 * [Minseok Song @ POSTECH](https://minseoksong.github.io/)
+* [Corey Callaghan @ UFlorida](https://www.coreytcallaghan.com/)
 
 ## Introduction 
 
