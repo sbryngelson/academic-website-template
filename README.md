@@ -34,8 +34,6 @@ Some examples are:
 * Fontawesome icons (email, CV, Google scholar, ResearchGate, GitHub, etc.)
 * Dark color scheme via Bootswatch
 * Consistent and attractive `About me` page
-* CV that uses the same `bib` file as Jekyll scholar (with appropriate style files for each)
-  * no more keeping multiple bibliographies updated!
 
 I encourage the use of this webpage as a template for your own academic website.
 The remainder of this document describes how to do this.
