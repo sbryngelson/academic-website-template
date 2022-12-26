@@ -14,6 +14,11 @@ Some users:
 * [ACME Group @ CMU](https://acme-group-cmu.github.io/)
 * [Minseok Song @ POSTECH](https://minseoksong.github.io/)
 * [Corey Callaghan @ UFlorida](https://www.coreytcallaghan.com/)
+* [Pavlo Bazilinskyy @ TU/e](https://bazilinskyy.github.io/)
+* [Bocong Zheng](https://bczheng.com/)
+* [Joshua G. Ortiz Baco](joshuagob.github.io)
+* [Xingli Fang](https://xfangsn.github.io/)
+
 
 ## Introduction 
 
