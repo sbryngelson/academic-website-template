@@ -1,32 +1,29 @@
 # Site settings
-title: Dr. Spencer Bryngelson
-email: spencer@caltech.edu
-description: Academic webpage of Dr. Spencer H. Bryngelson
+title: Richard Feynman
+email: richard@university.edu
+description: Academic webpage of Dr. Richard Feynman
 baseurl: ""
 url: ""
 
-
-# Google analytics ID: Remove or use your own!
-google_analytics: UA-167467135-1
-google_analytics_4: G-02KDGRRB2T
-google_tag_manager: GTM-TZ9Z7HZ
+# Google analytics ID: Uncomment and your own, if you like
+# google_analytics: XX
+# google_analytics_4: XXX
+# google_tag_manager: XXX
 
 # Footer info
 affiliation: >
-    Dr. Spencer Bryngelson<br/>
-    Senior Postdoctoral Scholar<br/>
-    <a href="http://www.eas.caltech.edu/" target="_blank">Engineering and Applied Science</a><br/>
+    Richard Feynman<br/>
+    Professor of Physics<br/>
     California Institute of Technology
 
 location: >
-  <a href="http://www.mce.caltech.edu/about/gates_thomas" target="_blank">Gates-Thomas Laboratory</a><br/>
-  California Institute of Technology <br/>
+  California Institute of Technology<br/>
   1200 E California Blvd<br/>
-  Pasadena, CA 91125, MC104-44
+  Pasadena, CA 91125
 
 contact: >
-    <a href="mailto:spencer@caltech.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Spencer via email</a> <br/>
-    <a href="/aboutwebsite.html"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
+    <a href="mailto:richard@university.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Richard via email</a> <br/>
+    <a href="https://github.com/sbryngelson/academic-website-template"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
 
 # Pages shown in navbar
 nav_pages:
@@ -35,8 +32,8 @@ nav_pages:
   - name: talks
   - name: research
   - name: software
-# - name: team
-# - name: teaching
+  - name: team
+  - name: teaching
 
 include:
   - .htaccess
@@ -66,13 +63,13 @@ plugins: ['jekyll/scholar']
 
 scholar:
 
-  last_name: Bryngelson
-  first_name: [Spencer H.]
+  last_name: Doe
+  first_name: [John]
 
-  style: shb
+  style: citesty
   locale: en
 
-  source: /cv/
+  source: /assets/
   bibliography: ref.bib
   bibliography_template: bibtemplate
   sort_by: year, month

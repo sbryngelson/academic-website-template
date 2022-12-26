@@ -1,34 +1,24 @@
-- name: Jean-Sebastien Spratt    
-  location: Caltech               
+- name: Student Here
+  location: Univesity Here
   degree: Ph.D. 
-  year: exp. 2022
+  year: 2022
 
-- name: Alexis Charalampopoulos  
-  location: MIT                   
+- name: Student Here
+  location: Univesity Here
   degree: Ph.D. 
-  year: exp. 2022
+  year: 2021
 
-- name: Ben Stevens              
-  location: Caltech               
-  degree: Ph.D. 
-  year: exp. 2021
-
-- name: Esteban Cisneros         
-  location: University of Illinois
-  degree: Ph.D. 
-  year: exp. 2021
-
-- name: Dr. David Mittelstein   
-  location: USC/Caltech           
+- name: Student Here
+  location: Univesity Here
   degree: Ph.D. 
   year: 2020
 
-- name: Dr. Theresa Trummler    
-  location: TU Munich             
-  degree: Ph.D. 
+- name: Student Here
+  location: Univesity Here
+  degree: M.S.
   year: 2020
 
-- name: Franz O'Meally           
-  location: Johns Hopkins         
+- name: Student Here
+  location: Univesity Here
   degree: B.S.
   year: 2020

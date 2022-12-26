@@ -11,7 +11,7 @@ permalink: /about/
 <div class="jumbotron">
 <div class="row">
 <div class="col-sm-4">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" width="100%" style="max-width:250px"/>
+  <img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo }}" width="100%" style="max-width:250px"/>
 </div>
 <div class="col-sm-8 col-xs-12">
   <h3>{{ member.name }}</h3>
@@ -84,7 +84,6 @@ permalink: /about/
 </div>
 {% endif %}
 
-
 {% if site.data.people %}
 <div class="jumbotron">
 ### Students and mentoring
@@ -96,22 +95,9 @@ permalink: /about/
 </div>
 {% endif %}
 
-
-{% if site.data.collaborators %}
-<div class="jumbotron">
-### Collaborators
-<ul>
-{% for collab in site.data.collaborators %}
- <li> <a href="{{collab.url}}" target="_blank">{{collab.name}}</a> ({{collab.title}})</li>
-{% endfor %}
-</ul>
-</div>
-{% endif %}
-
-
 <div class="jumbotron">
   <h4>Sponsors</h4>
   <div style='display:block; text-align:center; margin-left:auto; margin-right:auto;'>
- {% for funder in site.data.funders %}<a href="{{ funder.url }}" target="_blank"><img src='{{ site.url }}{{ site.baseurl }}/images/logopic/{{ funder.image }}' style='max-height: 80px; max-width: 200px; margin: 1%'/></a>{% endfor %}
+ {% for funder in site.data.funders %}<a href="{{ funder.url }}" target="_blank"><img src='{{ site.url }}{{ site.baseurl }}/images/{{ funder.image }}' style='max-height: 80px; max-width: 200px; margin: 1%'/></a>{% endfor %}
   </div>
 </div>

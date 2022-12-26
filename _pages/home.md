@@ -7,18 +7,18 @@ permalink: /
 
 ### Welcome!
 
-New medical devices and therapies stand to improve human health outcomes the world over.
-Though innovating in this space is challenging, predictive simulations provide a promising path forward.
-I am a **computational scientist** who clears these paths via new data-driven models, algorithms, and extreme-scale software.
-Recent examples include the <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-IJMF-20.pdf" target="_blank">most efficient sub-grid model</a> for simulating cavitation, a <a href="{{ site.url }}{{ site.baseurl }}/papers/bryngelson-PRE-19.pdf" target="_blank">low-order model</a> for cell-scale blood flow, and <a href="https://mfc-caltech.github.io/" target="_blank">MFC</a>, my open-source multi-phase flow solver.
-These developments guide biomicrofluidic device design and improve treatment outcomes (e.g. burst-wave <a href="https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/lithotripsy" target="_blank">lithotripsy</a>).
+Theoretical physics is a branch of physics that focuses on the development of mathematical models and theories to understand and explain natural phenomena.
+It plays a crucial role in our understanding of the fundamental laws of the universe and the fundamental particles that make up all matter.
+Research in theoretical physics helps us to make predictions about how the universe works and to test these predictions through experiments.
+It also helps us to understand the fundamental principles that govern the behavior of matter and energy, and to explore the limits of our current knowledge.
+Theoretical physics helps us to make progress in a wide range of fields, including cosmology, particle physics, and quantum mechanics, and it has led to many important discoveries and technological innovations.
 
 <div class="container">
 <div class="row">
 <center>
-<iframe src="https://player.vimeo.com/video/455688517?autoplay=1&loop=1&autopause=0&muted=1&quality=360p&background=1" width="100%" style="border-style:solid;border-radius:5px;" frameborder="0" allow="autoplay"></iframe>
-Transition to chaos of flowing red blood cells. <br/>
-Bryngelson & Freund, <i>Phys. Rev. Fluids</i> (2018)
+<img src="{{ site.url }}{{ site.baseurl }}/images/banner.jpg" width="100%"/><br/>
+Examples of Feynman diagrams. <br/>
+Feynman R., The theory of positrons. <i>Phys. Rev.</i> (1949)
 </center>
 </div>
 </div>
@@ -26,8 +26,8 @@ Bryngelson & Freund, <i>Phys. Rev. Fluids</i> (2018)
 
 ### About me
 
-I am a Senior Postdoctoral Scholar at the California Institute of Technology, working with <a href="https://www.colonius.caltech.edu/" target="_blank">Professor Tim Colonius</a>.
-I also work with <a href="http://sandlab.mit.edu/" target="_blank">Professor Themis Sapsis</a> at the Massachusetts Institute of Technology on machine-learned model closures.
-Previously, I was a Postdoctoral Researcher at the <a href="https://xpacc.illinois.edu/" target="_blank">Center for Exascale Simulation of Plasma-Coupled Combustion</a> (XPACC).
-I have a Ph.D. and M.S. in <a href="https://mechanical.illinois.edu/graduate/graduate-degree-programs/phd-programs/phd-theoretical-and-applied-mechanics" target="_blank">Theoretical and Applied Mechanics</a> from the University of Illinois at Urbana–Champaign (2017 and 2015), where I worked with <a href="https://aerospace.illinois.edu/directory/profile/jbfreund" target="_blank">Professor Jonathan Freund</a>.
-I hold B.S. degrees in Mechanical Engineering and Mathematics from the University of Michigan–Dearborn (2013).
+I am a physicist working in the field of quantum mechanics and quantum electrodynamics.
+I received my undergraduate degree in physics from the Massachusetts Institute of Technology (MIT) in 1939 and went on to earn my PhD from Princeton University in 1942.
+After completing my doctoral studies, I worked on the Manhattan Project, where I helped develop the first atomic bombs.
+After the war, I returned to academia, holding teaching and research positions at Cornell and now the California Institute of Technology.
+
