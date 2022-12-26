@@ -18,6 +18,7 @@ Some users:
 * [Bocong Zheng](https://bczheng.com/)
 * [Joshua G. Ortiz Baco](joshuagob.github.io)
 * [Xingli Fang](https://xfangsn.github.io/)
+* [Maria A. Zuluaga @ EURECOM](https://i-vesseg.github.io/)
 
 
 ## Introduction 
