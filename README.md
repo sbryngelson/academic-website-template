@@ -19,6 +19,7 @@ Some users:
 * [Joshua G. Ortiz Baco](joshuagob.github.io)
 * [Xingli Fang](https://xfangsn.github.io/)
 * [Maria A. Zuluaga @ EURECOM](https://i-vesseg.github.io/)
+* [Ilaria Colazzo](https://ilafly.github.io/)
 
 
 ## Introduction 
