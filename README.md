@@ -3,24 +3,23 @@
 ## Users
 
 Some users:
-* [Ethan Pickering](https://ethan-pickering.github.io/)
-* [Lalit M. Pant](https://home.iitk.ac.in/~lalit/)
-* [Mohammad Afzal Shadab](https://mashadab.github.io/)
-* [Michael Berhanu](http://www.msc.univ-paris-diderot.fr/~berhanu/)
-* [Spike Research Group](https://spike.doc.ic.ac.uk/)
-* [Computational Physics @ GT](https://comp-physics.group) (my research group webpage)
-* [Aditya Sundar](https://adisun94.github.io/)
-* [Cheng-Chun (Barry) Lee](https://barrylee36.github.io/)
-* [ACME Group @ CMU](https://acme-group-cmu.github.io/)
-* [Minseok Song @ POSTECH](https://minseoksong.github.io/)
-* [Corey Callaghan @ UFlorida](https://www.coreytcallaghan.com/)
-* [Pavlo Bazilinskyy @ TU/e](https://bazilinskyy.github.io/)
-* [Bocong Zheng](https://bczheng.com/)
-* [Joshua G. Ortiz Baco](joshuagob.github.io)
-* [Xingli Fang](https://xfangsn.github.io/)
-* [Maria A. Zuluaga @ EURECOM](https://i-vesseg.github.io/)
-* [Ilaria Colazzo](https://ilafly.github.io/)
-
+<a href="https://ilafly.github.io/" target="_blank">★</a>
+<a href="https://i-vesseg.github.io/" target="_blank">★</a>
+<a href="https://xfangsn.github.io/" target="_blank">★</a>
+<a href="https://joshuagob.github.io" target="_blank">★</a>
+<a href="https://bczheng.com/" target="_blank">★</a>
+<a href="https://bazilinskyy.github.io/" target="_blank">★</a>
+<a href="https://www.coreytcallaghan.com/" target="_blank">★</a>
+<a href="https://minseoksong.github.io/" target="_blank">★</a>
+<a href="https://acme-group-cmu.github.io/" target="_blank">★</a>
+<a href="https://barrylee36.github.io/" target="_blank">★</a>
+<a href="https://adisun94.github.io/" target="_blank">★</a>
+<a href="https://comp-physics.group" target="_blank">★</a>
+<a href="https://spike.doc.ic.ac.uk/" target="_blank">★</a>
+<a href="http://www.msc.univ-paris-diderot.fr/~berhanu/" target="_blank">★</a>
+<a href="https://mashadab.github.io/" target="_blank">★</a>
+<a href="https://home.iitk.ac.in/~lalit/" target="_blank">★</a>
+<a href="https://ethan-pickering.github.io/" target="_blank">★</a>
 
 ## Introduction 
 
