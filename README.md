@@ -25,6 +25,8 @@ Some users:
 <a href="https://felipesua.github.io/" target="_blank">★</a>
 <a href="https://shivvrat.github.io/" target="_blank">★</a>
 <a href="https://ritamraha.github.io/" target="_blank">★</a>
+<a href="https://matsesseldeurs.github.io/" target="_blank">★</a>
+
 
 __If you are using this template, feel free to share your site with me and I'll add it here!__
 
