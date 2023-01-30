@@ -65,6 +65,7 @@ Broadly speaking, there are three steps:
 Note:
 * This webpage uses Jekyll plugins like Jekyll Scholar to automatically build your bibliography. 
   If you are using Github pages then you will have to build the site with the `Rakefile` in the root directory of the source branch.
+  You can do so by first modifying the file as appropriate and then, after pushing your changes, execute `rake publish`.
 
 ## Customization
 
