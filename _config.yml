@@ -1,5 +1,5 @@
 # Site settings
-title: Richard Feynman
+title: Refaat Mohammad Alamgir
 email: richard@university.edu
 description: Academic webpage of Dr. Richard Feynman
 baseurl: ""
@@ -12,7 +12,7 @@ url: ""
 
 # Footer info
 affiliation: >
-    Richard Feynman<br/>
+    Refaat Mohammad Alamgir<br/>
     Professor of Physics<br/>
     California Institute of Technology
 
