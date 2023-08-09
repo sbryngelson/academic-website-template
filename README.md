@@ -31,6 +31,9 @@ Some users:
 <a href="https://melashri.net/" target="_blank">★</a>
 <a href="https://sahatulika15.github.io" target="_blank">★</a>
 <a href="https://mzhanglab.github.io" target="_blank">★</a>
+<a href="https://soar-lab.github.io" target="_blank">★</a>
+
+
 
 
 __If you are using this template, feel free to share your site with me and I'll add it here!__
