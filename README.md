@@ -34,6 +34,7 @@ Some users:
 <a href="https://soar-lab.github.io" target="_blank">★</a>
 <a href="https://azharghafoor.github.io/" target="_blank">★</a>
 <a href="https://hyunwoo.info/" target="_blank">★</a>
+<a href="https://computervision0.github.io/" target="_blank">★</a>
 
 __If you are using this template, feel free to share your site with me and I'll add it here!__
 
