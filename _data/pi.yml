@@ -7,7 +7,7 @@
  # scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
  # cv: cv/cv.pdf
   # Change the number below to the number of "educations" you have (up to 6)
-  number_educ: 2
+  number_educ: 3
   education1: "(2023) Ph.D. Mathematics, Kyoto University, Japan"
   education2: "(2020) Master. Mathematics, Kyoto University, Japan"
   education3: "(2017) Bachelor. Mathematics, Fudan University, China"
