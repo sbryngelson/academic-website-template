@@ -1,5 +1,5 @@
 - name: Wenbin Luo
-  photo: 
+  photo: headshot.jpg
   info: Postdoc at BICMR
   email: w.luo@pku.edu.cn
  # github: https://github.com/
@@ -7,14 +7,16 @@
  # scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
  # cv: cv/cv.pdf
   # Change the number below to the number of "educations" you have (up to 6)
-  number_educ: 1
-  education1: "(2023) Ph.D. Mathematics, Kyoto University"
-  # education3: 
+  number_educ: 2
+  education1: "(2023) Ph.D. Mathematics, Kyoto University, Japan"
+  education2: "(2020) Master. Mathematics, Kyoto University, Japan"
+  education3: "(2017) Bachelor. Mathematics, Fudan University, China"
   # education4: 
   # education5: 
   # education6: 
   education1short: (2023) Ph.D. Mathematics, Kyoto University
-  # education3short: 
+  education2short: (2020) Master. Mathematics, Kyoto University
+  education3short: (2017) Bachelor. Mathematics, Fudan University
   # education4short: 
   # education5short: 
   # education6short: 
