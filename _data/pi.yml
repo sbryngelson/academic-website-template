@@ -1,21 +1,19 @@
-- name: Dr. Richard Feynman
+- name: Wenbin Luo
   photo: headshot.jpg
-  info: Richard C. Tolman Professor, California Institute of Technology
-  email: richard@university.edu
+  info: Postdoc at BICMR
+  email: w.luo@pku.edu.cn
   github: https://github.com/
   researchgate: https://www.researchgate.net/
   scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
   cv: cv/cv.pdf
   # Change the number below to the number of "educations" you have (up to 6)
   number_educ: 2
-  education1: "(1942) Ph.D. Physics, Princeton University"
-  education2: "(1939) B.S. Physics, Massachusetts Institute of Technology"
+  education1: "(2023) Ph.D. Mathematics, Kyoto University"
   # education3: 
   # education4: 
   # education5: 
   # education6: 
-  education1short: (1942) Ph.D. Physics, Princeton
-  education2short: (1939) B.S. Physics, MIT
+  education1short: (2023) Ph.D. Mathematics, Kyoto University
   # education3short: 
   # education4short: 
   # education5short: 
