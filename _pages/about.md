@@ -73,7 +73,7 @@ permalink: /about/
 </div>
 {% endif %}
 
-{% if site.data.awards %}
+<!--{% if site.data.awards %}
 <div class="jumbotron">
 ### Awards
 <ul>
@@ -82,7 +82,7 @@ permalink: /about/
 {% endfor %}
 </ul>
 </div>
-{% endif %}
+{% endif %}-->
 
 <!--{% if site.data.people %}
 <div class="jumbotron">
