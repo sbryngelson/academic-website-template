@@ -84,7 +84,7 @@ permalink: /about/
 </div>
 {% endif %}
 
-{% if site.data.people %}
+<!--{% if site.data.people %}
 <div class="jumbotron">
 ### Students and mentoring
 <ul>
@@ -93,4 +93,4 @@ permalink: /about/
 {% endfor %}
 </ul>
 </div>
-{% endif %}
+{% endif %}-->
