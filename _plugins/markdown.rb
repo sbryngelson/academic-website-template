@@ -1,3 +1,4 @@
+require 'jekyll/scholar'
 =begin
   Jekyll tag to include Markdown text from _includes directory preprocessing with Liquid.
   Usage:
