@@ -19,10 +19,10 @@ affiliation: >
 location: >
   Peking University<br/>
   No. 5, Road Yiheyuan<br/>
-  Beijing, China
+  100871, Beijing, China
 
 contact: >
-#    <a href="mailto:richard@university.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Richard via email</a> <br/>
+    <a href="mailto:w.luo@pku.edu.cn" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Wenbin via email</a> <br/>
 #    <a href="https://github.com/sbryngelson/academic-website-template"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
 
 # Pages shown in navbar
@@ -30,8 +30,8 @@ nav_pages:
   - name: about
   - name: publications
   - name: talks
-  - name: research
-  - name: teaching
+  #- name: research
+  #- name: teaching
 
 include:
   - .htaccess
