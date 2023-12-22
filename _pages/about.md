@@ -7,7 +7,7 @@ permalink: /about/
 
 ## About 
 
-<!--{% for member in site.data.pi %}
+!--{% for member in site.data.pi %}
 <div class="jumbotron">
 <div class="row">
 <div class="col-sm-4">
@@ -60,7 +60,7 @@ permalink: /about/
 </div>
 </div>
 </div>
-{% endfor %}-->
+{% endfor %}
 
 {% if site.data.grants %}
 <div class="jumbotron">
