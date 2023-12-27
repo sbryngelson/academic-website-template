@@ -123,7 +123,7 @@ HTML commands and CSS styles can be directly used in a markdown files.
 #### Publication page and database
 
 The publications and talks are now listed via Jekyll Scholar.
-The bibliography file `ref.bib` is located in the `cv/` directory.
+The bibliography file `ref.bib` is located in the `assets/` directory.
 Modify according to your needs.
 
 ## Hosting
