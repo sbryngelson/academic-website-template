@@ -1,22 +1,22 @@
-- name: Dr. Richard Feynman
-  photo: headshot.jpg
-  info: Richard C. Tolman Professor, California Institute of Technology
-  email: richard@university.edu
-  github: https://github.com/
-  researchgate: https://www.researchgate.net/
-  scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
+- name: Primrose
+  photo: headshot.png
+  info: Primrose, University of British Columbia
+  email: prim9320@student.ubc.ca
+  #github: https://github.com/
+  #researchgate: https://www.researchgate.net/
+  #scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
   cv: cv/cv.pdf
   # Change the number below to the number of "educations" you have (up to 6)
-  number_educ: 2
-  education1: "(1942) Ph.D. Physics, Princeton University"
-  education2: "(1939) B.S. Physics, Massachusetts Institute of Technology"
-  # education3: 
+  number_educ: 3
+  education1: "(2025) Ph.D. English, University of British Columbia"
+  education2: "(2021) M.A. English, National University of Singapore"
+  education3: "(2016) B.A. English, National University of Singapore"
   # education4: 
   # education5: 
   # education6: 
-  education1short: (1942) Ph.D. Physics, Princeton
-  education2short: (1939) B.S. Physics, MIT
-  # education3short: 
+  education1short: (2025) Ph.D. English, UBC
+  education2short: (2021) M.S. English, NUS
+  education3short: (2016) B.A. English, NUS
   # education4short: 
   # education5short: 
   # education6short: 

@@ -1,24 +1,24 @@
-- name: Student Here
-  location: Univesity Here
-  degree: Ph.D. 
-  year: 2022
-
-- name: Student Here
-  location: Univesity Here
-  degree: Ph.D. 
-  year: 2021
-
-- name: Student Here
-  location: Univesity Here
-  degree: Ph.D. 
-  year: 2020
-
-- name: Student Here
-  location: Univesity Here
-  degree: M.S.
-  year: 2020
-
-- name: Student Here
-  location: Univesity Here
-  degree: B.S.
-  year: 2020
+#- name: Student Here
+#  location: Univesity Here
+#  degree: Ph.D.
+#  year: 2022
+#
+#- name: Student Here
+#  location: Univesity Here
+#  degree: Ph.D.
+#  year: 2021
+#
+#- name: Student Here
+#  location: Univesity Here
+#  degree: Ph.D.
+#  year: 2020
+#
+#- name: Student Here
+#  location: Univesity Here
+#  degree: M.S.
+#  year: 2020
+#
+#- name: Student Here
+#  location: Univesity Here
+#  degree: B.S.
+#  year: 2020
