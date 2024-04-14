@@ -41,6 +41,17 @@ Some users:
 <a href="https://gabry993.github.io/" target="_blank">★</a>
 <a href="https://shantnuu.github.io/" target="_blank">★</a>
 <a href="https://wenbinluomath.github.io/" target="_blank">★</a>
+<a href="https://aibio-lab.github.io/" target="_blank">★</a>
+<a href="https://shantnuu.github.io/" target="_blank">★</a>
+<a href="https://wenbinluomath.github.io/" target="_blank">★</a>
+<a href="https://dartsushi.github.io/" target="_blank">★</a>
+<a href="https://efstathia-soufleri.github.io/" target="_blank">★</a>
+<a href="https://zchoffin.github.io/" target="_blank">★</a>
+<a href="https://wangyb97.github.io/" target="_blank">★</a>
+<a href="https://sgleem.github.io/" target="_blank">★</a>
+<a href="https://has97.github.io/" target="_blank">★</a>
+<a href="https://albertgassol1.github.io/" target="_blank">★</a>
+<a href="https://seanpark05.github.io/" target="_blank">★</a>
 
 __If you are using this template, feel free to share your site with me and I'll add it here!__
 
