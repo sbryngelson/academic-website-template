@@ -14,9 +14,9 @@
   {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-3x"></i></a> {% endif %}
 
   <ul style="overflow: hidden">
-  {% for i in (1..member.number_educ) %}
-    <li> {{ member["education" | append: i] | replace: "-","&#8211;" }} </li>
-  {% endfor %}
+    {% for education in member.education %}
+      <li>{{ education | replace: "-","&#8211;" }}</li>
+    {% endfor %}
   </ul>
 
 </div>

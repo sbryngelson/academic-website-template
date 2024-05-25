@@ -6,17 +6,12 @@
   researchgate: https://www.researchgate.net/
   scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
   cv: cv/cv.pdf
-  # Change the number below to the number of "educations" you have (up to 6)
-  number_educ: 2
-  education1: "(1942) Ph.D. Physics, Princeton University"
-  education2: "(1939) B.S. Physics, Massachusetts Institute of Technology"
-  # education3: 
-  # education4: 
-  # education5: 
-  # education6: 
-  education1short: (1942) Ph.D. Physics, Princeton
-  education2short: (1939) B.S. Physics, MIT
-  # education3short: 
-  # education4short: 
-  # education5short: 
-  # education6short: 
+  # Change the items in "education" you have (up to 6)
+  education:
+    [
+      "(1942) Ph.D. Physics, Princeton University",
+      "(1939) B.S. Physics, Massachusetts Institute of Technology",
+    ]
+
+  educationshort:
+    ["(1942) Ph.D. Physics, Princeton", "(1939) B.S. Physics, MIT"]
