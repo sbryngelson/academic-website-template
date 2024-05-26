@@ -13,4 +13,5 @@ permalink: /allnews.html
 
 {{ article.headline }}
 {% endfor %}
+
 </div>
