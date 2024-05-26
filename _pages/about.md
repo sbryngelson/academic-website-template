@@ -7,7 +7,7 @@ permalink: /about/
 
 ## About
 
-{% include member-pi.html %}
+{% include member_pi.html %}
 {% include grants.html %}
 {% include awards.html %}
 {% include students.html %}
