@@ -31,4 +31,3 @@ permalink: /talks/
 ### Regular talks
 {% bibliography --query @incollection[keywords != invited] %}
 </div>
-
