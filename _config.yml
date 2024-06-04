@@ -12,9 +12,9 @@ url: ""
 
 # Footer info
 affiliation: >
-    Richard Feynman<br/>
-    Professor of Physics<br/>
-    California Institute of Technology
+  Richard Feynman<br/>
+  Professor of Physics<br/>
+  California Institute of Technology
 
 location: >
   California Institute of Technology<br/>
@@ -22,8 +22,8 @@ location: >
   Pasadena, CA 91125
 
 contact: >
-    <a href="mailto:richard@university.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Richard via email</a> <br/>
-    <a href="https://github.com/sbryngelson/academic-website-template"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
+  <a href="mailto:richard@university.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Richard via email</a> <br/>
+  <a href="https://github.com/sbryngelson/academic-website-template"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
 
 # Pages shown in navbar
 nav_pages:
@@ -34,6 +34,7 @@ nav_pages:
   - name: software
   - name: team
   - name: teaching
+  - name: blogs
 
 include:
   - .htaccess
@@ -58,11 +59,9 @@ kramdown:
   enable_coderay: false
   parse_block_html: true # default for kramdown is false. This will enable using Markdown links
 
-
-plugins: ['jekyll/scholar']
+plugins: ["jekyll/scholar"]
 
 scholar:
-
   last_name: Doe
   first_name: [John]
 
