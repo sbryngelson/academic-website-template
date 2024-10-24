@@ -54,7 +54,25 @@ Some users:
 <a href="https://seanpark05.github.io/" target="_blank">★</a>
 <a href="https://miki998.github.io/" target="_blank">★</a>
 <a href="https://wilfonba.github.io/" target="_blank">★</a>
-<a href="https://saharnazb.github.io/" target="_blank">*</a>
+<a href="https://saharnazb.github.io/" target="_blank">★</a>
+<a href="https://mvmacfarlane.github.io/" target="_blank">★</a>
+<a href="https://saharnaz.org/" target="_blank">★</a>
+<a href="https://www.isnicholas.com/" target="_blank">★</a>
+<a href="https://jojox666.github.io/" target="_blank">★</a>
+<a href="https://wenbinluomath.github.io/" target="_blank">★</a>
+<a href="https://dartsushi.github.io/" target="_blank">★</a>
+<a href="https://zhiyu7.github.io/" target="_blank">★</a>
+<a href="https://awen-li.github.io/" target="_blank">★</a>
+<a href="https://yukiiwong.github.io/" target="_blank">★</a>
+<a href="https://joeyleehk.github.io/" target="_blank">★</a>
+<a href="https://fabayocbocjr.github.io/" target="_blank">★</a>
+<a href="https://www.quantumcookie.xyz/" target="_blank">★</a>
+<a href="https://adityanandy.github.io/" target="_blank">★</a>
+<a href="https://jlastro.github.io/" target="_blank">★</a>
+<a href="https://yunzhe-li.top/" target="_blank">★</a>
+<a href="https://xia-hu.github.io/" target="_blank">★</a>
+<a href="https://p-bajpai.github.io/" target="_blank">★</a>
+<a href="https://zchoffin.github.io/" target="_blank">★</a>
 
 __If you are using this template, feel free to share your site with me, and I'll add it here!__
 
