@@ -1,7 +1,7 @@
 # Site settings
-title: Richard Feynman
-email: richard@university.edu
-description: Academic webpage of Dr. Richard Feynman
+title: Cecília Coelho
+email: coelhomc@hsu-hh.de
+description: Academic webpage of Cecília Coelho
 baseurl: ""
 url: ""
 
@@ -12,27 +12,26 @@ url: ""
 
 # Footer info
 affiliation: >
-  Richard Feynman<br/>
-  Professor of Physics<br/>
-  California Institute of Technology
+  Cecília Coelho<br/>
+  Researcher at Helmut-Schmidt University, Germany
+  Invited Assistant Professor at Polythecnic Institute of Viana do Castelo, Portugal<br/>
+  Member of the Centre of Mathematics of University of Minho, Portugal
 
 location: >
-  California Institute of Technology<br/>
-  1200 E California Blvd<br/>
-  Pasadena, CA 91125
+  Helmut-Schmidt-Universität - Universität der Bundeswehr Hamburg<br/>
+  Holstenhofweg 85<br/>
+  22043 Hamburg, Germay<br/>
+  
 
 contact: >
-  <a href="mailto:richard@university.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Richard via email</a> <br/>
-  <a href="https://github.com/sbryngelson/academic-website-template"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
+  <a href="mailto:coelhomc@hsu-hh.de" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact me via email</a> <br/>
 
 # Pages shown in navbar
 nav_pages:
   - name: about
   - name: publications
-  - name: talks
   - name: research
   - name: software
-  - name: team
   - name: teaching
   - name: blogs
 

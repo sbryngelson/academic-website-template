@@ -1,17 +1,18 @@
-- name: Dr. Richard Feynman
-  photo: headshot.jpg
-  info: Richard C. Tolman Professor, California Institute of Technology
-  email: richard@university.edu
-  github: https://github.com/
-  researchgate: https://www.researchgate.net/
-  scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
-  cv: cv/cv.pdf
+- name: Cecília Coelho
+  #photo: headshot.jpg
+  info: Researcher at Helmut-Schmidt University, Hamburg, Germany; Invited Assistant Professor at Polytechnic Institute of Viana do Castelo; Member of the Centre of Mathematics of University of Minho (CMAT)
+  email: coelhomc@hsu-hh.de
+  github: https://github.com/CeciliaCoelho
+  researchgate: https://www.researchgate.net/profile/C-Coelho-2?ev=hdr_xprf
+  scholar: https://scholar.google.com/citations?user=glIx3vsAAAAJ&hl=pt-PT
+  cv: cv/CV03032025.pdf
   # Change the items in "education" you have (up to 6)
   education:
     [
-      "(1942) Ph.D. Physics, Princeton University",
-      "(1939) B.S. Physics, Massachusetts Institute of Technology",
+      "(2025) Ph.D. in Mathematics, University of Minho",
+      "(2020) M.S. in Mathematics and Computation, University of Minho",
+      "(2018) B.S. in Physics, University of Minho",
     ]
 
   educationshort:
-    ["(1942) Ph.D. Physics, Princeton", "(1939) B.S. Physics, MIT"]
+    ["(2025) Ph.D. Mathematics, UMinho", "(2020) M.S. Mathematics and Computation, UMinho", "(2018) B.S Physics, UMinho"]
