@@ -26,7 +26,7 @@ years: [2016, 2017, 2018, 2019, 2020, 2021]
 {% bibliography --query @article %}
 </div>
 
-<div class="jumbotron">
+<!-- <div class="jumbotron">
 ### Refereed conference proceedings
 {% bibliography --query @inproceedings %}
-</div>
+</div> -->
