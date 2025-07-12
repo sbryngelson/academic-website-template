@@ -7,7 +7,7 @@ permalink: /about/
 
 ## About
 
-{% for member in site.data.pi %}
+{% Ujjal %}
 
 <div class="jumbotron">
 <div class="row">
