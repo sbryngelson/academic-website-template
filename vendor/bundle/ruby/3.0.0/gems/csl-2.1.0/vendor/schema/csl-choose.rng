@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns:cs="http://purl.org/net/xbiblio/csl" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns="http://relaxng.org/ns/structure/1.0">
+  <div>
+    <a:documentation>cs:choose - Conditional Statements"</a:documentation>
+    <define name="rendering-element.choose">
+      <element name="cs:choose">
+        <a:documentation>Use to conditionally render rendering elements.</a:documentation>
+        <ref name="choose.if"/>
+        <zeroOrMore>
+          <ref name="choose.else-if"/>
+        </zeroOrMore>
+        <optional>
+          <ref name="choose.else"/>
+        </optional>
+      </element>
+    </define>
+    <define name="choose.if">
+      <element name="cs:if">
+        <oneOrMore>
+          <ref name="condition"/>
+        </oneOrMore>
+        <ref name="match"/>
+        <zeroOrMore>
+          <ref name="rendering-element"/>
+        </zeroOrMore>
+      </element>
+    </define>
+    <define name="choose.else-if">
+      <element name="cs:else-if">
+        <oneOrMore>
+          <ref name="condition"/>
+        </oneOrMore>
+        <ref name="match"/>
+        <zeroOrMore>
+          <ref name="rendering-element"/>
+        </zeroOrMore>
+      </element>
+    </define>
+    <define name="choose.else">
+      <element name="cs:else">
+        <oneOrMore>
+          <ref name="rendering-element"/>
+        </oneOrMore>
+      </element>
+    </define>
+    <define name="condition">
+      <choice>
+        <attribute name="disambiguate" a:defaultValue="true">
+          <a:documentation>If used, the element content is only rendered if it disambiguates two
+otherwise identical citations. This attempt at disambiguation is only
+made after all other disambiguation methods have failed.</a:documentation>
+          <value>true</value>
+        </attribute>
+        <attribute name="is-numeric">
+          <a:documentation>Tests whether the given variables contain numeric text.</a:documentation>
+          <list>
+            <oneOrMore>
+              <ref name="variables"/>
+            </oneOrMore>
+          </list>
+        </attribute>
+        <attribute name="is-uncertain-date">
+          <a:documentation>Tests whether the given date variables contain approximate dates.</a:documentation>
+          <list>
+            <oneOrMore>
+              <ref name="variables.dates"/>
+            </oneOrMore>
+          </list>
+        </attribute>
+        <attribute name="locator">
+          <a:documentation>Tests whether the locator matches the given locator types.</a:documentation>
+          <list>
+            <oneOrMore>
+              <ref name="terms.locator"/>
+            </oneOrMore>
+          </list>
+        </attribute>
+        <attribute name="position">
+          <a:documentation>Tests whether the cite position matches the given positions.</a:documentation>
+          <list>
+            <oneOrMore>
+              <choice>
+                <value>first</value>
+                <value>subsequent</value>
+                <value>ibid</value>
+                <value>ibid-with-locator</value>
+                <value>near-note</value>
+              </choice>
+            </oneOrMore>
+          </list>
+        </attribute>
+        <attribute name="type">
+          <a:documentation>Tests whether the item matches the given types.</a:documentation>
+          <list>
+            <oneOrMore>
+              <ref name="item-types"/>
+            </oneOrMore>
+          </list>
+        </attribute>
+        <attribute name="variable">
+          <a:documentation>Tests whether the default ("long") forms of the given variables
+contain non-empty values.</a:documentation>
+          <list>
+            <oneOrMore>
+              <ref name="variables"/>
+            </oneOrMore>
+          </list>
+        </attribute>
+      </choice>
+    </define>
+    <define name="match">
+      <optional>
+        <attribute name="match" a:defaultValue="all">
+          <a:documentation>Set the testing logic.</a:documentation>
+          <choice>
+            <value>all</value>
+            <a:documentation>Element only tests "true" when all conditions test "true" for all
+given test values.</a:documentation>
+            <value>any</value>
+            <a:documentation>Element tests "true" when any condition tests "true" for any given
+test value.</a:documentation>
+            <value>none</value>
+            <a:documentation>Element only tests "true" when none of the conditions test "true"
+for any given test value.</a:documentation>
+          </choice>
+        </attribute>
+      </optional>
+    </define>
+  </div>
+</grammar>

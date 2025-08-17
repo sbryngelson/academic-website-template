@@ -1,0 +1,25 @@
+{% assign items = site.news | sort: "date" | reverse %}
+<div class="news-scroller" role="region" aria-label="Latest news">
+  {% for article in items limit: 5 %}
+    <article class="news-card">
+      <a class="news-link" href="{{ article.url | relative_url }}">
+        {% if article.image %}
+          <img class="news-img" src="{{ article.image | relative_url }}" alt="{{ article.title }}">
+        {% endif %}
+        <div class="news-text">
+          <time class="news-date" datetime="{{ article.date | date_to_xmlschema }}">
+            {{ article.date | date: "%-d %B %Y" }}
+          </time>
+          <h4 class="news-title">{{ article.title }}</h4>
+          {% if article.summary %}
+            <p class="news-summary">{{ article.summary }}</p>
+          {% endif %}
+        </div>
+      </a>
+    </article>
+  {% endfor %}
+</div>
+
+<p class="allnews-link">
+  <a href="{{ '/allnews.html' | relative_url }}">View all news →</a>
+</p>

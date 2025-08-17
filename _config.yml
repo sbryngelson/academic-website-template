@@ -1,9 +1,11 @@
 # Site settings
-title: Richard Feynman
-email: richard@university.edu
-description: Academic webpage of Dr. Richard Feynman
-baseurl: ""
-url: ""
+title: Quantum Devices and Simulation Group
+email: matti.silveri@univ.oulu.fi
+description: Academic webpage of Dr. Matti Silveri
+
+url: "https://kaanyurtseven112358.github.io"
+baseurl: "Quantum.Simulation.and.Devices.Group.Oulu"
+
 
 # Google analytics ID: Uncomment and your own, if you like
 # google_analytics: XX
@@ -12,18 +14,18 @@ url: ""
 
 # Footer info
 affiliation: >
-  Richard Feynman<br/>
-  Professor of Physics<br/>
-  California Institute of Technology
+  Matti Silveri<br/>
+  Associate Professor in Department of Physics and Astronomy<br/>
+  University of Oulu
 
 location: >
-  California Institute of Technology<br/>
-  1200 E California Blvd<br/>
-  Pasadena, CA 91125
+  University of Oulu<br/>
+  90014 Oulu<br/>
+  Finland
 
 contact: >
-  <a href="mailto:richard@university.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Richard via email</a> <br/>
-  <a href="https://github.com/sbryngelson/academic-website-template"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
+  <a href="mailto:matti.silveri@univ.oulu.fi" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Matti via email</a> <br/>
+  <a href="https://github.com/kaanyurtseven112358/allanlab"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
 
 # Pages shown in navbar
 nav_pages:
@@ -31,10 +33,15 @@ nav_pages:
   - name: publications
   - name: talks
   - name: research
-  - name: software
   - name: team
   - name: teaching
-  - name: blogs
+  - name: vacancies
+
+
+collections:
+  news:
+    output: true
+    permalink: /news/:name/
 
 include:
   - .htaccess

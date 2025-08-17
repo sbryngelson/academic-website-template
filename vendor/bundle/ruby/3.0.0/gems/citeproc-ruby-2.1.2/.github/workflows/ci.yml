@@ -1,0 +1,33 @@
+name: CI
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      BUNDLE_WITHOUT: debug:extra
+    strategy:
+      matrix:
+        ruby-version:
+          - '3.4'
+          - '3.3'
+          - '3.2'
+          - '3.1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby-version }}
+          bundler-cache: true
+      - run: bundle exec rake
+      - name: Upload coverage results
+        if: matrix.ruby-version == '3.3'
+        continue-on-error: true
+        uses: coverallsapp/github-action@v2
+        with:
+          github-token: ${{ github.token }}

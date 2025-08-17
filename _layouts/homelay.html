@@ -1,11 +1,193 @@
 ---
 layout: default
+layout_variant: home_news   # use the stacked Home + News layout
+container: container        # optional: fixed width; remove for full-bleed
 ---
 
-  <div id="homeid" class="col-sm-7 col-xs-12">
-	{{ content }}
+
+<div class="container">
+  <!-- HOME (main) -->
+  <div id="homeid" class="row">
+    <div class="col-200">
+      {{ content }}
+
+      <div class="home-hero">
+        {% include carousel.html height="60.25" unit="%" duration="7" number="1" %}
+        {% include carousel.html height="60.25" unit="%" duration="7" number="2" %}
+
+        <div class="hero-cards">
+
+          <div class="hero-intro">
+            <h2>Research Sections in Our Group</h2>
+            <p>Our research group is organized into two main sections, each fostering collaboration and integrating diverse expertise. Both sections collaborate closely, leveraging their unique strengths to drive innovation and achieve our research goals.</p>
+          </div>
+          {% include research_cards.html %}
+          
+        </div>
+      </div>
+    </div>
   </div>
-  
-  <div id="newsid" class="col-sm-5 col-xs-12" >
-	{% include sidebar.html %}
+
+  <!-- NEWS (below home) -->
+  <div id="newsid" class="container-fluid px-0 mt-4">
+    {% include news_scroller.html %}
   </div>
+</div>
+
+
+<style>
+/* Wide, scrollable news list */
+.news-scroller{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 20px;
+  max-height: 600px;          /* controls scroll height */
+  overflow-y: auto;
+  padding: 12px 16px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Individual news cards */
+.news-card{
+  background: #fff;
+  color: #111;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);
+  overflow: hidden;
+}
+
+.news-link{
+  display: grid;
+  grid-template-columns: 220px 1fr;  /* bigger image on the left */
+  gap: 16px;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+}
+
+.news-img{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.news-text{ padding-right: 12px; }
+.news-date{ font-size: 0.9rem; opacity: 0.7; display:block; margin-bottom: 6px; }
+.news-title{ margin: 0 0 6px 0; font-size: 1.1rem; }
+.news-summary{ margin: 0; }
+
+.allnews-link{ padding: 12px 16px; }
+.allnews-link a{ font-weight: 600; }
+
+/* Dark themes: keep cards readable */
+@media (prefers-color-scheme: dark){
+  .news-card{ background: #1f1f1f; color: #f0f0f0; }
+}
+
+
+.cards-row{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:24px;
+  margin: 24px 0;
+}
+
+.research-card{
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  background:#3b3939;
+  border-radius:20px;
+  padding:16px 18px;
+  width:280px;
+  color:#fff !important;
+  box-shadow:0 4px 14px rgba(0,0,0,.12);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.research-card:hover{ transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,.16); }
+
+.research-card img{
+  width:120px; height:120px; object-fit:cover; border-radius:50%;
+  display:block; margin:0 auto 10px;
+}/* Position cards over the bottom of the carousel area */
+.home-hero { position: relative; }
+
+/* Pull cards into the white space and center them */
+.hero-cards{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;           /* adjust how much they overlap */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+}
+
+/* Make room below for the overlapping cards */
+#newsid{ margin-top: 80px; }  /* adjust to match bottom overlap */
+
+/* Your existing cards layout still works */
+.cards-row{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:24px;
+}
+
+/* Mobile: don’t overlay, just stack normally */
+@media (max-width: 768px){
+  .hero-cards{
+    position: static;
+    transform: none;
+    margin-top: 16px;
+  }
+  #newsid{ margin-top: 24px; }
+}
+
+/* Tweak this number to set the space between carousel bottom and header/cards */
+:root { --hero-overlap: 18px; }  /* try 120–180px */
+
+/* The carousel wrapper reserves space for the overlay */
+.home-hero{
+  position: relative;
+  padding-bottom: calc(var(--hero-overlap) + 24px); /* ensures content below doesn't collide */
+}
+
+/* The intro + cards sit below the carousel by `--hero-overlap` */
+.hero-cards{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(-1 * var(--hero-overlap));  /* pushes the block down below the carousel */
+  width: 100%;
+  display: flex;
+  flex-direction: column;  /* intro above cards */
+  align-items: center;
+  z-index: 5;
+}
+
+/* Intro spacing */
+.hero-intro{
+  max-width: 900px;
+  text-align: center;
+  margin: 0 16px 14px;      /* small gap above cards */
+  color: #fff;              /* readable on carousel; remove if not needed */
+  text-shadow: 0 1px 2px rgba(0,0,0,.4);
+}
+
+/* No need to hack #newsid margin anymore */
+#newsid{ margin-top: 0; }
+
+/* Mobile: disable overlay so things stack normally */
+@media (max-width: 768px){
+  .hero-cards{
+    position: static;
+    transform: none;
+  }
+  .home-hero{ padding-bottom: 0; }
+}
+
+</style>

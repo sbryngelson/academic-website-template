@@ -1,0 +1,5 @@
+current directory: /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/sass-embedded-1.69.5/ext/sass
+/usr/bin/ruby3.0 -I/usr/lib/ruby/vendor_ruby -rrubygems /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/rake-13.3.0/exe/rake RUBYARCHDIR\=/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/extensions/x86_64-linux/3.0.0/sass-embedded-1.69.5 RUBYLIBDIR\=/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/extensions/x86_64-linux/3.0.0/sass-embedded-1.69.5
+gem install --force --install-dir /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/sass-embedded-1.69.5/ext/sass/ruby --no-document --ignore-dependencies --platform x86_64-linux-gnu --version 1.69.5 sass-embedded
+cp -r /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/sass-embedded-1.69.5/ext/sass/ruby/gems/sass-embedded-1.69.5-x86_64-linux/ext/sass/dart-sass dart-sass
+rm -rf /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/sass-embedded-1.69.5/ext/sass/ruby

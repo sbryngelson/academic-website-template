@@ -1,0 +1,164 @@
+current directory: /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20250816-10600-w5rqhe.rb extconf.rb
+checking for ffi.h... no
+checking for ffi.h in /usr/local/include,/usr/include/ffi,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ffi,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/ffi... no
+checking for whether -Wl,--exclude-libs,ALL is accepted as LDFLAGS... yes
+checking for rb_gc_mark_movable()... yes
+checking for whether -pthread is accepted as LDFLAGS... yes
+creating extconf.h
+creating Makefile
+
+current directory: /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c
+make DESTDIR\= clean
+
+current directory: /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c
+make DESTDIR\=
+Configuring libffi
+make -C "/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu"
+make[1]: Entering directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu'
+make  all-recursive
+make[2]: Entering directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu'
+Making all in include
+make[3]: Entering directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu/include'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu/include'
+Making all in testsuite
+make[3]: Entering directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu/testsuite'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu/testsuite'
+Making all in man
+make[3]: Entering directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu/man'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu/man'
+make[3]: Entering directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu'
+/bin/bash ./libtool  --tag=CC   --mode=compile x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi  -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src   -Wall  -fexceptions -c -o src/prep_cif.lo /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/prep_cif.c
+libtool: compile:  x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src -Wall -fexceptions -c /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/prep_cif.c  -fPIC -DPIC -o src/prep_cif.o
+/bin/bash ./libtool  --tag=CC   --mode=compile x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi  -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src   -Wall  -fexceptions -c -o src/types.lo /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/types.c
+libtool: compile:  x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src -Wall -fexceptions -c /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/types.c  -fPIC -DPIC -o src/types.o
+/bin/bash ./libtool  --tag=CC   --mode=compile x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi  -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src   -Wall  -fexceptions -c -o src/raw_api.lo /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/raw_api.c
+libtool: compile:  x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src -Wall -fexceptions -c /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/raw_api.c  -fPIC -DPIC -o src/raw_api.o
+/bin/bash ./libtool  --tag=CC   --mode=compile x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi  -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src   -Wall  -fexceptions -c -o src/java_raw_api.lo /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/java_raw_api.c
+libtool: compile:  x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src -Wall -fexceptions -c /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/java_raw_api.c  -fPIC -DPIC -o src/java_raw_api.o
+/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/java_raw_api.c: In function 'ffi_java_raw_call':
+/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/java_raw_api.c:317:3: warning: 'ffi_java_raw_to_ptrarray' is deprecated [-Wdeprecated-declarations]
+  317 |   ffi_java_raw_to_ptrarray (cif, raw, avalue);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/java_raw_api.c:76:1: note: declared here
+   76 | ffi_java_raw_to_ptrarray (ffi_cif *cif, ffi_java_raw *raw, void **args)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/java_raw_api.c: In function 'ffi_java_translate_args':
+/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/java_raw_api.c:328:3: warning: 'ffi_java_raw_size' is deprecated [-Wdeprecated-declarations]
+  328 |   ffi_java_raw *raw = (ffi_java_raw*)alloca (ffi_java_raw_size (cif));
+      |   ^~~~~~~~~~~~
+/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/java_raw_api.c:45:1: note: declared here
+   45 | ffi_java_raw_size (ffi_cif *cif)
+      | ^~~~~~~~~~~~~~~~~
+/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/java_raw_api.c:331:3: warning: 'ffi_java_ptrarray_to_raw' is deprecated [-Wdeprecated-declarations]
+  331 |   ffi_java_ptrarray_to_raw (cif, avalue, raw);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/java_raw_api.c:157:1: note: declared here
+  157 | ffi_java_ptrarray_to_raw (ffi_cif *cif, void **args, ffi_java_raw *raw)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/java_raw_api.c: In function 'ffi_prep_java_raw_closure':
+/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/java_raw_api.c:369:3: warning: 'ffi_prep_java_raw_closure_loc' is deprecated [-Wdeprecated-declarations]
+  369 |   return ffi_prep_java_raw_closure_loc (cl, cif, fun, user_data, cl);
+      |   ^~~~~~
+/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/java_raw_api.c:337:1: note: declared here
+  337 | ffi_prep_java_raw_closure_loc (ffi_java_raw_closure* cl,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/bin/bash ./libtool  --tag=CC   --mode=compile x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi  -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src   -Wall  -fexceptions -c -o src/closures.lo /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/closures.c
+libtool: compile:  x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src -Wall -fexceptions -c /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/closures.c  -fPIC -DPIC -o src/closures.o
+/bin/bash ./libtool  --tag=CC   --mode=compile x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi  -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src   -Wall  -fexceptions -c -o src/tramp.lo /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/tramp.c
+libtool: compile:  x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src -Wall -fexceptions -c /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/tramp.c  -fPIC -DPIC -o src/tramp.o
+/bin/bash ./libtool  --tag=CC   --mode=compile x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi  -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src   -Wall  -fexceptions -c -o src/x86/ffi64.lo /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/x86/ffi64.c
+libtool: compile:  x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src -Wall -fexceptions -c /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/x86/ffi64.c  -fPIC -DPIC -o src/x86/ffi64.o
+/bin/bash ./libtool  --tag=CC   --mode=compile x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi  -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src  -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src  -c -o src/x86/unix64.lo /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/x86/unix64.S
+libtool: compile:  x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src -c /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/x86/unix64.S  -fPIC -DPIC -o src/x86/unix64.o
+/bin/bash ./libtool  --tag=CC   --mode=compile x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi  -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src   -Wall  -fexceptions -c -o src/x86/ffiw64.lo /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/x86/ffiw64.c
+libtool: compile:  x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src -Wall -fexceptions -c /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/x86/ffiw64.c  -fPIC -DPIC -o src/x86/ffiw64.o
+/bin/bash ./libtool  --tag=CC   --mode=compile x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi  -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src  -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src  -c -o src/x86/win64.lo /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/x86/win64.S
+libtool: compile:  x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src -I. -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/include -Iinclude -I/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src -c /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/src/x86/win64.S  -fPIC -DPIC -o src/x86/win64.o
+/bin/bash ./libtool  --tag=CC   --mode=link x86_64-linux-gnu-gcc  -Wall  -fexceptions   -o libffi_convenience.la  src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo src/tramp.lo   src/x86/ffi64.lo src/x86/unix64.lo src/x86/ffiw64.lo src/x86/win64.lo 
+libtool: link: rm -fr  .libs/libffi_convenience.a(D)
+libtool: link: x86_64-linux-gnu-ar cr .libs/libffi_convenience.a  src/prep_cif.o src/types.o src/raw_api.o src/java_raw_api.o src/closures.o src/tramp.o src/x86/ffi64.o src/x86/unix64.o src/x86/ffiw64.o src/x86/win64.o
+libtool: link: x86_64-linux-gnu-ranlib .libs/libffi_convenience.a
+libtool: link: ( cd ".libs" && rm -f "libffi_convenience.la" && ln -s "../libffi_convenience.la" "libffi_convenience.la" )
+/bin/bash ./libtool  --tag=CC   --mode=link x86_64-linux-gnu-gcc  -Wall  -fexceptions -no-undefined -version-info `grep -v '^#' /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi/libtool-version`     -o libffi.la -rpath /usr/local/lib/../lib src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo src/tramp.lo  src/x86/ffi64.lo src/x86/unix64.lo src/x86/ffiw64.lo src/x86/win64.lo 
+libtool: link: x86_64-linux-gnu-ar cr .libs/libffi.a  src/prep_cif.o src/types.o src/raw_api.o src/java_raw_api.o src/closures.o src/tramp.o src/x86/ffi64.o src/x86/unix64.o src/x86/ffiw64.o src/x86/win64.o
+libtool: link: x86_64-linux-gnu-ranlib .libs/libffi.a
+libtool: link: ( cd ".libs" && rm -f "libffi.la" && ln -s "../libffi.la" "libffi.la" )
+make[3]: Leaving directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu'
+make[2]: Leaving directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu'
+make[1]: Leaving directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu'
+compiling AbstractMemory.c
+compiling ArrayType.c
+compiling Buffer.c
+compiling Call.c
+compiling ClosurePool.c
+compiling DynamicLibrary.c
+compiling Function.c
+compiling FunctionInfo.c
+compiling LastError.c
+compiling LongDouble.c
+compiling MappedType.c
+compiling MemoryPointer.c
+compiling MethodHandle.c
+compiling Platform.c
+compiling Pointer.c
+compiling Struct.c
+compiling StructByValue.c
+compiling StructLayout.c
+compiling Thread.c
+compiling Type.c
+compiling Types.c
+compiling Variadic.c
+compiling ffi.c
+linking shared-object ffi_c.so
+
+current directory: /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c
+make DESTDIR\= install
+make -C "/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu"
+make[1]: Entering directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu'
+make  all-recursive
+make[2]: Entering directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu'
+Making all in include
+make[3]: Entering directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu/include'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu/include'
+Making all in testsuite
+make[3]: Entering directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu/testsuite'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu/testsuite'
+Making all in man
+make[3]: Entering directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu/man'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu/man'
+make[3]: Entering directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu'
+make[3]: Leaving directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu'
+make[2]: Leaving directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu'
+make[1]: Leaving directory '/home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/ffi-1.17.2/ext/ffi_c/libffi-x86_64-linux-gnu'
+compiling AbstractMemory.c
+compiling ArrayType.c
+compiling Buffer.c
+compiling Call.c
+compiling ClosurePool.c
+compiling DynamicLibrary.c
+compiling Function.c
+compiling FunctionInfo.c
+compiling LastError.c
+compiling LongDouble.c
+compiling MappedType.c
+compiling MemoryPointer.c
+compiling MethodHandle.c
+compiling Platform.c
+compiling Pointer.c
+compiling Struct.c
+compiling StructByValue.c
+compiling StructLayout.c
+compiling Thread.c
+compiling Type.c
+compiling Types.c
+compiling Variadic.c
+compiling ffi.c
+linking shared-object ffi_c.so
+/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20250816-10600-q2sft

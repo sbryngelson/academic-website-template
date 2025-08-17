@@ -1,20 +1,41 @@
 <!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
-  <body>
-
+  <html>
+  {% include head.html %}    <body>
     {% include header.html %}
 
-    <div class="container-fluid">
-      <div class="row">
-        {{ content }}
-      </div>
+    {%- assign variant = page.layout_variant | default: 'standard' -%}
+    {%- assign container_class = page.container | default: 'container-fluid' -%}
+
+    <div class="{{ container_class }}">
+      {% if variant == 'home_news' %}
+        <!-- HOME (main content + carousels) -->
+        <div id="homeid" class="row">
+          <div class="col-200">
+            {{ content }}
+            {% include carousel.html height="60.25" unit="%" duration="7" number="1" %}
+            {% include carousel.html height="60.25" unit="%" duration="7" number="2" %}
+          </div>
+        </div>
+
+        <!-- NEWS (stacked below) -->
+        <div id="newsid" class="row mt-4">
+          <div class="col-20">
+            <div id="gridid" class="col-sm-20 col-xs-40">
+              {{ content }}
+            </div>
+          </div>
+        </div>
+
+      {% else %}
+        <!-- Standard single-column page -->
+        <div class="row">
+          <div class="col-20">
+            {{ content }}
+          </div>
+        </div>
+      {% endif %}
     </div>
 
-    {% include footer.html %}
-
-  </body>
-
+      {% include footer.html %}
+    </body>
 </html>

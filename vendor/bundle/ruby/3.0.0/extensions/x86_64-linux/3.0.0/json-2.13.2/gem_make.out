@@ -1,0 +1,22 @@
+current directory: /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/json-2.13.2/ext/json/ext/parser
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20250816-10600-dutr7d.rb extconf.rb
+checking for rb_enc_interned_str() in ruby/encoding.h... yes
+checking for rb_hash_new_capa() in ruby.h... no
+checking for rb_hash_bulk_insert() in ruby.h... yes
+checking for strnlen() in string.h... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+checking for x86intrin.h... yes
+checking for cpuid.h... yes
+creating Makefile
+
+current directory: /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/json-2.13.2/ext/json/ext/parser
+make DESTDIR\= clean
+
+current directory: /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/json-2.13.2/ext/json/ext/parser
+make DESTDIR\=
+compiling parser.c
+linking shared-object json/ext/parser.so
+
+current directory: /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/json-2.13.2/ext/json/ext/parser
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 parser.so ./.gem.20250816-10600-cuagv3/json/ext

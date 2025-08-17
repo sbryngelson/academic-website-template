@@ -1,0 +1,16 @@
+current directory: /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.7/ext/stringio
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20250816-10600-5mn83b.rb extconf.rb
+checking for rb_io_mode_t in ruby/io.h... no
+creating Makefile
+
+current directory: /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= clean
+
+current directory: /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\=
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: /home/kyurtsev24/academic-website-template/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20250816-10600-2spkul

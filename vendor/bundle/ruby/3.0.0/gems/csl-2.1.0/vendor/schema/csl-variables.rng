@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns="http://relaxng.org/ns/structure/1.0">
+  <div>
+    <a:documentation>Variables</a:documentation>
+    <define name="variables">
+      <a:documentation>All variables</a:documentation>
+      <choice>
+        <ref name="variables.dates"/>
+        <ref name="variables.names"/>
+        <ref name="variables.standard"/>
+      </choice>
+    </define>
+    <define name="variables.standard">
+      <a:documentation>Standard variables</a:documentation>
+      <choice>
+        <ref name="variables.numbers"/>
+        <ref name="variables.strings"/>
+        <ref name="variables.titles"/>
+      </choice>
+    </define>
+    <define name="variables.dates">
+      <a:documentation>Date variables</a:documentation>
+      <choice>
+        <value>accessed</value>
+        <value>available-date</value>
+        <value>event-date</value>
+        <value>issued</value>
+        <value>original-date</value>
+        <value>submitted</value>
+      </choice>
+    </define>
+    <define name="variables.names">
+      <a:documentation>Name variables</a:documentation>
+      <choice>
+        <value>author</value>
+        <value>chair</value>
+        <value>collection-editor</value>
+        <value>compiler</value>
+        <value>composer</value>
+        <value>container-author</value>
+        <value>contributor</value>
+        <value>curator</value>
+        <value>director</value>
+        <value>editor</value>
+        <value>editor-translator</value>
+        <value>editorial-director</value>
+        <value>executive-producer</value>
+        <value>guest</value>
+        <value>host</value>
+        <value>illustrator</value>
+        <value>interviewer</value>
+        <value>narrator</value>
+        <value>organizer</value>
+        <value>original-author</value>
+        <value>performer</value>
+        <value>producer</value>
+        <value>recipient</value>
+        <value>reviewed-author</value>
+        <value>script-writer</value>
+        <value>series-creator</value>
+        <value>translator</value>
+      </choice>
+    </define>
+    <define name="variables.numbers">
+      <a:documentation>Number variables</a:documentation>
+      <choice>
+        <value>chapter-number</value>
+        <value>citation-number</value>
+        <value>collection-number</value>
+        <value>edition</value>
+        <value>first-reference-note-number</value>
+        <value>issue</value>
+        <value>locator</value>
+        <value>number</value>
+        <value>number-of-pages</value>
+        <value>number-of-volumes</value>
+        <value>page</value>
+        <value>page-first</value>
+        <value>part-number</value>
+        <value>printing-number</value>
+        <value>section</value>
+        <value>supplement-number</value>
+        <value>version</value>
+        <value>volume</value>
+      </choice>
+    </define>
+    <define name="variables.titles">
+      <a:documentation>Title variables</a:documentation>
+      <choice>
+        <value>collection-title</value>
+        <value>container-title</value>
+        <value>original-title</value>
+        <value>part-title</value>
+        <value>reviewed-title</value>
+        <value>title</value>
+        <value>volume-title</value>
+        <!-- Short title forms. Will be removed in CSL 1.1 -->
+        <value>title-short</value>
+        <value>container-title-short</value>
+      </choice>
+    </define>
+    <define name="variables.strings">
+      <a:documentation>String variables</a:documentation>
+      <choice>
+        <value>abstract</value>
+        <value>annote</value>
+        <value>archive</value>
+        <value>archive_collection</value>
+        <value>archive_location</value>
+        <value>archive-place</value>
+        <value>authority</value>
+        <value>call-number</value>
+        <value>citation-key</value>
+        <value>citation-label</value>
+        <value>dimensions</value>
+        <value>division</value>
+        <value>DOI</value>
+        <!-- Alias for 'event-title'. Deprecated. Will be removed in CSL 1.1. -->
+        <value>event</value>
+        <value>event-title</value>
+        <value>event-place</value>
+        <value>genre</value>
+        <value>ISBN</value>
+        <value>ISSN</value>
+        <value>jurisdiction</value>
+        <value>keyword</value>
+        <value>language</value>
+        <value>license</value>
+        <value>medium</value>
+        <value>note</value>
+        <value>original-publisher</value>
+        <value>original-publisher-place</value>
+        <value>PMCID</value>
+        <value>PMID</value>
+        <value>publisher</value>
+        <value>publisher-place</value>
+        <value>references</value>
+        <value>reviewed-genre</value>
+        <value>scale</value>
+        <value>source</value>
+        <value>status</value>
+        <value>URL</value>
+        <value>year-suffix</value>
+      </choice>
+    </define>
+  </div>
+</grammar>

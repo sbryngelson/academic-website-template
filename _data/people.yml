@@ -1,24 +1,64 @@
-- name: Student Here
-  location: Univesity Here
-  degree: Ph.D. 
-  year: 2022
+# _data/team_members.yml
 
-- name: Student Here
-  location: Univesity Here
-  degree: Ph.D. 
-  year: 2021
+# ---------- Postdocs ----------
+- name: Hany Khalifa
+  info: Postdoc
+  email: Hany.Khalifa@oulu.fi
+  photo: people/hany_khalifa.jpg
 
-- name: Student Here
-  location: Univesity Here
-  degree: Ph.D. 
-  year: 2020
+- name: Brij Mohan
+  info: Postdoc
+  email: Brij.Mohan@oulu.fi
+  photo: people/brij_mohan.jpg
 
-- name: Student Here
-  location: Univesity Here
-  degree: M.S.
-  year: 2020
+- name: Christopher Campbell
+  info: Postdoc
+  email: Christopher.Campbell@oulu.fi
+  photo: people/christopher_campbell.jpg
 
-- name: Student Here
-  location: Univesity Here
-  degree: B.S.
-  year: 2020
+- name: Rengel Sia
+  info: Postdoc
+  email: Rengel.Sia@oulu.fi
+  photo: people/rengel_sia.jpg
+
+# ---------- PhD Students ----------
+- name: Sasu Tuohino
+  info: PhD Student
+  email: sasu.tuohino@aalto.fi
+  photo: people/sasu_tuohino.jpg
+
+- name: Anna Khylenko
+  info: PhD Student
+  email: Anna.Khylenko@oulu.fi
+  photo: people/anna_khylenko.jpg
+
+- name: Kaan Yurtseven
+  info: PhD Student
+  email: Kaan.Yurtseven@oulu.fi
+  photo: people/kaan_yurtseven.jpg
+
+- name: Taneli Tolppanen
+  info: PhD Student
+  email: Heikki.Tolppanen@oulu.fi
+  photo: people/taneli_tolppanen.jpg
+
+- name: Teemu Pihkakoski
+  info: PhD Student
+  email: Teemu.Pihkakoski@oulu.fi
+  photo: people/teemu_pihkakoski.jpg
+
+- name: Elina Heikkinen
+  info: PhD Student
+  email: Elina.Heikkinen@oulu.fi
+  photo: people/elina_heikkinen.jpg
+
+# ---------- Summer Students (BSc) ----------
+- name: Axel Vahur
+  info: Summer Student (BSc)
+  email: Axel.Vahur@student.oulu.fi   # primary (student)
+  photo: people/axel_vahur.jpg
+
+- name: Sami Hanhela
+  info: Summer Student (BSc)
+  email: Sami.Hanhela@student.oulu.fi  # primary (student)
+  photo: people/sami_hanhela.jpg

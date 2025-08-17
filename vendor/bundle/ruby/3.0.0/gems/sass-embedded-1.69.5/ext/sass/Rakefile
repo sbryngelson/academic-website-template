@@ -1,0 +1,439 @@
+# frozen_string_literal: true
+
+require 'rake/clean'
+
+task default: %i[install clean]
+
+task install: %w[cli.rb] do
+  Rake::Task['embedded_sass_pb.rb'].invoke unless File.exist?('embedded_sass_pb.rb')
+end
+
+CLEAN.include %w[protoc.exe ruby *.proto *.tar.gz *.zip]
+
+CLOBBER.include %w[dart-sass cli.rb embedded_sass_pb.rb]
+
+file 'protoc.exe' do |t|
+  fetch(ENV.fetch('PROTOC_BIN') { SassConfig.default_protoc }, t.name)
+  chmod 'a+x', t.name
+end
+
+file 'dart-sass' do |t|
+  raise if ENV.key?('DART_SASS')
+
+  gem_install 'sass-embedded', SassConfig.gem_version, SassConfig.gem_platform do |dir|
+    cp_r File.absolute_path("ext/sass/#{t.name}", dir), t.name
+  end
+rescue StandardError
+  archive = fetch(ENV.fetch('DART_SASS') { SassConfig.default_dart_sass })
+  unarchive archive
+  rm archive
+end
+
+file 'cli.rb' => %w[dart-sass] do |t|
+  exe = 'dart-sass/sass'
+  exe = "#{exe}#{['', '.bat', '.exe'].find { |ext| File.exist?("#{exe}#{ext}") }}"
+
+  raise "#{exe} not found" unless File.exist?(exe)
+
+  runtime = 'dart-sass/src/dart'
+  runtime = "#{runtime}#{['', '.exe'].find { |ext| File.exist?("#{runtime}#{ext}") }}"
+  snapshot = 'dart-sass/src/sass.snapshot'
+
+  command = if File.exist?(runtime) && File.exist?(snapshot)
+              "
+      File.absolute_path('#{runtime}', __dir__),
+      File.absolute_path('#{snapshot}', __dir__)
+    "
+            else
+              "
+      File.absolute_path('#{exe}', __dir__)
+    "
+            end
+
+  File.write(t.name, <<~CLI_RB)
+    # frozen_string_literal: true
+
+    module Sass
+      class CLI
+        COMMAND = [#{command}].freeze
+      end
+
+      private_constant :CLI
+    end
+  CLI_RB
+end
+
+file 'embedded_sass.proto' => %w[cli.rb] do |t|
+  fetch(ENV.fetch('EMBEDDED_SASS_PROTOCOL') { SassConfig.default_embedded_sass_protocol }, t.name)
+end
+
+rule '_pb.rb' => %w[.proto protoc.exe] do |t|
+  sh './protoc.exe', '--proto_path=.', '--ruby_out=.', t.source
+end
+
+# This is a FileUtils extension that defines several additional commands to be
+# added to the FileUtils utility functions.
+module FileUtils
+  # PowerShell quirks:
+  # - `powershell -Command -`:
+  #     Arguments must be part of command, thus cannot pass arguments safely without escaping.
+  # - `powershell -Command <script-block> [-args <arg-array>]`:
+  #     This only works when invoking powershell subshell in powershell.
+  # - `powershell -Command <string> [<CommandParameters>]`:
+  #     CommandParameters are joined with command and then parsed, thus cannot pass arguments safely without escaping.
+  # - `powershell -File -`:
+  #     Arguments must be part of file, thus cannot pass arguments safely without escaping.
+  # - `powershell -File <filePath> <args>`:
+  #     This is the only way to pass arguments safely without escaping.
+  def powershell(file, *args)
+    sh 'powershell', '-NoLogo', '-NoProfile', '-NonInteractive', '-ExecutionPolicy', 'Bypass', '-File', file, *args
+  end
+
+  def junzip(archive, dest = '.')
+    require 'java'
+
+    Rake.rake_output_message "Archive:  #{archive}" if Rake::FileUtilsExt.verbose_flag
+
+    current_directory = java.nio.file.Paths.get(org.jruby.Ruby.getGlobalRuntime.getCurrentDirectory)
+    zip_file = java.util.zip.ZipFile.new(current_directory.resolve(archive).toFile)
+    dest_path = current_directory.resolve(dest).normalize
+    entries = zip_file.entries
+    while entries.hasMoreElements
+      entry = entries.nextElement
+      name = entry.getName
+      path = dest_path.resolve(name).normalize
+      raise unless path.startsWith(dest_path)
+
+      Rake.rake_output_message "  inflating: #{name}" if Rake::FileUtilsExt.verbose_flag
+
+      if entry.isDirectory
+        java.nio.file.Files.createDirectories(path)
+      else
+        java.nio.file.Files.createDirectories(path.getParent)
+        java.nio.file.Files.copy(zip_file.getInputStream(entry), path)
+      end
+    end
+  ensure
+    zip_file&.close
+  end
+
+  def unarchive(archive, dest = '.')
+    case archive.downcase
+    when ->(name) { name.include?('.tar.') || name.end_with?('.tar') }
+      mkdir_p dest
+      sh 'tar', '-vxC', dest, '-f', archive, '--no-same-owner', '--no-same-permissions'
+    when ->(name) { name.end_with?('.zip') }
+      if RUBY_PLATFORM == 'java'
+        junzip archive, dest
+      elsif Gem.win_platform?
+        powershell 'expand-archive.ps1', '-Force', '-LiteralPath', archive, '-DestinationPath', dest
+      else
+        sh 'unzip', '-od', dest, archive
+      end
+    else
+      raise ArgumentError, "Unknown archive format #{archive}"
+    end
+  end
+
+  def fetch(source_uri, dest_path = nil)
+    require 'rubygems/remote_fetcher'
+
+    unless source_uri.is_a?(URI::Generic)
+      begin
+        source_uri = URI.parse(source_uri)
+      rescue StandardError
+        source_uri = URI.parse(URI::DEFAULT_PARSER.escape(source_uri.to_s))
+      end
+    end
+
+    scheme = source_uri.scheme
+    source_path = URI::DEFAULT_PARSER.unescape(source_uri.path || source_uri.opaque)
+
+    if Gem.win_platform? && scheme =~ /^[a-z]$/i && !source_path.include?(':')
+      source_path = "#{scheme}:#{source_path}"
+      scheme = nil
+    end
+
+    dest_path = File.basename(source_path) if dest_path.nil?
+
+    case scheme
+    when nil, 'file'
+      if Gem.win_platform? && source_path[0].chr == '/' && source_path[1].chr =~ /[a-z]/i && source_path[2].chr == ':'
+        source_path = source_path[1..]
+      end
+      cp source_path, dest_path
+    else
+      fetcher = Gem::RemoteFetcher.fetcher
+      symbol = "fetch_#{scheme}".to_sym
+      raise ArgumentError, "Unsupported URI scheme #{scheme}" unless fetcher.respond_to?(symbol)
+
+      if Rake::FileUtilsExt.verbose_flag
+        redacted_uri = Gem::RemoteFetcher::FetchError.new('', source_uri).uri
+        Rake.rake_output_message "fetch #{redacted_uri}"
+      end
+
+      unless Rake::FileUtilsExt.nowrite_flag
+        data = fetcher.public_send(symbol, source_uri)
+        Gem.write_binary(dest_path, data)
+      end
+    end
+
+    dest_path
+  end
+
+  def gem_install(name, version, platform)
+    install_dir = File.absolute_path('ruby', __dir__)
+
+    if Rake::FileUtilsExt.verbose_flag
+      Rake.rake_output_message [
+        'gem', 'install',
+        '--force',
+        '--install-dir', install_dir,
+        '--no-document', '--ignore-dependencies',
+        '--platform', platform,
+        '--version', version,
+        'sass-embedded'
+      ].join(' ')
+    end
+
+    dependency = Gem::Dependency.new(name, version)
+
+    specs_and_sources, _errors = Gem::SpecFetcher.fetcher.spec_for_dependency(dependency, false)
+
+    spec, source = specs_and_sources.find do |s, _|
+      s.platform == platform
+    end
+
+    raise if spec.nil? || source.nil?
+
+    if Rake::FileUtilsExt.nowrite_flag
+      installer = Gem::Installer.for_spec(spec, { force: true, install_dir: install_dir })
+    else
+      path = source.download(spec, install_dir)
+      installer = Gem::Installer.at(path, { force: true, install_dir: install_dir })
+      installer.install
+    end
+
+    yield installer.dir
+  ensure
+    rm_rf install_dir
+  end
+end
+
+# The {SassConfig} module.
+module SassConfig
+  module Platform
+    OS = case RbConfig::CONFIG['host_os'].downcase
+         when /darwin/
+           'darwin'
+         when /linux-android/
+           'linux-android'
+         when /linux-musl/
+           'linux-musl'
+         when /linux-uclibc/
+           'linux-uclibc'
+         when /linux/
+           'linux'
+         when *Gem::WIN_PATTERNS
+           'windows'
+         else
+           RbConfig::CONFIG['host_os'].downcase
+         end
+
+    CPU = case RbConfig::CONFIG['host_cpu'].downcase
+          when /amd64|x86_64|x64/
+            'x86_64'
+          when /i\d86|x86|i86pc/
+            'i386'
+          when /arm64|aarch64/
+            'aarch64'
+          when /arm/
+            'arm'
+          when /ppc64le|powerpc64le/
+            'powerpc64le'
+          when /s390x/
+            's390x'
+          else
+            RbConfig::CONFIG['host_cpu']
+          end
+
+    ARCH = "#{CPU}-#{OS}".freeze
+
+    EMULATION = if ARCH == 'aarch64-windows'
+                  begin
+                    require_relative 'win32_api'
+
+                    if Win32API.x64?
+                      'x86_64'
+                    elsif Win32API.x86?
+                      'i386'
+                    end
+                  rescue LoadError
+                    'i386'
+                  end
+                end
+  end
+
+  private_constant :Platform
+
+  module_function
+
+  def dart_sass_version
+    require 'json'
+
+    spec = JSON.parse(File.read(File.absolute_path('package.json', __dir__)))
+
+    spec['dependencies']['sass']
+  end
+
+  def default_dart_sass
+    repo = 'https://github.com/sass/dart-sass'
+
+    tag_name = dart_sass_version
+
+    message = "dart-sass for #{Platform::ARCH} not available at #{repo}/releases/tag/#{tag_name}"
+
+    os = case Platform::OS
+         when 'darwin'
+           'macos'
+         when 'linux'
+           'linux'
+         when 'linux-android'
+           repo = 'https://github.com/dart-android/dart-sass'
+           'android'
+         when 'linux-musl'
+           repo = 'https://github.com/dart-musl/dart-sass'
+           'linux'
+         when 'windows'
+           'windows'
+         else
+           raise NotImplementedError, message
+         end
+
+    cpu = case Platform::EMULATION || Platform::CPU
+          when 'i386'
+            'ia32'
+          when 'x86_64'
+            'x64'
+          when 'aarch64'
+            'arm64'
+          when 'arm'
+            'arm'
+          else
+            raise NotImplementedError, message
+          end
+
+    ext = Platform::OS == 'windows' ? 'zip' : 'tar.gz'
+
+    "#{repo}/releases/download/#{tag_name}/dart-sass-#{tag_name}-#{os}-#{cpu}.#{ext}"
+  end
+
+  def default_protoc
+    require 'rubygems/remote_fetcher'
+
+    repo = 'https://repo.maven.apache.org/maven2/com/google/protobuf/protoc'
+
+    spec = Gem::Dependency.new('google-protobuf').to_spec
+
+    version = spec.version
+
+    message = "protoc for #{Platform::ARCH} not available at #{repo}/#{version}"
+
+    os = case Platform::OS
+         when 'darwin'
+           'osx'
+         when 'linux'
+           'linux'
+         when 'windows'
+           'windows'
+         else
+           raise NotImplementedError, message
+         end
+
+    cpu = case Platform::EMULATION || Platform::CPU
+          when 'i386'
+            'x86_32'
+          when 'x86_64'
+            'x86_64'
+          when 'aarch64'
+            'aarch_64'
+          when 'powerpc64le'
+            'ppcle_64'
+          when 's390x'
+            's390_64'
+          else
+            raise NotImplementedError, message
+          end
+
+    uri = "#{repo}/#{version}/protoc-#{version}-#{os}-#{cpu}.exe"
+
+    Gem::RemoteFetcher.fetcher.fetch_https(URI.parse("#{uri}.sha1"))
+
+    uri
+  rescue Gem::RemoteFetcher::FetchError
+    tuples = Gem::SpecFetcher.fetcher.detect(:released) do |name_tuple|
+      name_tuple.name == spec.name && name_tuple.platform == 'ruby'
+    end
+
+    tuples.sort.reverse_each do |name_tuple, _source|
+      uri = "#{repo}/#{name_tuple.version}/protoc-#{name_tuple.version}-#{os}-#{cpu}.exe"
+
+      Gem::RemoteFetcher.fetcher.fetch_https(URI.parse("#{uri}.sha1"))
+
+      return uri
+    rescue Gem::RemoteFetcher::FetchError
+      next
+    end
+
+    raise NotImplementedError, message
+  end
+
+  def default_embedded_sass_protocol
+    require 'json'
+    require 'open3'
+
+    stdout, stderr, status = Open3.capture3(RbConfig.ruby,
+                                            File.absolute_path('../../exe/sass', __dir__),
+                                            '--embedded',
+                                            '--version')
+
+    raise stderr unless status.success?
+
+    tag_name = JSON.parse(stdout)['protocolVersion']
+
+    "https://github.com/sass/sass/raw/embedded-protocol-#{tag_name}/spec/embedded_sass.proto"
+  end
+
+  def development?
+    File.exist?('../../Gemfile')
+  end
+
+  def gem_version
+    require_relative '../../lib/sass/embedded/version'
+
+    development? ? dart_sass_version : Sass::Embedded::VERSION
+  end
+
+  def gem_platform
+    platform = Gem::Platform.new("#{Platform::EMULATION || Platform::CPU}-#{RbConfig::CONFIG['host_os']}")
+    case Platform::OS
+    when 'darwin'
+      Gem::Platform.new([RbConfig::CONFIG['host_cpu'], platform.os])
+    when 'linux'
+      if platform.version&.start_with?('gnu')
+        platform
+      else
+        Gem::Platform.new([platform.cpu, platform.os, "gnu#{platform.version}"])
+      end
+    when 'windows'
+      case platform.cpu
+      when 'x86_64'
+        Gem::Platform.new('x64-mingw32')
+      else
+        Gem::Platform.new([platform.cpu, 'mingw32'])
+      end
+    else
+      platform
+    end
+  end
+end

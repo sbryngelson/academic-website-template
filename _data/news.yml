@@ -1,6 +1,12 @@
-- date: 1 January, 1941
-  headline: "Example news here"
+# _data/news.yml
+- date: 2025-08-10
+  headline: "New Group Member"
+  summary: "We have a new member joining our team."
+  image: /images/headshot.jpg
+  link: /team/#new-member            # ← internal link to section/anchor on your Team page
 
-- date: 1 January, 1940
-  headline: "Example news here"
-
+- date: 2025-07-22
+  headline: "Group retreat photos"
+  summary: "Two days of brainstorming and hiking."
+  image: /images/everest.jpg
+  link: https://example.com/retreat-post   # external is fine

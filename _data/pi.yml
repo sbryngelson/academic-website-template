@@ -1,7 +1,7 @@
-- name: Dr. Richard Feynman
+- name: Matti Silveri
   photo: headshot.jpg
-  info: Richard C. Tolman Professor, California Institute of Technology
-  email: richard@university.edu
+  info: Associate Professor in Department of Physics and Astronomy, University of Oulu
+  email: matti.silveri@univ.oulu.fi
   github: https://github.com/
   researchgate: https://www.researchgate.net/
   scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
@@ -9,9 +9,10 @@
   # Change the items in "education" you have (up to 6)
   education:
     [
-      "(1942) Ph.D. Physics, Princeton University",
-      "(1939) B.S. Physics, Massachusetts Institute of Technology",
+      "(2013) Ph.D. Physics, University of Oulu",
+      "(2013-2016) Postdoctoral Associate, Yale University, USA",
+      "(2016) Postdoctoral Researcher, University of Oulu and Aalto University",
+      "(2018-2023) Academy of Finland Research Fellow, Project: 'Many-body localization and dissipation in arrays of superconducting transmon devices'",
     ]
 
-  educationshort:
-    ["(1942) Ph.D. Physics, Princeton", "(1939) B.S. Physics, MIT"]
+
