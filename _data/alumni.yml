@@ -1,4 +1,16 @@
-- name: Example Alumni Name
+- name: Douglas González
+  photo: people/DouglasGonzalez.jpeg
+  duration: In the lab 2015-18
+  info: Now at Univeristy of X
+  email: exampleemail@gmail.com
+
+- name: Cesar Marroquín
+  photo: people/CesarMarroquin.jpeg
+  duration: In the lab 2015-18
+  info: Now at Univeristy of X
+  email: exampleemail@gmail.com
+
+- name: Ivan Grijalva
   photo: rock.jpg
   duration: In the lab 2015-18
   info: Now at Univeristy of X

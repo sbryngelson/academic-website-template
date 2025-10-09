@@ -1,9 +1,82 @@
+- name: Julio Fajardo
+  slug: julio-fajardo
+  photo: people/JulioFajardo.jpg
+  position: Poner su info
+  email: julio.fajardo@galileo.edu
+  google_schoolar: https://website.com
+  linkedin: https://website.com
+
+- name: Michaelle Pérez
+  slug: michaelle-perez
+  photo: people/MichaellePerez.jpg
+  bio: Michaelle Perez is a researcher, consultant, and professor with extensive experience in mathematics and computer science education.
+      He has taught at the university level, authored books, and provided consultancy for multiple companies across diverse sectors.
+      His research interests include artificial intelligence, medical imaging, and computer vision, with a focus on creating innovative solutions that bridge theoretical knowledge and practical applications.
+      He holds a B.Sc. in Computer Science from Galileo University, Guatemala.
+  interests: ["Mathematics", "Artificial Intelligence", "Medical Imaging", "Computer Vision"]
+  education:
+      - { degree: "BSc in Computer Science", year: <YEAR>, place: "Galileo University, Guatemala" }
+  position: Researcher
+  google_scholar: https://scholar.google.com/citations?hl=en&user=OHs1KRUAAAAJ
+  linkedin: https://www.linkedin.com/in/michaelle-perez-468a43173/
+
+- slug: juan-pablo-barrientos
+  name: Juan Pablo Barrientos
+  photo: people/JuanBarrientos.jpeg
+  bio: Juan Pablo Barrientos is a research assistant in Biomedical Engineering at Universidad Galileo. 
+       His research focuses on applying artificial intelligence to medical imaging, with a particular interest in developing computational tools for improving diagnostic 
+       accuracy and healthcare accessibility in resource-limited settings. He holds an M.Sc. in Biomedical Engineering and a B.Sc. in Computer Science Engineering from Universidad Galileo, Guatemala.
+       His work bridges computer science and biomedical applications, aiming to create innovative solutions that address critical challenges in global health.
+  interests: ["Artificial Intelligence", "Medical Imaging", "Global Health"]
+  education:
+    - { degree: "MSc in Biomedical Engineering", year: 2023, place: "Universidad Galileo, Guatemala" }
+    - { degree: "BSc in System Engineering", year: 2021, place: "Universidad Galileo, Guatemala" }
+  position: Research Assistant
+  email: juan.barrientos@galileo.edu
+  google_schoolar: https://website.com
+  linkedin: https://www.linkedin.com/in/juanpbarrientos/
+
+- name: Juan Pablo Rodríguez
+  slug: juan-pablo-rodriguez
+  photo: people/JuanRodriguez.jpg
+  bio: He currently works as a research assistant at BiomedLab and as a teacher assistant at Galileo University. He graduated with honors with a Master’s degree in Biomedical Engineering and also with a Bachelor's degree in Computer Science Engineering. His current research focuses on processing and analysis of medical images, especially CBCT images, working to develop an AI-based system capable of automatic segmentation of upper airways to improve clinical evaluation. He also works in the development of an application aimed at the early detection of cerebrovascular events to assist emergency services and improve the patient's outcome.
+  position: Research Assistant
+  interests: ["Medical imaging", "Artificial Intelligence", "Image processing", "Bioprinting"]
+  education:
+    - { degree: "MSc in Biomedical Engineering", year: 2023, place: "Universidad Galileo, Guatemala" }
+    - { degree: "BSc in System Engineering", year: 2021, place: "Universidad Galileo, Guatemala" }
+  email: pablo.rodriguezillescas@galileo.edu
+  google_schoolar: https://scholar.google.com/citations?user=D3HdJiIAAAAJ&hl=en
+  linkedin: https://www.linkedin.com/jp-rodriguez-illescas
+
+- name: Paula Barrios
+  slug: paula-barrios
+  photo: people/PaulaBarrios.jpg
+  bio: Biomedical Engineer from Universidad del Valle de Guatemala. Experience includes participation in medical equipment maintenance and technical support projects in hospital environments, as well as volunteer involvement in technical approaches within public and semi-public healthcare systems. Currently pursuing a Master’s degree in Biomedical Engineering at Universidad Galileo and collaborating in research activities within the laboratory, including a project focused on studying muscle hemodynamics during the phases of gait.
+  position: Poner su info
+  email: example@galileo.edu
+  google_schoolar: https://website.com
+  linkedin: https://website.com
+
+- name: José Barrios
+  slug: jose-barrios
+  photo: people/JoseBarrios.jpg
+  position: Poner su info
+  email: example@galileo.edu
+  google_schoolar: https://website.com
+  linkedin: https://website.com
+
 - name: Example student name
+  slug: example-student-name
   photo: rock.jpg
-  info: Postdoc, started Oct 2040
+  position: Postdoc, started Oct 2040
   email: exampleemail@gmail.com
-  website: https://website.com
+  google_schoolar: https://website.com
+  linkedin: https://website.com
+
 
 - name: "This could be you !"
   photo: rock.jpg
   info: See <a href="www">openings</a> for more info
+
+

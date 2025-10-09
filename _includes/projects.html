@@ -1,0 +1,56 @@
+
+<style>
+  .media-container {
+  width: 100%;
+  max-width: 800px;  
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.media-container iframe,
+.media-container video,
+.media-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+</style>
+{% assign projects = site.data.projects %}
+{% for p in projects %}
+<div class="row align-items-center project">
+    <div class="col-md-6">
+      {% if p.media.type == "youtube" and p.media.youtube_id %}
+        <div class="media-container ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/{{ p.media.youtube_id | escape }}"
+                  title="{{ p.title | escape }}" allowfullscreen></iframe>
+        </div>
+      {% elsif p.media.type == "video" and p.media.file %}
+        <div class="media-container ratio ratio-16x9">
+          <video controls playsinline preload="metadata">
+            <source src="{{ p.media.file | relative_url }}" type="video/mp4">
+            {% if p.media.file_webm %}<source src="{{ p.media.file_webm | relative_url }}" type="video/webm">{% endif %}
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      {% else %}
+        <div class="media-container ratio ratio-16x9">
+          <img src="{{ p.media.image | relative_url }}"
+              alt="{{ p.media.alt | default: p.title | escape }}">
+        </div>
+      {% endif %}
+    </div>
+    <div class="col-md-6 text-md-start">
+      <h3>{{ p.title }}</h3>
+      <p>{{ p.summary }}</p>
+      {% if p.resources %}
+        <p><strong>Resources:</strong>
+        {% for r in p.resources %}
+          <a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.label }}</a>{% if forloop.last == false %} · {% endif %}
+        {% endfor %}</p>
+      {% endif %}
+    </div>
+</div>
+{% endfor %}

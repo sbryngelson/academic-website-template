@@ -1,27 +1,47 @@
 <br/>
 <section id="footer">
-<div class="container-footer">
-  <div class="panel-footer">
-	  <div class="row">
-		<div class="col-sm-4">
-		    <h5>About</h5>	
-            <p>{{ site.affiliation }}</p>
+  <div class="container-footer">
+    <div class="panel-footer">
+      <div class="row align-items-center">
+
+		<div class="col-sm-2 text-center">
+		<img src="{{ site.baseurl }}/images/iib_logo.png" 
+			alt="Left Logo" 
+			style="height:80px; width:auto; object-fit:contain;">
 		</div>
 
-		<div class="col-sm-4">
-		    <h5>Contact</h5>	
-            <p>{{ site.contact }}</p>
+        <div class="col-sm-8">
+          <div class="row">
+            <div class="col-sm-4">
+              <h5>About</h5>
+              <p>{{ site.affiliation }}</p>
+            </div>
+
+            <div class="col-sm-4">
+              <h5>Contact</h5>
+              <p>{{ site.contact }}</p>
+            </div>
+
+            <div class="col-sm-4">
+              <h5>Coordinates</h5>
+              <p>{{ site.location }}</p>
+            </div>
+          </div>
+        </div>
+
+		<div class="col-sm-2 text-center">
+		<img src="{{ site.baseurl }}/images/biomed_logo.png" 
+			alt="Right Logo" 
+			style="height:120px; width:auto; object-fit:contain;">
 		</div>
 
-		<div class="col-sm-4">
-		    <h5>Coordinates</h5>	
-            <p>{{ site.location }}</p>
-		</div>
-	  </div>
+      </div>
 
-      <center><p>&copy {{ "now" | date: "%Y" }} {{site.title | escape }} </p></center>
-	</div>
+      <center>
+        <p>&copy; {{ "now" | date: "%Y" }} {{ site.title | escape }}</p>
+      </center>
+    </div>
   </div>
-</div>
+</section>
 
 <script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>

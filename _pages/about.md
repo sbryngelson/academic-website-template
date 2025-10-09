@@ -6,8 +6,13 @@ permalink: /about/
 ---
 
 ## About
+<div class="jumbotron">
+<div style="display: flex; justify-content: center;"> 
+<img src="{{ site.url }}{{ site.baseurl }}/images/team.jpg" width="100%" style="max-width:500px; justify-content:center"/>
+</div>
+</div>
 
-{% for member in site.data.pi %}
+<!-- {% for member in site.data.pi %}
 
 <div class="jumbotron">
 <div class="row">
@@ -32,7 +37,7 @@ permalink: /about/
 </div>
 </div>
 </div>
-{% endfor %}
+{% endfor %} -->
 
 {% if site.data.grants %}
 
@@ -70,9 +75,31 @@ permalink: /about/
 </div>
 {% endif %}
 
+{% if site.data.networks %}
 <div class="jumbotron">
+  <h3>Network connections</h3>
+  <ul>
+    {% for network in site.data.networks %}
+      <li>{{ network.name }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% if site.data.academic_service %}
+<div class="jumbotron">
+  <h3>Academic service</h3>
+  <ul>
+    {% for service in site.data.academic_service %}
+      <li>{{ service.name }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<!-- <div class="jumbotron">
   <h4>Sponsors</h4>
   <div style='display:block; text-align:center; margin-left:auto; margin-right:auto;'>
   {% for funder in site.data.funders %}<a href="{{ funder.url }}" target="_blank"><img src='{{ site.url }}{{ site.baseurl }}/images/{{ funder.image }}' style='max-height: 80px; max-width: 200px; margin: 1%'/></a>{% endfor %}
   </div>
-</div>
+</div> -->

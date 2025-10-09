@@ -1,17 +1,21 @@
-- name: Dr. Richard Feynman
-  photo: headshot.jpg
-  info: Richard C. Tolman Professor, California Institute of Technology
-  email: richard@university.edu
+- name: Andrea Lara, Ph.D. 
+  photo: /people/andrea.jpg
+  info: Andrea Lara, Ph.D, director of the Biomedical Engineering Institute at Universidad Galileo
+  email: andrealh@galileo.edu
   github: https://github.com/
   researchgate: https://www.researchgate.net/
-  scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
+  # agregar google schoolar
   cv: cv/cv.pdf
   # Change the items in "education" you have (up to 6)
   education:
     [
-      "(1942) Ph.D. Physics, Princeton University",
-      "(1939) B.S. Physics, Massachusetts Institute of Technology",
+      "(2023) Ph.D. in Biomedical Engineering, TU Graz, Austria",
+      "(2017) MSc in Biomedical Engineering, University of Luebeck, Germany",
+      "(2013) BSc in Electronics Engineering, Universidad Galileo, Guatemala",
     ]
 
   educationshort:
-    ["(1942) Ph.D. Physics, Princeton", "(1939) B.S. Physics, MIT"]
+    ["(2023) Ph.D. in Biomedical Engineering, TU Graz",
+      "(2017) MSc in Biomedical Engineering, University of Luebeck",
+      "(2013) BSc in Electronics Engineering, Universidad Galileo",
+      ]

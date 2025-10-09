@@ -1,24 +1,19 @@
-- name: Student Here
-  location: Univesity Here
-  degree: Ph.D. 
-  year: 2022
+- name: Juan Pablo Barrientos
+  location: Universidad Galileo
+  degree: MSc 
+  year: 2023
 
-- name: Student Here
-  location: Univesity Here
-  degree: Ph.D. 
-  year: 2021
+- name: Juan Pablo Rodríguez
+  location: Universidad Galileo
+  degree: MSc 
+  year: 2023
 
-- name: Student Here
-  location: Univesity Here
-  degree: Ph.D. 
-  year: 2020
+- name: Paula Barrios
+  location: Universidad Galileo
+  degree: BSc
+  year: 2024
 
-- name: Student Here
-  location: Univesity Here
-  degree: M.S.
-  year: 2020
-
-- name: Student Here
-  location: Univesity Here
-  degree: B.S.
-  year: 2020
+- name: José Barrios
+  location: Universidad Galileo
+  degree: BSc
+  year: 2024

@@ -20,56 +20,101 @@ pre{
     word-wrap: break-word; 
     width:100%; overflow-x:auto;
 }
+
+.bibliography { list-style: none; padding-left: 0; margin-left: 0; }
+.bibliography li { list-style: none; margin: 0 0 20px 0; }
+.bibliography li::marker { content: ""; }
+
+
+.pub-item{
+  padding:14px; border-radius:12px; border:1px solid rgba(0,0,0,.08);
+  box-shadow:0 2px 8px rgba(0,0,0,.06); margin-bottom:14px;
+}
+.pub-title{
+  font-weight:700; font-size:1.08rem; line-height:1.35; margin-bottom:4px;
+}
+.pub-venue{
+  font-style:italic; color:#6b7280; font-size:.95rem;
+}
+.pub-authors{
+  color:#374151; font-size:.95rem; margin-top:6px;
+}
+.pub-actions{ margin-top:10px; }
+.btn{
+  margin-bottom:5px; padding:0 14px; height:22px; line-height:22px;
+}
+pre{
+  white-space: pre-wrap; word-wrap: break-word; width:100%; overflow-x:auto;
+}
 </style>
 
 
-<div class="text-justify">{{reference}}</div>
+<div class="pub-item">
+  <div class="pub-title">
+    {% if entry.doi and entry.type != 'unpublished' %}
+      <a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank">{{ entry.title }}</a>
+    {% elsif entry.url %}
+      <a href="{{ entry.url }}" target="_blank">{{ entry.title }}</a>
+    {% else %}
+      {{ entry.title }}
+    {% endif %}
+  </div>
 
-<!-- You can use the below to make your name bold -->
-<!-- {{reference | replace_first: 'Bryngelson, S. H.', '<b>Bryngelson, S. H.</b>' | replace_first: 'Bryngelson, S.', '<b>Bryngelson, S.</b>' }}</div> -->
+  <div class="pub-venue">
+    {% if entry.journal %}{{ entry.journal }}{% elsif entry.booktitle %}{{ entry.booktitle }}{% endif %}
+    {% if entry.year %} · {{ entry.year }}{% endif %}
+  </div>
 
-{% assign bibtest = false %}
-{% if entry.file %}
-{% assign bibfile = "/papers/" | append: entry.file %}
-{% for file in site.static_files %}
-  {% if file.path contains bibfile %}
-   {% assign bibtest = true %}
+  <div class="pub-authors">
+    {%- assign names = entry.author_array -%}
+    {%- for a in names -%}
+      {{ a.last }}, {{ a.first }}{% unless forloop.last %}; {% endunless %}
+    {%- endfor -%}
+  </div>
+
+  <div class="pub-actions">
+    {% assign bibtest = false %}
+    {% if entry.file %}
+      {% assign bibfile = "/papers/" | append: entry.file %}
+      {% for file in site.static_files %}{% if file.path contains bibfile %}{% assign bibtest = true %}{% endif %}{% endfor %}
+    {% endif %}
+
+    {% if bibtest %}
+      <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.file }}" target="_blank">
+        <button class="btn btn-success btm-sm">PDF</button>
+      </a>
+    {% endif %}
+
+    {% if entry.doi %}
+      {% if entry.type == 'unpublished' %}
+        <a href="{{ entry.doi | prepend: 'https://arxiv.org/abs/' }}" target="_blank"><button class="btn btn-primary btm-sm">ARXIV</button></a>
+      {% else %}
+        <a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank"><button class="btn btn-primary btm-sm">DOI</button></a>
+      {% endif %}
+    {% endif %}
+
+    {% if entry.type == 'unpublished' or entry.type == 'article' or entry.type == 'thesis' or entry.type == 'inproceedings' or entry.type == 'report' %}
+      <button class="btn btn-danger btm-sm" onclick="toggleBibtex{{entry.key}}()">BIB</button>
+    {% endif %}
+
+    {% if entry.abstract %}
+      <button class="btn btn-warning btm-sm" onclick="toggleAbstract{{entry.key}}()">ABSTRACT</button>
+    {% endif %}
+  </div>
+
+  {% if entry.abstract %}
+    <div id="a{{entry.key}}" style="display:none; background-color:black; border-radius:5px; padding:10px; margin-top:10px;">
+      <pre>{{ entry.bibtex | remove: "entry.abstract" }}</pre>
+    </div>
+  {% else %}
+    <div id="a{{entry.key}}" style="display:none; background-color:black; border-radius:5px; padding:10px; margin-top:10px;">
+      <pre>{{ entry.bibtex }}</pre>
+    </div>
   {% endif %}
-{% endfor %}
-{% endif %}
 
-{% if bibtest %}
-<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.file }}" target="_blank"><button class="btn btn-success btm-sm">PDF</button></a>
-{% endif %}
-
-{% if entry.doi %}
-{% if entry.type == 'unpublished' %}
-<a href="{{ entry.doi | prepend: 'https://arxiv.org/abs/' }}" target="_blank"><button class="btn btn-primary btm-sm">ARXIV</button></a>
-{% else %}
-<a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank"><button class="btn btn-primary btm-sm">DOI</button></a>
-{% endif %}
-{% endif %}
-
-{% if entry.type == 'unpublished' or entry.type == 'article' or  entry.type == 'thesis' or entry.type == 'inproceedings' or entry.type == 'report' %}
-<button class="btn btn-danger btm-sm"  onclick="toggleBibtex{{entry.key}}()">BIB</button>
-{% endif %}
-
-{% if entry.abstract %}
-<button class="btn btn-warning btm-sm"  onclick="toggleAbstract{{entry.key}}()">ABSTRACT</button>
-{% endif %}
-
-{% if entry.abstract %}
-<div id="a{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>{{ entry.bibtex | remove: "entry.abstract" }}</pre>
-</div>
-{% else %}
-<div id="a{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>{{ entry.bibtex }}</pre>
-</div>
-{% endif %}
-
-<div id="b{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>{{entry.abstract}}</pre>
+  <div id="b{{entry.key}}" style="display:none; background-color:black; border-radius:5px; padding:10px; margin-top:10px;">
+    <pre>{{entry.abstract}}</pre>
+  </div>
 </div>
 
 <script>

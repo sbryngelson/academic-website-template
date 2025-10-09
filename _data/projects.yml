@@ -1,0 +1,45 @@
+# Orden de aparición
+- key: natalia
+  title: "NatalIA — AI-assisted obstetric ultrasound"
+  media:
+    type: youtube          # youtube | image
+    youtube_id: "E8vFWk4uNYU"
+    image: "/images/natalia.jpg"   # fallback/preview
+    alt: "NatalIA project overview"
+  summary: >
+    NatalIA is a tele-ultrasound workflow that helps midwives and primary-care providers
+    acquire fetal scans using blind sweeps with portable probes. Our platform uses AI to  
+    assist with fetal plane identification, quality control, and asynchronous specialist review,
+    lowering access barriers in low-resource settings.
+  resources:
+    - label: "Project page (CLIAS)"
+      url: "https://clias.iecs.org.ar/proyectos/natalia/"
+
+
+- key: cbct
+  title: "CBCT — Image reconstruction & anatomical analytics"
+  media:
+    type: video
+    file: "/videos/cbct.mp4"  # Use a placeholder image or actual project image
+    alt: "CBCT project image"
+  summary: >
+    Diagnosing nasal and sinonasal disorders, including tumors, relies heavily on a detailed evaluation of the sinonasal cavity. However, the complex anatomy of the sinuses and the minimal intensity variations between air, soft tissue, and fluids pose significant challenges for accurate evaluation and surgery planning. This project focuses on developing an AI-based system capable of automatic segmentation of the sinonasal cavity in CBCT studies to improve clinical evaluation and the implementation of path-finding algorithms to aid in surgery planning.
+
+- key: strokes
+  title: "Strokes App — Prehospital stroke triage & decision support"
+  media:
+    type: image
+    image: "/images/strokes.png"  
+    alt: "Strokes App placeholder"
+  summary: >
+    In resource-limited settings, access to specialists is often limited, and early stroke detection is extremely valuable, as in most cases the patient has only about 4.5 hours before stroke damage is irreversible. This project focuses on developing a system for early detection of strokes in low-resource settings, particularly within challenging public health environments. The project is currently being developed in collaboration with San Juan National Hospital and local emergency services.
+
+- key: nirs
+  title: "NIRS — Wearable near-infrared spectroscopy for bedside monitoring"
+  media:
+    type: image
+    image: "/images/nirs.jpg"      
+    alt: "NIRS project placeholder"
+  summary: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat mi non finibus
+    bibendum. Integer laoreet nisl sit amet vehicula scelerisque.

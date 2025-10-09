@@ -11,3 +11,83 @@ $baseurl: "{{ site.url }}{{ site.baseurl }}";
 // @import "bootstrap_customization";
 @import "bootstrap";
 @import "SHB_css";
+:root { color-scheme: light; }
+
+html, body {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+
+/* Si tu tema añade clases/atributos de “dark”, neutralízalos */
+html.dark, body.dark,
+[data-theme="dark"], [data-bs-theme="dark"],
+.theme-dark, .dark {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+html.dark *, body.dark *,
+[data-theme="dark"] *, [data-bs-theme="dark"] *,
+.theme-dark * , .dark * {
+  color: inherit;
+  background-color: transparent;
+}
+
+/* Bloques comunes que podrían quedar oscuros */
+.card, .panel, .box, .container, .content, .pub-item {
+  background: #ffffff !important;
+  color: #111111 !important;
+  border-color: rgba(0,0,0,.08) !important;
+}
+
+/* Enlaces y botones (ajusta a tu paleta si quieres) */
+a { color: #0645ad !important; }
+pre, code { background:#f6f8fa !important; color:#0a0a0a !important; }
+
+
+/* ——— NAVBAR siempre clara ——— */
+.navbar,
+.navbar-inverse,
+.navbar-dark,
+.navbar.bg-dark,
+.navbar.navbar-dark.bg-dark {
+  background: #ffffff !important;
+  border-color: rgba(0,0,0,.08) !important;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link,
+.navbar a {
+  color: #111111 !important;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-brand:hover { color: #0d6efd !important; }
+
+/* Si el tema usa helpers globales */
+.bg-dark    { background-color: #ffffff !important; }
+.navbar-dark .navbar-nav .nav-link,
+.text-white { color: #111111 !important; } /* ok porque forzamos modo claro */
+
+/* ——— Contenedores/“secciones” que te salen negros ——— */
+.well, .panel, .panel-default, .panel-body,
+.box, .jumbotron, .content, .container {
+  background: #ffffff !important;
+  color: #111111 !important;
+  border: 1px solid rgba(0,0,0,.08) !important;
+}
+
+/* ——— Cards y listas ——— */
+.card, .card-body, .card-header, .card-footer,
+.list-group-item {
+  background: #ffffff !important;
+  color: #111111 !important;
+  border-color: rgba(0,0,0,.08) !important;
+}
+
+/* ——— Títulos y enlaces ——— */
+h1, h2, h3, h4, h5, h6 { color: #111111 !important; }
+a { color: #0645ad !important; }
+a:hover { color: #0d6efd !important; }
+
+/* ——— Bloques de bib/abstract ——— */
+pre, code { background:#f6f8fa !important; color:#0a0a0a !important; }
+

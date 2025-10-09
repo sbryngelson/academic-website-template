@@ -1,0 +1,130 @@
+<style>
+.member-hero{
+  display:grid;
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "photo bio"
+    "meta  details";
+  gap:24px;
+  align-items:start;
+}
+.member-photo{ 
+  grid-area: photo; 
+  width:260px; 
+  height:290px; 
+  border-radius:50%; 
+  object-fit:cover; 
+  box-shadow:0 4px 18px rgba(0,0,0,.08); 
+}
+.member-meta{ 
+  grid-area: meta; 
+  text-align:center; 
+  justify-self:center; 
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.member-name{ font-size:2rem; margin:0; }
+.member-position{ color:#6c757d; margin:.25rem 0 .75rem; }
+
+.member-icons{
+  display:flex !important;
+  flex-direction:row !important;
+  flex-wrap:nowrap !important;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  white-space:nowrap;
+}
+.member-icons a{
+  display:inline-flex !important;
+  align-items:center;
+  justify-content:center;
+  line-height:1;
+  margin:0; 
+  padding:0;
+  flex:0 0 auto;
+}
+.member-icons i{ display:block; }
+
+.member-bio{ grid-area: bio; }
+.member-details{ grid-area: details; }
+.member-section-title{ font-weight:700; font-size:1.25rem; margin:1.25rem 0 .5rem; }
+
+.member-card{ display:none; }
+.member-card:target{ display:block; }
+:target ~ #default-block{ display:none; }
+
+@media (max-width: 768px){
+  .member-hero{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "photo"
+      "meta"
+      "bio"
+      "details";
+  }
+  .member-photo{ width:220px; height:220px; justify-self:center; }
+}
+</style>
+
+<div class="container my-4">
+
+  {% for m in site.data.team_members %}
+  <section class="member-card" id="{{ m.slug | escape }}">
+    <div class="member-hero">
+
+      <img class="member-photo" alt="{{ m.name | escape }}"
+           src="{{ site.baseurl }}/images/{{ m.photo }}">
+
+      <div class="member-meta">
+        <h1 class="member-name">{{ m.name }}</h1>
+        {% if m.position %}<div class="member-position">{{ m.position }}</div>{% endif %}
+        <div class="member-icons">
+          {% if m.email %}<a href="mailto:{{ m.email }}"><i class="fa fa-envelope-square fa-2x"></i></a>{% endif %}
+          {% if m.linkedin %}<a href="{{ m.linkedin }}" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>{% endif %}
+          {% if m.google_schoolar %}<a href="{{ m.google_schoolar }}" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a>{% endif %}
+        </div>
+      </div>
+
+      <div class="member-bio">
+        {% if m.bio %}<p class="lead">{{ m.bio }}</p>{% endif %}
+      </div>
+
+      <div class="member-details">
+        <div class="row">
+          <div class="col-md-6">
+            {% if m.interests and m.interests.size > 0 %}
+            <div class="member-section-title">Interests</div>
+            <ul>
+              {% for t in m.interests %}<li>{{ t }}</li>{% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+          <div class="col-md-6">
+            {% if m.education and m.education.size > 0 %}
+            <div class="member-section-title">Education</div>
+            <ul class="list-unstyled">
+              {% for e in m.education %}
+                <li>
+                  <span class="fw-semibold">{{ e.degree }}</span>{% if e.year %}, {{ e.year }}{% endif %}<br>
+                  <span class="text-muted">{{ e.place }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  {% endfor %}
+
+  <section id="default-block">
+    <h3>Select a team member</h3>
+    <p>Please go back to the <a href="{{ site.baseurl }}/team/">team page</a> and click a name.</p>
+  </section>
+
+</div>
