@@ -4,10 +4,18 @@
   summary: "This is a brief summary of the news article that will appear in the sidebar preview."
   content: "This is the full content of the news article. You can write multiple paragraphs here with all the details about the news. This content will only appear in the full news page (allnews)."
   image: "news.jpg"
+  links:
+    - text: "Read more on our website"
+      url: "https://example.com/article1"
+    - text: "Related research paper"
+      url: "https://example.com/paper1"
 
 - date: 1 January, 1940
   title: "Another example news"
   summary: "Brief summary of this second news article for sidebar display."
   content: "Complete content of the second news article with all relevant information and details that you want to share with your readers."
   image: "news.jpg"
+  links:
+    - text: "External source"
+      url: "https://example.com/source"
 
