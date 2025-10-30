@@ -1,6 +1,13 @@
+
 - date: 1 January, 1941
-  headline: "Example news here"
+  title: "Example news title here"
+  summary: "This is a brief summary of the news article that will appear in the sidebar preview."
+  content: "This is the full content of the news article. You can write multiple paragraphs here with all the details about the news. This content will only appear in the full news page (allnews)."
+  image: "news.jpg"
 
 - date: 1 January, 1940
-  headline: "Example news here"
+  title: "Another example news"
+  summary: "Brief summary of this second news article for sidebar display."
+  content: "Complete content of the second news article with all relevant information and details that you want to share with your readers."
+  image: "news.jpg"
 
