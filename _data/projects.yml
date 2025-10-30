@@ -43,3 +43,12 @@
   summary: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat mi non finibus
     bibendum. Integer laoreet nisl sit amet vehicula scelerisque.
+
+- key: farmahl
+  title: "Interactions Web — Drug Interaction Search Platform"
+  media:
+    type: image
+    image: "/images/FarmaHL.png"
+    alt: "FarmaHL project overview"
+  summary: >
+    web-based tool designed to streamline the process of retrieving and summarizing drug interaction information from trusted medical sources. The platform enables pharmacists and hospital staff to perform unified searches across multiple databases simultaneously, automatically generating concise summaries for each consulted source. By centralizing access and reducing redundant searches, this web helps minimize workflow bottlenecks and accelerates the preparation of clinical reports for hospitalized patients.
