@@ -1,0 +1,121 @@
+<style>
+    .member-hero{
+      display:grid;
+      grid-template-columns: 280px 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "photo bio"
+        "meta  details";
+      gap:24px;
+      align-items:start;
+    }
+    .member-photo{ 
+      grid-area: photo; 
+      width:260px; 
+      height:290px; 
+      border-radius:50%; 
+      object-fit:cover; 
+      box-shadow:0 4px 18px rgba(0,0,0,.08); 
+    }
+    .member-meta{ 
+      grid-area: meta; 
+      text-align:center; 
+      justify-self:center; 
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+    .member-name{ font-size:2rem; margin:0; }
+    .member-position{ color:#6c757d; margin:.25rem 0 .75rem; }
+    
+    .member-icons{
+      display:flex !important;
+      flex-direction:row !important;
+      flex-wrap:nowrap !important;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      white-space:nowrap;
+    }
+    .member-icons a{
+      display:inline-flex !important;
+      align-items:center;
+      justify-content:center;
+      line-height:1;
+      margin:0; 
+      padding:0;
+      flex:0 0 auto;
+    }
+    .member-icons i{ display:block; }
+    
+    .member-bio{ grid-area: bio; }
+    .member-details{ grid-area: details; }
+    .member-section-title{ font-weight:700; font-size:1.25rem; margin:1.25rem 0 .5rem; }
+    
+    .member-card{ display:none; }
+    .member-card:target{ display:block; }
+    :target ~ #default-block{ display:none; }
+    
+    @media (max-width: 768px){
+      .member-hero{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "photo"
+          "meta"
+          "bio"
+          "details";
+      }
+      .member-photo{ width:220px; height:220px; justify-self:center; }
+    }
+</style>
+    
+    <div class="container my-4">
+    
+      {% for m in site.data.pi %}
+      <section class="member-card" id="{{ m.slug | escape }}">
+        <div class="member-hero">
+    
+          <img class="member-photo" alt="{{ m.name | escape }}"
+               src="{{ site.baseurl }}/images/{{ m.photo }}">
+    
+          <div class="member-meta">
+            <h1 class="member-name">{{ m.name }}</h1>
+            {% if m.info %}<div class="member-position">{{ m.info }}</div>{% endif %}
+            <div class="member-icons">
+              {% if m.email %}<a href="mailto:{{ m.email }}"><i class="fa fa-envelope-square fa-2x"></i></a>{% endif %}
+              {% if m.github %}<a href="{{ m.github }}" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>{% endif %}
+              {% if m.researchgate %}<a href="{{ m.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-2x"></i></a>{% endif %}
+              {% if m.scholar %}<a href="{{ m.scholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a>{% endif %}
+              {% if m.cv %}<a href="{{ site.baseurl }}/{{ m.cv }}" target="_blank"><i class="ai ai-cv-square ai-2x"></i></a>{% endif %}
+            </div>
+          </div>
+    
+          <div class="member-bio">
+            {% if m.bio %}<p class="lead">{{ m.bio }}</p>{% endif %}
+          </div>
+    
+          <div class="member-details">
+            <div class="row">
+              <div class="col-md-12">
+                {% if m.education and m.education.size > 0 %}
+                <div class="member-section-title">Education</div>
+                <ul class="list-unstyled">
+                  {% for edu in m.education %}
+                    <li class="mb-2">{{ edu }}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </section>
+      {% endfor %}
+    
+      <section id="default-block">
+        <h3>Select PI profile</h3>
+        <p>Please go back to the <a href="{{ site.baseurl }}/team/">team page</a> and click on the PI name.</p>
+      </section>
+    
+    </div>

@@ -1,6 +1,8 @@
 - name: Andrea Lara, Ph.D. 
+  slug: andrea-lara
   photo: /people/andrea.jpg
   info: Andrea Lara, Ph.D, director of the Biomedical Engineering Institute at Universidad Galileo
+  bio: Lorem ipsum dolor sit amet consectetur adipiscing elit, conubia enim leo urna diam curae feugiat, vulputate ultricies vestibulum nisi elementum per. Euismod primis auctor et nam interdum vitae, senectus posuere facilisis ornare aliquet, at quis cum rhoncus porta.
   email: andrealh@galileo.edu
   github: https://github.com/
   researchgate: https://www.researchgate.net/
