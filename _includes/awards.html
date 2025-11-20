@@ -1,0 +1,78 @@
+<style>
+    .awards-container {
+      margin-top: 1rem;
+    }
+    
+    .award-item {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1.5rem;
+      align-items: start;
+      padding: 1rem 0;
+      border-bottom: 1px solid #e9ecef;
+    }
+    
+    .award-item:last-child {
+      border-bottom: none;
+    }
+    
+    .award-image {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.1);
+      object-fit: cover;
+    }
+    
+    .award-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .award-name {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: #000000;
+      margin-bottom: 0.25rem;
+    }
+    
+    .award-year {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+    
+    @media (max-width: 768px) {
+      .award-item {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      
+      .award-image {
+        max-width: 150px;
+        margin: 0 auto;
+      }
+    }
+    </style>
+    
+    {% if site.data.awards %}
+    <div class="jumbotron">
+      <h3>Awards</h3>
+      <div class="awards-container">
+        {% for award in site.data.awards %}
+          <div class="award-item">
+            <div>
+              <img src="{{ site.url }}{{ site.baseurl }}/images/{{ award.image }}" 
+                   alt="{{ award.name }}" 
+                   class="award-image"/>
+            </div>
+            <div class="award-content">
+              <div class="award-name">{{ award.name | replace: "-","&#8211;" }}</div>
+              <div class="award-year">{{ award.year }}</div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}

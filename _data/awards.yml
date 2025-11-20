@@ -1,3 +1,7 @@
-- name: Example award here (2021)
-- name: Example award here (2020)
+- name: Example award here
+  year: 2021
+  image: rock.jpg
+- name: Example award here
+  year: 2020
+  image: rock.jpg
 

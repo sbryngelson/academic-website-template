@@ -1,2 +1,8 @@
-- name: CLIAS - 2023
-- name: CLIAS - 2024
+- name: CLIAS 
+  date: 2023
+  content: Lorem ipsum dolor sit amet consectetur adipiscing elit, conubia enim leo urna diam curae feugiat
+
+- name: CLIAS 
+  date: 2024
+  content: Lorem ipsum dolor sit amet consectetur adipiscing elit, conubia enim leo urna diam curae feugiat
+

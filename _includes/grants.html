@@ -1,0 +1,58 @@
+<style>
+    .grants-container {
+      margin-top: 1rem;
+    }
+    
+    .grant-item {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #e9ecef;
+    }
+    
+    .grant-item:last-child {
+      border-bottom: none;
+    }
+    
+    .grant-header {
+      margin-bottom: 0.35rem;
+    }
+    
+    .grant-name {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: #000000;
+    }
+    
+    .grant-date {
+      font-size: 0.9rem;
+      color: #6c757d;
+      font-weight: 500;
+      margin-left: 0.5rem;
+    }
+    
+    .grant-content {
+      font-size: 0.95rem;
+      color: #495057;
+      line-height: 1.5;
+      padding-left: 0;
+      margin-top: 0.25rem;
+    }
+    </style>
+    
+    {% if site.data.grants %}
+    <div class="jumbotron">
+      <h3>Grants</h3>
+      <div class="grants-container">
+        {% for grant in site.data.grants %}
+          <div class="grant-item">
+            <div class="grant-header">
+              <span class="grant-name">{{ grant.name }}</span>
+              <span class="grant-date">({{ grant.date }})</span>
+            </div>
+            {% if grant.content %}
+              <div class="grant-content">{{ grant.content }}</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
