@@ -1,0 +1,33 @@
+<style>
+    .networks-container {
+      margin-top: 1rem;
+    }
+    
+    .network-item {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #e9ecef;
+    }
+    
+    .network-item:last-child {
+      border-bottom: none;
+    }
+    
+    .network-name {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: #000000;
+    }
+    </style>
+    
+    {% if site.data.networks %}
+    <div class="jumbotron">
+      <h3>Network connections</h3>
+      <div class="networks-container">
+        {% for network in site.data.networks %}
+          <div class="network-item">
+            <div class="network-name">{{ network.name }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}

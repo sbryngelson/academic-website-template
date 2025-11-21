@@ -27,8 +27,11 @@
   <h4>News</h4>
 
   {% for article in site.data.news limit:3 %}
-  <b>{{ article.date }}</b>
-    <p>{{ article.headline }}</p>
+  <div style="margin-bottom: 20px;">
+    <h5><b>{{ article.title }}</b></h5>
+    <p style="margin: 5px 0; font-size: 1em; color: #666;">{{ article.date }}</p>
+    <p>{{ article.summary }}</p>
+  </div>
   {% endfor %}
   
   <h5><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></h5>

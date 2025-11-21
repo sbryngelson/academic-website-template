@@ -1,0 +1,46 @@
+<style>
+    .news-image-container {
+      width: 100%;
+      max-width: 800px;  
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+  
+    .news-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      display: block;
+    }
+  
+    .news-item {
+      margin-bottom: 40px; 
+      padding-bottom: 30px; 
+      border-bottom: 1px solid #eee;
+    }
+  </style>
+  
+  {% for article in site.data.news %}
+  <div class="row align-items-center news-item">
+      <div class="col-md-6">
+        {% if article.image %}
+          <div class="news-image-container ratio ratio-16x9">
+            <img src="{{site.url}}{{site.baseurl}}/images/news/{{ article.image }}"
+                alt="{{ article.title | escape }}">
+          </div>
+        {% endif %}
+      </div>
+      <div class="col-md-6 text-md-start">
+        <h3>{{ article.title }}</h3>
+        <p style="color: #666; font-style: italic; margin-bottom: 15px;">{{ article.date }}</p>
+        <p style="text-align: justify;">{{ article.content }}</p>
+        {% if article.links %}
+          <p><strong>Related Links:</strong>
+          {% for link in article.links %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.text }}</a>{% if forloop.last == false %} · {% endif %}
+          {% endfor %}</p>
+        {% endif %}
+      </div>
+  </div>
+  {% endfor %}

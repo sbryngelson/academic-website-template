@@ -61,10 +61,38 @@
 - name: José Barrios
   slug: jose-barrios
   photo: people/JoseBarrios.jpg
-  position: Poner su info
+  bio: José Barrios is a teaching assistant in Computer Science and Mathematics at Universidad Galileo, where he is also a research assistant in the Biomedical Engineering Laboratory. His current work combines his background in Systems Engineering with his postgraduate studies in Artificial Intelligence, focusing on the integration of computational approaches and biomedical applications. He holds a B.Sc. in System Engineering (Program completion) from Universidad Galileo, Guatemala, and is currently pursuing a postgraduate degree in Artificial Intelligence at the same institution. His interests include the development of innovative projects that leverage engineering and AI to create practical solutions with real-world impact.
+  position: Student
+  interests: ["Artificial Intelligence", "development of innovation projects", "AI to improve medicine"]
+  education:
+    - { degree: "Program completion in System Engineering", year: 2024, place: "Universidad Galileo, Guatemala" }
   email: example@galileo.edu
   google_schoolar: https://website.com
-  linkedin: https://website.com
+  linkedin: https://www.linkedin.com/in/jose-javier-barrios
+
+- name: Natali Corado
+  slug: natali-corado
+  photo: people/NataliCorado.jpeg
+  bio: Currently in the final year of a Bachelor’s Degree in Systems Engineering, Computer Science, and Information Technology. Enthusiastic about software development, artificial intelligence, and technology innovation, aiming to apply computational solutions in educational and scientific contexts.
+  position: Student
+  interests: [ "Software Development", "Artificial Intelligence", "Data Analysis" ]
+  education:
+    - { degree: "BSc in Systems Engineering and Computer Science", year: "Expected 2025", place: "Universidad Galileo, Guatemala" }
+  email: exampleemail@gmail.com
+  google_schoolar: https://website.com
+  linkedin: https://www.linkedin.com/in/natali-corado-689971394/
+
+- name: Mariandré Sosa
+  slug: mariandre-sosa
+  photo: people/MariandreSosa.jpg
+  bio: Mariandré Sosa is a second-year Mechatronics Engineering student at Universidad Galileo, Guatemala, and a volunteer at Biomedical institute. Her work and interests center on the development of accessible medical technologies, with a particular focus on ultrasound systems for community healthcare and midwifery. She is also interested in medical imaging, prosthetics, and the simulation of biomedical equipment, aiming to integrate engineering innovation with social impact to make healthcare technologies more inclusive and affordable.
+  position: Student
+  interests: ["Accessible Medical Technology", "Ultrasound Systems", "Medical Imaging", "Prosthetics", "Biomedical Simulation"]
+  education:
+    - { degree: "BSc in Mechatronics Engineering (in progress)", year: "2024 -", place: "Universidad Galileo, Guatemala" }
+  email: exampleemail@gmail.com
+  google_schoolar: https://website.com
+  linkedin: www.linkedin.com/in/mariandré-sosa-melgar
 
 - name: Example student name
   slug: example-student-name

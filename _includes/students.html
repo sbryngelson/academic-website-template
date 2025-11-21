@@ -1,0 +1,49 @@
+<style>
+    .students-container {
+      margin-top: 1rem;
+    }
+    
+    .student-item {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #e9ecef;
+    }
+    
+    .student-item:last-child {
+      border-bottom: none;
+    }
+    
+    .student-name {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: #000000;
+    }
+    
+    .student-info {
+      font-size: 0.9rem;
+      color: #6c757d;
+      margin-left: 0.5rem;
+    }
+    
+    .student-details {
+      font-size: 0.95rem;
+      color: #495057;
+      margin-top: 0.25rem;
+    }
+    </style>
+    
+    {% if site.data.people %}
+    <div class="jumbotron">
+      <h3>Students and Mentoring</h3>
+      <div class="students-container">
+        {% for student in site.data.people %}
+          <div class="student-item">
+            <div>
+              <span class="student-name">{{ student.name }}</span>
+              <span class="student-info">({{ student.degree }}, {{ student.year }})</span>
+            </div>
+            <div class="student-details">{{ student.location }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
