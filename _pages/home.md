@@ -12,7 +12,7 @@ The BiomedLab is proud to be the first research laboratory dedicated to Biomedic
 <div class="container">
 <div class="row">
 <center>    
-<img src="{{ site.url }}{{ site.baseurl }}/images/biomed_logo.png" width="100%"/><br/>
+<img src="{{ site.url }}{{ site.baseurl }}/images/logos/biomed_logo.jpg" width="100%"/><br/>
 </center>
 </div>
 </div>

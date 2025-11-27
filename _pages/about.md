@@ -42,9 +42,9 @@ permalink: /about/
 {::nomarkdown}
 {% include grants.html %}
 {% include awards.html %}
-{% include students.html %}
+<!-- {% include students.html %} -->
 {% include networks.html %}
-{% include academic_service.html %}
+<!-- {% include academic_service.html %} -->
 {:/nomarkdown}
 
 

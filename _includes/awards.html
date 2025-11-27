@@ -18,7 +18,7 @@
     
     .award-image {
       width: 100%;
-      max-width: 180px;
+      max-width: 400px;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,.1);
@@ -68,8 +68,9 @@
                    class="award-image"/>
             </div>
             <div class="award-content">
-              <div class="award-name">{{ award.name | replace: "-","&#8211;" }}</div>
-              <div class="award-year">{{ award.year }}</div>
+              <div class="award-name">{{ award.name | replace: "-","&#8211;" }} - {{ award.year }}</div>
+              <div class="award-year">{{ award.description }}</div>
+              
             </div>
           </div>
         {% endfor %}

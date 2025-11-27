@@ -1,10 +1,23 @@
-- name: Julio Fajardo
-  slug: julio-fajardo
+- slug: julio-fajardo
+  name: Julio Enrique Fajardo
   photo: people/JulioFajardo.jpg
-  position: Poner su info
+  bio:  Julio Enrique Fajardo, PhD, is the Subdirector of the Turing Laboratory
+        and a Senior Researcher at the Biomedical Engineering Research Laboratory (BiomedLab)
+        at Universidad Galileo. His work focuses on robotics for rehabilitation, artificial intelligence,
+        computer vision, optimal and robust control, and biomedical instrumentation. He earned 
+        his Ph.D. in Electrical Engineering from Universidade Estadual de Campinas (UNICAMP), 
+        graduating Summa Cum Laude, and holds both a master's degree in Industrial Electronics 
+        and a bachelor's degree in Electronic Engineering from Universidad Galileo.
+  interests: ["Robotics", "Control Systems", "Computer Vision", "Biomedical Engineering", "Artificial Intelligence"]
+  education:
+    - { degree: "PhD in Electrical Engineering", year: 2023, place: "UNICAMP, Brazil" }
+    - { degree: "MSc in Industrial Electronics", year: 2017, place: "Universidad Galileo, Guatemala" }
+    - { degree: "BSc in Electronic Engineering", year: 2012, place: "Universidad Galileo, Guatemala" }
+  position: Senior Researcher
   email: julio.fajardo@galileo.edu
-  google_schoolar: https://website.com
-  linkedin: https://website.com
+  google_scholar: https://scholar.google.com/citations?user=-G6WKocAAAAJ
+  linkedin: https://www.linkedin.com/in/julioefajardo/
+
 
 - name: Michaelle Pérez
   slug: michaelle-perez
@@ -15,14 +28,14 @@
       He holds a B.Sc. in Computer Science from Galileo University, Guatemala.
   interests: ["Mathematics", "Artificial Intelligence", "Medical Imaging", "Computer Vision"]
   education:
-      - { degree: "BSc in Computer Science", year: <YEAR>, place: "Galileo University, Guatemala" }
-  position: Researcher
+      - { degree: "BSc in Computer Science", year: 2010, place: "Galileo University, Guatemala" }
+  position: Senior Researcher
   google_scholar: https://scholar.google.com/citations?hl=en&user=OHs1KRUAAAAJ
   linkedin: https://www.linkedin.com/in/michaelle-perez-468a43173/
 
 - slug: juan-pablo-barrientos
   name: Juan Pablo Barrientos
-  photo: people/JuanBarrientos.jpeg
+  photo: people/JuanBarrientos.jpg
   bio: Juan Pablo Barrientos is a research assistant in Biomedical Engineering at Universidad Galileo. 
        His research focuses on applying artificial intelligence to medical imaging, with a particular interest in developing computational tools for improving diagnostic 
        accuracy and healthcare accessibility in resource-limited settings. He holds an M.Sc. in Biomedical Engineering and a B.Sc. in Computer Science Engineering from Universidad Galileo, Guatemala.
@@ -33,7 +46,7 @@
     - { degree: "BSc in System Engineering", year: 2021, place: "Universidad Galileo, Guatemala" }
   position: Research Assistant
   email: juan.barrientos@galileo.edu
-  google_schoolar: https://website.com
+  google_scholar: https://website.com
   linkedin: https://www.linkedin.com/in/juanpbarrientos/
 
 - name: Juan Pablo Rodríguez
@@ -46,17 +59,16 @@
     - { degree: "MSc in Biomedical Engineering", year: 2023, place: "Universidad Galileo, Guatemala" }
     - { degree: "BSc in System Engineering", year: 2021, place: "Universidad Galileo, Guatemala" }
   email: pablo.rodriguezillescas@galileo.edu
-  google_schoolar: https://scholar.google.com/citations?user=D3HdJiIAAAAJ&hl=en
+  google_scholar: https://scholar.google.com/citations?user=D3HdJiIAAAAJ&hl=en
   linkedin: https://www.linkedin.com/jp-rodriguez-illescas
 
 - name: Paula Barrios
   slug: paula-barrios
   photo: people/PaulaBarrios.jpg
   bio: Biomedical Engineer from Universidad del Valle de Guatemala. Experience includes participation in medical equipment maintenance and technical support projects in hospital environments, as well as volunteer involvement in technical approaches within public and semi-public healthcare systems. Currently pursuing a Master’s degree in Biomedical Engineering at Universidad Galileo and collaborating in research activities within the laboratory, including a project focused on studying muscle hemodynamics during the phases of gait.
-  position: Poner su info
-  email: example@galileo.edu
-  google_schoolar: https://website.com
-  linkedin: https://website.com
+  position: Student
+  email: 	25012505@galileo.edu
+  linkedin: https://www.linkedin.com/in/paula-barrios0206/
 
 - name: José Barrios
   slug: jose-barrios
@@ -67,7 +79,7 @@
   education:
     - { degree: "Program completion in System Engineering", year: 2024, place: "Universidad Galileo, Guatemala" }
   email: example@galileo.edu
-  google_schoolar: https://website.com
+  google_scholar: https://website.com
   linkedin: https://www.linkedin.com/in/jose-javier-barrios
 
 - name: Natali Corado
@@ -79,7 +91,7 @@
   education:
     - { degree: "BSc in Systems Engineering and Computer Science", year: "Expected 2025", place: "Universidad Galileo, Guatemala" }
   email: exampleemail@gmail.com
-  google_schoolar: https://website.com
+  google_scholar: https://website.com
   linkedin: https://www.linkedin.com/in/natali-corado-689971394/
 
 - name: Mariandré Sosa
@@ -91,20 +103,46 @@
   education:
     - { degree: "BSc in Mechatronics Engineering (in progress)", year: "2024 -", place: "Universidad Galileo, Guatemala" }
   email: exampleemail@gmail.com
-  google_schoolar: https://website.com
+  google_scholar: https://website.com
   linkedin: www.linkedin.com/in/mariandré-sosa-melgar
 
-- name: Example student name
-  slug: example-student-name
-  photo: rock.jpg
-  position: Postdoc, started Oct 2040
-  email: exampleemail@gmail.com
-  google_schoolar: https://website.com
-  linkedin: https://website.com
+- name: Leonel Morales
+  slug: leonel-morales
+  photo: people/LeonelMorales.png
+  bio:  A final-year Electronic Engineering student at Universidad Galileo, Guatemala, volunteer in the biomedical engineering laboratory, passionate about electronics, both in the development of integrated circuits and in their implementation in different areas such as industry or medicine, with the aim of increasing my knowledge and improving in my area of ​​work.
+  position: Student
+  interests: ["PCB Desing", "Embedded systems"]
+  education:
+    - { degree: "BSc in Systems Engineering (in progress)", year: "2023 -", place: "Universidad Galileo, Guatemala" }
+  email: 23001545@galileo.edu
+  linkedin: www.linkedin.com/in/leonel-morales-de-paz-891935392
+
+- name: Aaron Garcia
+  slug: aaron-garcia
+  photo: people/AaronGarcia.jpeg
+  bio: A final-year Mechatronics Engineering student at Universidad Galileo, Guatemala, with strong interests in electronics design, embedded systems, and creating mechanisms that integrate hardware and motion. Passionate about motion analysis, actuator control, and 3D mechanical designs aimed at solving real technical challenges.
+       Especially motivated by projects where electronics and mechanics merge in the medical field whether through sensing, instrumentation, or developing devices that support healthcare. Enjoys turning ideas into functional prototypes and exploring how engineering can create meaningful impact.
+  position: Student
+  interests: ["PCB Desing", "Applied Mechanics", "3D Design", "Medical instrumentation"]
+  education:
+    - { degree: "BSc in Systems Engineering (in progress)", year: "2022 -", place: "Universidad Galileo, Guatemala" }
+  email: aaron.garcia@galileo.edu
+  linkedin : www.linkedin.com/in/aaron-s-garcia-270b9033a
 
 
-- name: "This could be you !"
-  photo: rock.jpg
-  info: See <a href="www">openings</a> for more info
+
+
+# - name: Example student name
+#   slug: example-student-name
+#   photo: rock.jpg
+#   position: Postdoc, started Oct 2040
+#   email: exampleemail@gmail.com
+#   google_scholar: https://website.com
+#   linkedin: https://website.com
+
+
+# - name: "This could be you !"
+#   photo: rock.jpg
+#   info: See <a href="www">openings</a> for more info
 
 

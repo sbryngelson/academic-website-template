@@ -1,13 +1,18 @@
 - name: Andrea Lara, Ph.D. 
   slug: andrea-lara
-  photo: /people/andrea.jpg
+  photo: /people/Andrea.jpg
   info: Andrea Lara, Ph.D, director of the Biomedical Engineering Institute at Universidad Galileo
-  bio: Lorem ipsum dolor sit amet consectetur adipiscing elit, conubia enim leo urna diam curae feugiat, vulputate ultricies vestibulum nisi elementum per. Euismod primis auctor et nam interdum vitae, senectus posuere facilisis ornare aliquet, at quis cum rhoncus porta.
+  bio:  Andrea Lara holds a Bachelor's in Electronics from Universidad Galileo, a Master's in Biomedical Engineering from the University of Luebeck, 
+        and a PhD in Biomedical Engineering from Graz University of Technology. She is currently the Director of the Biomedical Engineering Department at Universidad Galileo,
+        where she leads Guatemala's first biomedical academic program and research laboratory. Her research focuses on applying artificial intelligence (AI) to 
+        medical image analysis, particularly on developing tools that address the specific challenges faced by Guatemala's healthcare system. 
   email: andrealh@galileo.edu
-  github: https://github.com/
-  researchgate: https://www.researchgate.net/
+  linkedin: https://www.linkedin.com/in/andrea-lara-/
+  google_scholar: https://scholar.google.com/citations?user=fzd1NpYAAAAJ&hl=en
+  # github: https://github.com/
+  # researchgate: https://www.researchgate.net/
   # agregar google schoolar
-  cv: cv/cv.pdf
+  #cv: cv/cv.pdf
   # Change the items in "education" you have (up to 6)
   education:
     [

@@ -1,1 +1,18 @@
+- name: RISE-MICCAI
+  url: https://rise-miccai.org/
+  logo: networks/rise_logo.jpg
+
+- name: SIPAIM
+  url: https://sipaim.org/
+  logo: networks/sipaim_logo.jpg
+
+- name: FUTURE-AI
+  url: https://future-ai.eu/
+  logo: networks/future_ai_logo.jpg
+
 - name: LABI
+  url: https://labi.lat/es/
+  logo: networks/labi_logo.jpg
+
+
+

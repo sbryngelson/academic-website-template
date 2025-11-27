@@ -1,11 +1,12 @@
 - name: Favio Reyna
-  photo: rock.jpg
-  duration: In the lab 2015-18
-  info: Now at Univeristy of X
+  photo: people/FavioReyna.jpeg
+  medical_specialty: Radiologist
+  info: Chief of Radiology Department - DiagnostiX <br>
+        Secretary of the School of Medicine at Universidad Franciso Marroquín
   email: exampleemail@gmail.com
 
-- name: Mónica
-  photo: rock.jpg
-  duration: In the lab 2015-18
-  info: Now at Univeristy of X
+- name: Mónica Morales
+  photo: people/MonicaMorales.jpg
+  medical_specialty: Radiologist
+  info: Radiologist at Diagnostixs 
   email: exampleemail@gmail.com

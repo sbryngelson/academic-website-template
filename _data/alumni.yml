@@ -1,17 +1,16 @@
 - name: Douglas González
   photo: people/DouglasGonzalez.jpeg
-  duration: In the lab 2015-18
-  info: Now at Univeristy of X
-  email: exampleemail@gmail.com
+  duration: In the lab 2020-24
+  info: Lab manager at FISLAB, Universidad Galileo
+
 
 - name: Cesar Marroquín
   photo: people/CesarMarroquin.jpeg
-  duration: In the lab 2015-18
-  info: Now at Univeristy of X
-  email: exampleemail@gmail.com
+  duration: In the lab 2023-24
+  info: Research assistant at Turing Lab, Universidad Galileo
+
 
 - name: Ivan Grijalva
-  photo: rock.jpg
-  duration: In the lab 2015-18
-  info: Now at Univeristy of X
-  email: exampleemail@gmail.com
+  photo: people/IvanGrijalva.jpg
+  duration: In the lab 2019-22
+  info: Senior data scientist at  Electric Power Markets

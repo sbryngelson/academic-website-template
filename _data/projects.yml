@@ -4,7 +4,7 @@
   media:
     type: youtube          # youtube | image
     youtube_id: "E8vFWk4uNYU"
-    image: "/images/natalia.jpg"   # fallback/preview
+    image: "/images/project/natalia.jpg"   # fallback/preview
     alt: "NatalIA project overview"
   summary: >
     NatalIA is a tele-ultrasound workflow that helps midwives and primary-care providers
@@ -29,7 +29,7 @@
   title: "Strokes App — Prehospital stroke triage & decision support"
   media:
     type: image
-    image: "/images/strokes.png"  
+    image: "/images/projects/strokes.png"  
     alt: "Strokes App placeholder"
   summary: >
     In resource-limited settings, access to specialists is often limited, and early stroke detection is extremely valuable, as in most cases the patient has only about 4.5 hours before stroke damage is irreversible. This project focuses on developing a system for early detection of strokes in low-resource settings, particularly within challenging public health environments. The project is currently being developed in collaboration with San Juan National Hospital and local emergency services.
@@ -38,7 +38,7 @@
   title: "NIRS — Wearable near-infrared spectroscopy for bedside monitoring"
   media:
     type: image
-    image: "/images/nirs.jpg"      
+    image: "/images/projects/nirs.jpg"      
     alt: "NIRS project placeholder"
   summary: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat mi non finibus
@@ -48,7 +48,7 @@
   title: "Interactions Web — Drug Interaction Search Platform"
   media:
     type: image
-    image: "/images/FarmaHL.png"
+    image: "/images/projects/FarmaHL.png"
     alt: "FarmaHL project overview"
   summary: >
     web-based tool designed to streamline the process of retrieving and summarizing drug interaction information from trusted medical sources. The platform enables pharmacists and hospital staff to perform unified searches across multiple databases simultaneously, automatically generating concise summaries for each consulted source. By centralizing access and reducing redundant searches, this web helps minimize workflow bottlenecks and accelerates the preparation of clinical reports for hospitalized patients.

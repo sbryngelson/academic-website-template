@@ -1,33 +1,109 @@
 <style>
-    .networks-container {
-      margin-top: 1rem;
-    }
-    
-    .network-item {
-      padding: 0.75rem 0;
-      border-bottom: 1px solid #e9ecef;
-    }
-    
-    .network-item:last-child {
-      border-bottom: none;
-    }
-    
-    .network-name {
-      font-weight: 600;
-      font-size: 1.05rem;
-      color: #000000;
-    }
-    </style>
-    
-    {% if site.data.networks %}
-    <div class="jumbotron">
-      <h3>Network connections</h3>
-      <div class="networks-container">
-        {% for network in site.data.networks %}
-          <div class="network-item">
+  .networks-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .network-item {
+    flex: 0 1 calc(25% - 1.5rem);
+    max-width: 220px;
+    display: flex;
+  }
+
+  .network-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+  }
+
+  .network-logo-wrapper {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .network-logo {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .network-name {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #0046ad;
+    text-align: center;
+  }
+
+  .network-card:hover .network-name,
+  .network-card:focus .network-name {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 992px) {
+    .network-item { flex: 0 1 calc(33.333% - 1.5rem); }
+  }
+
+  @media (max-width: 768px) {
+    .network-item { flex: 0 1 calc(50% - 1.5rem); }
+  }
+
+  @media (max-width: 576px) {
+    .network-item { flex: 0 1 100%; }
+  }
+</style>
+
+{% if site.data.networks %}
+<div class="jumbotron">
+  <h3>Network connections</h3>
+  <div class="networks-container">
+    {% for network in site.data.networks %}
+      <div class="network-item">
+        {% if network.url %}
+          <a
+            href="{{ network.url }}"
+            class="network-card"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="network-logo-wrapper">
+              {% if network.logo %}
+                <img
+                  src="{{ site.baseurl }}/images/{{ network.logo }}"
+                  alt="{{ network.name }} logo"
+                  class="network-logo"
+                >
+              {% endif %}
+            </div>
+            <div class="network-name">{{ network.name }}</div>
+          </a>
+        {% else %}
+          <div class="network-card">
+            <div class="network-logo-wrapper">
+              {% if network.logo %}
+                <img
+                  src="{{ site.baseurl }}/images/{{ network.logo }}"
+                  alt="{{ network.name }} logo"
+                  class="network-logo"
+                >
+              {% endif %}
+            </div>
             <div class="network-name">{{ network.name }}</div>
           </div>
-        {% endfor %}
+        {% endif %}
       </div>
-    </div>
-    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

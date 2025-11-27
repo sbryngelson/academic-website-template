@@ -1,8 +1,14 @@
-- name: CLIAS 
-  date: 2023
-  content: Lorem ipsum dolor sit amet consectetur adipiscing elit, conubia enim leo urna diam curae feugiat
+- name: NatalIA – Implementation Project 
+  date: May 2025 – May 2026
+  content:  Supported by the Centro de Inteligencia Artificial y Salud para América Latina y el Caribe (CLIAS) 
+            and the International Development Research Centre (IDRC), this project focuses on advancing 
+            NatalIA, an AI-driven framework for the automatic detection of relevant fetal planes to 
+            enhance prenatal care in rural and underserved areas.
 
-- name: CLIAS 
-  date: 2024
-  content: Lorem ipsum dolor sit amet consectetur adipiscing elit, conubia enim leo urna diam curae feugiat
+- name: NatalIA – Laboratory Research Project 
+  date: Nov 2023- Nov 2024
+  content:  Funded by the Centro de Inteligencia Artificial y Salud para América Latina y el Caribe (CLIAS) 
+            and the International Development Research Centre (IDRC), this laboratory initiative 
+            aims to strengthen the development of NatalIA, an AI framework designed to support the 
+            automatic identification of key fetal planes for improved prenatal screening in remote communities.
 
