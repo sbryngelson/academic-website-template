@@ -33,7 +33,9 @@
     alt: "Strokes App placeholder"
   summary: >
     In resource-limited settings, access to specialists is often limited, and early stroke detection is extremely valuable, as in most cases the patient has only about 4.5 hours before stroke damage is irreversible. This project focuses on developing a system for early detection of strokes in low-resource settings, particularly within challenging public health environments. The project is currently being developed in collaboration with San Juan National Hospital and local emergency services.
-
+  resources:
+    - label: "Project page"
+      url: "https://stroke-app.online/"
 - key: nirs
   title: "NIRS — Wearable near-infrared spectroscopy for bedside monitoring"
   media:
@@ -52,3 +54,19 @@
     alt: "FarmaHL project overview"
   summary: >
     web-based tool designed to streamline the process of retrieving and summarizing drug interaction information from trusted medical sources. The platform enables pharmacists and hospital staff to perform unified searches across multiple databases simultaneously, automatically generating concise summaries for each consulted source. By centralizing access and reducing redundant searches, this web helps minimize workflow bottlenecks and accelerates the preparation of clinical reports for hospitalized patients.
+
+- key: modular
+  title: Augmented Reality based Colonoscopy Simulator
+  media:
+    type: image
+    image: "/images/projects/modular.png"
+    alt: "ModuleAR project overview"
+  summary: >
+          A 3D-printed colonoscopy training simulator that uses augmented reality to help
+          medical trainees recognize gastrointestinal pathologies. An endoscopic camera
+          navigates the printed colon while AR markers overlay conditions such as polyps,
+          Crohn’s disease, and tumors, enabling interactive quizzes and diagnostic learning
+          in a low-cost, realistic environment.
+  resources:
+    - label: "Video Demo"
+      url: "https://youtu.be/5LNDOfcHiiQ?si=hq2R4yG7SNopsJTL"

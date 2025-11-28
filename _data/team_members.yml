@@ -72,6 +72,18 @@
   education:
     - { degree: "B.Sc. in Biomedical Engineering", year: 2024, place: "Universidad del Valle de Guatemala" }
 
+- slug: lucy-team
+  name: Lucy Tam, Ing.
+  photo: people/LucyTam.jpg
+  bio:  Lucy is a research intern in Biomedical Engineering at Universidad Galileo. She holds a B.Sc. in Biomedical Engineering from Universidad del Valle de Guatemala.
+        Her research focuses on designing a 2 DoF mechanism for a 3D-printed hand prosthesis to optimize the relation between the rigidity, precision, and energetic consumption. The expected result is a lighter, safer, and more efficient prosthesis. Her work aims to increase the users’ independence and mobility with assistive devices that adapt smoothly to them.
+  interests: [“Biomechanics”, “Rehabilitation Engineering”, “CAD Modeling”]
+  education:
+    - { degree: "B.Sc. in Biomedical Engineering", year: 2025, place: "Universidad del Valle de Guatemala, Guatemala" }
+  position: Research Intern
+  email: tam20005@uvg.edu.gt
+  linkedin: https://www.linkedin.com/in/lucy-tam-ingenierabiomedica/
+
 - name: José Barrios
   slug: jose-barrios
   photo: people/JoseBarrios.jpg
@@ -94,28 +106,6 @@
   email: exampleemail@gmail.com
   linkedin: https://www.linkedin.com/in/natali-corado-689971394/
 
-- name: Mariandré Sosa
-  slug: mariandre-sosa
-  photo: people/MariandreSosa.jpg
-  bio: Mariandré Sosa is a second-year Mechatronics Engineering student at Universidad Galileo, Guatemala, and a volunteer at Biomedical institute. Her work and interests center on the development of accessible medical technologies, with a particular focus on ultrasound systems for community healthcare and midwifery. She is also interested in medical imaging, prosthetics, and the simulation of biomedical equipment, aiming to integrate engineering innovation with social impact to make healthcare technologies more inclusive and affordable.
-  position: Bachelor’s student
-  interests: ["Accessible Medical Technology", "Ultrasound Systems", "Medical Imaging", "Prosthetics", "Biomedical Simulation"]
-  education:
-    - { degree: "BSc in Mechatronics Engineering (in progress)", year: "2024 -", place: "Universidad Galileo, Guatemala" }
-  email: exampleemail@gmail.com
-  linkedin: www.linkedin.com/in/mariandré-sosa-melgar
-
-- name: Leonel Morales
-  slug: leonel-morales
-  photo: people/LeonelMorales.png
-  bio:  A final-year Electronic Engineering student at Universidad Galileo, Guatemala, volunteer in the biomedical engineering laboratory, passionate about electronics, both in the development of integrated circuits and in their implementation in different areas such as industry or medicine, with the aim of increasing my knowledge and improving in my area of ​​work.
-  position: Bachelor’s student
-  interests: ["PCB Desing", "Embedded systems"]
-  education:
-    - { degree: "BSc in Systems Engineering (in progress)", year: "2023 -", place: "Universidad Galileo, Guatemala" }
-  email: 23001545@galileo.edu
-  linkedin: www.linkedin.com/in/leonel-morales-de-paz-891935392
-
 - name: Aaron Garcia
   slug: aaron-garcia
   photo: people/AaronGarcia.jpeg
@@ -127,6 +117,32 @@
     - { degree: "BSc in Systems Engineering (in progress)", year: "2022 -", place: "Universidad Galileo, Guatemala" }
   email: aaron.garcia@galileo.edu
   linkedin : www.linkedin.com/in/aaron-s-garcia-270b9033a
+  
+- name: Leonel Morales
+  slug: leonel-morales
+  photo: people/LeonelMorales.png
+  bio:  A final-year Electronic Engineering student at Universidad Galileo, Guatemala, volunteer in the biomedical engineering laboratory, passionate about electronics, both in the development of integrated circuits and in their implementation in different areas such as industry or medicine, with the aim of increasing my knowledge and improving in my area of ​​work.
+  position: Bachelor’s student
+  interests: ["PCB Desing", "Embedded systems"]
+  education:
+    - { degree: "BSc in Systems Engineering (in progress)", year: "2023 -", place: "Universidad Galileo, Guatemala" }
+  email: 23001545@galileo.edu
+  linkedin: www.linkedin.com/in/leonel-morales-de-paz-891935392
+  
+- name: Mariandré Sosa
+  slug: mariandre-sosa
+  photo: people/MariandreSosa.jpg
+  bio: Mariandré Sosa is a second-year Mechatronics Engineering student at Universidad Galileo, Guatemala, and a volunteer at Biomedical institute. Her work and interests center on the development of accessible medical technologies, with a particular focus on ultrasound systems for community healthcare and midwifery. She is also interested in medical imaging, prosthetics, and the simulation of biomedical equipment, aiming to integrate engineering innovation with social impact to make healthcare technologies more inclusive and affordable.
+  position: Bachelor’s student
+  interests: ["Accessible Medical Technology", "Ultrasound Systems", "Medical Imaging", "Prosthetics", "Biomedical Simulation"]
+  education:
+    - { degree: "BSc in Mechatronics Engineering (in progress)", year: "2024 -", place: "Universidad Galileo, Guatemala" }
+  email: exampleemail@gmail.com
+  linkedin: www.linkedin.com/in/mariandré-sosa-melgar
+
+
+
+
 
 
 
