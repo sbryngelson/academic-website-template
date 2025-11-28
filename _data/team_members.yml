@@ -62,13 +62,15 @@
   google_scholar: https://scholar.google.com/citations?user=D3HdJiIAAAAJ&hl=en
   linkedin: https://www.linkedin.com/jp-rodriguez-illescas
 
-- name: Paula Barrios
+- name: Paula Barrios, Ing.
   slug: paula-barrios
   photo: people/PaulaBarrios.jpg
   bio: Biomedical Engineer from Universidad del Valle de Guatemala. Experience includes participation in medical equipment maintenance and technical support projects in hospital environments, as well as volunteer involvement in technical approaches within public and semi-public healthcare systems. Currently pursuing a Master’s degree in Biomedical Engineering at Universidad Galileo and collaborating in research activities within the laboratory, including a project focused on studying muscle hemodynamics during the phases of gait.
   position: Master’s student researcher
   email: 	25012505@galileo.edu
   linkedin: https://www.linkedin.com/in/paula-barrios0206/
+  education:
+    - { degree: "B.Sc. in Biomedical Engineering", year: 2024, place: "Universidad del Valle de Guatemala" }
 
 - name: José Barrios
   slug: jose-barrios
