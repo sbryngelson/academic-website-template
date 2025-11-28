@@ -46,7 +46,7 @@
     - { degree: "B.Sc. in Computer Science", year: 2021, place: "Universidad Galileo, Guatemala" }
   position: Research Assistant
   email: juan.barrientos@galileo.edu
-  google_scholar: https://website.com
+  google_scholar: https://scholar.google.com/citations?user=kaZ3Y5gAAAAJ
   linkedin: https://www.linkedin.com/in/juanpbarrientos/
 
 - name: Juan Pablo Rodríguez, M.Sc.
@@ -60,7 +60,7 @@
     - { degree: "B.Sc. in Computer Science", year: 2021, place: "Universidad Galileo, Guatemala" }
   email: pablo.rodriguezillescas@galileo.edu
   google_scholar: https://scholar.google.com/citations?user=D3HdJiIAAAAJ&hl=en
-  linkedin: https://www.linkedin.com/jp-rodriguez-illescas
+  linkedin: https://www.linkedin.com/in/jp-rodr%C3%ADguez-illescas/
 
 - name: Paula Barrios, Ing.
   slug: paula-barrios

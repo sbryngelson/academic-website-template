@@ -43,14 +43,16 @@
       {% endif %}
     </div>
     <div class="col-md-6 text-md-start">
-      <h3>{{ p.title }}</h3>
-      <p>{{ p.summary }}</p>
-      {% if p.resources %}
-        <p><strong>Resources:</strong>
-        {% for r in p.resources %}
-          <a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.label }}</a>{% if forloop.last == false %} · {% endif %}
-        {% endfor %}</p>
-      {% endif %}
+      <div style="text-align: justify; text-justify: inter-word;">
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.summary }}</p>
+        {% if p.resources %}
+          <p><strong>Resources:</strong>
+          {% for r in p.resources %}
+            <a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.label }}</a>{% if forloop.last == false %} · {% endif %}
+          {% endfor %}</p>
+        {% endif %}
+        </div>
     </div>
 </div>
 {% endfor %}

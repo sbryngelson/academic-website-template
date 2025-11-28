@@ -93,7 +93,9 @@
           </div>
     
           <div class="member-bio">
-            {% if m.bio %}<p class="lead">{{ m.bio }}</p>{% endif %}
+            <div style="text-align: justify; text-justify: inter-word;">
+              {% if m.bio %}<p class="lead">{{ m.bio }}</p>{% endif %}
+            </div>
           </div>
     
           <div class="member-details">

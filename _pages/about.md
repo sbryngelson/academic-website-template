@@ -38,7 +38,7 @@ permalink: /about/
 </div>
 </div>
 {% endfor %} -->
-
+<div style="text-align: justify; text-justify: inter-word;">
 {::nomarkdown}
 {% include grants.html %}
 {% include awards.html %}
@@ -46,7 +46,7 @@ permalink: /about/
 {% include networks.html %}
 <!-- {% include academic_service.html %} -->
 {:/nomarkdown}
-
+</div>
 
 <!--{% if site.data.people %}
 
