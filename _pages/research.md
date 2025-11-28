@@ -14,11 +14,6 @@ img{border-radius:12px}
 .ratio{border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,.08)}
 </style>
 
-# Research
-
-<div class="section-lead">
-BiomedLab is the first research laboratory dedicated to Biomedical Engineering in Guatemala...
-</div>
 
 ## Research Areas
 <div class="text-center">

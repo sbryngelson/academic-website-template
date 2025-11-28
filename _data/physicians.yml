@@ -1,12 +1,12 @@
 - name: Favio Reyna
   photo: people/FavioReyna.jpeg
-  medical_specialty: Radiologist
+  medical_specialty: BS, IB, BSc, MD, Radiologist
   info: Chief of Radiology Department - DiagnostiX <br>
         Secretary of the School of Medicine at Universidad Franciso Marroquín
   email: exampleemail@gmail.com
 
 - name: Mónica Morales
   photo: people/MonicaMorales.jpg
-  medical_specialty: Radiologist
-  info: Radiologist at Diagnostixs 
+  medical_specialty: MD, Radiologist
+  info: Radiologist at DiagnostiX 
   email: exampleemail@gmail.com
