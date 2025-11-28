@@ -30,7 +30,7 @@
   education:
       - { degree: "B.Sc. in Computer Science", year: 2010, place: "Galileo University, Guatemala" }
   position: Senior Researcher
-  #google_scholar: https://scholar.google.com/citations?hl=en&user=OHs1KRUAAAAJ
+  google_scholar: https://scholar.google.com/citations?user=L6V2KV8AAAAJ
   linkedin: https://www.linkedin.com/in/michaelle-perez-468a43173/
 
 - slug: juan-pablo-barrientos

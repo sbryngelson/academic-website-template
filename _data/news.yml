@@ -1,21 +1,39 @@
 
-- date: 1 January, 1941
-  title: "Example news title here"
-  summary: "This is a brief summary of the news article that will appear in the sidebar preview."
-  content: "This is the full content of the news article. You can write multiple paragraphs here with all the details about the news. This content will only appear in the full news page (allnews)."
-  image: "news.jpg"
+- date: 14 November, 2025
+  title: "BiomedLab Participates in the LABI Meeting in Buenos Aires"
+  summary: "BiomedLab joined the Latin America Bioimaging (LABI) Meeting to present NatalIA and strengthen collaborations in regional imaging research."
+  content: "BiomedLab participated in the LABI Meeting in Buenos Aires, where our team presented the NatalIA project and contributed to discussions on advancing imaging research in Latin America. We were honored to collaborate with SIPAIM Society during the event and witness the signing of the Memorandum of Understanding between SIPAIM and LABI. This partnership reinforces regional cooperation and fosters new opportunities for joint initiatives in bioimaging."
+  image: "news/labi.jpg"
   links:
-    - text: "Read more on our website"
-      url: "https://example.com/article1"
-    - text: "Related research paper"
-      url: "https://example.com/paper1"
+    - text: "View post on LinkedIn"
+      url: "https://www.linkedin.com/posts/andrea-lara-_thanks-to-latin-america-bioimaging-labi-activity-7394365130278592512-VQOE"
 
-- date: 1 January, 1940
-  title: "Another example news"
-  summary: "Brief summary of this second news article for sidebar display."
-  content: "Complete content of the second news article with all relevant information and details that you want to share with your readers."
-  image: "news.jpg"
+
+- date: October, 2025
+  title: "RISE MICCAI Features BiomedLab in Its New Podcast Series"
+  summary: "RISE MICCAI launched its new podcast series with an episode highlighting BiomedLab’s work and regional impact."
+  content: "RISE MICCAI released the first episode of its new podcast ‘Voices of RISE MICCAI,’ featuring Andrea Lara and spotlighting the development of Guatemala’s biomedical engineering program and BiomedLab’s contributions to AI-driven healthcare. The episode also highlights the role of NatalIA as an example of innovation emerging from the Global South, along with insights into community-focused research and regional scientific leadership."
+  image: "networks/rise_logo.jpg"
   links:
-    - text: "External source"
-      url: "https://example.com/source"
+    - text: "View post on LinkedIn"
+      url: "https://www.linkedin.com/posts/rise-miccai_rooted-in-community-riseing-with-innovation-activity-7388461972280958976-5VHU"
+
+
+- date: October, 2025
+  title: "IDRC Highlights Global Health Research, Including NatalIA"
+  summary: "IDRC showcased global initiatives powered by responsible AI, featuring NatalIA among examples from the Global South."
+  content: "The International Development Research Centre (IDRC) highlighted impactful research initiatives supported across the Global South. Among them was BiomedLab’s work on NatalIA, recognized for improving maternal health in underserved communities through responsible and accessible AI. The post emphasized how collaborations funded by IDRC and partners are enabling solutions that strengthen health systems worldwide."
+  image: "news/idrc.png"
+  links:
+    - text: "View post on LinkedIn"
+      url: "https://www.linkedin.com/posts/idrc_research-impact-ugcPost-7379859204972519424-C2qT"
+
+- date: October, 2025
+  title: "BiomedLab at MICCAI 2025 and Looking Ahead to MICCAI 2026"
+  summary: "BiomedLab participated at MICCAI 2025 in Korea, sharing research achievements and contributing to the upcoming MICCAI 2026 organization."
+  content: "BiomedLab represented Universidad Galileo at MICCAI 2025 in Daejeon, Korea, thanks to key grants from the MICCAI Society and Global BioImaging. Our team presented the NatalIA project, which received the Best Paper Award at the MIRASOL Workshop. The post also highlighted continued support from CLIAS and IDRC, and the announcement of participation in the Organizing Committee for MICCAI 2026 in Abu Dhabi. These milestones underscore BiomedLab’s commitment to advancing medical imaging and AI research globally."
+  image: "news/miccai2025.jpg"
+  links:
+    - text: "View post on LinkedIn"
+      url: "https://www.linkedin.com/posts/andrea-lara-_miccai2025-miccai2026-activity-7378888566065758208-qFvB"
 

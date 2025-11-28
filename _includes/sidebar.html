@@ -4,6 +4,7 @@
    <center>
    <a href="{{site.url}}{{site.baseurl}}/about"><img src="{{site.url}}{{site.baseurl}}/images/{{ member.photo }}" width="60%" style="block:inline; margin-left:auto; margin-right:auto; margin-bottom:5px;"/></a>
    <h4>{{ member.name }}</h4>
+   <h5>{{member.position}} </h5>
    <div style="margin-bottom:5px">
       {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a> {% endif %}
       {% if member.google_scholar %} <a href="{{ member.google_scholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a> {% endif %}
@@ -28,9 +29,9 @@
 <div class="jumbotron">
   <h4>News</h4>
 
-  {% for article in site.data.news limit:3 %}
+  {% for article in site.data.news limit:2 %}
   <div style="margin-bottom: 20px;">
-    <h5><b>{{ article.title }}</b></h5>
+    <h7><b>{{ article.title }}</b></h7>
     <p style="margin: 5px 0; font-size: 1em; color: #666;">{{ article.date }}</p>
     <p>{{ article.summary }}</p>
   </div>
