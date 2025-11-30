@@ -7,13 +7,11 @@ permalink: /
 
 ### Welcome!
 
-Theoretical physics is a branch of physics that focuses on the development of mathematical models and theories to understand and explain natural phenomena.
-It plays a crucial role in our understanding of the fundamental laws of the universe and the fundamental particles that make up all matter.
-Research in theoretical physics helps us to make predictions about how the universe works and to test these predictions through experiments.
-It also helps us to understand the fundamental principles that govern the behavior of matter and energy, and to explore the limits of our current knowledge.
-Theoretical physics helps us to make progress in a wide range of fields, including cosmology, particle physics, and quantum mechanics, and it has led to many important discoveries and technological innovations.
+<div style="text-align: justify;">
+Welcome to our website! We are a computational research group within the [Newark College of Engineering](https://engineering.njit.edu/) at New Jersey Institute of Technology. Our mission is to enable computer-aided engineering design and analysis of real-world physical systems through the development of efficient computational models. We work on advancing the state of the art in reduced-order modeling for high-dimensional dynamical systems (e.g., fluid flows) by combining equation-based and data-driven approaches to construct models that capture the essential physics while significantly reducing computational cost. This effort involves exploiting the structure of the governing equations when available, and developing novel learning-based methods when data serve as the primary source of information. 
+</div>
 
-<div class="container">
+<!-- <div class="container">
 <div class="row">
 <center>
 <img src="{{ site.url }}{{ site.baseurl }}/images/banner.jpg" width="100%"/><br/>
@@ -21,12 +19,11 @@ Examples of Feynman diagrams. <br/>
 Feynman R., The theory of positrons. <i>Phys. Rev.</i> (1949)
 </center>
 </div>
-</div>
+</div> -->
 <br/>
 
-### About me
+### About the Principal Investigator
 
-I am a physicist working in the field of quantum mechanics and quantum electrodynamics.
-I received my undergraduate degree in physics from the Massachusetts Institute of Technology (MIT) in 1939 and went on to earn my PhD from Princeton University in 1942.
-After completing my doctoral studies, I worked on the Manhattan Project, where I helped develop the first atomic bombs.
-After the war, I returned to academia, holding teaching and research positions at Cornell and now at the California Institute of Technology.
+<div style="text-align: justify;">
+Alberto Padovan is an Assistant Professor in the [Mechanical and Industrial Engineering Department](https://mie.njit.edu/) at New Jersey Institute of Technology. He received his PhD from Princeton University in Mechanical and Aerospace Engineering in September 2022, and from 2022 to 2025 he was a Postdoctoral Research Associate in the Aerospace Engineering Department at the University of Illinois Urbana-Champaign, where he was also affiliated with the Center for Hypersonics and Entry Systems Studies. Alberto's research interests lie at the intersection of fluid mechanics, applied dynamical systems theory, controls and data science. 
+</div>

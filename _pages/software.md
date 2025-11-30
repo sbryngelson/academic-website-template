@@ -39,15 +39,17 @@ iframe {
 <div class="jumbotron">
 <div class="row align-items-end">
 <div class="col-md-12 col-sm-12">
-<h4><b>Example Software</b></h4>
-<a href="https://example.com" target="_blank"><button class="btn btn-success btn-sm">WEBSITE</button></a>
-<a href="https://github.com" target="_blank"><button class="btn btn-info btn-sm">GIT</button></a>
-<a href="{{ site.url }}{{ site.baseurl }}/papers/example_proceeding.pdf" target="_blank"><button class="btn btn-danger btn-sm">PAPER</button></a> 
+<h4><b>resolvent4py</b></h4>
+<a href="https://pypi.org/project/resolvent4py/" target="_blank"><button class="btn btn-success btn-sm">Website</button></a>
+<a href="https://github.com/albertopadovan/resolvent4py" target="_blank"><button class="btn btn-info btn-sm">GitHub</button></a>
+<a href="{{ site.url }}{{ site.baseurl }}/papers/resolvent4py_softwareX.pdf" target="_blank"><button class="btn btn-danger btn-sm">Paper</button></a> 
 
-<b>Authors:</b>
-<i>Example authors</i>
+<b>Developers:</b>
+<i>Alberto Padovan (NJIT), Vishal Anantharaman (Caltech), Clancy Rowley (Princeton)</i>
 
-Example software description.
+<div style="text-align: justify;">
+<i>Resolvent4py</i> is a parallel Python package shipping with state-of-the-art algorithms for the analyis, control, and model reduction of large-scale linear systems. Distributed-memory parallelism is enabled through <i>mpi4py</i>, <i>petsc4py</i> and <i>slepc4py</i>.
+</div>
 
 </div>
 </div>

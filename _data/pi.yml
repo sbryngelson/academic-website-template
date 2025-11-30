@@ -1,17 +1,18 @@
-- name: Dr. Richard Feynman
-  photo: headshot.jpg
-  info: Richard C. Tolman Professor, California Institute of Technology
-  email: richard@university.edu
-  github: https://github.com/
-  researchgate: https://www.researchgate.net/
-  scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
-  cv: cv/cv.pdf
+- name: Alberto Padovan
+  photo: ap_headshot.jpg
+  info: "Assistant Professor<br>Mechanical and Industrial Engineering<br>New Jersey Institute of Technology"
+  email: alberto.padovan@njit.edu
+  github: https://github.com/albertopadovan
+  researchgate: https://www.researchgate.net/profile/Alberto-Padovan?ev=hdr_xprf
+  scholar: https://scholar.google.com/citations?user=qIsV2HwAAAAJ&hl=en
+  # cv: cv/cv.pdf
   # Change the items in "education" you have (up to 6)
   education:
     [
-      "(1942) Ph.D. Physics, Princeton University",
-      "(1939) B.S. Physics, Massachusetts Institute of Technology",
+      "Ph.D. Mechanical and Aerospace Engineering, Princeton University (2022)",
+      "M.A. Mechanical and Aerospace Engineering, Princeton University (2019)",
+      "B.S. Mechanical and Aerospace Engineering, SUNY Buffalo (2017)",
     ]
 
-  educationshort:
-    ["(1942) Ph.D. Physics, Princeton", "(1939) B.S. Physics, MIT"]
+  # educationshort:
+  #   ["(1942) Ph.D. Physics, Princeton", "(1939) B.S. Physics, MIT"]

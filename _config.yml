@@ -1,7 +1,7 @@
 # Site settings
-title: Richard Feynman
-email: richard@university.edu
-description: Academic webpage of Dr. Richard Feynman
+title: Alberto Padovan
+email: alberto.padovan@njit.edu
+description: Alberto Padovan's research website at NJIT
 baseurl: ""
 url: ""
 
@@ -12,29 +12,27 @@ url: ""
 
 # Footer info
 affiliation: >
-  Richard Feynman<br/>
-  Professor of Physics<br/>
-  California Institute of Technology
+  Alberto Padovan<br/>
+  Assistant Professor<br/>
+  Mechanical and Industrial Engineering<br/>
+  New Jersey Institute of Technology
 
 location: >
-  California Institute of Technology<br/>
-  1200 E California Blvd<br/>
-  Pasadena, CA 91125
+  New Jersey Institute of Technology<br/>
+  200 Central Ave #204<br/>
+  Newark, NJ 07114
 
 contact: >
-  <a href="mailto:richard@university.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Richard via email</a> <br/>
-  <a href="https://github.com/sbryngelson/academic-website-template"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
+  Office: 262 Fenster Hall<br/>
+  Email: alberto.padovan@njit.edu
 
 # Pages shown in navbar
 nav_pages:
-  - name: about
+  - name: team
   - name: publications
   - name: talks
   - name: research
   - name: software
-  - name: team
-  - name: teaching
-  - name: blogs
 
 include:
   - .htaccess
@@ -62,8 +60,8 @@ kramdown:
 plugins: ["jekyll/scholar"]
 
 scholar:
-  last_name: Doe
-  first_name: [John]
+  last_name: Padovan
+  first_name: [Alberto]
 
   style: citesty
   locale: en
@@ -71,7 +69,7 @@ scholar:
   source: /assets/
   bibliography: ref.bib
   bibliography_template: bibtemplate
-  sort_by: year, month
+  sort_by: year, month, day
   order: descending
 
   replace_strings: true
@@ -83,8 +81,8 @@ scholar:
 
   query: "@*"
 
-  bibliography_list_attributes:
-    reversed: "reversed"
+  # bibliography_list_attributes:
+  #   reversed: "reversed"
 
 exclude:
   - Gemfile

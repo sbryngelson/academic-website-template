@@ -1,6 +1,16 @@
-- date: 1 January, 1941
-  headline: "Example news here"
+- date: November 22, 2025
+  headline: "We attended the annual APS DFD conference in Houston, TX"
 
-- date: 1 January, 1940
-  headline: "Example news here"
+- date: October 15, 2025
+  headline: "Paper on stability analysis of compressible boundary layers over 
+    submlimating surfaces accepted for publication in the Journal of Fluid Mechanics.
+    This was work in collaboration with Blaine Vollmer and Dan Bodony at University of Illinois
+    Urbana-Champaign"
 
+- date: September 30, 2025
+  headline: "Alberto gave an invited talk at the Fall Colloquium Seminar Series in the 
+    Department of Mechanical and Aerospace Engineering at Cornell University"
+
+- date: September 5, 2025
+  headline: "Alberto gave an invited talk at the Mathematical Sciences Departmental Colloquium at
+    New Jersey Institute of Technology"

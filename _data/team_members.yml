@@ -1,9 +1,15 @@
-- name: Example student name
-  photo: rock.jpg
-  info: Postdoc, started Oct 2040
-  email: exampleemail@gmail.com
-  website: https://website.com
+- name: Federico Cutolo
+  photo: fc_headshot.jpeg
+  info: Ph.D. student (1st year)<br/>
+    Mechanical and Industrial Engineering<br/>
+    New Jersey Institute of Technology
+  email: federico.cutolo@njit.edu
+  # website: https://website.com
+  education:
+    [
+      "M.S. Aeronautical Engineering, Politecnico di Milano (2024)",
+    ]
 
-- name: "This could be you !"
-  photo: rock.jpg
-  info: See <a href="www">openings</a> for more info
+# - name: "This could be you !"
+#   photo: rock.jpg
+#   info: See <a href="www">openings</a> for more info
