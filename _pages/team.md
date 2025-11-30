@@ -5,9 +5,9 @@ sitemap: false
 permalink: /team/
 ---
 
-## Team
+<!-- ## Team -->
 
-**We are looking for new team members** [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
+<!-- **We are looking for new team members** [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies) **!** -->
 
 ## Principal Investigator
 
@@ -29,13 +29,20 @@ permalink: /team/
     <li>{{ education | replace: "-","&#8211;" }}</li>
   {% endfor %}
 </ul>
+
+{% if member.about %}
+<div style="text-align: justify;">
+  {{member.about}}
+</div>
+{% endif %} 
+
 </div>
 </div>
 </div>
 
 {% endfor %}
 
-## Current Students and Postdocs
+## Current Students
 
 <div class='jumbotron'>
 {% assign number_printed = 0 %}
@@ -67,6 +74,12 @@ permalink: /team/
     <li>{{ education | replace: "-","&#8211;" }}</li>
   {% endfor %}
 </ul>
+
+{% if member.about %}
+<div style="text-align: justify;">
+  {{member.about}}
+</div>
+{% endif %} 
 
 </div>
 <!-- </div> -->

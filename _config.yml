@@ -1,5 +1,5 @@
 # Site settings
-title: Alberto Padovan
+title: AP Group
 email: alberto.padovan@njit.edu
 description: Alberto Padovan's research website at NJIT
 baseurl: ""
@@ -14,7 +14,7 @@ url: ""
 affiliation: >
   Alberto Padovan<br/>
   Assistant Professor<br/>
-  Mechanical and Industrial Engineering<br/>
+  Mechanical and Industrial Eng.<br/>
   New Jersey Institute of Technology
 
 location: >
@@ -24,6 +24,7 @@ location: >
 
 contact: >
   Office: 262 Fenster Hall<br/>
+  Phone: (973) 642-4244<br/>
   Email: alberto.padovan@njit.edu
 
 # Pages shown in navbar
@@ -31,7 +32,6 @@ nav_pages:
   - name: team
   - name: publications
   - name: talks
-  - name: research
   - name: software
 
 include:

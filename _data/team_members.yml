@@ -5,10 +5,11 @@
     New Jersey Institute of Technology
   email: federico.cutolo@njit.edu
   # website: https://website.com
-  education:
-    [
-      "M.S. Aeronautical Engineering, Politecnico di Milano (2024)",
-    ]
+  # education:
+  #   [
+  #     "M.S. Aeronautical Engineering, Politecnico di Milano (2024)",
+  #   ]
+  about: Federico Cutolo is a Ph.D. student in Mechanical and Industrial Engineering at the New Jersey Institute of Technology. He earned his M.S. in Aeronautical Engineering from Politecnico di Milano in 2024 and worked as a Research Assistant at the Center for Hypersonics and Entry Systems Studies at the University of Illinois Urbana-Champaign from 2023 to 2025. His research explores uncertainty quantification, hypersonic flows, data science, and reduced-order modeling. Beyond research, Federico enjoys theater, music, and playing soccer.
 
 # - name: "This could be you !"
 #   photo: rock.jpg

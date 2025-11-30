@@ -7,12 +7,20 @@
   scholar: https://scholar.google.com/citations?user=qIsV2HwAAAAJ&hl=en
   # cv: cv/cv.pdf
   # Change the items in "education" you have (up to 6)
-  education:
-    [
-      "Ph.D. Mechanical and Aerospace Engineering, Princeton University (2022)",
-      "M.A. Mechanical and Aerospace Engineering, Princeton University (2019)",
-      "B.S. Mechanical and Aerospace Engineering, SUNY Buffalo (2017)",
-    ]
+  # education:
+  #   [
+  #     "Ph.D. Mechanical and Aerospace Engineering, Princeton University (2022)",
+  #     "M.A. Mechanical and Aerospace Engineering, Princeton University (2019)",
+  #     "B.S. Mechanical and Aerospace Engineering, SUNY Buffalo (2017)",
+  #   ]
+  about: Alberto Padovan is an Assistant Professor in the [Mechanical and Industrial Engineering Department](https://mie.njit.edu/) at 
+    New Jersey Institute of Technology. He received his Ph.D. from Princeton University in Mechanical and Aerospace Engineering 
+    in September 2022, and from 2022 to 2025 he was a Postdoctoral Research Associate in the 
+    Aerospace Engineering Department at the University of Illinois Urbana-Champaign, where he was also 
+    affiliated with the Center for Hypersonics and Entry Systems Studies. Alberto's research interests 
+    lie at the intersection of fluid mechanics, applied dynamical systems theory, controls and data science. 
+
+
 
   # educationshort:
   #   ["(1942) Ph.D. Physics, Princeton", "(1939) B.S. Physics, MIT"]
