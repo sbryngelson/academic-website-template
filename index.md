@@ -1,6 +1,6 @@
 ---
 title: "Home"
-layout: homelay
+layout: default
 sitemap: false
 ---
 
