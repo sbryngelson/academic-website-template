@@ -2,8 +2,8 @@
 title: AP Group
 email: alberto.padovan@njit.edu
 description: Alberto Padovan's research website at NJIT
-baseurl: ""
-url: ""
+baseurl: "/apgroup"
+url: "https://albertopadovan.github.io"
 
 # Google analytics ID: Uncomment and your own, if you like
 # google_analytics: XX
