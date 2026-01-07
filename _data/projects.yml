@@ -35,7 +35,7 @@
     In resource-limited settings, access to specialists is often limited, and early stroke detection is extremely valuable, as in most cases the patient has only about 4.5 hours before stroke damage is irreversible. This project focuses on developing a system for early detection of strokes in low-resource settings, particularly within challenging public health environments. The project is currently being developed in collaboration with San Juan National Hospital and local emergency services.
   resources:
     - label: "Project page"
-      url: "https://stroke-app.online/"
+      url: "https://rescatecerebralgt.com"
 - key: nirs
   title: "NIRS — Wearable near-infrared spectroscopy for bedside monitoring"
   media:
