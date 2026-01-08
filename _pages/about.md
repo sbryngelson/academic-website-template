@@ -34,6 +34,7 @@ permalink: /about/
 </div>
 {% endfor %}
 
+<!--
 {% if site.data.grants %}
 
 <div class="jumbotron">
@@ -76,3 +77,4 @@ permalink: /about/
   {% for funder in site.data.funders %}<a href="{{ funder.url }}" target="_blank"><img src='{{ site.url }}{{ site.baseurl }}/images/{{ funder.image }}' style='max-height: 80px; max-width: 200px; margin: 1%'/></a>{% endfor %}
   </div>
 </div>
+-->
