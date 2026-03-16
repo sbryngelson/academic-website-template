@@ -9,3 +9,9 @@
   medical_specialty: 
   info: Radiologist at DiagnostiX 
   email: exampleemail@gmail.com
+
+- name: Alejandra Herrera Andino, MD, Cum Laude
+  photo: people/AlejandraHerrera.jpeg
+  medical_specialty: 
+  info: Chief Resident 2026 of the Radiology and Diagnostic Imaging Residency Program at the Instituto Guatemalteco de Seguridad Social (IGSS). 
+  email: exampleemail@gmail.com
