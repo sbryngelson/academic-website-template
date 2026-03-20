@@ -36,15 +36,14 @@
   resources:
     - label: "Project page"
       url: "https://rescatecerebralgt.com"
-- key: nirs
-  title: "NIRS — Wearable near-infrared spectroscopy for bedside monitoring"
+- key: psm
+  title: "Physiological Signal Monitoring and Analysis during Human Movement"
   media:
     type: image
-    image: "/images/projects/nirs.jpg"      
-    alt: "NIRS project placeholder"
+    image: "/images/projects/psm.png"      
+    alt: "PSM project placeholder"
   summary: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat mi non finibus
-    bibendum. Integer laoreet nisl sit amet vehicula scelerisque.
+    This work focuses on the development and application of technologies for monitoring physiological signals during human movement. In the laboratory, efforts are directed toward the integration of CW-NIRS optodes, embedded systems, and data processing methods to study how the body responds to different physical activities. The approach combines signal acquisition with kinematic gait analysis through state-of-the-art human pose estimation methods to explore relationships between physiological and biomechanical processes. This work supports research in biomedical engineering by promoting accessible, adaptable, and cost-effective solutions for real-world applications.
 
 - key: farmahl
   title: "Interactions Web — Drug Interaction Search Platform"
