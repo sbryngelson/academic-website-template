@@ -118,17 +118,6 @@
   email: aaron.garcia@galileo.edu
   linkedin : www.linkedin.com/in/aaron-s-garcia-270b9033a
   
-- name: Leonel Morales
-  slug: leonel-morales
-  photo: people/LeonelMorales.png
-  bio:  A final-year Electronic Engineering student at Universidad Galileo, Guatemala, volunteer in the biomedical engineering laboratory, passionate about electronics, both in the development of integrated circuits and in their implementation in different areas such as industry or medicine, with the aim of increasing my knowledge and improving in my area of ​​work.
-  position: Bachelor’s student
-  interests: ["PCB Desing", "Embedded systems"]
-  education:
-    - { degree: "BSc in Systems Engineering (in progress)", year: "2023 -", place: "Universidad Galileo, Guatemala" }
-  email: 23001545@galileo.edu
-  linkedin: www.linkedin.com/in/leonel-morales-de-paz-891935392
-  
 - name: Mariandré Sosa
   slug: mariandre-sosa
   photo: people/MariandreSosa.jpg
@@ -140,6 +129,16 @@
   email: exampleemail@gmail.com
   linkedin: www.linkedin.com/in/mariandré-sosa-melgar
 
+- name: Wei-Chung Cheng
+  slug: weichung-cheng
+  photo: people/WeiChung.jpg
+  bio:  Wei-Chung Cheng is a final-year student of Bachelor’s Degree in Systems Engineering, Computer Science, and Information Technology. His interests lie in computer science, artificial intelligence and software engineering, working to develop technological solutions to scientific and medical problems.
+  position: Bachelor’s student
+  interests: ["Medical Imaging", "Artificial Intelligence", "Image Processing"]
+  education:
+    - { degree: "BSc in Systems Engineering and Computer Science (in progress)", year: "2023 -", place: "Universidad Galileo, Guatemala" }
+  email: weichung.cheng@galileo.edu
+  linkedin: www.linkedin.com/in/wei-chung-cheng-89549a349
 
 
 
