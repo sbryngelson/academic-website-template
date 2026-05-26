@@ -227,6 +227,7 @@
 <a href="https://yuminglab.github.io/" target="_blank">★</a>
 <a href="https://zeyuD.github.io/" target="_blank">★</a>
 <a href="https://zhoulongyu.github.io/" target="_blank">★</a>
+<a href="https://nderus.github.io" target="_blank">★</a>
 
 __Using this template? Share your site and I'll add it here!__
 
