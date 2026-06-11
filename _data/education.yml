@@ -1,0 +1,23 @@
+- degree: "Ph.D."
+  institution: "Rochester Institute of Technology"
+  location: "U.S.A."
+  dates: "Aug. 2019 – Dec. 2023"
+  details:
+    - "Engineering Ph.D. Program | Supervisor: Dr. Yunbo Zhang"
+    - "Dissertation: Enhancing human-robot collaboration through intuitive Augmented Reality interface and precise visualization"
+
+- degree: "M.S."
+  institution: "The Hong Kong University of Science and Technology"
+  location: "Hong Kong, China"
+  dates: "Aug. 2018 – Jun. 2019"
+  details:
+    - "Major: Mechanical Engineering | GPA 4.0/4.0 | Advisor: Prof. Kai Tang"
+    - "Thesis Project: Robotic engraving of complex models"
+
+- degree: "B.S."
+  institution: "Nanjing University of Aeronautics and Astronautics"
+  location: "P. R. China"
+  dates: "Sept. 2014 – Jun. 2018"
+  details:
+    - "Major: Aircraft Design and Engineering | GPA 3.9/5.0 Rank 35/302"
+    - "Graduation Design: Structure design of micro multi-legged robot based on piezoelectric actuators"

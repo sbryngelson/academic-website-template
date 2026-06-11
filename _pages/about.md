@@ -31,6 +31,93 @@ permalink: /about/
 </div>
 </div>
 
+{% if site.data.education %}
+<div class="section-card">
+<h3>Education</h3>
+{% for edu in site.data.education %}
+<div>
+<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+<div>
+<h4 style="margin: 0; margin-bottom: var(--space-1);">{{ edu.degree }} · {{ edu.institution }}</h4>
+<p style="margin: 0; font-size: 0.9rem; color: var(--text-tertiary);">{{ edu.location }}</p>
+</div>
+<p style="margin: 0; font-size: 0.9rem; color: var(--text-tertiary); white-space: nowrap;">{{ edu.dates }}</p>
+</div>
+<ul style="margin-top: var(--space-2); padding-left: 1.5rem;">
+{% for detail in edu.details %}
+<li style="margin-bottom: var(--space-1); font-size: 0.95rem;">{{ detail }}</li>
+{% endfor %}
+</ul>
+</div>
+{% unless forloop.last %}<hr style="border: none; border-top: 1px solid var(--border-color); margin: var(--space-4) 0;">{% endunless %}
+{% endfor %}
+</div>
+{% endif %}
+
+
+
+
+
+{% if site.data.experience.professional_experience %}
+<div class="section-card">
+<h3>Professional Experience</h3>
+{% for job in site.data.experience.professional_experience %}
+<div>
+<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+<div>
+<h4 style="margin: 0; margin-bottom: var(--space-1);">{{ job.position }}</h4>
+<p style="margin: 0; margin-bottom: var(--space-1); color: var(--text-secondary);">{{ job.company }}</p>
+<p style="margin: 0; font-size: 0.9rem; color: var(--text-tertiary);">{{ job.location }}</p>
+</div>
+<p style="margin: 0; font-size: 0.9rem; color: var(--text-tertiary); white-space: nowrap;">{{ job.dates }}</p>
+</div>
+<ul style="margin-top: var(--space-2); padding-left: 1.5rem;">
+{% for highlight in job.highlights %}
+<li style="margin-bottom: var(--space-1); font-size: 0.95rem;">{{ highlight }}</li>
+{% endfor %}
+</ul>
+</div>
+{% unless forloop.last %}<hr style="border: none; border-top: 1px solid var(--border-color); margin: var(--space-4) 0;">{% endunless %}
+{% endfor %}
+</div>
+{% endif %}
+
+{% if site.data.experience.teaching_experience %}
+<div class="section-card">
+<h3>Teaching Experience</h3>
+{% for job in site.data.experience.teaching_experience %}
+<div>
+<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+<div>
+<h4 style="margin: 0; margin-bottom: var(--space-1);">{{ job.position }}</h4>
+<p style="margin: 0; margin-bottom: var(--space-1); color: var(--text-secondary);">{{ job.institution }}{% if job.course %} · {{ job.course }}{% endif %}</p>
+<p style="margin: 0; font-size: 0.9rem; color: var(--text-tertiary);">{{ job.location }}</p>
+</div>
+<p style="margin: 0; font-size: 0.9rem; color: var(--text-tertiary); white-space: nowrap;">{{ job.dates }}</p>
+</div>
+{% if job.description %}
+<p style="margin: var(--space-2) 0; font-size: 0.95rem;">{{ job.description }}</p>
+{% endif %}
+{% if job.courses %}
+<ul style="margin-top: var(--space-2); padding-left: 1.5rem;">
+{% for course in job.courses %}
+<li style="margin-bottom: var(--space-1); font-size: 0.95rem;">{{ course }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% if job.highlights %}
+<ul style="margin-top: var(--space-2); padding-left: 1.5rem;">
+{% for highlight in job.highlights %}
+<li style="margin-bottom: var(--space-1); font-size: 0.95rem;">{{ highlight }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+</div>
+{% unless forloop.last %}<hr style="border: none; border-top: 1px solid var(--border-color); margin: var(--space-4) 0;">{% endunless %}
+{% endfor %}
+</div>
+{% endif %}
+
 {% if site.data.grants %}
 <div class="section-card">
 <h3>Grants</h3>

@@ -1,0 +1,82 @@
+# Professional Experience
+professional_experience:
+  - position: "Assistant Professor"
+    company: "Lamar University"
+    location: "Beaumont, TX 77705, USA"
+    dates: "Jul. 2024 – Present"
+    highlights:
+      - "Research Interests: Human-robot Interaction, Robotics manipulation, Programming by Demonstration, Robotics System Design, Augmented & Virtual Reality, Human Factors, Tele-robots, Cobots, Cyber-Physical Systems, Digital Twin, Industry 4.0, Smart Factory."
+      - "Teaching: Robotics Operations and Programming (INEN-5301), AR/VR in manufacturing (INEN-5301), Introduction to Robotics (INEN-5358), Professional Seminar (INEN-6110)."
+
+  - position: "Software Engineer"
+    company: "Meta Reality Labs"
+    location: "Redmond, WA 98052, USA"
+    dates: "Jan. 2024 – Mar. 2024"
+    highlights:
+      - "Enhanced Meta Simulators wide-FOV compatibility, validating canting camera functionality on UEVR and Steam VR, testing 30 applications to ensure stability and performance."
+      - "Developed and optimized VRSDKs for 4+ prototyping HMDs with wide-FOV, varifocal, and high-resolution, reducing integration time by 30%."
+      - "Showcased wide-FOV practical applications by creating two immersive scenarios in Unreal Engine, achieving 20% higher user engagement in usability testing."
+      - "Designed a realistic Codec Avatar experience by developing a Unity application featuring multiple avatars for PCVR."
+
+  - position: "Research Assistant"
+    company: "Rochester Institute of Technology"
+    location: "Rochester, NY 14623, USA"
+    dates: "Aug. 2019 – May. 2023"
+    highlights:
+      - "Responsible for supporting and assisting Dr. Yunbo Zhang in various research activities and projects."
+      - "Set up the research laboratory with robot manipulators (Aubo, UFactory) and VR HMDs (Oculus Rift, HTC Vive, Meta Quest 1/2/3/pro)."
+      - "Conducted research in human-robot interaction, smart manufacturing, and AR/VR development."
+
+  - position: "Research Intern"
+    company: "OPPO US Research Center (Innopeak Tech)"
+    location: "Bellevue, WA 98004, USA"
+    dates: "Jun. 2022 – Sep. 2022"
+    highlights:
+      - "Designed and developed an innovative MR teleoperation system with an Automated Guided Vehicle (Rover Pro)."
+      - "Implemented the teleoperation system on Microsoft HoloLens 2 with real-time video streaming capabilities."
+      - "Developed a 3D UI/UX design for an intuitive and user-friendly interface, enhancing three control modes."
+      - "Created and demonstrated a fitness instruction application within the Metaverse, showcasing practical applications."
+
+  - position: "Engineering Intern"
+    company: "Guangdong Bright Dream Robotics Co., Ltd."
+    location: "Foshan, Guangdong, China"
+    dates: "May. 2019 – Aug. 2019"
+    highlights:
+      - "Tile-Laying Robot development project: a construction robot for indoor tile thin-laying."
+      - "Established an autonomous movement system by developing an elevation positioning and movement control system."
+      - "Developed and tested the software of the 6-DOF robot for smooth movement and outstanding mechanical performance."
+
+# Teaching Experience
+teaching_experience:
+  - position: "Assistant Professor"
+    institution: "Lamar University"
+    location: "Beaumont, TX 77705, USA"
+    dates: "Jul. 2024 – Present"
+    description: "Department of Industrial and Systems Engineering, taking online and face-to-face classes in graduate levels:"
+    courses:
+      - "Robotics Operations and Programming (INEN-5301)"
+      - "AR/VR in manufacturing (INEN-5301)"
+      - "Introduction to Robotics (INEN-5358)"
+      - "Professional Seminar (INEN-6110)"
+
+  - position: "Guest Lecturer"
+    institution: "Monroe Community College"
+    location: "Rochester, NY 14623, USA"
+    dates: "Aug. 2023 – May. 2024"
+    description: "Developed a comprehensive course titled \"Industrial Robotics and Automation in Manufacturing\" for community college students, ensuring that students gain a holistic understanding of the challenges and opportunities presented by Industry 4.0."
+    highlights:
+      - "Delivered the lecture in both in-person and online."
+
+  - position: "Teaching Assistant"
+    institution: "Rochester Institute of Technology"
+    course: "3D Printing (ISEE-741)"
+    location: "Rochester, NY 14623, USA"
+    dates: "Aug. 2021 – May. 2022"
+    description: "Educated graduates in a hands-on lab session on creating a 3D design and printing a functional prototype with 3D printing technologies on various devices and tools, such as Original Prusa, Markforged, and Formlabs."
+
+  - position: "Teaching Assistant"
+    institution: "Rochester Institute of Technology"
+    course: "Materials Processing (ISEE-140)"
+    location: "Rochester, NY 14623, USA"
+    dates: "Aug. 2021 – Dec. 2021"
+    description: "Guided undergraduates on a project with fabrication processes, including cutting, molding, casting, forming, milling, powder metallurgy, solid modeling, and engineering drawing."
