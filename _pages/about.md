@@ -64,6 +64,20 @@ permalink: /about/
 </div>
 {% endif %}
 
+{% if site.data.services %}
+<div class="section-card">
+<h3>Academic Services</h3>
+{% for service in site.data.services %}
+<h4 style="margin-top: var(--space-4); margin-bottom: var(--space-2);">{{ service.category }}</h4>
+<ul>
+{% for item in service.items %}
+<li>{{ item.name }}{% if item.years %}: {{ item.years }}{% endif %}</li>
+{% endfor %}
+</ul>
+{% endfor %}
+</div>
+{% endif %}
+
 {% if site.data.funders %}
 <div class="section-card">
 <h4>Sponsors</h4>

@@ -1,0 +1,24 @@
+# Academic services, shown on the About page.
+# Each entry needs: category, items (list of name, and optionally years)
+- category: Conference Reviewer
+  items:
+    - name: ASME Manufacturing Science and Engineering Conference (MSEC)
+      years: "2021, 2022, 2023, 2024"
+    - name: ASME International Design Engineering Technical Conferences & Computers and Information in Engineering Conference (IDETC-CIE)
+      years: "2023, 2024, 2025, 2026"
+    - name: ACM International Conference of Human-Computer Interaction (CHI)
+      years: "2024"
+    - name: IEEE Conference on Robot and Human Interactive Communication (RO-MAN)
+      years: "2024"
+    - name: American Society for Engineering Education (ASEE) Annual Conference
+      years: "2025"
+    - name: International Conference on Extended Reality (ICXR)
+      years: "2025"
+
+- category: Journal Reviewer
+  items:
+    - name: ASME Journal of Computing and Information Science in Engineering (JCISE)
+    - name: Journal of Intelligent Manufacturing
+    - name: ASTM Smart and Sustainable Manufacturing Systems
+    - name: Robotics and Computer-Integrated Manufacturing (RCIM)
+    - name: International Journal of Human-Computer Interaction
