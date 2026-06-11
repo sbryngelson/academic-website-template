@@ -3,11 +3,11 @@
 # Delete this file if you only need the basics.
 
 # EXAMPLE -- replace or delete
-- education:
-    - "2023 - Ph.D. Rochester Institute of Technology"
-    - "2019 - M.S. The Hong Kong University of Science and Technology"
-    - "2018 - B.S. Nanjing University of Aeronautics and Astronautics"
-  educationshort:
-    - "2023 - Ph.D. Rochester Institute of Technology"
-    - "2019 - M.S. The Hong Kong University of Science and Technology"
-    - "2018 - B.S. Nanjing University of Aeronautics and Astronautics"
+education:
+  - "2023 - Ph.D. Rochester Institute of Technology"
+  - "2019 - M.S. The Hong Kong University of Science and Technology"
+  - "2018 - B.S. Nanjing University of Aeronautics and Astronautics"
+educationshort:
+  - "2023 - Ph.D. Rochester Institute of Technology"
+  - "2019 - M.S. The Hong Kong University of Science and Technology"
+  - "2018 - B.S. Nanjing University of Aeronautics and Astronautics"
