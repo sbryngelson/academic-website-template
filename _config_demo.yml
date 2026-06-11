@@ -1,6 +1,0 @@
-# Demo site override — used by GitHub Actions to deploy to
-# sbryngelson.github.io/academic-website-template/
-# Users who fork this repo should NOT use this file.
-
-baseurl: "/academic-website-template"
-url: "https://sbryngelson.github.io"

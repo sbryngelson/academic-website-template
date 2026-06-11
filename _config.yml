@@ -1,22 +1,22 @@
 # ============================================================
 # STEP 1: Your Identity (required)
 # ============================================================
-name: "Richard Feynman"
-title: "Professor of Physics"
-institution: "California Institute of Technology"
-email: richard@university.edu
-photo: headshot.jpg  # place your photo in images/
+name: "Wenhao Yang"
+title: "Assistant Professor"
+institution: "Lamar University"
+email: wenhao.yang@lamar.edu
+photo: VinkoYang-1-1.jpg  # place your photo in images/
 
 # ============================================================
 # STEP 2: Your Links (optional -- delete any you don't use)
 # ============================================================
 links:
-  google_scholar: "https://scholar.google.com/citations?user=B7vSqZsAAAAJ"
-  github: "https://github.com/"
-  researchgate: "https://www.researchgate.net/"
-  orcid: ""
+  google_scholar: "https://scholar.google.com/citations?user=nzyki6UAAAAJ&hl"
+  github: "https://github.com/VinkoYang"
+  researchgate: "https://www.researchgate.net/profile/Wenhao-Yang-28?ev=hdr_xprf"
+  orcid: "https://orcid.org/0009-0004-4977-2914"
   twitter: ""
-  linkedin: ""
+  linkedin: "https://www.linkedin.com/in/wenhaoyang-vinko"
   cv: ""  # e.g., "papers/cv.pdf" — leave blank to hide the CV icon
 
 # ============================================================
@@ -24,7 +24,7 @@ links:
 # ============================================================
 accent_color: "#1a7a6d"      # theme color for links and buttons
 dark_mode: true              # show dark mode toggle in navbar
-description: "Academic webpage of Dr. Richard Feynman"
+description: "Academic webpage of Dr. Wenhao Yang"
 baseurl: ""
 url: ""
 
@@ -76,8 +76,8 @@ kramdown:
 plugins: ["jekyll/scholar", "jekyll-sitemap"]
 
 scholar:
-  last_name: Doe
-  first_name: [John]
+  last_name: Yang
+  first_name: [Wenhao]
   style: citesty
   locale: en
   source: /assets/
