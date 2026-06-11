@@ -38,7 +38,7 @@ permalink: /about/
 <div>
 <div style="display: flex; justify-content: space-between; align-items: flex-start;">
 <div>
-<h4 style="margin: 0; margin-bottom: var(--space-1);">{{ edu.degree }} · {{ edu.institution }}</h4>
+<h4 style="margin: 0; margin-bottom: var(--space-1);">{{ edu.degree }} ｜ {{ edu.institution }}</h4>
 <p style="margin: 0; font-size: 0.9rem; color: var(--text-tertiary);">{{ edu.location }}</p>
 </div>
 <p style="margin: 0; font-size: 0.9rem; color: var(--text-tertiary); white-space: nowrap;">{{ edu.dates }}</p>
