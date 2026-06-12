@@ -20,20 +20,18 @@ Through interdisciplinary research, XRAI Lab seeks to redefine how intelligent m
 
 ## Equipment
 
-<div class="research-grid">
+<div class="equipment-grid">
 {% for item in site.data.equipment %}
-<div class="research-card">
+<div class="equipment-card">
 {% if item.image and item.image != "" %}
-<img src="{{ site.url }}{{ site.baseurl }}/images/{{ item.image }}" class="research-thumb" alt="{{ item.name }}" loading="lazy">
+<img src="{{ site.url }}{{ site.baseurl }}/images/{{ item.image }}" class="equipment-thumb" alt="{{ item.name }}" loading="lazy">
 {% else %}
-<div class="research-thumb" style="background: var(--bg-secondary); display: flex; align-items: center; justify-content: center; height: 200px;">
-  <i class="fa-solid fa-microchip" style="font-size: 3rem; color: var(--text-tertiary);"></i>
-</div>
+<div class="equipment-thumb-placeholder"><i class="fa-solid fa-microchip"></i></div>
 {% endif %}
-<div class="research-body">
-<p style="margin: 0 0 var(--space-1) 0; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-tertiary);">{{ item.category }}</p>
-<h4 class="research-title">{{ item.name }}</h4>
-<p class="research-desc">{{ item.description }}</p>
+<div class="equipment-body">
+<p class="equipment-category">{{ item.category }}</p>
+<h4 class="equipment-name">{{ item.name }}</h4>
+<p class="equipment-desc">{{ item.description }}</p>
 </div>
 </div>
 {% endfor %}

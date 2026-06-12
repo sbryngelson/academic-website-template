@@ -1,0 +1,104 @@
+# Research projects, shown on the Research page.
+# Each entry: title, image, duration, end_date (YYYY-MM for sorting), keywords, abstract, links
+# Projects are displayed in reverse chronological order by end_date.
+
+
+- title: "Augmented reality-based human-robot interaction system"
+  image: "research/2020_ARrobotinterface.jpg"
+  start_date: "2019-08"
+  end_date: "2020-11"
+  keywords:
+    - Human-Robot Interaction
+    - Augmented Reality
+    - Robot Programming
+  abstract: >
+    This project proposed and developed an intuitive and immersive AR-based interface for cobot (AUBO i5) programming,
+    aiming to address the challenges in performing path planning tasks in complex environments.
+  links:
+    paper: ""
+    webpage: ""
+    video: "https://youtu.be/PO4EoN_ix-Y"
+    bib: ""
+
+
+- title: "System design of a human-centered AR HRI with cognition awareness"
+  image: "research/2021_ARrobotcognition.jpg"
+  start_date: "2019-11"
+  end_date: "2021-10"
+  keywords:
+    - Human-Robot Interaction
+    - Augmented Reality
+    - Cognition Awareness
+    - Cognitive Load Theory
+    - Learning Science
+  abstract: >
+    This work proposed a novel system, HAR2bot, for path planning tasks in complex environments.
+    The proposed system effectively balances the communication between the operator and the robot to minimize the cognitive
+    burden associated with the design loop, leading to improved task efficiency and accuracy.
+  links:
+    paper: ""
+    webpage: ""
+    video: "https://youtu.be/JPeubcl6sQs"
+    bib: ""
+
+
+- title: "Visualization error analysis for augmented reality stereo VST system"
+  image: "research/2021_ARstereoVST.jpg"
+  start_date: "2021-5"
+  end_date: "2021-11"
+  keywords:
+    - Augmented Reality
+  abstract: >
+    In this research study, the sources of registration errors were identified in stereo video see-through systems and a mathematical model was established to describe the propagation of these errors in the display process.
+  links:
+    paper: ""
+    webpage: ""
+    video: ""
+    bib: ""
+
+
+- title: "An application of depth map completion and super-resolution in AR rendering"
+  image: "research/2021_ARdepthmap.jpg"
+  start_date: "2021-9"
+  end_date: "2021-11"
+  keywords:
+    - Augmented Reality
+  abstract: >
+    This project presents an experiment on an AR-based human-robot interaction scenario, aimed at demonstrating the effectiveness of a proposed method for 
+    addressing occlusion problems in the rendering of virtual objects. The method involves the use of depth completion and super-resolution techniques to enhance the visual quality.
+  links:
+    paper: ""
+    webpage: ""
+    video: ""
+    bib: ""
+
+
+- title: "Augmented reality assisted maintenance and repair system development"
+  image: "research/2021_arrepair.jpg"
+  start_date: "2021-12"
+  end_date: "2022-2"
+  keywords:
+    - Augmented Reality
+  abstract: >
+    This project demonstrates the potential of utilizing digital twin technology with an Augmented Reality interface for improved maintenance procedures. 
+    By presenting a demo system of a repair process, this work aims to highlight the benefits of using AR for clear and intuitive visualization of the device being repaired, resulting in improved accuracy and ease of instruction for technicians.
+  links:
+    paper: ""
+    webpage: ""
+    video: "https://youtu.be/NfVmJfu_26A"
+    bib: ""
+
+- title: "Augmented Reality"
+  image: "research/2021_smartfactory.jpg"
+  start_date: "2021-12"
+  end_date: "2022-2"
+  keywords:
+    - 
+  abstract: >
+    An AR headset-based prototyping system has been developed to offer a clear and intuitive digital visualization for the purpose of exploring the 
+    potential applications of smart factories. This project presents a case study of a maintenance application in a CNC machine shop for technicians.
+  links:
+    paper: ""
+    webpage: ""
+    video: "https://youtu.be/p6v-WwOH-og"
+    bib: ""

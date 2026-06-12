@@ -3,17 +3,20 @@
 # Optional: email, website, scholar, github, researchgate, cv
 # Photos go in images/ or images/team/
 
-- name: George Zweig
-  photo: team/george-zweig.svg
-  info: PhD Student, Quark Model
+- name: Saleh Mohammad Mobin
+  photo: team/mobin.jpg
+  info: DE Student
+  email: smobin@lamar.edu
 
-- name: Albert Hibbs
-  photo: team/albert-hibbs.svg
-  info: PhD Student, Quantum Mechanics
+- name: Lakshmana Ayyalasomayajula (Avinash)
+  photo: team/avinash.jpg
+  info: DE Student
+  email: layyalasomay@lamar.edu
 
-- name: Thomas Curtright
-  photo: team/thomas-curtright.svg
-  info: PhD Student, Quantum Field Theory
+- name: Rezwanul Ashraf Ruddro
+  photo: team/rezwanul.jpg
+  info: DE Student
+  email: rruddro@lamar.edu
 
 - name: "This could be you!"
   photo: rock.jpg
