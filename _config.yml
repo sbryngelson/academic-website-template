@@ -40,6 +40,7 @@ nav_pages:
   - name: publications
   - name: talks
   - name: research
+  - name: lab
   - name: software
   - name: team
   - name: teaching

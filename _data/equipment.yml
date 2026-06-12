@@ -1,0 +1,47 @@
+- name: "Universal Robots UR5e"
+  category: "Collaborative Robot"
+  image: "lab/ur5e.jpg"
+  description: >
+    A 6-DOF collaborative robot arm with 5 kg payload and 850 mm reach.
+    Used for human-robot collaboration research, programming by demonstration,
+    and AR-guided assembly tasks.
+
+- name: "AUBO i5"
+  category: "Collaborative Robot"
+  image: "lab/aubo_i5.jpg"
+  description: >
+    A lightweight 6-DOF cobot with 5 kg payload designed for flexible
+    manufacturing. Deployed in studies on intuitive robot programming
+    and AR-based teleoperation interfaces.
+
+- name: "Meta Quest 3"
+  category: "XR Headset"
+  image: "lab/quest3.jpg"
+  description: >
+    Standalone mixed reality headset with color passthrough and hand tracking.
+    Primary platform for developing MR applications in manufacturing training,
+    human-robot interaction, and spatial computing research.
+
+- name: "Microsoft HoloLens 2"
+  category: "XR Headset"
+  image: "lab/hololens2.jpg"
+  description: >
+    An optical see-through AR headset with eye tracking and hand gesture input.
+    Used for industrial AR interface research, including robot programming
+    visualization and first responder training simulations.
+
+- name: "HTC Vive Pro"
+  category: "XR Headset"
+  image: "lab/vive_pro.jpg"
+  description: >
+    High-fidelity VR headset with SteamVR tracking. Supports immersive
+    simulation environments for operator training, virtual prototyping,
+    and cybersecurity studies in mixed reality contexts.
+
+- name: "Intel RealSense D435i"
+  category: "Depth Sensor"
+  image: "lab/realsense.jpg"
+  description: >
+    RGB-D depth camera with IMU for real-time 3D perception. Used in
+    robot perception pipelines, AR registration experiments, and
+    human pose estimation for interaction studies.
