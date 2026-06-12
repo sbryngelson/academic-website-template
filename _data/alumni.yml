@@ -1,18 +1,10 @@
 # Former lab members.
-# Each entry needs: name, duration, info
-# Optional: photo, email
+# Each entry needs: name, duration
+# Optional: degree, thesis, info (current position)
 
-- name: Albert Hibbs
-  photo: team/albert-hibbs.svg
-  duration: 1951-55
-  info: Now at Jet Propulsion Laboratory
+- name: Muhammad Ilyas Mubarik
+  duration: 2024-2025
+  degree: M.S.
+  thesis: "Advanced Mixed Reality Training for First Responders in Hurricane Scenarios"
+  info: ""
 
-- name: William Frazer
-  photo: team/william-frazer.svg
-  duration: 1954-58
-  info: Now Professor at UC San Diego
-
-- name: Robert Hellwarth
-  photo: team/robert-hellwarth.svg
-  duration: 1952-56
-  info: Now Professor at USC

@@ -61,13 +61,15 @@ permalink: /team/
 <div class="section-card">
 <table class="alumni-table">
 <thead>
-<tr><th>Name</th><th>Duration</th><th>Current Position</th></tr>
+<tr><th>Name</th><th>Degree</th><th>Duration</th><th>Thesis</th><th>Current Position</th></tr>
 </thead>
 <tbody>
 {% for member in site.data.alumni %}
 <tr>
 <td>{{ member.name }}</td>
+<td>{{ member.degree }}</td>
 <td>{{ member.duration }}</td>
+<td style="font-style: italic;">{{ member.thesis }}</td>
 <td>{{ member.info }}</td>
 </tr>
 {% endfor %}

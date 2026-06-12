@@ -1,47 +1,45 @@
-- name: "Universal Robots UR5e"
+- name: "Universal Robots UR10e"
   category: "Collaborative Robot"
-  image: "lab/ur5e.jpg"
+  image: "equip_ur10e.jpeg"
   description: >
-    A 6-DOF collaborative robot arm with 5 kg payload and 850 mm reach.
-    Used for human-robot collaboration research, programming by demonstration,
-    and AR-guided assembly tasks.
+    A 6-DOF collaborative robot arm with 12.5 kg payload and 1300 mm reach.
+    Equipped with a Robotiq Wrist Camera, a Robotiq 2F gripper, a Robotiq AirPick vacuum gripper, and a Robotiq Screwdriving Solution for automated fastening and assembly.
+    A conveyor system is integrated to enable continuous material flow and support experiments in automated production and logistics.
 
-- name: "AUBO i5"
+- name: "UFactory Xarm 6"
   category: "Collaborative Robot"
-  image: "lab/aubo_i5.jpg"
+  image: "equip_xarm6.jpeg"
   description: >
-    A lightweight 6-DOF cobot with 5 kg payload designed for flexible
-    manufacturing. Deployed in studies on intuitive robot programming
-    and AR-based teleoperation interfaces.
+    A lightweight 6-DOF collaborative robot with a 5 kg payload and 700 mm reach. 
+    The system is equipped with an xArm two-finger gripper for adaptable and precise object handling and an Orbbec Gemini 335 depth camera for object detection, depth sensing, and vision-guided manipulation.
+    This platform supports research in human-centered robotics, perception-driven manipulation, and immersive human-robot interaction.
 
-- name: "Meta Quest 3"
+- name: "Virtualis Motion VR Station"
+  category: "XR station"
+  image: "equip_virtrualis.jpeg"
+  description: >
+   An advanced balance assessment and rehabilitation platform that integrates a 360-degree dynamic force plate with immersive virtual reality. 
+   The system enables precise evaluation of human balance and postural control through Computerized Dynamic Posturography (CDP), including standardized 
+   tests such as Sensory Organization Test (SOT), Limits of Stability (LoS), and Adaptation Tests.
+
+- name: "Clearpath Husky with Robot Arm"
+  category: "Mobile Manipulator"
+  image: "equip_husky.jpeg"
+  description: >
+    A rugged, all-terrain unmanned ground vehicle (UGV) designed for autonomous mobile robotics research. Integrated with a robotic arm, 
+    the platform enables mobile manipulation capabilities for tasks that combine navigation and object interaction in complex environments.
+
+- name: "Varjo VR-3"
   category: "XR Headset"
-  image: "lab/quest3.jpg"
+  image: "equip-Varjo-VR-3.png"
   description: >
-    Standalone mixed reality headset with color passthrough and hand tracking.
-    Primary platform for developing MR applications in manufacturing training,
-    human-robot interaction, and spatial computing research.
+    High-fidelity VR headset designed for ultra-high-fidelity immersive experiences. 
+    Featuring human-eye resolution and precise integrated eye tracking, it enables highly realistic rendering and detailed user behavior analysis.
 
-- name: "Microsoft HoloLens 2"
+- name: "Meta Quest 3 & 3s"
   category: "XR Headset"
-  image: "lab/hololens2.jpg"
+  image: "equip-metaquest3.png"
   description: >
-    An optical see-through AR headset with eye tracking and hand gesture input.
-    Used for industrial AR interface research, including robot programming
-    visualization and first responder training simulations.
-
-- name: "HTC Vive Pro"
-  category: "XR Headset"
-  image: "lab/vive_pro.jpg"
-  description: >
-    High-fidelity VR headset with SteamVR tracking. Supports immersive
-    simulation environments for operator training, virtual prototyping,
-    and cybersecurity studies in mixed reality contexts.
-
-- name: "Intel RealSense D435i"
-  category: "Depth Sensor"
-  image: "lab/realsense.jpg"
-  description: >
-    RGB-D depth camera with IMU for real-time 3D perception. Used in
-    robot perception pipelines, AR registration experiments, and
-    human pose estimation for interaction studies.
+    The Meta Quest 3 and Quest 3S are standalone mixed reality headsets that support both fully immersive VR 
+    and passthrough-based AR experiences. With inside-out tracking and wireless operation, they provide a flexible 
+    and accessible platform for developing and deploying interactive XR applications.
