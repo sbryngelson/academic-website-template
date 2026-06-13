@@ -1,3 +1,18 @@
+#  - code: "INEN 5358"          # 课程编号
+#   name: "课程名"
+#   semesters:                 # 可多个学期
+#     - "Fall 2024"
+#   description: >             # 课程简介
+#     ...
+#   syllabus: "files/xxx.pdf"  # 留空则不显示链接
+#   textbook:
+#     title: "书名"
+#     url: "https://..."       # 留空则不显示
+#   projects:                  # 可多个，留空列表则不显示
+#     - title: "Team A Project"
+#       url: "https://..."
+
+
 - code: "INEN 5301-05"
   name: "Collaborative Robot Operations and Programming"
   semesters:
