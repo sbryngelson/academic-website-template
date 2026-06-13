@@ -88,12 +88,14 @@
     video: "https://youtu.be/NfVmJfu_26A"
     bib: ""
 
-- title: "Augmented Reality"
+- title: "Augmented reality assisted smart factory management system development"
   image: "research/2021_smartfactory.jpg"
   start_date: "2021-12"
   end_date: "2022-2"
   keywords:
-    - 
+    - Augmented Reality
+    - Smart Factory
+    - Digital Twin
   abstract: >
     An AR headset-based prototyping system has been developed to offer a clear and intuitive digital visualization for the purpose of exploring the 
     potential applications of smart factories. This project presents a case study of a maintenance application in a CNC machine shop for technicians.
@@ -102,3 +104,43 @@
     webpage: ""
     video: "https://youtu.be/p6v-WwOH-og"
     bib: ""
+
+- title: "A global calibration to solve the misregistration problems in VST AR system"
+  image: "research/2021_ARstereoVST.jpg"
+  start_date: "2021-10"
+  end_date: "2023-2"
+  keywords:
+    - Augmented reality
+    - Calibration
+    - Errors
+    - Robots
+  abstract: >
+    The purpose of this study is to introduce a calibration method for the registration problem in a video seethrough 
+    Augmented Reality (AR) system. This study investigates error sources and presents an efficient calibration procedure 
+    to reduce the misalignment accuracy via HMD-to-Camera transformation.
+  links:
+    paper: ""
+    webpage: "https://asmedigitalcollection.asme.org/computingengineering/article/24/3/031003/1166670/A-Global-Correction-Framework-for-Camera"
+    video: ""
+    bib: ""
+
+- title: "A Tele-robot System with Mixed-Reality Interaction"
+  image: "research/2022_telerobot.jpg"
+  start_date: "2022-6"
+  end_date: "2022-9"
+  keywords:
+    - Augmented reality
+    - Teleoperation
+    - User Interface
+    - Robotics
+  abstract: >
+    This study describes the development of a tele-robot control system that utilizes a Mixed Reality headset, 
+    (HoloLens 2), to remotely control Automated Guided Vehicles (Rover Pro). The system features a user-friendly 
+    interface that offers three control methods: motion control, physical button control, and virtual button control.
+  links:
+    paper: ""
+    webpage: ""
+    video: ""
+    bib: ""
+
+
