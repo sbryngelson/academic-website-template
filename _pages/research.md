@@ -7,10 +7,34 @@ permalink: /research/
 
 ## Research
 
+<input type="text" class="pub-search" id="researchSearch" placeholder="Search by title or keyword...">
+
+{% comment %}
+  Keywords are auto-collected from _data/research.yml at build time.
+  Adding or removing keywords in research.yml will automatically update the filter buttons below.
+{% endcomment %}
+{% assign kw_string = "" %}
+{% for item in site.data.research %}
+  {% if item.keywords %}
+    {% for kw in item.keywords %}
+      {% if kw and kw != "" %}
+        {% assign kw_string = kw_string | append: kw | append: "|||" %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+{% assign kw_array = kw_string | split: "|||" | uniq | sort %}
+
+<div class="research-filter-bar">
+<button class="research-filter-btn active" data-kw="__all__">All</button>
+{% for kw in kw_array %}{% if kw != "" %}<button class="research-filter-btn" data-kw="{{ kw | downcase }}">{{ kw }}</button>{% endif %}{% endfor %}
+</div>
+
 {% assign sorted_research = site.data.research | sort: "end_date" | reverse %}
-<div class="research-list">
+<div class="research-list" id="researchList">
 {% for item in sorted_research %}
-<div class="research-card-h">
+{% assign kw_joined = item.keywords | join: "|" %}
+<div class="research-card-h" data-research-searchable data-keywords="{{ kw_joined | downcase }}">
 <div class="research-card-h-img">
 {% if item.image and item.image != "" %}
 <img src="{{ site.url }}{{ site.baseurl }}/images/{{ item.image }}" alt="{{ item.title }}" loading="lazy">
@@ -49,3 +73,37 @@ permalink: /research/
 </div>
 {% endfor %}
 </div>
+
+<script>
+(function () {
+  var searchInput = document.getElementById('researchSearch');
+  var filterBtns = document.querySelectorAll('.research-filter-btn');
+  var cards = document.querySelectorAll('[data-research-searchable]');
+  var activeKw = '__all__';
+
+  function applyFilters() {
+    var query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    cards.forEach(function (card) {
+      var text = card.textContent.toLowerCase();
+      var kwAttr = card.getAttribute('data-keywords') || '';
+      var kwArr = kwAttr.split('|').map(function (k) { return k.trim(); });
+      var matchesText = !query || text.includes(query);
+      var matchesKw = activeKw === '__all__' || kwArr.indexOf(activeKw) >= 0;
+      card.style.display = (matchesText && matchesKw) ? '' : 'none';
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', applyFilters);
+  }
+
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      filterBtns.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      activeKw = btn.getAttribute('data-kw');
+      applyFilters();
+    });
+  });
+})();
+</script>

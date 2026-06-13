@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}?v={{ site.time | date: '%s' }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="icon" href="{{ site.url }}{{ site.baseurl }}/images/yang_notion_avatar_c-1.png" type="image/png">
   <link rel="alternate" type="application/rss+xml" title="{{ site.name | escape }}" href="{{ site.url }}{{ site.baseurl }}/feed.xml">

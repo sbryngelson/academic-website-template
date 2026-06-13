@@ -2,6 +2,38 @@
 // Research page — horizontal card list
 // =============================================================
 
+.research-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.research-filter-btn {
+  display: inline-block;
+  padding: 0.25rem 0.875rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-full);
+  background-color: var(--accent-light);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+
+  &:hover {
+    background-color: var(--accent);
+    color: #fff;
+  }
+
+  &.active {
+    background-color: var(--accent);
+    color: #fff;
+  }
+}
+
 .research-list {
   display: flex;
   flex-direction: column;
