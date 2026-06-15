@@ -144,3 +144,63 @@
     bib: ""
 
 
+- title: "Real-Time Object Detection for Mixed Reality on Meta Quest 3S Using AI Building Blocks"
+  image: "research/2026_AIBuildingBlocks_ObjectDetection.gif"
+  start_date: "2026-3"
+  end_date: "2026-4"
+  keywords:
+    - Augmented Reality
+    - Mixed Reality
+    - Object Detection
+    - Unity
+    - Meta Quest 3S
+  abstract: >
+    This research project focuses on the development and deployment of a real-time object detection system 
+    for Mixed Reality (MR) and Virtual Reality (VR) environments using the Meta Quest 3S platform. 
+    Leveraging the newly released AI Building Blocks provided in Meta SDK v83+ and the Meta XR MR Utility Kit v83+.
+  links:
+    paper: ""
+    webpage: "https://github.com/VinkoYang/ObjectDetectionMetaQuest3S_Demo"
+    video: "https://youtu.be/P87vekD4n84"
+    bib: ""
+
+
+- title: "Seeing Isn't Believing: The Vertical-Horizontal Illusion Across Screens and XR Headsets"
+  image: "research/2026_Vertical-HorizontalIllusion.png"
+  start_date: "2026-2"
+  end_date: "2026-3"
+  keywords:
+    - Mixed Reality
+    - Head-Mounted Displays
+    - Human Computer Interaction 
+    - Spatial Perception
+  abstract: >
+    The Vertical-Horizontal Illusion (VHI) biases perceived geometric proportions across visual displays. 
+    This study introduces the Square Recognition Test (SRT), a unified method to measure perceived squareness across devices. 
+    A within-subject study (N = 24) on PC, mobile, and AR HMDs shows a consistent bias toward slightly wider-than-tall rectangles 
+    (PSE ≈ 1.02-1.04), indicating device-invariant VHI effects. 
+  links:
+    paper: ""
+    webpage: ""
+    video: ""
+    bib: ""
+
+- title: "MOTION: AI-Driven Biomechanical Motion Capture for Augmented Reality Rehabilitation"
+  image: "research/2026-4_Motion.png"
+  start_date: "2026-2"
+  end_date: "2026-3"
+  keywords:
+    - Mixed Reality
+    - Motion Capture
+    - Embodied Interaction
+    - Adaptive Interfaces
+  abstract: >
+    MOTION is an AI-powered AR rehabilitation system that uses real-time biomechanical motion capture and adaptive feedback 
+    to improve movement accuracy and engagement. By combining body tracking, gamified interaction, and remote clinician support, 
+    the platform enables accessible and personalized rehabilitation in XR environments.
+  links:
+    paper: ""
+    webpage: ""
+    video: ""
+    bib: ""
+    poster: "papers/Motion_Spring_Conference_Poster.pdf"

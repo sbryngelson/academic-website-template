@@ -7,3 +7,5 @@ Gemfile.lock
 package-lock.json
 node_modules/
 .worktrees/
+.claude/
+.vs/
