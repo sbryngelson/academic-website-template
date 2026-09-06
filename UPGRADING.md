@@ -95,4 +95,5 @@ If you copied the template before September 2026, note these changes:
 - `_data/people.yml` and the About page's "Students and Mentoring" list were removed (they duplicated `alumni.yml`).
 - Publication links come from BibTeX fields (`arxiv`, `url`, `code`, `slides`, `video`, `poster`, `data`); an arXiv id in the `doi` field of an `@unpublished` entry still works. The year badge is taken from the `year` field. `selected = {true}` lists an entry on the home page.
 - URLs are no longer printed inside the reference text (`citesty.csl`); they appear as buttons.
+- Vendored Bootstrap SCSS is 5.3.8 (was 5.3.3; no visual change). MathJax is loaded from `mathjax@4` (was `@3`); if you customized `_includes/mathjax.html`, note the v4 script path has no `es5/` directory. CI runs on Ruby 4.0 (and 3.4).
 - `favicon.ico` was removed from the repository; the deploy workflow now rasterizes it (and `apple-touch-icon.png`) from the generated `favicon.svg`.
