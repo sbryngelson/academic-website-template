@@ -1,0 +1,179 @@
+// =============================================================
+// Print — white paper, no site chrome, references stay usable
+// =============================================================
+// Applies only when a page is printed or saved as PDF.
+
+@media print {
+  @page {
+    margin: 2cm;
+  }
+
+  // Paper, not screen: undo dark mode, the accent color, and shadows
+  :root,
+  [data-bs-theme="dark"] {
+    --bg-primary: #fff;
+    --bg-secondary: #fff;
+    --bg-card: #fff;
+    --text-primary: #000;
+    --text-secondary: #222;
+    --text-muted: #555;
+    --border-color: #bbb;
+    --accent: #000;
+    --accent-hover: #000;
+    --accent-light: transparent;
+    --on-accent: #fff;
+    --shadow-sm: none;
+    --shadow-md: none;
+    --shadow-lg: none;
+    --shadow-navbar: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    background-color: #fff !important;
+    color: #000;
+  }
+
+  body::before {
+    display: none; // noise texture
+  }
+
+  // Site chrome with no meaning on paper
+  .navbar,
+  .search-overlay,
+  .back-to-top,
+  .skip-link,
+  .site-footer,
+  .search-toggle,
+  .dark-mode-toggle,
+  .pub-search,
+  .copy-btn,
+  .btn-bib,
+  .btn-abstract {
+    display: none !important;
+  }
+
+  // Sections animate in on scroll; on paper everything is visible at once
+  .fade-in-section {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  // Collapsed BibTeX/abstracts stay hidden; ones the reader opened are printed in full
+  .pub-collapse:not(.show) {
+    display: none;
+  }
+  .pub-collapse.show {
+    max-height: none;
+  }
+
+  // Single column
+  .site-container {
+    max-width: none;
+    padding: 0;
+  }
+  .home-grid {
+    display: block;
+  }
+  // Card grids: Chrome moves a whole CSS grid to the next page rather than
+  // splitting it between rows, which strands the heading above it. Plain
+  // block flow and floats fragment correctly.
+  .team-grid,
+  .research-grid {
+    display: block;
+  }
+  .research-grid::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  // Chrome treats flex containers as unbreakable when paginating, so the
+  // compact people card is plain block flow with a floated photo.
+  .team-card {
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    margin-bottom: var(--space-3);
+  }
+  .research-card {
+    float: left;
+    width: 48%;
+    margin: 0 1% 1em 0;
+  }
+  // Compact people cards: less ink, and a row is short enough to stay with its heading
+  .team-card {
+    padding: var(--space-3);
+  }
+  .team-card .team-photo {
+    float: left;
+    width: 64px;
+    height: 64px;
+    margin: 0 var(--space-4) 0 0;
+  }
+  .team-card .team-links {
+    justify-content: flex-start;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  // Keep small units whole across page breaks. Large containers such as
+  // .section-card must be allowed to split, or a card longer than a page is
+  // pushed to the next page leaving the first one blank.
+  .team-card,
+  .research-card,
+  .callout,
+  .pub-entry,
+  .news-item,
+  li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  h1, h2, h3, h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .section-card,
+  .profile-card,
+  .team-card,
+  .research-card {
+    box-shadow: none;
+    border: 1px solid var(--border-color);
+  }
+
+  // Links: plain, underlined, and external references show their destination
+  a {
+    color: #000;
+    text-decoration: underline;
+    background-image: none;
+  }
+  .pub-actions a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    word-break: break-all;
+  }
+
+  // Pills and badges as plain text
+  .btn-pill,
+  .year-badge,
+  .chip {
+    background: none !important;
+    color: #000 !important;
+    border: none;
+    padding: 0;
+    text-decoration: none;
+  }
+  .pub-actions {
+    gap: 0 1.25em;
+  }
+  .year-badge {
+    font-weight: 700;
+  }
+}
