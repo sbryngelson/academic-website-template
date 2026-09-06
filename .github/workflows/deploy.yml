@@ -49,7 +49,7 @@ jobs:
       # favicon.ico and the iOS home-screen icon match the generated SVG.
       - name: Rasterize favicon
         run: |
-          sudo apt-get update -qq >/dev/null && sudo apt-get install -y -qq librsvg2-bin >/dev/null
+          sudo apt-get update -qq >/dev/null && sudo apt-get install -y -qq librsvg2-bin imagemagick >/dev/null
           rsvg-convert -w 180 -h 180 _site/favicon.svg -o _site/apple-touch-icon.png
           rsvg-convert -w 32  -h 32  _site/favicon.svg -o _site/favicon-32.png
           rsvg-convert -w 16  -h 16  _site/favicon.svg -o _site/favicon-16.png
