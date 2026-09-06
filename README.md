@@ -1,12 +1,17 @@
 # A website template for academics
 
 <p align="center">
-  <img src="images/screenshots/home-hero.png" alt="Home page — light and dark mode" width="900">
+  <img src="images/screenshots/home-hero.webp" alt="Home page in light and dark mode" width="900">
 </p>
 
 <p align="center">
   <strong>A beautiful, production-ready Jekyll website for academics and research groups.</strong><br>
-  Fork it. Fill in your info. Publish.
+  Use the template. Fill in your info. Publish.
+</p>
+
+<p align="center">
+  <a href="https://github.com/sbryngelson/academic-website-template/actions/workflows/deploy.yml"><img src="https://github.com/sbryngelson/academic-website-template/actions/workflows/deploy.yml/badge.svg" alt="Build and Deploy"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license"></a>
 </p>
 
 <h3 align="center">
@@ -283,16 +288,16 @@ __Using this template? Share your site and I'll add it here!__
 
 | | |
 |:---:|:---:|
-| ![Publications](images/screenshots/publications.png) | ![Team](images/screenshots/team.png) |
-| Publications with search & year badges | Team page with card grid |
-| ![Search](images/screenshots/search.png) | |
+| ![Publications](images/screenshots/publications.webp) | ![Team](images/screenshots/team.webp) |
+| Publications: filter box, year badges, buttons from BibTeX fields | Team page with card grid (dark mode) |
+| ![Search](images/screenshots/search.webp) | |
 | Site-wide search (Cmd+K) | |
 
 ## Quick Start
 
 1. Click **[Use this template](https://github.com/sbryngelson/academic-website-template/generate)** and name the new repository `YOUR_USERNAME.github.io`
    (prefer this over forking: you get a clean history, no upstream baggage, and the option to keep it private)
-2. **Install** [Jekyll](https://jekyllrb.com/docs/installation/) and run `bundle install`
+2. **Install** Ruby and Bundler ([Jekyll's guide](https://jekyllrb.com/docs/installation/) covers it), then run `bundle install`
 3. **Configure** your site:
    ```bash
    ./setup.sh --clean  # remove the demo content and fill in your details, or
@@ -306,6 +311,7 @@ __Using this template? Share your site and I'll add it here!__
    bundle exec jekyll serve
    # open http://localhost:4000
    ```
+7. **Deploy**: push to GitHub, then once, in your repo, set **Settings > Pages > Source** to **GitHub Actions**. Every later push deploys automatically.
 
 ## Detailed How-To Guide
 
@@ -343,12 +349,15 @@ photo: headshot.jpg   # place your photo in images/
 Or run the interactive setup script:
 
 ```bash
-./setup.sh
+./setup.sh          # prompts for name, title, institution, email
+./setup.sh --clean  # same, after removing the demo content
 ```
+
+`--clean` asks for confirmation, then empties the data files (keeping their field comments), `assets/ref.bib`, `_posts/`, `papers/`, the demo team and research images, and the Feynman prose in `home.md`, `research.md`, and `team.md`, and points `photo` at a placeholder avatar.
 
 ### Step 4: Add Your Links
 
-Still in `_config.yml`, add your academic profiles. Delete any you don't use:
+Still in `_config.yml`, add your academic profiles. Leave blank (or delete) any you don't use:
 
 ```yaml
 # STEP 2: Your Links
@@ -433,8 +442,10 @@ Edit `_data/news.yml` (newest first):
 
 Each page in `_pages/` is a Markdown file. Edit the content directly:
 
-- `home.md` — your welcome text and bio
+- `home.md` — your welcome text and bio (see [Home page building blocks](#home-page-building-blocks))
 - `research.md` — describe your research areas
+- `about.md` — optional sections (grants, awards, sponsors) driven by `_data/`
+- `team.md` — the openings note and administrative contact
 
 Talks, teaching, and software are lists in `_data/` (see below); their pages need no editing.
 
@@ -515,13 +526,41 @@ The site uses modular SASS in `_sass/`:
 
 ```
 _sass/
-  base/          # variables, typography, reset
-  components/    # card, navbar, buttons, footer, profile, publication, search
+  base/          # variables, fonts, typography, icons, reset
+  components/    # card, chips, navbar, buttons, footer, profile, publication, search
   layouts/       # home grid, team grid, research grid
-  utilities/     # dark mode, animations
+  utilities/     # dark mode, animations, print
 ```
 
 For JavaScript, edit `assets/js/site.js` directly. There is no build step.
+
+### Home page building blocks
+
+`home.md` uses three optional blocks you can copy, reorder, or delete:
+
+```html
+<!-- Research-area chips (link to /research) -->
+<div class="chip-container" markdown="0">
+<a href="{{ '/research' | relative_url }}" class="chip">Quantum Electrodynamics</a>
+<a href="{{ '/research' | relative_url }}" class="chip">Superfluidity</a>
+</div>
+
+<!-- Callout box: callout-success, callout-warning, or callout-info -->
+<div class="callout callout-success" markdown="0">
+<div class="callout-title">{% include icon.html name="award" class="callout-icon" %} Nobel Prize in Physics, 1965</div>
+<p>One or two sentences.</p>
+</div>
+
+<!-- Banner image with caption; place the image in images/ -->
+<div class="banner-frame" markdown="0">
+<img src="{{ '/images/banner.webp' | relative_url }}" alt="Describe the image" width="1400" height="449" loading="lazy">
+<div class="banner-caption">Caption text</div>
+</div>
+```
+
+### Search
+
+Every page and blog post is indexed for the Cmd+K search at build time. Add `search: false` to a page's front matter to leave it out.
 
 ### Icons
 
@@ -539,9 +578,7 @@ MathJax is loaded only where it is needed. Add `math: true` to the front matter 
 
 ## Publications
 
-Publications are managed via [Jekyll Scholar](https://github.com/inukshuk/jekyll-scholar) using BibTeX. Edit `assets/ref.bib` with your references.
-
-Set `scholar.last_name` and `scholar.first_name` in `_config.yml` to bold your name in the publication list (see Step 6 above).
+Publications are generated from `assets/ref.bib` by [Jekyll Scholar](https://github.com/inukshuk/jekyll-scholar); see [Step 6](#step-6-add-publications) for the supported fields and name bolding.
 
 ## Hosting
 
@@ -559,6 +596,17 @@ Purchase a domain, enter it under **Settings > Pages > Custom domain**, and conf
 
 Set `url` (and `baseurl` if the site lives in a sub-path) in `_config.yml`, build with `JEKYLL_ENV=production bundle exec jekyll build`, and upload `_site/` to your server.
 
+## Troubleshooting
+
+| Symptom | Cause and fix |
+|---|---|
+| The deploy workflow fails at "Configure Pages" | Pages is not enabled for GitHub Actions yet. Settings > Pages > Source > **GitHub Actions** (one time). |
+| Site builds locally but pages 404 on GitHub | Push to the `source` branch; the workflow only deploys from there. Check the Actions tab for the run. |
+| My name is not bold in the publication list | `scholar.first_name` must match the rendered initials exactly, e.g. `["J. A.", "J."]`, longest form first. |
+| `bundle install` fails on macOS | The system Ruby is too old or read-only. Install Ruby 3.2+ with Homebrew, rbenv, or mise, then rerun. |
+| A page is missing from Cmd+K search | Pages need a `title` in their front matter; `search: false` excludes a page on purpose. |
+| Equations do not render | Add `math: true` to that page's front matter, or `math: true` in `_config.yml`. |
+
 ## Upgrading
 
 Coming from the previous version? See [UPGRADING.md](UPGRADING.md).
@@ -571,7 +619,7 @@ Coming from the previous version? See [UPGRADING.md](UPGRADING.md).
 
 ## Acknowledgment
 
-I credit the [Allen Lab](https://www.allanlab.org/) for creating a beautiful academic research group webpage. Many parts of this site were adopted or copied from their laboratory webpage.
+I credit the [Allan Lab](https://www.allanlab.org/) for creating a beautiful academic research group webpage. Many parts of this site were adopted or copied from their laboratory webpage.
 
 ## License
 
