@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Setup guide
+    url: https://github.com/sbryngelson/academic-website-template#quick-start
+    about: Step-by-step instructions for configuring and deploying your site.

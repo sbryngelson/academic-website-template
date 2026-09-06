@@ -1,7 +1,7 @@
 <footer class="site-footer">
   <div class="footer-grid">
     <div>
-      <h5>About</h5>
+      <h3 class="footer-heading">About</h3>
       <p>
         {{ site.name }}<br>
         {{ site.title }}<br>
@@ -9,14 +9,14 @@
       </p>
     </div>
     <div>
-      <h5>Contact</h5>
+      <h3 class="footer-heading">Contact</h3>
       <p>
         <a href="mailto:{{ site.email }}"><i class="fa-solid fa-envelope"></i> {{ site.email }}</a><br>
         {% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}"><i class="fa-brands fa-github"></i> GitHub</a><br>{% endif %}
       </p>
     </div>
     <div>
-      <h5>Links</h5>
+      <h3 class="footer-heading">Links</h3>
       <p>
         {% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}"><i class="ai ai-google-scholar"></i> Google Scholar</a><br>{% endif %}
         {% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}"><i class="ai ai-researchgate"></i> ResearchGate</a><br>{% endif %}
@@ -31,5 +31,5 @@
   </div>
 </footer>
 
-<script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
-<script src="{{ "/assets/js/site.min.js" | relative_url }}"></script>
+<script src="{{ '/assets/javascript/bootstrap/bootstrap.bundle.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/site.js' | relative_url }}"></script>

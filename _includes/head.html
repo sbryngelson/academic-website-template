@@ -8,12 +8,12 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}">
   <meta property="og:description" content="{{ site.description }}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
-  {% if site.photo %}<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}">{% endif %}
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  {% if site.photo %}<meta property="og:image" content="{{ site.photo | prepend: '/images/' | absolute_url }}">{% endif %}
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}">
   <meta name="twitter:description" content="{{ site.description }}">
-  {% if site.photo %}<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}">{% endif %}
+  {% if site.photo %}<meta name="twitter:image" content="{{ site.photo | prepend: '/images/' | absolute_url }}">{% endif %}
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,24 +25,27 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="icon" href="{{ site.url }}{{ site.baseurl }}/favicon.svg" type="image/svg+xml">
-  <link rel="alternate icon" href="{{ site.url }}{{ site.baseurl }}/favicon.ico">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.name | escape }}" href="{{ site.url }}{{ site.baseurl }}/feed.xml">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+  <!-- favicon.svg is generated from your initials + accent color (see favicon.svg).
+       favicon.ico and apple-touch-icon.png are rasterized from it during deployment
+       for browsers without SVG favicon support (Safari). -->
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="32x32">
+  <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name | escape }}" href="{{ '/feed.xml' | absolute_url }}">
 
-  <!-- Accent color from config -->
+  <!-- Accent color from config; light/dark variants are derived in _sass/base/_variables.scss -->
   {% if site.accent_color %}
   <style>
-    :root { --accent: {{ site.accent_color }}; --accent-hover: {{ site.accent_color }}; }
+    :root { --accent-base: {{ site.accent_color }}; }
   </style>
   {% endif %}
 
+  {% unless site.dark_mode == false %}
   <!-- Dark mode: apply saved theme before paint to prevent flash -->
   <script>
     (function() {
-      var darkMode = {{ site.dark_mode | default: true }};
-      if (!darkMode) return;
       var saved = localStorage.getItem('theme');
       if (saved) {
         document.documentElement.setAttribute('data-bs-theme', saved);
@@ -51,6 +54,7 @@
       }
     })();
   </script>
+  {% endunless %}
 
   {% if jekyll.environment == 'production' %}
   {% include analytics.html %}
@@ -64,7 +68,7 @@
     "@context": "https://schema.org",
     "@type": "{% if page.url == '/' %}WebSite{% else %}WebPage{% endif %}",
     "name": "{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}",
-    "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+    "url": "{{ page.url | absolute_url }}",
     "description": "{{ site.description | escape }}",
     "author": {
       "@type": "Person",

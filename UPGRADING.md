@@ -71,6 +71,19 @@ If you added custom CSS to `SHB_css.scss`, move it to a new file in `_sass/` and
 
 ```bash
 bundle install
-npm install        # only if you want to modify JS
 bundle exec jekyll serve
 ```
+
+## 8. Changes in the 2026 cleanup
+
+If you copied the template before September 2026, note these changes:
+
+- Layouts `gridlay`, `team`, `research`, `textlay`, `piclay`, and `publications` were identical and are now a single `page` layout. Change `layout:` in your `_pages/*.md` front matter to `page`.
+- The blog index moved from `/blogs/` to `/blog/`, and posts are published at `/blog/<year>/<title>/` (set by `permalink` in `_config.yml`). The nav entry is `- name: blog`.
+- Links use Jekyll's `relative_url` filter instead of `{{ site.url }}{{ site.baseurl }}`, so local preview works even when `url` is set.
+- `assets/js/site.js` is loaded directly; `site.min.js`, `package.json`, and the npm build step are gone.
+- Name bolding in publications is driven by `scholar.last_name` and `scholar.first_name` in `_config.yml`; write them as they appear in the rendered list (`Last, F. M.`).
+- `sitemap: false` was removed from the page front matter so pages appear in `sitemap.xml`.
+- `Gemfile.lock` is committed. Run `bundle install` once after pulling.
+- `CNAME` and `_config_demo.yml` were removed. The deploy workflow now reads your site's URL and base path from Settings > Pages, so neither file is needed.
+- `favicon.ico` was removed from the repository; the deploy workflow now rasterizes it (and `apple-touch-icon.png`) from the generated `favicon.svg`.

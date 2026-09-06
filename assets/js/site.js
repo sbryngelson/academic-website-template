@@ -217,9 +217,13 @@
     }
   });
 
+  // Site may be served from a sub-path (e.g. user.github.io/repo); the layout
+  // stores site.baseurl on <body> so the index can be fetched from the right place.
+  var baseurl = (document.body && document.body.getAttribute('data-baseurl')) || '';
+
   function loadSearchData(callback) {
     if (searchData) { callback(searchData); return; }
-    fetch('/assets/search.json')
+    fetch(baseurl + '/assets/search.json')
       .then(function (r) { return r.json(); })
       .then(function (data) {
         searchData = data;

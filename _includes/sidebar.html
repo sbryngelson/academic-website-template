@@ -1,13 +1,13 @@
 <div class="profile-card">
-<a href="{{ site.url }}{{ site.baseurl }}/about">
-<img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}" class="profile-photo" alt="{{ site.name }}" loading="lazy">
+<a href="{{ '/about' | relative_url }}">
+<img src="{{ site.photo | prepend: '/images/' | relative_url }}" class="profile-photo" alt="{{ site.name }}" loading="lazy">
 </a>
 <h4 class="profile-name">{{ site.name }}</h4>
 <p class="profile-title">{{ site.title }}</p>
 <p class="profile-institution">{{ site.institution }}</p>
 <div class="profile-links">
 {% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
-{% if site.links.cv and site.links.cv != "" %}<a href="{{ site.url }}{{ site.baseurl }}/{{ site.links.cv }}" class="icon-link" title="CV"><i class="ai ai-cv"></i></a>{% endif %}
+{% if site.links.cv and site.links.cv != "" %}<a href="{{ site.links.cv | prepend: '/' | relative_url }}" class="icon-link" title="CV"><i class="ai ai-cv"></i></a>{% endif %}
 {% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}" class="icon-link" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
 {% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}" class="icon-link" title="GitHub"><i class="fa-brands fa-github"></i></a>{% endif %}
 {% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}" class="icon-link" title="ResearchGate"><i class="ai ai-researchgate"></i></a>{% endif %}
@@ -34,5 +34,5 @@
 </div>
 {% endfor %}
 </div>
-<p style="margin-top: var(--space-4);"><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">See all news &rarr;</a></p>
+<p style="margin-top: var(--space-4);"><a href="{{ '/allnews.html' | relative_url }}">See all news &rarr;</a></p>
 </div>

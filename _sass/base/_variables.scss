@@ -3,10 +3,14 @@
 // =============================================================
 
 :root {
-  // Accent — a warm scholarly teal
-  --accent: #1a7a6d;
-  --accent-hover: #15655a;
-  --accent-light: rgba(26, 122, 109, 0.08);
+  // Accent. Set `accent_color` in _config.yml (it overrides --accent-base);
+  // every other accent variable is derived from it so light and dark mode
+  // both stay readable whatever color is chosen.
+  --accent-base: #1a7a6d;
+  --accent: var(--accent-base);
+  --accent-hover: color-mix(in srgb, var(--accent-base) 82%, black);
+  --accent-light: color-mix(in srgb, var(--accent-base) 8%, transparent);
+  --on-accent: #ffffff;           // text placed on a solid accent background
 
   // Light mode — warm parchment tones
   --bg-primary: #f8f6f1;
@@ -14,7 +18,7 @@
   --bg-card: #ffffff;
   --text-primary: #2c2a25;
   --text-secondary: #5c5850;
-  --text-muted: #8a857c;
+  --text-muted: #6f6a61;
   --border-color: #e2ded6;
   --shadow-sm: 0 1px 3px rgba(44, 42, 37, 0.06);
   --shadow-md: 0 4px 12px rgba(44, 42, 37, 0.08);
@@ -51,16 +55,18 @@
 
 // Dark mode — rich warm dark
 [data-bs-theme="dark"] {
-  --accent: #3dbaa8;
-  --accent-hover: #5dd4c2;
-  --accent-light: rgba(61, 186, 168, 0.1);
+  // Lighten the accent so text and pills meet WCAG AA on dark surfaces
+  --accent: color-mix(in srgb, var(--accent-base) 62%, white);
+  --accent-hover: color-mix(in srgb, var(--accent-base) 45%, white);
+  --accent-light: color-mix(in srgb, var(--accent-base) 14%, transparent);
+  --on-accent: #1c1b18;
 
   --bg-primary: #1c1b18;
   --bg-secondary: #262520;
   --bg-card: #2a2924;
   --text-primary: #e8e4dc;
   --text-secondary: #b5b0a5;
-  --text-muted: #7d796f;
+  --text-muted: #9a958a;
   --border-color: #3d3a33;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
