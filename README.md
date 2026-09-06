@@ -242,6 +242,7 @@ __Using this template? Share your site and I'll add it here!__
 - **Frosted glass navbar** with backdrop blur, active page indicator, and scroll shadow
 - **Dynamic favicon** — SVG generated from your initials + accent color; ICO and Apple touch icon rasterized from it at deploy time
 - **Responsive** — CSS Grid layouts that adapt from desktop to tablet to mobile
+- **Print stylesheet** — printing or saving a page as PDF gives white paper, no navigation, and references with their DOI/arXiv URLs spelled out
 
 ### Interactions
 - **Site-wide search** — press `Cmd+K` (or `Ctrl+K`) to instantly search all pages
