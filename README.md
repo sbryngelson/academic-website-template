@@ -62,7 +62,6 @@
 <a href="https://seanpark05.github.io/" target="_blank">★</a>
 <a href="https://miki998.github.io/" target="_blank">★</a>
 <a href="https://wilfonba.github.io/" target="_blank">★</a>
-<a href="https://saharnazb.github.io/" target="_blank">★</a>
 <a href="https://mvmacfarlane.github.io/" target="_blank">★</a>
 <a href="https://saharnaz.org/" target="_blank">★</a>
 <a href="https://www.isnicholas.com/" target="_blank">★</a>
@@ -81,14 +80,11 @@
 <a href="https://avibagchi.github.io/" target="_blank">★</a>
 <a href="https://binbin-xie.github.io/" target="_blank">★</a>
 <a href="https://BiomedLabUGgt.github.io/" target="_blank">★</a>
-<a href="https://Chemical118.github.io/" target="_blank">★</a>
 <a href="https://emilyvansyoc.github.io/" target="_blank">★</a>
 <a href="https://Erd-ling.github.io/" target="_blank">★</a>
 <a href="https://estimation-control-learning-laboratory.github.io/" target="_blank">★</a>
 <a href="https://EthanJ666.github.io/" target="_blank">★</a>
 <a href="https://f-farhan.github.io/" target="_blank">★</a>
-<a href="https://fekaputra.github.io/" target="_blank">★</a>
-<a href="https://flampouris.github.io/" target="_blank">★</a>
 <a href="https://gcg-helsinki.github.io/" target="_blank">★</a>
 <a href="https://Grupo-MATE.github.io/" target="_blank">★</a>
 <a href="https://guancai.github.io/" target="_blank">★</a>
