@@ -4,14 +4,14 @@ layout: page
 permalink: /talks/
 ---
 
-## Talks
+# Talks
 
 <div class="section-card" id="pubList">
-<h3>Invited Talks</h3>
+<h2>Invited Talks</h2>
 
 {% bibliography --query @incollection[keywords ^= invited] %}
 
-<h3>Regular Talks</h3>
+<h2>Regular Talks</h2>
 
 {% bibliography --query @incollection[keywords != invited] %}
 </div>

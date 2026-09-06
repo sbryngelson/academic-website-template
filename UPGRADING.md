@@ -86,4 +86,9 @@ If you copied the template before September 2026, note these changes:
 - `sitemap: false` was removed from the page front matter so pages appear in `sitemap.xml`.
 - `Gemfile.lock` is committed. Run `bundle install` once after pulling.
 - `CNAME` and `_config_demo.yml` were removed. The deploy workflow now reads your site's URL and base path from Settings > Pages, so neither file is needed.
+- Font Awesome and Academicons are gone. Icons are inline SVG: replace `<i class="fa-solid fa-envelope"></i>` with `{% include icon.html name="envelope" %}` (names: github, envelope, google-scholar, researchgate, orcid, cv, linkedin, x-twitter, house, sun, moon, search, copy, check, award, arrow-up). Add more in `_includes/icons.svg`.
+- Fonts are self-hosted from `assets/fonts/`; the Google Fonts `<link>` is gone.
+- MathJax loads only on pages with `math: true` in their front matter (or `math: true` in `_config.yml`).
+- Bootstrap's JavaScript is no longer shipped; the mobile menu is handled in `assets/js/site.js`. Bootstrap's `buttons`, `card`, `dropdown` and `close` SCSS modules are no longer imported.
+- Page titles are `# Title` (h1) instead of `## Title`; section headings remain `##`.
 - `favicon.ico` was removed from the repository; the deploy workflow now rasterizes it (and `apple-touch-icon.png`) from the generated `favicon.svg`.

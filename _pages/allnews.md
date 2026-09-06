@@ -4,7 +4,7 @@ layout: page
 permalink: /allnews.html
 ---
 
-## News
+# News
 
 <div class="section-card" markdown="0">
 <div class="news-timeline">

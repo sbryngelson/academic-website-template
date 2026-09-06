@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
-  <h2 itemprop="name headline">{{ page.title | escape }}</h2>
+  <h1 itemprop="name headline">{{ page.title | escape }}</h1>
   <p class="text-muted" style="font-size: 0.875rem;">
     <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
     {% if page.author %} &middot; <span itemprop="author">{{ page.author }}</span>{% endif %}

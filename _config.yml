@@ -24,6 +24,7 @@ links:
 # ============================================================
 accent_color: "#1a7a6d"      # theme color; light and dark variants are derived automatically
 dark_mode: true              # set to false to disable dark mode entirely
+math: false                  # true loads MathJax on every page; or add `math: true` to individual pages
 description: "Academic webpage of Dr. Richard Feynman"
 
 # When deploying with the included GitHub Actions workflow these are filled
@@ -112,7 +113,6 @@ exclude:
   - LICENSE
   - setup.sh
   - images/screenshots
-  - assets/javascript/bootstrap/__DO_NOT_MODIFY
   - vendor
   - .bundle
   - node_modules

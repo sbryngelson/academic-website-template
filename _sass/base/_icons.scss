@@ -1,0 +1,13 @@
+// =============================================================
+// Inline SVG icons (sprite in _includes/icons.svg)
+// =============================================================
+// Icons size to the surrounding font-size, like the icon fonts they replace.
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  fill: currentColor;
+  flex-shrink: 0;
+}

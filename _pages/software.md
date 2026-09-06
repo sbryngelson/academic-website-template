@@ -4,10 +4,10 @@ layout: page
 permalink: /software/
 ---
 
-## Software
+# Software
 
 <div class="section-card">
-<h3>Path Integral Monte Carlo</h3>
+<h2>Path Integral Monte Carlo</h2>
 <div class="pub-actions" style="margin-bottom: var(--space-3);">
 <a href="https://example.com" target="_blank" class="btn-pill btn-website">Website</a>
 <a href="https://github.com" target="_blank" class="btn-pill btn-git">Git</a>
@@ -17,7 +17,7 @@ permalink: /software/
 </div>
 
 <div class="section-card">
-<h3>QED Diagram Calculator</h3>
+<h2>QED Diagram Calculator</h2>
 <div class="pub-actions" style="margin-bottom: var(--space-3);">
 <a href="https://example.com" target="_blank" class="btn-pill btn-website">Website</a>
 </div>

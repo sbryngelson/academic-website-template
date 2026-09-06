@@ -236,7 +236,7 @@ __Using this template? Share your site and I'll add it here!__
 ## Features
 
 ### Design
-- **Source Serif 4 + DM Sans** typography — elegant serif headings paired with a clean geometric sans body
+- **Source Serif 4 + DM Sans** typography — elegant serif headings paired with a clean geometric sans body, self-hosted (no Google Fonts requests)
 - **Warm parchment palette** with subtle noise texture for depth, not flat generic whites
 - **Dark mode** — toggle in navbar, auto-detects system preference, persists across visits
 - **Frosted glass navbar** with backdrop blur, active page indicator, and scroll shadow
@@ -266,13 +266,14 @@ __Using this template? Share your site and I'll add it here!__
 
 ### Technical
 - **Modular SASS** — organized into `base/`, `components/`, `layouts/`, `utilities/`
-- **Selective Bootstrap 5.3.3** — only imports the modules used, not the full bundle
+- **No third-party requests** — fonts and icons are served from your own site; the only external script is MathJax, and only on pages that opt in
+- **Selective Bootstrap 5.3 SCSS** — navbar, reboot and utilities only; no Bootstrap JavaScript, no jQuery
 - **Single dependency-free JS file** — dark mode, search, toggles, scroll effects, copy button
 - **Auto-generated sitemap** via `jekyll-sitemap`
 - **Reproducible builds** — `Gemfile.lock` is committed, so your site builds the same way next year
 - **CI on pull requests** — every PR is built and its internal links are checked
 - **Open Graph + Twitter Cards** — links look good when shared on social media
-- **MathJax 3** — LaTeX formula rendering out of the box
+- **MathJax 3** — add `math: true` to a page or post (or set it site-wide in `_config.yml`)
 
 ## Screenshots
 
@@ -500,6 +501,20 @@ _sass/
 ```
 
 For JavaScript, edit `assets/js/site.js` directly. There is no build step.
+
+### Icons
+
+Icons are inline SVG symbols in `_includes/icons.svg` (Simple Icons, Lucide, Bootstrap Icons). Use one with:
+
+```liquid
+{% include icon.html name="github" %}
+```
+
+To add an icon, paste its path data into a new `<symbol id="icon-NAME" viewBox="...">` in that file.
+
+### Math
+
+MathJax is loaded only where it is needed. Add `math: true` to the front matter of any page or post that contains LaTeX, or set `math: true` in `_config.yml` to load it everywhere.
 
 ## Publications
 

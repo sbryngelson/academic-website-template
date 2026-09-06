@@ -6,6 +6,15 @@ MathJax = {
     }, 
     svg: {
     fontCache: 'global'
+    },
+    startup: {
+    // Equation-reference links live inside the aria-hidden SVG; keep them out
+    // of the tab order so screen readers and keyboard users are not sent there.
+    pageReady: function () {
+      return MathJax.startup.defaultPageReady().then(function () {
+        document.querySelectorAll('mjx-container svg a').forEach(function (a) { a.setAttribute('tabindex', '-1'); });
+      });
+    }
     }
 };
 </script>

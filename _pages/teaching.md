@@ -4,7 +4,7 @@ layout: page
 permalink: /teaching/
 ---
 
-## Teaching
+# Teaching
 
 <div class="section-card">
 <ul>

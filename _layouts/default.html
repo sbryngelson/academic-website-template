@@ -4,10 +4,12 @@
   {% include head.html %}
 
   <body data-baseurl="{{ site.baseurl }}">
+    <a class="skip-link" href="#main">Skip to content</a>
+    {% include icons.svg %}
 
     {% include header.html %}
 
-    <main class="site-container">
+    <main id="main" class="site-container">
       {{ content }}
     </main>
 

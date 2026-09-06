@@ -30,10 +30,14 @@
   margin-bottom: var(--space-6);
   box-shadow: var(--shadow-sm);
 
-  h3, h4 {
+  // Headings inside a card are sub-sections: no accent underline
+  h2, h3, h4 {
     margin-top: 0;
     &::after {
       display: none;
     }
+  }
+  h2 {
+    font-size: 1.375rem;
   }
 }

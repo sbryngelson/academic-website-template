@@ -1,7 +1,7 @@
 // =============================================================
 // Typography — Source Serif + DM Sans
 // =============================================================
-// Fonts loaded via <link> in head.html.
+// Fonts are self-hosted; see _fonts.scss.
 // Source Serif 4: elegant variable-weight serif for headings
 // DM Sans: clean geometric sans for body with personality
 
@@ -23,8 +23,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
 }
 
-h1 { font-size: 2.5rem; font-weight: 800; }
-h2 {
+// Page titles are h1; section headings h2. Both share the accent underline.
+h1, h2 {
   font-size: 1.875rem;
   &::after {
     content: '';
