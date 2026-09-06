@@ -1,7 +1,7 @@
 <nav class="navbar sticky-top navbar-expand-md">
   <div class="container" style="max-width: var(--container-max);">
-    <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">
-      <img src="{{ site.url }}{{ site.baseurl }}/favicon.svg" width="24" height="24" class="d-inline-block align-text-top" alt="" style="border-radius: 5px;">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/favicon.svg' | relative_url }}" width="24" height="24" class="d-inline-block align-text-top" alt="" style="border-radius: 5px;">
       {{ site.name | escape }}
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,11 +11,11 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/">Home</a>
+          <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
         </li>
         {% for nav in site.nav_pages %}
         <li class="nav-item">
-          <a class="nav-link{% if page.url contains nav.name %} active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/{{ nav.name }}">{{ nav.name | capitalize }}</a>
+          <a class="nav-link{% if page.url contains nav.name %} active{% endif %}" href="{{ nav.name | prepend: '/' | relative_url }}">{{ nav.name | capitalize }}</a>
         </li>
         {% endfor %}
       </ul>
@@ -23,11 +23,11 @@
         <button class="search-toggle" id="searchToggle" aria-label="Search site">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-        {% if site.dark_mode %}
+        {% unless site.dark_mode == false %}
         <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
           <i class="fa-solid fa-sun" id="themeIcon"></i>
         </button>
-        {% endif %}
+        {% endunless %}
       </div>
     </div>
   </div>

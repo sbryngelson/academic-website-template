@@ -1,7 +1,6 @@
 ---
 title: "Home"
 layout: homelay
-sitemap: false
 permalink: /
 ---
 
@@ -9,12 +8,12 @@ permalink: /
 <p class="home-hero-sub">{{ site.title }}, {{ site.institution }}</p>
 
 <div class="chip-container" markdown="0">
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Quantum Electrodynamics</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Path Integrals</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Superfluidity</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Parton Model</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Quantum Computing</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Nanotechnology</a>
+<a href="{{ '/research' | relative_url }}" class="chip">Quantum Electrodynamics</a>
+<a href="{{ '/research' | relative_url }}" class="chip">Path Integrals</a>
+<a href="{{ '/research' | relative_url }}" class="chip">Superfluidity</a>
+<a href="{{ '/research' | relative_url }}" class="chip">Parton Model</a>
+<a href="{{ '/research' | relative_url }}" class="chip">Quantum Computing</a>
+<a href="{{ '/research' | relative_url }}" class="chip">Nanotechnology</a>
 </div>
 
 Theoretical physics is a branch of physics that focuses on the development of mathematical models and theories to understand and explain natural phenomena.
@@ -27,7 +26,7 @@ Research in theoretical physics helps us to make predictions about how the unive
 </div>
 
 <div class="banner-frame" markdown="0">
-<img src="{{ site.url }}{{ site.baseurl }}/images/banner.jpg" alt="Feynman diagrams" loading="lazy">
+<img src="{{ '/images/banner.jpg' | relative_url }}" alt="Feynman diagrams" loading="lazy">
 <div class="banner-caption">Examples of Feynman diagrams. Feynman R., <em>The theory of positrons. Phys. Rev.</em> (1949)</div>
 </div>
 

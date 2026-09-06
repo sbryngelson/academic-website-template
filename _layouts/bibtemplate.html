@@ -1,11 +1,27 @@
 ---
 ---
 
-<div class="pub-entry" data-pub-searchable>
-  <div class="text-justify">{{ reference }}</div>
+{% comment %}
+  Bold the site owner's name. Uses scholar.last_name / scholar.first_name
+  from _config.yml; the first matching form wins.
+{% endcomment %}
+{% assign ref = reference %}
+{% if site.scholar.last_name and site.scholar.first_name %}
+  {% assign bolded = false %}
+  {% for first in site.scholar.first_name %}
+    {% unless bolded %}
+      {% capture me %}{{ site.scholar.last_name }}, {{ first }}{% endcapture %}
+      {% if ref contains me %}
+        {% capture me_bold %}<b>{{ me }}</b>{% endcapture %}
+        {% assign ref = ref | replace: me, me_bold %}
+        {% assign bolded = true %}
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+{% endif %}
 
-  <!-- You can use the below to make your name bold -->
-  <!-- <div class="text-justify">{{ reference | replace_first: 'Bryngelson, S. H.', '<b>Bryngelson, S. H.</b>' }}</div> -->
+<div class="pub-entry" data-pub-searchable>
+  <div class="text-justify">{{ ref }}</div>
 
   {% assign bibtest = false %}
   {% if entry.file %}
@@ -19,14 +35,14 @@
 
   <div class="pub-actions">
     {% if bibtest %}
-    <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.file }}" target="_blank" class="btn-pill btn-pdf">PDF</a>
+    <a href="{{ entry.file | prepend: '/papers/' | relative_url }}" target="_blank" class="btn-pill btn-pdf">PDF</a>
     {% endif %}
 
     {% if entry.doi %}
       {% if entry.type == 'unpublished' %}
       <a href="{{ entry.doi | prepend: 'https://arxiv.org/abs/' }}" target="_blank" class="btn-pill btn-arxiv">arXiv</a>
       {% else %}
-      <a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank" class="btn-pill btn-doi">DOI</a>
+      <a href="{{ entry.doi | prepend: 'https://doi.org/' }}" target="_blank" class="btn-pill btn-doi">DOI</a>
       {% endif %}
     {% endif %}
 
@@ -39,15 +55,9 @@
     {% endif %}
   </div>
 
-  {% if entry.abstract %}
-  <div class="pub-collapse" id="bib-{{ entry.key }}">
-    <pre>{{ entry.bibtex | remove: "entry.abstract" }}</pre>
-  </div>
-  {% else %}
   <div class="pub-collapse" id="bib-{{ entry.key }}">
     <pre>{{ entry.bibtex }}</pre>
   </div>
-  {% endif %}
 
   {% if entry.abstract %}
   <div class="pub-collapse" id="abs-{{ entry.key }}">

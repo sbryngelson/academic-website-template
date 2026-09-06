@@ -240,7 +240,7 @@ __Using this template? Share your site and I'll add it here!__
 - **Warm parchment palette** with subtle noise texture for depth, not flat generic whites
 - **Dark mode** — toggle in navbar, auto-detects system preference, persists across visits
 - **Frosted glass navbar** with backdrop blur, active page indicator, and scroll shadow
-- **Dynamic SVG favicon** — auto-generated from your initials + accent color
+- **Dynamic favicon** — SVG generated from your initials + accent color; ICO and Apple touch icon rasterized from it at deploy time
 - **Responsive** — CSS Grid layouts that adapt from desktop to tablet to mobile
 
 ### Interactions
@@ -260,15 +260,17 @@ __Using this template? Share your site and I'll add it here!__
 
 ### For New Users
 - **Interactive setup script** — run `./setup.sh` to fill in your name, title, and institution
-- **4-step `_config.yml`** — numbered sections with inline comments guide you through setup
+- **5-step `_config.yml`** — numbered sections with inline comments guide you through setup
 - **Well-commented data files** — every field in `_data/*.yml` is explained with examples
 - **Smart link handling** — empty links in config are automatically hidden (no broken icons)
 
 ### Technical
 - **Modular SASS** — organized into `base/`, `components/`, `layouts/`, `utilities/`
 - **Selective Bootstrap 5.3.3** — only imports the modules used, not the full bundle
-- **Single JS file** (4KB minified) — dark mode, search, toggles, scroll effects, copy button
+- **Single dependency-free JS file** — dark mode, search, toggles, scroll effects, copy button
 - **Auto-generated sitemap** via `jekyll-sitemap`
+- **Reproducible builds** — `Gemfile.lock` is committed, so your site builds the same way next year
+- **CI on pull requests** — every PR is built and its internal links are checked
 - **Open Graph + Twitter Cards** — links look good when shared on social media
 - **MathJax 3** — LaTeX formula rendering out of the box
 
@@ -283,13 +285,13 @@ __Using this template? Share your site and I'll add it here!__
 
 ## Quick Start
 
-1. **Fork** [this repository](https://github.com/sbryngelson/academic-website-template)
-2. **Delete** `_config_demo.yml` (it's only for the demo site)
-3. **Install** [Jekyll](https://jekyllrb.com/docs/installation/) and run `bundle install`
+1. Click **[Use this template](https://github.com/sbryngelson/academic-website-template/generate)** and name the new repository `YOUR_USERNAME.github.io`
+   (prefer this over forking: you get a clean history, no upstream baggage, and the option to keep it private)
+2. **Install** [Jekyll](https://jekyllrb.com/docs/installation/) and run `bundle install`
 3. **Configure** your site:
    ```bash
    ./setup.sh          # interactive setup, or
-   vim _config.yml     # edit Steps 1-4 directly
+   vim _config.yml     # edit Steps 1-5 directly
    ```
 4. **Add your publications** to `assets/ref.bib`
 5. **Customize** data files in `_data/` (team members, news, awards, etc.)
@@ -301,24 +303,22 @@ __Using this template? Share your site and I'll add it here!__
 
 ## Detailed How-To Guide
 
-### Step 1: Fork and Clone
+### Step 1: Create Your Repository
+
+Click **[Use this template](https://github.com/sbryngelson/academic-website-template/generate)** on GitHub and name the new repository `YOUR_USERNAME.github.io`. Then clone it:
 
 ```bash
-# Fork the repo on GitHub, then clone your fork
 git clone https://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io.git
 cd YOUR_USERNAME.github.io
 ```
+
 
 ### Step 2: Install Dependencies
 
 You need Ruby and Jekyll installed. See [Jekyll's installation guide](https://jekyllrb.com/docs/installation/).
 
 ```bash
-# Install Ruby gems
 bundle install
-
-# Optional: install Node.js dependencies (only needed if you want to edit JS)
-npm install
 ```
 
 ### Step 3: Configure Your Identity
@@ -377,15 +377,13 @@ Edit `assets/ref.bib` with your BibTeX entries. The publications page is auto-ge
 }
 ```
 
-To bold your name in the publication list, update the scholar settings in `_config.yml`:
+Your name is bolded automatically in the publication list. Set it in `_config.yml` exactly as it appears in the rendered list (`Last, F. M.`), longest form first:
 
 ```yaml
 scholar:
   last_name: Smith
-  first_name: [Jane, J.]
+  first_name: ["J. A.", "J."]
 ```
-
-Then uncomment the name-bolding line in `_layouts/bibtemplate.html`.
 
 ### Step 7: Add Team Members
 
@@ -431,6 +429,8 @@ nav_pages:
   - name: research
 ```
 
+Blog posts live in `_posts/` and are published at `/blog/<year>/<title>/`.
+
 ### Step 10: Preview and Deploy
 
 ```bash
@@ -454,7 +454,7 @@ Your site will be live at `https://YOUR_USERNAME.github.io` within a few minutes
 
 ### _config.yml
 
-The config file is organized into 4 numbered steps:
+The config file is organized into 5 numbered steps:
 
 | Step | Section | What to fill in |
 |------|---------|-----------------|
@@ -462,6 +462,7 @@ The config file is organized into 4 numbered steps:
 | 2 | **Your Links** | Google Scholar, GitHub, ORCID, Twitter, LinkedIn, CV |
 | 3 | **Site Settings** | Accent color, dark mode toggle, analytics |
 | 4 | **Your Pages** | Comment out any pages you don't need |
+| 5 | **Publications** | Your name (for bolding) and Jekyll Scholar options |
 
 ### Data Files
 
@@ -480,11 +481,11 @@ Each file has inline comments explaining every field. Entries marked `# EXAMPLE`
 
 ### Pages
 
-All pages are in `_pages/`. Edit the Markdown content directly. Pages use the `gridlay` layout by default.
+All pages are in `_pages/`. Edit the Markdown content directly. Pages use the `page` layout; blog posts use `post`.
 
 ### Accent Color & Dark Mode
 
-Set `accent_color` in `_config.yml` to change the theme color across the entire site (links, buttons, highlights, favicon). Set `dark_mode: false` to disable the dark mode toggle entirely.
+Set `accent_color` in `_config.yml` to change the theme color across the entire site (links, buttons, highlights, favicon). Light and dark mode variants are derived from it automatically. Set `dark_mode: false` to disable dark mode entirely.
 
 ### CSS & JS Customization
 
@@ -498,29 +499,29 @@ _sass/
   utilities/     # dark mode, animations
 ```
 
-For JavaScript, edit `assets/js/site.js` then run `npm run build` to minify. Pre-built JS is committed, so `npm` is only needed if you modify the source.
+For JavaScript, edit `assets/js/site.js` directly. There is no build step.
 
 ## Publications
 
 Publications are managed via [Jekyll Scholar](https://github.com/inukshuk/jekyll-scholar) using BibTeX. Edit `assets/ref.bib` with your references.
 
-Update `scholar.last_name` and `scholar.first_name` in `_config.yml` to auto-bold your name in the publication list.
+Set `scholar.last_name` and `scholar.first_name` in `_config.yml` to bold your name in the publication list (see Step 6 above).
 
 ## Hosting
 
 ### GitHub Pages
 
-Fork this repo as `your_username.github.io` and push. A **GitHub Actions workflow** is included (`.github/workflows/deploy.yml`) that automatically builds the site with Jekyll Scholar and deploys to GitHub Pages on every push to `source`.
+Create your repo from this template as `your_username.github.io` and push. A **GitHub Actions workflow** is included (`.github/workflows/deploy.yml`) that automatically builds the site with Jekyll Scholar and deploys to GitHub Pages on every push to `source`.
 
-To enable it: go to your repo's **Settings > Pages > Source** and select **GitHub Actions** instead of "Deploy from a branch".
+One-time setup: go to your repo's **Settings > Pages > Source** and select **GitHub Actions** instead of "Deploy from a branch". (GitHub does not let a workflow enable Pages on its own; until you do this, the deploy step will fail with a message saying so.)
 
 ### Custom Domain
 
-Purchase a domain, update the `CNAME` file, and configure DNS. See [GitHub's guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
+Purchase a domain, enter it under **Settings > Pages > Custom domain**, and configure DNS; the workflow picks up the new URL automatically. See [GitHub's guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site). (Sites deployed with GitHub Actions configure the domain in Settings, not with a `CNAME` file.)
 
 ### Self-Hosting
 
-Build with `bundle exec jekyll serve`, then upload `_site/` to your server. Set `url` and `baseurl` in `_config.yml` accordingly.
+Set `url` (and `baseurl` if the site lives in a sub-path) in `_config.yml`, build with `JEKYLL_ENV=production bundle exec jekyll build`, and upload `_site/` to your server.
 
 ## Upgrading
 

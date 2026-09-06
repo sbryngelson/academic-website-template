@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-gem "jekyll", "4.3.3"
-gem "sass-embedded", "~> 1.77.0"  # pin to avoid noisy deprecation warnings from Bootstrap SCSS
-gem "rack", ">= 2.2.3"
+gem "jekyll", "~> 4.4"
+gem "jekyll-scholar", "~> 7.3"
+gem "jekyll-sitemap", "~> 1.4"
 gem "kramdown-parser-gfm"
-gem 'jekyll-scholar'
-gem 'jekyll-sitemap'
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.9"
+
+# Standard-library gems that are no longer bundled with Ruby >= 3.4
 gem "csv"
 gem "base64"
 gem "bigdecimal"

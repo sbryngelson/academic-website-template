@@ -8,7 +8,7 @@ email: richard@university.edu
 photo: headshot.jpg  # place your photo in images/
 
 # ============================================================
-# STEP 2: Your Links (optional -- delete any you don't use)
+# STEP 2: Your Links (optional -- leave blank to hide an icon)
 # ============================================================
 links:
   google_scholar: "https://scholar.google.com/citations?user=B7vSqZsAAAAJ"
@@ -17,18 +17,22 @@ links:
   orcid: ""
   twitter: ""
   linkedin: ""
-  cv: ""  # e.g., "papers/cv.pdf" — leave blank to hide the CV icon
+  cv: ""  # e.g., "papers/cv.pdf"
 
 # ============================================================
 # STEP 3: Site Settings
 # ============================================================
-accent_color: "#1a7a6d"      # theme color for links and buttons
-dark_mode: true              # show dark mode toggle in navbar
+accent_color: "#1a7a6d"      # theme color; light and dark variants are derived automatically
+dark_mode: true              # set to false to disable dark mode entirely
 description: "Academic webpage of Dr. Richard Feynman"
-baseurl: ""
-url: ""
 
-# Google Analytics — paste your GA4 measurement ID, or leave blank
+# When deploying with the included GitHub Actions workflow these are filled
+# in automatically from your Pages settings (user site, project site, or
+# custom domain). Set them only if you host the site somewhere else.
+url: ""
+baseurl: ""
+
+# Google Analytics -- paste your GA4 measurement ID, or leave blank
 analytics:
   google_id: ""
 
@@ -43,18 +47,42 @@ nav_pages:
   - name: software
   - name: team
   - name: teaching
-  - name: blogs
+  - name: blog
+
+# ============================================================
+# STEP 5: Publications (assets/ref.bib)
+# ============================================================
+# Your name is bolded in the publication list. Write it exactly as it
+# appears in the rendered list ("Last, F. M."); list the longest form first.
+scholar:
+  last_name: Feynman
+  first_name: ["R. P.", "R."]
+  style: citesty
+  locale: en
+  source: /assets/
+  bibliography: ref.bib
+  bibliography_template: bibtemplate
+  sort_by: year, month
+  order: descending
+  replace_strings: true
+  join_strings: true
+  query: "@*"
+  bibliography_list_attributes:
+    reversed: "reversed"
 
 # ============================================================
 # Advanced Settings (you probably don't need to change these)
 # ============================================================
+permalink: /blog/:year/:title/
+
 include:
-  - .htaccess
   - _pages
 
 sass:
-  quiet_deps: true
   style: compressed
+  quiet_deps: true                # hide warnings from vendored Bootstrap SCSS
+  silence_deprecations: [import]  # Bootstrap 5.3 still uses @import
+  sourcemap: development          # no .map file in production builds
 
 markdown: kramdown
 highlighter: rouge
@@ -75,33 +103,16 @@ kramdown:
 
 plugins: ["jekyll/scholar", "jekyll-sitemap"]
 
-scholar:
-  last_name: Doe
-  first_name: [John]
-  style: citesty
-  locale: en
-  source: /assets/
-  bibliography: ref.bib
-  bibliography_template: bibtemplate
-  sort_by: year, month
-  order: descending
-  replace_strings: true
-  join_strings: true
-  details_dir: bibliography
-  details_layout: bibtex.html
-  details_link: Details
-  query: "@*"
-  bibliography_list_attributes:
-    reversed: "reversed"
-
+# Repository files that should not be published to the site
 exclude:
   - Gemfile
   - Gemfile.lock
-  - update_bootstrap.sh
-  - switch_theme.sh
-  - tags
-  - Rakefile
+  - README.md
+  - UPGRADING.md
+  - LICENSE
+  - setup.sh
+  - images/screenshots
+  - assets/javascript/bootstrap/__DO_NOT_MODIFY
+  - vendor
+  - .bundle
   - node_modules
-  - package.json
-  - package-lock.json
-  - docs

@@ -1,0 +1,43 @@
+name: Site does not build or deploy
+description: Your copy of the template fails to build, or the deployed site looks wrong.
+labels: [support]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Most build problems can be diagnosed from the Actions log. Please fill in everything below.
+  - type: input
+    id: repo
+    attributes:
+      label: Link to your repository
+      placeholder: https://github.com/you/you.github.io
+    validations:
+      required: true
+  - type: input
+    id: site
+    attributes:
+      label: Link to the deployed site (if any)
+      placeholder: https://you.github.io
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before filing
+      options:
+        - label: In my repo, Settings > Pages > Source is set to "GitHub Actions" (not "Deploy from a branch").
+          required: true
+        - label: I have looked at the failing run under the Actions tab.
+          required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Actions log
+      description: Paste the relevant part of the failing step's output from the Actions tab.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: local
+    attributes:
+      label: Does it build locally?
+      description: Output of `bundle exec jekyll build`, if you tried it.
+      render: shell

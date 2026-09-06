@@ -1,7 +1,6 @@
 ---
 title: "Publications"
-layout: gridlay
-sitemap: false
+layout: page
 permalink: /publications/
 ---
 
