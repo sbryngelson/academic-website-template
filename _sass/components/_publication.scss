@@ -52,6 +52,13 @@
   margin-top: var(--space-1);
 }
 
+// Selected publications on the home page: no list numbering
+.selected-pubs ol.bibliography {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
 // Collapsible bibtex/abstract
 .pub-collapse {
   max-height: 0;

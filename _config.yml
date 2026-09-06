@@ -33,13 +33,19 @@ description: "Academic webpage of Dr. Richard Feynman"
 url: ""
 baseurl: ""
 
-# Google Analytics -- paste your GA4 measurement ID, or leave blank
+# Analytics -- fill in whichever service you use; leave the rest blank.
 analytics:
-  google_id: ""
+  google_id: ""          # Google Analytics 4 measurement ID, e.g. G-XXXXXXXXXX
+  plausible_domain: ""   # Plausible: your site's domain, e.g. jsmith.github.io
+  umami_website_id: ""   # Umami: website ID (and umami_src if self-hosted)
+  umami_src: ""          #   default https://cloud.umami.is/script.js
+  goatcounter: ""        # GoatCounter: your code, e.g. jsmith (for jsmith.goatcounter.com)
 
 # ============================================================
 # STEP 4: Choose Your Pages (comment out any you don't need)
 # ============================================================
+# Each name is a page in _pages/. Add `label: Papers` to change the
+# navbar text without changing the URL.
 nav_pages:
   - name: about
   - name: publications
@@ -70,6 +76,8 @@ scholar:
   query: "@*"
   bibliography_list_attributes:
     reversed: "reversed"
+  # Template-only fields, kept out of the copyable BibTeX
+  bibtex_skip_fields: [abstract, month_numeric, file, selected, code, slides, video, poster, data]
 
 # ============================================================
 # Advanced Settings (you probably don't need to change these)

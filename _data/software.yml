@@ -1,0 +1,21 @@
+# Software projects, shown on the Software page in the order listed.
+# Each entry needs: name, description
+# Optional: authors, website, repo, docs, paper
+
+- name: Path Integral Monte Carlo
+  authors: R. P. Feynman, A. Hibbs
+  website: https://example.com
+  repo: https://github.com
+  description: >-
+    A Monte Carlo simulation code for computing quantum mechanical path integrals
+    in many-body systems. Used to study the lambda transition in liquid helium
+    and other quantum statistical mechanics problems.
+
+- name: QED Diagram Calculator
+  authors: R. P. Feynman
+  website: https://example.com
+  docs: https://example.com/docs
+  description: >-
+    A tool for systematically enumerating and evaluating Feynman diagrams in
+    quantum electrodynamics calculations, automating the computation of
+    scattering amplitudes to arbitrary order in perturbation theory.

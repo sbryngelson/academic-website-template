@@ -91,4 +91,8 @@ If you copied the template before September 2026, note these changes:
 - MathJax loads only on pages with `math: true` in their front matter (or `math: true` in `_config.yml`).
 - Bootstrap's JavaScript is no longer shipped; the mobile menu is handled in `assets/js/site.js`. Bootstrap's `buttons`, `card`, `dropdown` and `close` SCSS modules are no longer imported.
 - Page titles are `# Title` (h1) instead of `## Title`; section headings remain `##`.
+- Talks moved from `@incollection` BibTeX entries to `_data/talks.yml`; teaching and software pages are generated from `_data/teaching.yml` and `_data/software.yml`.
+- `_data/people.yml` and the About page's "Students and Mentoring" list were removed (they duplicated `alumni.yml`).
+- Publication links come from BibTeX fields (`arxiv`, `url`, `code`, `slides`, `video`, `poster`, `data`); an arXiv id in the `doi` field of an `@unpublished` entry still works. The year badge is taken from the `year` field. `selected = {true}` lists an entry on the home page.
+- URLs are no longer printed inside the reference text (`citesty.csl`); they appear as buttons.
 - `favicon.ico` was removed from the repository; the deploy workflow now rasterizes it (and `apple-touch-icon.png`) from the generated `favicon.svg`.

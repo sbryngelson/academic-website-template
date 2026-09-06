@@ -1,0 +1,14 @@
+{% assign talk = include.talk %}
+<div class="pub-entry">
+  {% if talk.year %}<span class="year-badge">{{ talk.year }}</span>{% endif %}
+  {% capture line %}<strong>{{ talk.title }}</strong>{% if talk.event %}. {{ talk.event }}{% endif %}{% if talk.location %}, {{ talk.location }}{% endif %}{% if talk.date %}, {{ talk.date }}{% endif %}{% endcapture %}
+  {% assign last_char = line | slice: -1 %}
+  <div class="text-justify">{{ line }}{% unless last_char == "." %}.{% endunless %}</div>
+  {% if talk.url or talk.slides or talk.video %}
+  <div class="pub-actions">
+    {% if talk.url %}<a href="{{ talk.url }}" target="_blank" class="btn-pill btn-link">Link</a>{% endif %}
+    {% if talk.slides %}<a href="{{ talk.slides }}" target="_blank" class="btn-pill btn-slides">Slides</a>{% endif %}
+    {% if talk.video %}<a href="{{ talk.video }}" target="_blank" class="btn-pill btn-video">Video</a>{% endif %}
+  </div>
+  {% endif %}
+</div>

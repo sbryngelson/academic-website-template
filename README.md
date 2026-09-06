@@ -256,12 +256,15 @@ __Using this template? Share your site and I'll add it here!__
 - **Auto-generated from BibTeX** via Jekyll Scholar — just edit `assets/ref.bib`
 - **Search bar** — filter publications by title, author, or year
 - **Year badges** — small accent-colored pills for quick scanning
-- **Pill buttons** — PDF, DOI, arXiv, BIB, Abstract
+- **Pill buttons** — PDF, DOI, arXiv, Link, Code, Slides, Video, Poster, Data, BIB, Abstract, all driven by BibTeX fields
+- **Selected publications** on the home page — add `selected={true}` to an entry
 
 ### For New Users
-- **Interactive setup script** — run `./setup.sh` to fill in your name, title, and institution
+- **Interactive setup script** — `./setup.sh` fills in your name, title, and institution; `./setup.sh --clean` also strips the demo content
+- **Talks, teaching, and software as data** — edit a YAML list, not HTML
 - **5-step `_config.yml`** — numbered sections with inline comments guide you through setup
 - **Well-commented data files** — every field in `_data/*.yml` is explained with examples
+- **Analytics, your choice** — Google Analytics, Plausible, Umami, or GoatCounter, each a one-line setting
 - **Smart link handling** — empty links in config are automatically hidden (no broken icons)
 
 ### Technical
@@ -291,7 +294,8 @@ __Using this template? Share your site and I'll add it here!__
 2. **Install** [Jekyll](https://jekyllrb.com/docs/installation/) and run `bundle install`
 3. **Configure** your site:
    ```bash
-   ./setup.sh          # interactive setup, or
+   ./setup.sh --clean  # remove the demo content and fill in your details, or
+   ./setup.sh          # keep the demo content as examples, or
    vim _config.yml     # edit Steps 1-5 directly
    ```
 4. **Add your publications** to `assets/ref.bib`
@@ -373,10 +377,23 @@ Edit `assets/ref.bib` with your BibTeX entries. The publications page is auto-ge
   volume = {42},
   pages = {1--10},
   doi = {10.1234/example},
+  arxiv = {2401.01234},
+  code = {https://github.com/jsmith/novel-approach},
   file = {smith2024.pdf},       % place PDF in papers/
+  selected = {true},            % also show on the home page
   abstract = {We present...}
 }
 ```
+
+Every link is a BibTeX field; use the ones you have:
+
+| Field | Button |
+|-------|--------|
+| `file` | PDF (file in `papers/`) |
+| `doi`, `arxiv`, `url` | DOI, arXiv, Link |
+| `code`, `slides`, `video`, `poster`, `data` | Code, Slides, Video, Poster, Data |
+| `abstract` | Abstract (expandable) |
+| `selected = {true}` | Listed under "Selected publications" on the home page |
 
 Your name is bolded automatically in the publication list. Set it in `_config.yml` exactly as it appears in the rendered list (`Last, F. M.`), longest form first:
 
@@ -417,8 +434,8 @@ Each page in `_pages/` is a Markdown file. Edit the content directly:
 
 - `home.md` — your welcome text and bio
 - `research.md` — describe your research areas
-- `software.md` — list your software projects
-- `teaching.md` — list your courses
+
+Talks, teaching, and software are lists in `_data/` (see below); their pages need no editing.
 
 To remove a page from the navbar, comment it out in `_config.yml`:
 
@@ -426,6 +443,7 @@ To remove a page from the navbar, comment it out in `_config.yml`:
 nav_pages:
   - name: about
   - name: publications
+    label: Papers        # optional: navbar text (URL stays /publications)
   # - name: talks        # hidden from navbar
   - name: research
 ```
@@ -461,7 +479,7 @@ The config file is organized into 5 numbered steps:
 |------|---------|-----------------|
 | 1 | **Your Identity** | Name, title, institution, email, photo |
 | 2 | **Your Links** | Google Scholar, GitHub, ORCID, Twitter, LinkedIn, CV |
-| 3 | **Site Settings** | Accent color, dark mode toggle, analytics |
+| 3 | **Site Settings** | Accent color, dark mode, math, analytics (GA4, Plausible, Umami, GoatCounter) |
 | 4 | **Your Pages** | Comment out any pages you don't need |
 | 5 | **Publications** | Your name (for bolding) and Jekyll Scholar options |
 
@@ -475,7 +493,9 @@ The config file is organized into 5 numbered steps:
 | `_data/awards.yml` | Awards and honors |
 | `_data/grants.yml` | Grants and funding |
 | `_data/funders.yml` | Funder logos |
-| `_data/people.yml` | Students and mentees |
+| `_data/talks.yml` | Invited and contributed talks |
+| `_data/teaching.yml` | Courses |
+| `_data/software.yml` | Software projects |
 | `_data/pi.yml` | Optional: detailed education for About page |
 
 Each file has inline comments explaining every field. Entries marked `# EXAMPLE` should be replaced or deleted.
