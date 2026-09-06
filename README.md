@@ -270,13 +270,13 @@ __Using this template? Share your site and I'll add it here!__
 ### Technical
 - **Modular SASS** — organized into `base/`, `components/`, `layouts/`, `utilities/`
 - **No third-party requests** — fonts and icons are served from your own site; the only external script is MathJax, and only on pages that opt in
-- **Selective Bootstrap 5.3 SCSS** — navbar, reboot and utilities only; no Bootstrap JavaScript, no jQuery
+- **Selective Bootstrap 5.3.8 SCSS** — navbar, reboot and utilities only; no Bootstrap JavaScript, no jQuery
 - **Single dependency-free JS file** — dark mode, search, toggles, scroll effects, copy button
 - **Auto-generated sitemap** via `jekyll-sitemap`
 - **Reproducible builds** — `Gemfile.lock` is committed, so your site builds the same way next year
 - **CI on pull requests** — every PR is built and its internal links are checked
 - **Open Graph + Twitter Cards** — links look good when shared on social media
-- **MathJax 3** — add `math: true` to a page or post (or set it site-wide in `_config.yml`)
+- **MathJax 4** — add `math: true` to a page or post (or set it site-wide in `_config.yml`)
 
 ## Screenshots
 
@@ -320,7 +320,7 @@ cd YOUR_USERNAME.github.io
 
 ### Step 2: Install Dependencies
 
-You need Ruby and Jekyll installed. See [Jekyll's installation guide](https://jekyllrb.com/docs/installation/).
+You need Ruby (3.2 or newer; the deploy workflow uses 4.0) and Bundler. See [Jekyll's installation guide](https://jekyllrb.com/docs/installation/).
 
 ```bash
 bundle install
