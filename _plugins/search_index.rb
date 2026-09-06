@@ -13,10 +13,18 @@ module SearchIndex
   EXCLUDED_URLS = ['/404.html'].freeze
   MAX_CHARS = 5000
 
+  # Markup that carries no searchable prose: scripts, styles, publication
+  # action buttons, and the collapsed BibTeX/abstract blocks.
+  NOISE = [
+    %r{<(script|style)[^>]*>.*?</\1>}m,
+    %r{<div class="pub-actions">.*?</div>}m,
+    %r{<div class="pub-collapse"[^>]*>.*?</div>}m
+  ].freeze
+
   def self.text(html)
     main = html[%r{<main[^>]*>(.*)</main>}m, 1] || html
-    main = main.gsub(%r{<(script|style)[^>]*>.*?</\1>}m, ' ')
-               .gsub(/<[^>]+>/, ' ')
+    NOISE.each { |re| main = main.gsub(re, ' ') }
+    main = main.gsub(/<[^>]+>/, ' ')
     CGI.unescapeHTML(main).gsub(/\s+/, ' ').strip[0, MAX_CHARS]
   end
 
