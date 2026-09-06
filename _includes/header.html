@@ -15,7 +15,7 @@
         </li>
         {% for nav in site.nav_pages %}
         <li class="nav-item">
-          <a class="nav-link{% if page.url contains nav.name %} active{% endif %}" href="{{ nav.name | prepend: '/' | relative_url }}">{{ nav.name | capitalize }}</a>
+          <a class="nav-link{% if page.url contains nav.name %} active{% endif %}" href="{{ nav.name | prepend: '/' | relative_url }}">{% if nav.label %}{{ nav.label }}{% else %}{{ nav.name | capitalize }}{% endif %}</a>
         </li>
         {% endfor %}
       </ul>

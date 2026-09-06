@@ -30,6 +30,16 @@ Research in theoretical physics helps us to make predictions about how the unive
 <div class="banner-caption">Examples of Feynman diagrams. Feynman R., <em>The theory of positrons. Phys. Rev.</em> (1949)</div>
 </div>
 
+{% capture selected %}{% bibliography --query @*[selected=true] %}{% endcapture %}
+{% if selected contains "pub-entry" %}
+## Selected publications
+
+<div class="section-card selected-pubs" markdown="0">
+{{ selected }}
+<p style="margin: var(--space-4) 0 0;"><a href="{{ '/publications' | relative_url }}">All publications &rarr;</a></p>
+</div>
+{% endif %}
+
 ## About me
 
 I am a physicist working in the field of quantum mechanics and quantum electrodynamics.

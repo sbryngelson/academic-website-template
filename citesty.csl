@@ -1576,23 +1576,8 @@
     </group>
   </macro>
   <macro name="access">
-    <choose>
-      <else-if variable="URL">
-        <group delimiter=" ">
-          <choose>
-            <if variable="issued status" match="none">
-              <group delimiter=" ">
-                <text term="retrieved" text-case="capitalize-first"/>
-                <date variable="accessed" form="text" suffix=","/>
-                <text term="from"/>
-              </group>
-            </if>
-          </choose>
-          <text variable="URL"/>
-          <text variable="address"/>
-        </group>
-      </else-if>
-    </choose>
+    <!-- DOI and URL are rendered as buttons by _layouts/bibtemplate.html, not in the reference text -->
+    <text value=""/>
   </macro>
   <macro name="event">
     <choose>

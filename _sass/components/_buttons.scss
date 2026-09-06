@@ -34,8 +34,15 @@
     &:hover { background-color: #8c1515; color: #fff; }
   }
 
+  // Outlined: BibTeX/abstract toggles and secondary links
   &.btn-bib,
-  &.btn-abstract {
+  &.btn-abstract,
+  &.btn-link,
+  &.btn-code,
+  &.btn-slides,
+  &.btn-video,
+  &.btn-poster,
+  &.btn-data {
     background-color: transparent;
     color: var(--text-secondary);
     border-color: var(--border-color);

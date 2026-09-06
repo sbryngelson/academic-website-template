@@ -6,21 +6,22 @@ permalink: /software/
 
 # Software
 
-<div class="section-card">
-<h2>Path Integral Monte Carlo</h2>
+{% for project in site.data.software %}
+<div class="section-card" markdown="0">
+<h2>{{ project.name }}</h2>
+{% if project.website or project.repo or project.docs or project.paper %}
 <div class="pub-actions" style="margin-bottom: var(--space-3);">
-<a href="https://example.com" target="_blank" class="btn-pill btn-website">Website</a>
-<a href="https://github.com" target="_blank" class="btn-pill btn-git">Git</a>
+{% if project.website %}<a href="{{ project.website }}" target="_blank" class="btn-pill btn-website">Website</a>{% endif %}
+{% if project.repo %}<a href="{{ project.repo }}" target="_blank" class="btn-pill btn-git">Code</a>{% endif %}
+{% if project.docs %}<a href="{{ project.docs }}" target="_blank" class="btn-pill btn-link">Docs</a>{% endif %}
+{% if project.paper %}<a href="{{ project.paper }}" target="_blank" class="btn-pill btn-link">Paper</a>{% endif %}
 </div>
-<p><strong>Authors:</strong> <em>R. P. Feynman, A. Hibbs</em></p>
-<p>A Monte Carlo simulation code for computing quantum mechanical path integrals in many-body systems. Used to study the lambda transition in liquid helium and other quantum statistical mechanics problems.</p>
+{% endif %}
+{% if project.authors %}<p><strong>Authors:</strong> <em>{{ project.authors }}</em></p>{% endif %}
+<p>{{ project.description }}</p>
 </div>
+{% endfor %}
 
-<div class="section-card">
-<h2>QED Diagram Calculator</h2>
-<div class="pub-actions" style="margin-bottom: var(--space-3);">
-<a href="https://example.com" target="_blank" class="btn-pill btn-website">Website</a>
-</div>
-<p><strong>Authors:</strong> <em>R. P. Feynman</em></p>
-<p>A tool for systematically enumerating and evaluating Feynman diagrams in quantum electrodynamics calculations, automating the computation of scattering amplitudes to arbitrary order in perturbation theory.</p>
-</div>
+{% unless site.data.software.size > 0 %}
+<p class="text-muted">No software listed yet. Add entries to <code>_data/software.yml</code>.</p>
+{% endunless %}

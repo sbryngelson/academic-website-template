@@ -52,17 +52,6 @@ permalink: /about/
 </div>
 {% endif %}
 
-{% if site.data.people %}
-<div class="section-card">
-<h3>Students and Mentoring</h3>
-<ul>
-{% for student in site.data.people %}
-<li>{{ student.name }}, {{ student.location }} ({{ student.degree }}, {{ student.year }})</li>
-{% endfor %}
-</ul>
-</div>
-{% endif %}
-
 {% if site.data.funders %}
 <div class="section-card">
 <h4>Sponsors</h4>

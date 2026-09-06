@@ -8,3 +8,15 @@
   gtag('config', '{{ site.analytics.google_id }}');
 </script>
 {% endif %}
+{% if site.analytics.plausible_domain and site.analytics.plausible_domain != "" %}
+<!-- Plausible -->
+<script defer data-domain="{{ site.analytics.plausible_domain }}" src="https://plausible.io/js/script.js"></script>
+{% endif %}
+{% if site.analytics.umami_website_id and site.analytics.umami_website_id != "" %}
+<!-- Umami -->
+<script defer src="{% if site.analytics.umami_src and site.analytics.umami_src != "" %}{{ site.analytics.umami_src }}{% else %}https://cloud.umami.is/script.js{% endif %}" data-website-id="{{ site.analytics.umami_website_id }}"></script>
+{% endif %}
+{% if site.analytics.goatcounter and site.analytics.goatcounter != "" %}
+<!-- GoatCounter -->
+<script data-goatcounter="https://{{ site.analytics.goatcounter }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+{% endif %}

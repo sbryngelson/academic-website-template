@@ -20,39 +20,40 @@
   {% endfor %}
 {% endif %}
 
+{% comment %}
+  Links come from BibTeX fields:
+    file     PDF in papers/          arxiv   arXiv identifier
+    doi      DOI                     url     any web page
+    code, slides, video, poster, data   URLs
+  For backwards compatibility an arXiv id in the doi field of an
+  @unpublished entry is still treated as an arXiv link.
+{% endcomment %}
+{% assign has_pdf = false %}
+{% if entry.file %}
+  {% assign pdf_path = "/papers/" | append: entry.file %}
+  {% for file in site.static_files %}{% if file.path contains pdf_path %}{% assign has_pdf = true %}{% endif %}{% endfor %}
+{% endif %}
+{% assign arxiv_id = entry.arxiv %}
+{% if arxiv_id == nil or arxiv_id == "" %}
+  {% if entry.type == 'unpublished' and entry.doi %}{% assign arxiv_id = entry.doi %}{% endif %}
+{% endif %}
+
 <div class="pub-entry" data-pub-searchable>
+  {% if entry.year %}<span class="year-badge">{{ entry.year }}</span>{% endif %}
   <div class="text-justify">{{ ref }}</div>
 
-  {% assign bibtest = false %}
-  {% if entry.file %}
-  {% assign bibfile = "/papers/" | append: entry.file %}
-  {% for file in site.static_files %}
-    {% if file.path contains bibfile %}
-     {% assign bibtest = true %}
-    {% endif %}
-  {% endfor %}
-  {% endif %}
-
   <div class="pub-actions">
-    {% if bibtest %}
-    <a href="{{ entry.file | prepend: '/papers/' | relative_url }}" target="_blank" class="btn-pill btn-pdf">PDF</a>
-    {% endif %}
-
-    {% if entry.doi %}
-      {% if entry.type == 'unpublished' %}
-      <a href="{{ entry.doi | prepend: 'https://arxiv.org/abs/' }}" target="_blank" class="btn-pill btn-arxiv">arXiv</a>
-      {% else %}
-      <a href="{{ entry.doi | prepend: 'https://doi.org/' }}" target="_blank" class="btn-pill btn-doi">DOI</a>
-      {% endif %}
-    {% endif %}
-
-    {% if entry.type == 'unpublished' or entry.type == 'article' or entry.type == 'thesis' or entry.type == 'inproceedings' or entry.type == 'report' %}
+    {% if has_pdf %}<a href="{{ entry.file | prepend: '/papers/' | relative_url }}" target="_blank" class="btn-pill btn-pdf">PDF</a>{% endif %}
+    {% if arxiv_id and arxiv_id != "" %}<a href="https://arxiv.org/abs/{{ arxiv_id }}" target="_blank" class="btn-pill btn-arxiv">arXiv</a>{% endif %}
+    {% if entry.doi and entry.doi != arxiv_id %}<a href="https://doi.org/{{ entry.doi }}" target="_blank" class="btn-pill btn-doi">DOI</a>{% endif %}
+    {% if entry.url %}<a href="{{ entry.url }}" target="_blank" class="btn-pill btn-link">Link</a>{% endif %}
+    {% if entry.code %}<a href="{{ entry.code }}" target="_blank" class="btn-pill btn-code">Code</a>{% endif %}
+    {% if entry.slides %}<a href="{{ entry.slides }}" target="_blank" class="btn-pill btn-slides">Slides</a>{% endif %}
+    {% if entry.video %}<a href="{{ entry.video }}" target="_blank" class="btn-pill btn-video">Video</a>{% endif %}
+    {% if entry.poster %}<a href="{{ entry.poster }}" target="_blank" class="btn-pill btn-poster">Poster</a>{% endif %}
+    {% if entry.data %}<a href="{{ entry.data }}" target="_blank" class="btn-pill btn-data">Data</a>{% endif %}
     <button class="btn-pill btn-bib" data-toggle-target="bib-{{ entry.key }}">BIB</button>
-    {% endif %}
-
-    {% if entry.abstract %}
-    <button class="btn-pill btn-abstract" data-toggle-target="abs-{{ entry.key }}">Abstract</button>
-    {% endif %}
+    {% if entry.abstract %}<button class="btn-pill btn-abstract" data-toggle-target="abs-{{ entry.key }}">Abstract</button>{% endif %}
   </div>
 
   <div class="pub-collapse" id="bib-{{ entry.key }}">
