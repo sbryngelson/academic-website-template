@@ -4,7 +4,7 @@ layout: page
 permalink: /blog/
 ---
 
-## Blog
+# Blog
 
 {% if site.posts.size > 0 %}
 <div class="section-card" markdown="0">

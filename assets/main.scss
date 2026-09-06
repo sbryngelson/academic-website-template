@@ -2,7 +2,11 @@
 ---
 
 
-// Bootstrap 5.3.3 — selective imports
+// Fonts (self-hosted)
+@import "base/fonts";
+
+// Bootstrap 5.3 SCSS — only the modules the markup uses (navbar, reboot,
+// utilities, grid). Bootstrap's JavaScript is not used.
 @import "bootstrap/functions";
 @import "bootstrap/variables";
 @import "bootstrap/variables-dark";
@@ -16,19 +20,16 @@
 @import "bootstrap/containers";
 @import "bootstrap/grid";
 @import "bootstrap/tables";
-@import "bootstrap/buttons";
 @import "bootstrap/transitions";
-@import "bootstrap/dropdown";
 @import "bootstrap/nav";
 @import "bootstrap/navbar";
-@import "bootstrap/card";
-@import "bootstrap/close";
 @import "bootstrap/utilities/api";
 
 // Base
 @import "base/variables";
 @import "base/reset";
 @import "base/typography";
+@import "base/icons";
 
 // Components
 @import "components/card";

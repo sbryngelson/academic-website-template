@@ -4,7 +4,7 @@ layout: homelay
 permalink: /
 ---
 
-<h2 class="home-hero">{{ site.name }}</h2>
+<h1 class="home-hero">{{ site.name }}</h1>
 <p class="home-hero-sub">{{ site.title }}, {{ site.institution }}</p>
 
 <div class="chip-container" markdown="0">
@@ -21,16 +21,16 @@ It plays a crucial role in our understanding of the fundamental laws of the univ
 Research in theoretical physics helps us to make predictions about how the universe works and to test these predictions through experiments.
 
 <div class="callout callout-success" markdown="0">
-<div class="callout-title"><i class="fa-solid fa-award callout-icon"></i> Nobel Prize in Physics, 1965</div>
+<div class="callout-title">{% include icon.html name="award" class="callout-icon" %} Nobel Prize in Physics, 1965</div>
 <p>Awarded the Nobel Prize jointly with Julian Schwinger and Shin'ichiro Tomonaga for fundamental work in quantum electrodynamics, with deep-ploughing consequences for the physics of elementary particles.</p>
 </div>
 
 <div class="banner-frame" markdown="0">
-<img src="{{ '/images/banner.jpg' | relative_url }}" alt="Feynman diagrams" loading="lazy">
+<img src="{{ '/images/banner.webp' | relative_url }}" alt="Feynman diagrams" width="1400" height="449" loading="lazy">
 <div class="banner-caption">Examples of Feynman diagrams. Feynman R., <em>The theory of positrons. Phys. Rev.</em> (1949)</div>
 </div>
 
-### About me
+## About me
 
 I am a physicist working in the field of quantum mechanics and quantum electrodynamics.
 I received my undergraduate degree in physics from the Massachusetts Institute of Technology (MIT) in 1939 and went on to earn my PhD from Princeton University in 1942.

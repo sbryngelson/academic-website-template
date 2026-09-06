@@ -4,7 +4,7 @@
       <img src="{{ '/favicon.svg' | relative_url }}" width="24" height="24" class="d-inline-block align-text-top" alt="" style="border-radius: 5px;">
       {{ site.name | escape }}
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -21,11 +21,11 @@
       </ul>
       <div class="d-flex align-items-center" style="gap: var(--space-2);">
         <button class="search-toggle" id="searchToggle" aria-label="Search site">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          {% include icon.html name="search" %}
         </button>
         {% unless site.dark_mode == false %}
         <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
-          <i class="fa-solid fa-sun" id="themeIcon"></i>
+          {% include icon.html name="sun" id="themeIcon" %}
         </button>
         {% endunless %}
       </div>
@@ -37,7 +37,7 @@
 <div class="search-overlay" id="searchOverlay">
 <div class="search-modal">
 <div class="search-input-wrapper">
-<i class="fa-solid fa-magnifying-glass search-input-icon"></i>
+{% include icon.html name="search" class="search-input-icon" %}
 <input type="text" class="search-input" id="searchInput" placeholder="Search pages..." autocomplete="off">
 <kbd class="search-kbd">ESC</kbd>
 </div>

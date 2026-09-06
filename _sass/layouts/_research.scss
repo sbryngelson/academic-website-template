@@ -46,6 +46,7 @@
     font-weight: 700;
     margin-top: 0;
     margin-bottom: var(--space-2);
+    &::after { display: none; }
   }
 
   .research-desc {

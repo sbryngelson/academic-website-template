@@ -15,17 +15,14 @@
   <meta name="twitter:description" content="{{ site.description }}">
   {% if site.photo %}<meta name="twitter:image" content="{{ site.photo | prepend: '/images/' | absolute_url }}">{% endif %}
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,700;0,8..60,800;1,8..60,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <!-- Fonts are self-hosted (assets/fonts/, declared in _sass/base/_fonts.scss).
+       Preload the two faces used above the fold. -->
+  <link rel="preload" href="{{ '/assets/fonts/source-serif-4-latin-normal-wght.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/assets/fonts/dm-sans-latin-normal-wght.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 
   <!-- Styles -->
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <meta name="theme-color" content="{{ site.accent_color | default: '#1a7a6d' }}">
   <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
   <!-- favicon.svg is generated from your initials + accent color (see favicon.svg).
        favicon.ico and apple-touch-icon.png are rasterized from it during deployment
@@ -60,7 +57,7 @@
   {% include analytics.html %}
   {% endif %}
 
-  {% include mathjax.html %}
+  {% if page.math or site.math %}{% include mathjax.html %}{% endif %}
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">

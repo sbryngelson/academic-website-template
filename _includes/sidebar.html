@@ -1,19 +1,19 @@
 <div class="profile-card">
 <a href="{{ '/about' | relative_url }}">
-<img src="{{ site.photo | prepend: '/images/' | relative_url }}" class="profile-photo" alt="{{ site.name }}" loading="lazy">
+<img src="{{ site.photo | prepend: '/images/' | relative_url }}" class="profile-photo" alt="{{ site.name }}" width="140" height="140" fetchpriority="high">
 </a>
-<h4 class="profile-name">{{ site.name }}</h4>
+<p class="profile-name">{{ site.name }}</p>
 <p class="profile-title">{{ site.title }}</p>
 <p class="profile-institution">{{ site.institution }}</p>
 <div class="profile-links">
-{% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
-{% if site.links.cv and site.links.cv != "" %}<a href="{{ site.links.cv | prepend: '/' | relative_url }}" class="icon-link" title="CV"><i class="ai ai-cv"></i></a>{% endif %}
-{% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}" class="icon-link" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
-{% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}" class="icon-link" title="GitHub"><i class="fa-brands fa-github"></i></a>{% endif %}
-{% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}" class="icon-link" title="ResearchGate"><i class="ai ai-researchgate"></i></a>{% endif %}
-{% if site.links.orcid and site.links.orcid != "" %}<a href="{{ site.links.orcid }}" class="icon-link" title="ORCID"><i class="ai ai-orcid"></i></a>{% endif %}
-{% if site.links.twitter and site.links.twitter != "" %}<a href="{{ site.links.twitter }}" class="icon-link" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>{% endif %}
-{% if site.links.linkedin and site.links.linkedin != "" %}<a href="{{ site.links.linkedin }}" class="icon-link" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>{% endif %}
+{% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email" aria-label="Email">{% include icon.html name="envelope" %}</a>{% endif %}
+{% if site.links.cv and site.links.cv != "" %}<a href="{{ site.links.cv | prepend: '/' | relative_url }}" class="icon-link" title="CV" aria-label="CV">{% include icon.html name="cv" %}</a>{% endif %}
+{% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}" class="icon-link" title="Google Scholar" aria-label="Google Scholar">{% include icon.html name="google-scholar" %}</a>{% endif %}
+{% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}" class="icon-link" title="GitHub" aria-label="GitHub">{% include icon.html name="github" %}</a>{% endif %}
+{% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}" class="icon-link" title="ResearchGate" aria-label="ResearchGate">{% include icon.html name="researchgate" %}</a>{% endif %}
+{% if site.links.orcid and site.links.orcid != "" %}<a href="{{ site.links.orcid }}" class="icon-link" title="ORCID" aria-label="ORCID">{% include icon.html name="orcid" %}</a>{% endif %}
+{% if site.links.twitter and site.links.twitter != "" %}<a href="{{ site.links.twitter }}" class="icon-link" title="Twitter" aria-label="Twitter">{% include icon.html name="x-twitter" %}</a>{% endif %}
+{% if site.links.linkedin and site.links.linkedin != "" %}<a href="{{ site.links.linkedin }}" class="icon-link" title="LinkedIn" aria-label="LinkedIn">{% include icon.html name="linkedin" %}</a>{% endif %}
 </div>
 {% if site.data.pi[0].educationshort %}
 <ul style="text-align: left; margin-top: var(--space-4); list-style: none; padding-left: 0;">
@@ -25,7 +25,7 @@
 </div>
 
 <div class="section-card" style="margin-top: var(--space-6);">
-<h4 style="margin-top: 0;">News</h4>
+<h2 style="margin-top: 0; font-size: 1.125rem;">News</h2>
 <div class="news-timeline">
 {% for article in site.data.news limit:3 %}
 <div class="news-item">

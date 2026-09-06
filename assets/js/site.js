@@ -1,10 +1,38 @@
 // =============================================================
-// site.js — Dark mode, publication filter, toggles, scroll effects,
-//           copy bibtex, back-to-top, year badges
+// site.js — Mobile nav, dark mode, publication filter, toggles,
+//           scroll effects, copy bibtex, back-to-top, year badges
 // =============================================================
 
 (function () {
   'use strict';
+
+  // Icons come from the inline sprite in _includes/icons.svg
+  function iconHTML(name) {
+    return '<svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-' + name + '"></use></svg>';
+  }
+  function setIcon(svg, name) {
+    var use = svg && svg.querySelector('use');
+    if (use) use.setAttribute('href', '#icon-' + name);
+  }
+
+  // ----- Mobile Navigation -----
+
+  var navToggler = document.querySelector('.navbar-toggler');
+  var navMenu = document.getElementById('navbarNav');
+
+  if (navToggler && navMenu) {
+    navToggler.addEventListener('click', function () {
+      var open = navMenu.classList.toggle('show');
+      navToggler.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    // Close the menu after a link is chosen
+    navMenu.addEventListener('click', function (e) {
+      if (e.target.closest('a.nav-link')) {
+        navMenu.classList.remove('show');
+        navToggler.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
 
   // ----- Dark Mode Toggle -----
 
@@ -14,11 +42,7 @@
   function updateIcon() {
     if (!icon) return;
     var theme = document.documentElement.getAttribute('data-bs-theme');
-    if (theme === 'dark') {
-      icon.className = 'fa-solid fa-moon';
-    } else {
-      icon.className = 'fa-solid fa-sun';
-    }
+    setIcon(icon, theme === 'dark' ? 'moon' : 'sun');
   }
 
   if (toggle) {
@@ -80,15 +104,16 @@
 
     var btn = document.createElement('button');
     btn.className = 'copy-btn';
-    btn.innerHTML = '<i class="fa-regular fa-copy"></i>';
+    btn.innerHTML = iconHTML('copy');
     btn.title = 'Copy to clipboard';
+    btn.setAttribute('aria-label', 'Copy BibTeX to clipboard');
 
     btn.addEventListener('click', function () {
       navigator.clipboard.writeText(pre.textContent.trim()).then(function () {
-        btn.innerHTML = '<i class="fa-solid fa-check"></i>';
+        btn.innerHTML = iconHTML('check');
         btn.classList.add('copied');
         setTimeout(function () {
-          btn.innerHTML = '<i class="fa-regular fa-copy"></i>';
+          btn.innerHTML = iconHTML('copy');
           btn.classList.remove('copied');
         }, 2000);
       });
@@ -117,7 +142,7 @@
 
   var topBtn = document.createElement('button');
   topBtn.className = 'back-to-top';
-  topBtn.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
+  topBtn.innerHTML = iconHTML('arrow-up');
   topBtn.setAttribute('aria-label', 'Back to top');
   document.body.appendChild(topBtn);
 
