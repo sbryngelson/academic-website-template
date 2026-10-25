@@ -19,6 +19,10 @@
 </h3>
 
 <p align="center">
+  If this template saves you time, please <a href="https://github.com/sbryngelson/academic-website-template/stargazers">star the repo</a>. Stars are how other academics find it.
+</p>
+
+<p align="center">
   <a href="#quick-start">Quick Start</a> &middot;
   <a href="#features">Features</a> &middot;
   <a href="#customization">Customization</a> &middot;
@@ -216,7 +220,7 @@
 
 Each star is a live site built from this template. The list is re-checked now and then; sites that go offline or move to another template are removed.
 
-__Using this template? Share your site and I'll add it here!__
+__Using this template? Share your site and I'll add it here, and consider starring the repo so others can find it.__
 
 ---
 
