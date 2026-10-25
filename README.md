@@ -270,21 +270,26 @@ __Using this template? Share your site and I'll add it here, and consider starri
 - **Open Graph + Twitter Cards** — links look good when shared on social media
 - **MathJax 4** — add `math: true` to a page or post (or set it site-wide in `_config.yml`)
 
-## How it compares to al-folio
+## How it compares
 
-[al-folio](https://github.com/alshedivat/al-folio) is the most popular academic Jekyll theme and the one most people weigh this template against. Measured on each project's demo home page on 2026-10-25 (Lighthouse 12.8, desktop preset):
+The usual alternatives are [academicpages](https://github.com/academicpages/academicpages.github.io), [al-folio](https://github.com/alshedivat/al-folio) and [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes). Measured on each project's demo home page on 2026-10-25 (Lighthouse 12.8, desktop preset):
 
-| | This template | al-folio |
-|---|---:|---:|
-| Page weight | 375 KB | 902 KB |
-| JavaScript | 3 KB | 456 KB |
-| Requests | 12 | 83 |
-| Third-party servers contacted | 0 | 12 |
-| Lighthouse accessibility | 100 | 92 |
+| | This template | academicpages | al-folio | Minimal Mistakes |
+|---|---:|---:|---:|---:|
+| Page weight | 375 KB | 898 KB | 902 KB | 404 KB |
+| JavaScript | 3 KB | 294 KB | 456 KB | 42 KB |
+| Third-party servers contacted | 0 | 1 | 12 | 1 |
+| Lighthouse accessibility | 100 | 96 | 92 | 100 |
 
-**Choose this template** if you run a research group (team and alumni pages, news, grants, talks, teaching and software, each from a YAML file), want a site that sends nothing about your visitors to font or script CDNs, or want code that is easy to read and change (one small JavaScript file, modular SCSS).
+Minimal Mistakes was measured with its demo's ads and analytics blocked, since they are not part of the theme. Five of al-folio's twelve servers serve the Altmetric and Dimensions badges its demo enables.
+
+**Choose this template** if you run a research group (team and alumni pages, news, grants, talks, teaching and software, each from a YAML file), want publications rendered straight from a BibTeX file, or want a site that sends nothing about your visitors to font or script CDNs.
+
+**Choose academicpages** if you prefer one Markdown file per publication and talk (its Python scripts generate them from a TSV or BibTeX file), or want its talk map and portfolio section.
 
 **Choose al-folio** if you want a CV page generated from RenderCV or JSON Resume, Jupyter notebooks and Distill-style posts, Altmetric and Dimensions badges, automatic Google Scholar citation counts, or its larger plugin ecosystem.
+
+**Choose Minimal Mistakes** if you want a general-purpose theme installed as a gem, with skins, many layouts and comment systems. It has no publication list or team page built in.
 
 ## Screenshots
 
