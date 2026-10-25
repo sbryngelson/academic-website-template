@@ -270,6 +270,22 @@ __Using this template? Share your site and I'll add it here, and consider starri
 - **Open Graph + Twitter Cards** — links look good when shared on social media
 - **MathJax 4** — add `math: true` to a page or post (or set it site-wide in `_config.yml`)
 
+## How it compares to al-folio
+
+[al-folio](https://github.com/alshedivat/al-folio) is the most popular academic Jekyll theme and the one most people weigh this template against. Measured on each project's demo home page on 2026-10-25 (Lighthouse 12.8, desktop preset):
+
+| | This template | al-folio |
+|---|---:|---:|
+| Page weight | 375 KB | 902 KB |
+| JavaScript | 3 KB | 456 KB |
+| Requests | 12 | 83 |
+| Third-party servers contacted | 0 | 12 |
+| Lighthouse accessibility | 100 | 92 |
+
+**Choose this template** if you run a research group (team and alumni pages, news, grants, talks, teaching and software, each from a YAML file), want a site that sends nothing about your visitors to font or script CDNs, or want code that is easy to read and change (one small JavaScript file, modular SCSS).
+
+**Choose al-folio** if you want a CV page generated from RenderCV or JSON Resume, Jupyter notebooks and Distill-style posts, Altmetric and Dimensions badges, automatic Google Scholar citation counts, or its larger plugin ecosystem.
+
 ## Screenshots
 
 | | |
