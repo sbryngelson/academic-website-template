@@ -32,7 +32,7 @@ GEM
       time (< 1.0)
     csl-styles (2.0.2)
       csl (~> 2.0)
-    csv (3.3.6)
+    csv (3.3.7)
     date (3.5.1)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
