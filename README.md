@@ -177,6 +177,7 @@
 <a href="https://MosesStewart.github.io/" target="_blank">★</a>
 <a href="https://mxyao.github.io/" target="_blank">★</a>
 <a href="https://NaokiItsui.github.io/" target="_blank">★</a>
+<a href="https://nelsonr.dev/" target="_blank">★</a>
 <a href="https://owenarden.github.io/home/" target="_blank">★</a>
 <a href="https://pinakisar.github.io/" target="_blank">★</a>
 <a href="https://pponzio.github.io/" target="_blank">★</a>
